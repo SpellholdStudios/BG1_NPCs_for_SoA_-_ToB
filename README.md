@@ -16,7 +16,7 @@ The mod is compatible with BG2, BG2: EE, BGT and EET.
 This mod must be installed AFTER other NPC mods containing the same NPCs - in which case they will simply be skipped, but all the rest of the content of this mod will be available! In that way, you can still install Kulyok's Xan or Lava's Quayle and still enjoy the rest of the mod. For example, if a player were to have other version of Quayle installed and he tried to install the component 'Gnomes is the City: Tiax and Quayle', installer would skip over Smiling Imp's Quayle. Thus, Tiax from this mod and Lava's Quayle would appear in the game.
 Also compatible with the "The Darkest Day" mod - but on "classic" (non-EE) version of game "BG1 NPCs for SoA & ToB" must be installed AFTER "TDD" mod, in this case two identical NPCs will not appear in the game.
 
-Note: For downloading the current version from GitHub, make sure you go to the releases page and download the [latest release of this mod!](https://github.com/SpellholdStudios/NTotSC/releases)
+Note: For downloading the current version from GitHub, make sure you go to the releases page and download the [latest release of this mod!](https://github.com/SpellholdStudios/BG1_NPCs_for_SoA_-_ToB/releases)
 
 [Read the Readme](https://spellholdstudios.github.io/readmes/BG1ReadMe.pdf)
 
