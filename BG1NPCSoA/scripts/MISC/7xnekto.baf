@@ -1,0 +1,17 @@
+IF 
+Global("GarrickBardQuest","GLOBAL",5)
+See([PC])
+THEN
+  RESPONSE #100
+    SetGlobal("GarrickBardQuest","GLOBAL",6)
+	ActionOverride(Player1,SetDialog("PLAYER1"))
+	ActionOverride(Player1,StartDialog("Player1",Myself))
+END
+
+IF 
+Global("GarrickBardQuest","GLOBAL",7)
+Exists("7xnekto")
+THEN
+  RESPONSE #100
+DestroySelf()
+END

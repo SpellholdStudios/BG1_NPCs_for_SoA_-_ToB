@@ -1,0 +1,11 @@
+IF
+Global("StartEndBios","AR6200",1)
+InParty("7XBRAN")
+Global("7XBRANBio","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("7XBRANBio","GLOBAL",1)
+TextScreen("BranEp")
+SmallWait(1)
+Continue()
+END

@@ -1,0 +1,17 @@
+
+
+IF 
+Global("KivanQuest","GLOBAL",0)
+
+THEN
+  RESPONSE #100
+CreateCreature("7XCRE73",[468.837],4)
+SetGlobal("KivanQuest","GLOBAL",1)
+Continue()
+END
+
+
+
+
+
+

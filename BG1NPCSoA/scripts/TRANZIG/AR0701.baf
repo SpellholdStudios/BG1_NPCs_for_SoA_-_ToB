@@ -1,0 +1,17 @@
+IF 
+
+Global("TranzigE","GLOBAL",1)
+InParty("7XBRAN")
+
+
+THEN
+  RESPONSE #100
+
+CreateCreature("7Xcre8",[419.657],0)
+SetGlobal("TranzigE","GLOBAL",2)
+Continue()
+END
+
+
+
+

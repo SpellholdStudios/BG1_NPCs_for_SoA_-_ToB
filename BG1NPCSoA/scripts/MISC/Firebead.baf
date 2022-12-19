@@ -1,0 +1,19 @@
+IF
+	Dead("bg1x6")
+	See([PC])
+THEN
+	RESPONSE #100
+	    ChangeEnemyAlly(Myself,NEUTRAL)
+		StartDialogNoSet([PC])
+END
+
+IF
+    AreaCheck("AR0700")
+	Global("7xFirebead","AR0700",1)
+	See([PC])
+	!Dead("bg1x6")
+	!See([ENEMY])
+THEN
+	RESPONSE #100
+	MoveToObject(Player1)
+END

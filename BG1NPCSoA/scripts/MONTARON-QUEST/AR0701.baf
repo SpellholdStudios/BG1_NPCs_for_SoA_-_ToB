@@ -1,0 +1,18 @@
+
+
+
+
+IF 
+InParty("7XMONT")Global("MontiQuest","GLOBAL",1)
+
+
+THEN
+  RESPONSE #100
+CreateCreature("MQFIRE1",[2415.934],10)
+SetGlobal("MontiQuest","GLOBAL",2)
+Continue()
+END
+
+
+
+

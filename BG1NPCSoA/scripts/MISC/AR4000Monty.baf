@@ -1,0 +1,17 @@
+IF
+	InPartyAllowDead("7XMONT")
+	Global("MONTISummonedTOB","GLOBAL",1)
+THEN
+	RESPONSE #100
+		ActionOverride("7XMONT",ChangeAIScript("7XMON25",OVERRIDE))
+		SetGlobal("MONTISummonedTOB","GLOBAL",2)
+END
+
+IF
+	InPartyAllowDead("7XMONT")
+	Global("MONTISummonedTOB","GLOBAL",0)
+THEN
+	RESPONSE #100
+		ActionOverride("7XMONT",ChangeAIScript("7XMON25",OVERRIDE))
+		SetGlobal("MONTISummonedTOB","GLOBAL",2)
+END

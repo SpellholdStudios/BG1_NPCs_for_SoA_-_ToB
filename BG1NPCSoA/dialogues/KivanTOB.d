@@ -1,0 +1,126 @@
+EXTEND_TOP FATESP 6 #4
+  IF ~!Dead("7XKIVA")
+!InMyArea("7XKIVA")
+Global("KIVANSummonedToB","GLOBAL",0)~ THEN
+   REPLY @0
+    DO ~CreateVisualEffect("SPPORTAL",[1999.1218])
+Wait(2)
+CreateCreature("7XCRE73",[1999.1218],0)
+SetGlobal("KIVANSummonedToB","GLOBAL",1)~ GOTO 8
+END
+
+BEGIN ~7XKIV25P~
+
+IF ~Global("KIVANKickedOutToB","GLOBAL",0)~ THEN BEGIN KIVANOut 
+  SAY  @1 
+  IF ~~ THEN REPLY @2 GOTO KIVANOutx
+  IF ~AreaCheck("AR4500")~ THEN REPLY @3 DO ~SetGlobal("KIVANKickedOutToB","GLOBAL",1)
+MoveToPointNoInterrupt([1626.1498])
+Face(0)~ GOTO KIVANOut1
+  IF ~!AreaCheck("AR4500")
+!AreaCheck("AR4000")
+!AreaCheck("AR6200")~ THEN REPLY @4 DO ~SetGlobal("KIVANKickedOutToB","GLOBAL",1)
+CreateVisualEffectObject("SPDIMNDR",Myself)
+Wait(2)
+MoveBetweenAreas("AR4500",[1626.1498],0)
+~ EXIT
+  IF ~!AreaCheck("AR4500")
+!AreaCheck("AR4000")
+!AreaCheck("AR6200")~ THEN REPLY @3 DO ~SetGlobal("KIVANKickedOutToB","GLOBAL",1)~ GOTO KIVANOut1
+END
+
+IF ~~ THEN BEGIN KIVANOutx
+  SAY @5 
+  IF ~~ THEN EXIT
+END
+
+
+IF ~~ THEN BEGIN KIVANOut1 
+  SAY @6 
+  IF ~~ THEN EXIT
+END
+
+IF ~Global("KIVANKickedOutToB","GLOBAL",1)~ THEN BEGIN KIVANOut2 
+  SAY @7 
+  IF ~~ THEN REPLY @8 GOTO KIVANOut1
+  IF ~~ THEN REPLY @9DO ~SetGlobal("KIVANKickedOutToB","GLOBAL",0)
+JoinParty()~ GOTO KIVANOutx
+IF ~~ THEN REPLY @10 DO ~SetGlobal("KIVANKickedOutToB","GLOBAL",0)
+JoinParty()~ GOTO KIVANOutx
+END
+
+
+
+BEGIN ~7XKIV25D~
+BEGIN ~7XKIV25J~
+BEGIN ~7XKIVA25~
+
+BEGIN ~BKIVA25~
+
+
+
+
+
+
+
+
+
+
+APPEND 7XKIVA
+
+IF WEIGHT #-10~Global("KIVANSummonedToB","GLOBAL",1)~ THEN BEGIN Intro 
+  SAY @11 
+IF ~~ THEN REPLY @12 GOTO KIVANToB1
+END
+END
+
+APPEND 7XKIVA
+IF ~~ THEN BEGIN KIVANToB1 
+  SAY @13
+=
+@14
+  IF ~~ THEN REPLY @15 GOTO KIVANToB3
+  IF ~~ THEN REPLY @16 GOTO KIVANToB4
+END
+END
+
+APPEND 7XKIVA
+IF ~~ THEN BEGIN KIVANToB3 
+  SAY @17 
+  IF ~~ THEN DO ~SetGlobal("KIVANSummonedToB","GLOBAL",2)JoinParty()~ EXIT
+END
+END
+
+APPEND 7XKIVA
+IF ~~ THEN BEGIN KIVANToB4 
+  SAY @18 
+  IF ~~ THEN REPLY @19 DO ~SetGlobal("KIVANSummonedToB","GLOBAL",2)JoinParty()~ GOTO KIVANToB3 
+  IF ~~ THEN REPLY @20 GOTO KIVANToB5
+END
+END
+
+APPEND 7XKIVA
+IF ~~ THEN BEGIN KIVANToB5 
+  SAY @21 
+  IF ~~ THEN DO ~MoveToPointNoInterrupt([1626.1498])
+Face(0)~ EXIT
+END
+END
+
+APPEND 7XKIVA
+IF ~Global("KIVANSummonedToB","GLOBAL",2)~ THEN BEGIN KIVANToB6
+  SAY @22 
+  IF ~~ THEN REPLY @23 DO ~SetGlobal("KIVANKickedOutToB","GLOBAL",1)JoinParty()~ GOTO KIVANToB3
+  IF ~~ THEN REPLY @24 GOTO KIVANToB7
+END
+END
+
+APPEND 7XKIVA
+IF ~~ THEN BEGIN KIVANToB7 
+  SAY @21 
+  IF ~~ THEN EXIT
+END
+END
+
+
+

@@ -1,0 +1,25 @@
+IF 
+Global("LanfearCreate","AR2600",0)
+Global("BG1XLNF","GLOBAL",1)
+
+THEN
+  RESPONSE #100
+CreateCreature("7XCRE66",[3453.505],0)
+SetGlobal("LanfearCreate","AR2600",1)
+Continue()
+END
+
+IF 
+Global("BG1XLNF","GLOBAL",2)
+Dead("7XCRE68")
+Dead("7xLanfir")
+
+THEN
+  RESPONSE #100
+SetGlobal("BG1XLNF","GLOBAL",3)  
+EraseJournalEntry(@1774)
+AddJournalEntry(@1807,QUEST_DONE)
+AddexperienceParty("25000")
+Continue()
+END
+

@@ -1,0 +1,18 @@
+IF 
+    True() 
+THEN 
+    RESPONSE #100 
+CutSceneID(Player1)
+FadeToColor([20.0],0) 
+Wait(2) 
+LeaveAreaLUA("ARBGX4","",[310.694],8)
+RestorePartyLocations()
+Wait(2)
+MoveViewPoint([1964.2725],INSTANT)
+FadeFromColor([20.0],0)
+Wait(2)
+EndCutSceneMode()
+END
+
+
+

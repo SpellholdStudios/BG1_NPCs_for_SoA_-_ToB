@@ -1,0 +1,13 @@
+IF
+Global("DornRomanceActive","GLOBAL",2) 
+Global("MontyRomanceActive","GLOBAL",2) 
+Global("MontyRomanceDornTalk","LOCALS",0)
+See(Player1)
+InParty(Myself)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("MontyRomanceDornTalk","LOCALS",1)
+ActionOverride(Myself,StartDialogNoSet(Player1))
+END

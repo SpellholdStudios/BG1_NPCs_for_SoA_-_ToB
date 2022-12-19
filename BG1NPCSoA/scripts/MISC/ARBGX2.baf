@@ -1,0 +1,121 @@
+IF
+!StateCheck(Player1,CD_STATE_NOTVALID)
+Global("BG1X1","GLOBAL",2)
+Global("LadyExists","ARBGX2",0)
+RealGlobalTimerExpired("AuctionStartTimer","GLOBAL") 
+THEN
+
+RESPONSE #100
+SetGlobal("LadyExists","ARBGX2",1)
+CreateCreature("7XCRE30",[250.717],0)
+END 
+
+IF
+Global("WaterGardensCondominium","GLOBAL",1)
+
+THEN
+RESPONSE #100
+CreateCreatureDoor("7XCRE99",[350.1063],4)
+SetGlobal("WaterGardensCondominium","GLOBAL",2)
+END
+
+IF
+InMyArea("KPLEND01")
+
+THEN
+
+RESPONSE #10
+  Wait(20)
+    ActionOverride("7XCRE97",DisplayStringHead(Myself,@1738)
+ActionOverride("7XCREAA",DisplayStringHead(Myself,454)
+Wait(2)
+ActionOverride("FULADY",DisplayStringHead(Myself,@1739)
+Wait(2)
+ActionOverride("HIST1",DisplayStringHead(Myself,@1740)
+ActionOverride("TREVIL01",DisplayStringHead(Myself,@1741)
+Wait(3)
+ActionOverride("7XCREHH",DisplayStringHead(Myself,@1742)
+Wait(20)
+
+RESPONSE #10
+    Wait(10)
+    ActionOverride("KPLEND01",DisplayStringHead(Myself,@1743)
+ActionOverride("7XCREBB",DisplayStringHead(Myself,491)
+Wait(3)
+ActionOverride("7XCREAA",DisplayStringHead(Myself,541)
+ActionOverride("TRMER02",DisplayStringHead(Myself,@1744)
+Wait(2)
+ActionOverride("TRMER02",DisplayStringHead(Myself,@1745)  
+Wait(20)
+
+RESPONSE #10
+Wait(5)
+ActionOverride("AMCUST01",DisplayStringHead(Myself,602)
+Wait(1)
+ActionOverride("7XCRE97",DisplayStringHead(Myself,@1746)
+Wait(2)
+ActionOverride("7XCREAA",DisplayStringHead(Myself,409)
+ActionOverride("KPSERV01",DisplayStringHead(Myself,276)
+Wait(2)
+ActionOverride("7XCREXX",DisplayStringHead(Myself,@1747)
+ActionOverride("TRCAR04",DisplayStringHead(Myself,625)
+Wait(20)
+
+RESPONSE #10
+    Wait(10)
+ActionOverride("KPLEND01",DisplayStringHead(Myself,@1748)
+Wait(2)
+ActionOverride("AMCUST01",DisplayStringHead(Myself,602)
+ActionOverride("7XCREXX",DisplayStringHead(Myself,@1747)
+Wait(2)
+ActionOverride("7XCREAA",DisplayStringHead(Myself,454)
+ActionOverride("KPSERV01",DisplayStringHead(Myself,276)
+Wait(2)
+ActionOverride("TRCAR04",DisplayStringHead(Myself,625)
+Wait(20)
+
+  RESPONSE #10
+    Wait(10)
+ActionOverride("7XCREBB",DisplayStringHead(Myself,491)
+ActionOverride("7XCRE97",DisplayStringHead(Myself,@1749)
+Wait(5)
+ActionOverride("KPLEND01",DisplayStringHead(Myself,@1750)
+Wait(3)
+ActionOverride("FARTHIN",DisplayStringHead(Myself,377)
+ActionOverride("7XCREAA",DisplayStringHead(Myself,409)
+Wait(20)
+
+  RESPONSE #10
+Wait(20)
+NoAction()
+
+  RESPONSE #10
+Wait(20)
+NoAction()
+
+  RESPONSE #10
+Wait(20)
+NoAction()
+
+END 
+
+
+IF
+  SpellCast([PC],0)
+  !GlobalTimerNotExpired("SpellsBad","GLOBAL")
+  Global("BribedCowled","GLOBAL",0)
+  GlobalLT("CowledWarning","GLOBAL",7)
+THEN
+  RESPONSE #100
+    CreateCreatureObjectDoor("COWENF2",Lasttrigger,0,0,0)
+    SetGlobalTimer("SpellsBad","GLOBAL",300)
+END
+
+IF
+  SpellCast([PC],0)
+  Global("BribedCowled","GLOBAL",0)
+  GlobalTimerNotExpired("SpellsBad","GLOBAL")
+THEN
+  RESPONSE #100
+    Wait(1)
+END

@@ -1,0 +1,158 @@
+// Bridge
+IF
+InParty("7XMONT")!StateCheck("7XMONT",CD_STATE_NOTVALID)
+AreaCheck("ar0500")
+  Global("MONTYar0500","AR0500",0)
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+  SetGlobal("MONTYar0500","AR0500",1)
+  RealSetGlobalTimer("MONTYar0500TalkTimer","GLOBAL",7) 
+END
+
+IF
+InParty("7XMONT")!StateCheck("7XMONT",CD_STATE_NOTVALID)
+AreaCheck("ar0500")
+  Global("MONTYar0500","AR0500",1)
+  CombatCounter(0)
+  RealGlobalTimerExpired("MONTYar0500TalkTimer","GLOBAL") 
+THEN
+  RESPONSE #100
+  SetGlobal("MONTYar0500","AR0500",2)
+  StartDialogNoSet(Player1)
+END
+
+
+
+// Docks 
+IF
+InParty("7XMONT")!StateCheck("7XMONT",CD_STATE_NOTVALID)
+AreaCheck("ar0300")
+  Global("MONTYar0300","AR0300",0)
+CombatCounter(0)
+THEN
+  RESPONSE #100
+  SetGlobal("MONTYar0300","AR0300",1)
+  RealSetGlobalTimer("MONTYar0300TalkTimer","GLOBAL",15) 
+END
+
+IF
+InParty("7XMONT")!StateCheck("7XMONT",CD_STATE_NOTVALID)
+AreaCheck("ar0300")
+  Global("MONTYar0300","AR0300",1)
+  CombatCounter(0)
+  RealGlobalTimerExpired("MONTYar0300TalkTimer","GLOBAL") 
+THEN
+  RESPONSE #100
+  SetGlobal("MONTYar0300","AR0300",2)
+  StartDialogNoSet(Player1)
+END
+
+// Deril Estate
+IF
+InParty("7XMONT")!StateCheck("7XMONT",CD_STATE_NOTVALID)
+AreaCheck("AR1004")
+  Global("MONTYAR1004","AR1004",0)
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+  SetGlobal("MONTYAR1004","AR1004",1)
+  RealSetGlobalTimer("MONTYAR1004TalkTimer","GLOBAL",3) 
+END
+
+IF
+InParty("7XMONT")!StateCheck("7XMONT",CD_STATE_NOTVALID)
+AreaCheck("AR1004")
+  Global("MONTYAR1004","AR1004",1)
+  CombatCounter(0)
+  RealGlobalTimerExpired("MONTYAR1004TalkTimer","GLOBAL") 
+THEN
+  RESPONSE #100
+   SetGlobal("MONTYAR1004","AR1004",2)
+  StartDialogNoSet(Player1)
+END
+
+// Copper Coronet
+IF
+InParty("7XMONT")!StateCheck("7XMONT",CD_STATE_NOTVALID)
+AreaCheck("AR0406")
+  Global("MONTYar0406","AR0406",0)
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+  SetGlobal("MONTYar0406","AR0406",1)
+  RealSetGlobalTimer("MONTYAR0406TalkTimer","GLOBAL",3) 
+END
+
+IF
+InParty("7XMONT")!StateCheck("7XMONT",CD_STATE_NOTVALID)
+AreaCheck("AR0406")
+  Global("MONTYar0406","AR0406",1)
+  CombatCounter(0)
+  RealGlobalTimerExpired("MONTYAR0406TalkTimer","GLOBAL") 
+THEN
+  RESPONSE #100
+   SetGlobal("MONTYar0406","AR0406",2)
+  StartDialogNoSet(Player1)
+END
+
+// Graveyard
+IF
+
+InParty("7XMONT")!StateCheck("7XMONT",CD_STATE_NOTVALID)
+Global("MontiGraveYard","LOCALS",0)
+AreaCheck("ar0800")
+
+THEN
+  RESPONSE #100
+    StartDialogNoSet(Player1)
+END
+
+// Rep
+IF
+
+InParty("7XMONT")!StateCheck("7XMONT",CD_STATE_NOTVALID)
+ReputationGT(Player1,15)
+Global("MontyTooGoodRep","GLOBAL",0)
+
+THEN
+  RESPONSE #100
+    StartDialogNoSet(Player1)
+END
+
+IF
+
+InParty("7XMONT")!StateCheck("7XMONT",CD_STATE_NOTVALID)
+ReputationLT(Player1,4)
+Global("MontyRepVeryBad","GLOBAL",0)
+
+THEN
+  RESPONSE #100
+    StartDialogNoSet(Player1)
+END
+
+// Drunk
+IF
+
+InParty("7XMONT")!StateCheck("7XMONT",CD_STATE_NOTVALID)
+CheckStatGT(Myself,50,INTOXICATION)
+Global("MontyDrunkTalk1","GLOBAL",0)
+
+THEN
+  RESPONSE #100
+    StartDialogNoSet(Player1)
+END
+
+// Black Lotus Cake (romance)
+IF
+InParty("7XMONT")!StateCheck("7XMONT",CD_STATE_NOTVALID)
+Global("PCMontyFlirts","GLOBAL",2) 
+Global("MontyRomanceActive","GLOBAL",0)
+Global("MontyBlackLotus","LOCALS",0)
+RealGlobalTimerExpired("MontyBlackLotusTimer","GLOBAL") 
+
+THEN
+  RESPONSE #100
+    SetGlobal("MontyBlackLotus","LOCALS",1)
+    StartDialogNoSet(Player1)
+END

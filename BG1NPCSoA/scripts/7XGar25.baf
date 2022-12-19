@@ -1,0 +1,53 @@
+// Amkethran
+IF
+InParty("7XGAR")!StateCheck("7XGAR",CD_STATE_NOTVALID)
+AreaCheck("AR5500") 
+Global("GarrickAmkethran","GLOBAL",0)
+THEN
+  RESPONSE #100
+   SetGlobal("GarrickAmkethran","GLOBAL",1)
+   RealSetGlobalTimer("GarrickAmkethranTimer","GLOBAL",15)
+END
+
+IF
+InParty("7XGAR")!StateCheck("7XGAR",CD_STATE_NOTVALID)
+See(Player1)
+AreaCheck("AR5500") 
+CombatCounter(0)
+Global("GarrickAmkethran","GLOBAL",1)
+RealGlobalTimerExpired("GarrickAmkethranTimer","GLOBAL") 
+THEN
+  RESPONSE #100
+   SetGlobal("GarrickAmkethran","GLOBAL",2)
+   SmallWait(3)
+   StartDialogNoSet(Player1)
+END
+
+
+// PC Friendship talks
+IF
+InParty("7XGAR")!StateCheck("7XGAR",CD_STATE_NOTVALID)
+Global("GarrickToBFriendship","GLOBAL",0)
+!RealGlobalTimerNotExpired("GarrickPCTalkToBTimer","GLOBAL") 
+CombatCounter(0) 
+THEN
+  RESPONSE #100
+   RealSetGlobalTimer("GarrickPCTalkToBTimer","GLOBAL",400)
+   SetGlobal("GarrickToBFriendship","GLOBAL",1)
+END
+
+IF
+InParty("7XGAR")!StateCheck("7XGAR",CD_STATE_NOTVALID)
+See(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+RealGlobalTimerExpired("GarrickPCTalkToBTimer","GLOBAL") 
+CombatCounter(0) 
+AreaType(OUTDOOR)
+!AreaType(DUNGEON)
+OR(2)
+Global("GarrickToBFriendship","GLOBAL",1)
+Global("GarrickToBFriendship","GLOBAL",2)
+THEN
+  RESPONSE #100
+   StartDialogNoSet(Player1)
+END

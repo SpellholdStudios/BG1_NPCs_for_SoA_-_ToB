@@ -1,0 +1,11 @@
+IF
+Global("StartEndBios","AR6200",1)
+InParty("7Xkaga")
+Global("7XkagaBio","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("7XkagaBio","GLOBAL",1)
+TextScreen("KagaEp")
+SmallWait(1)
+Continue()
+END

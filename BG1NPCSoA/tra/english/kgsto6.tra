@@ -1,0 +1,257 @@
+@0    = ~'Ello there mate. I am Capatain Swag Johnny Gull, just in from Maztica. I bring in loads of cargo for Kagain before the merchants in the other districts can get their bleedin' hands on 'em!~
+@1    = ~Would you care to challenge me to a wrestling match? It is just ten gold pieces to try. If you win, I'll give you five hundred platinum coins.~
+@2    = ~How about it?~
+@3    = ~Are you crazy, do I like that stupid?~
+@4    = ~Sorry, I don't have the time right now.~
+@5    = ~Sure, why not?~
+@6    = ~Fantastic! Let's start!~
+@7    = ~(Which technique will you try?)~
+@8    = ~Dropkick~
+@9    = ~Chokeslam~
+@10   = ~Arm Drag~
+@11   = ~Bulldogging Headlock~
+@12   = ~Headscissors Takedown~
+@13   = ~Eye Gouge~
+@14   = ~Jawbreaker~
+@15   = ~Rabbit Punch~
+@16   = ~*sigh* Very well. Come back if you change your mind.~
+@17   = ~(Swag Johnny Gull swats you away like an insignificant fly)~
+@18   = ~Meh... I thought I might actually break a sweat. You should practice a bit and come back when you are stronger.~
+@19   = ~Impressive, but what now?
+
+~
+@20   = ~(Which technique will you try now?)~
+@21   = ~Cactus Clothesline~
+@22   = ~Monkey Flip~
+@23   = ~Low Blow~
+@24   = ~Snapmare~
+@25   = ~Suplex~
+@26   = ~Hip Toss~
+@27   = ~Back Brain Kick~
+@28   = ~Good move.
+
+~
+@29   = ~Uppercut~
+@30   = ~Flying Back Elbow~
+@31   = ~Swinging Neckbreaker~
+@32   = ~Quarter Nelson~
+@33   = ~Mandible Claw~
+@34   = ~Facebuster~
+@35   = ~Piledriver~
+@36   = ~Big Boot~
+@37   = ~You continue to impress me.
+
+~
+@38   = ~Karate Chop~
+@39   = ~Tornado DDT~
+@40   = ~Springboard Moonsault~
+@41   = ~Cobra Clutch Suplex~
+@42   = ~Anaconda Vice~
+@43   = ~Fisherman Driver~
+@44   = ~Powerslam~
+@45   = ~Piggyback Stunner~
+@46   = ~Very good!
+
+~
+@47   = ~Tilt-a-whirl Backbreaker~
+@48   = ~Scorpion Hold~
+@49   = ~Flying Lariat~
+@50   = ~Crossface Chickenwing~
+@51   = ~Figure-Four Leglock~
+@52   = ~Ghetto Blaster~
+@53   = ~Spear~
+@54   = ~Headbutt~
+@55   = ~A wise guy huh?
+
+~
+@56   = ~Hurricane Kick~
+@57   = ~Tiger Knee Strike~
+@58   = ~Sumo Chop~
+@59   = ~Bitch Slap~
+@60   = ~Gut Punch~
+@61   = ~Kick to Groin~
+@62   = ~Bite~
+@63   = ~Frog Splash~
+@64   = ~What... you trying to make me look bad?
+
+~
+@65   = ~DDT~
+@66   = ~Gatorback~
+@67   = ~Crescent Jack Knife~
+@68   = ~Leg Sweep~
+@69   = ~BackBreaker~
+@70   = ~Ankle Lock~
+@71   = ~Switcheroo Swipe~
+@72   = ~Over Head Mule Kick~
+@73   = ~Would you stay put?
+
+~
+@74   = ~Wrist Lock~
+@75   = ~The Art of the Eight Limbs~
+@76   = ~Fatality~
+@77   = ~Spinning Elbow~
+@78   = ~Roundhouse Kick~
+@79   = ~Rotating Vertical Suplex~
+@80   = ~Jackhammer~
+@81   = ~Wolf Dance Feint Crucifix Armbar~
+@82   = ~Cobra Clutch~
+@83   = ~Somersault Leg Drop~
+@84   = ~Full Nelson~
+@85   = ~Shooting Star~
+@86   = ~Rapid Chops~
+@87   = ~Leg Trap Chokeslam~
+@88   = ~Mountain Bomb~
+@89   = ~Spinning bulldog~
+@90   = ~Okay, no more Mr. Nice Guy
+
+~
+@91   = ~Vertical Press~
+@92   = ~Mule Kick~
+@93   = ~Groin Attack~
+@94   = ~Joint Lock~
+@95   = ~Lotus Kick~
+@96   = ~Chokehold~
+@97   = ~Tornado Kick~
+@98   = ~Dragonrana~
+@99   = ~You are starting to get on my nerves
+
+~
+@100  = ~Knife Hand~
+@101  = ~Spoon Sweep~
+@102  = ~Ankle Pick~
+@103  = ~Touch Of Death~
+@104  = ~Liver Shot~
+@105  = ~Hair Pull~
+@106  = ~Shoulder Strike~
+@107  = ~Rising Uppercut~
+@108  = ~Stop making this difficult on yourself.
+
+~
+@109  = ~Gutwrench~
+@110  = ~Pumphandle Falling Powerslam~
+@111  = ~Iron Palm~
+@112  = ~Cloverleaf~
+@113  = ~Spinning Toe Hold~
+@114  = ~Skin the Cat~
+@115  = ~Triangle Choke~
+@116  = ~Military Press Drop~
+@117  = ~Just give up already, you're out classed.
+
+~
+@118  = ~Wheelbarrow Driver~
+@119  = ~Crane Kick~
+@120  = ~Dropsault~
+@121  = ~Cross-Legged Wrist-Clutch Fisherman Brainbuster~
+@122  = ~630° Senton~
+@123  = ~Rocking Horse~
+@124  = ~Butt Drop~
+@125  = ~Testicular Claw~
+@126  = ~A wise guy huh?
+
+Which technique will you try now)~
+@127  = ~Fierce Punch~
+@128  = ~Now what tough guy?
+
+~
+@129  = ~Jab~
+@130  = ~Chop~
+@131  = ~Elbow Strike~
+@132  = ~You almost hurt me there.
+
+~
+@133  = ~Hadouken~
+@134  = ~Front Kick~
+@135  = ~WEAK!
+
+~
+@136  = ~Sidekick~
+@137  = ~Sucker Punch~
+@138  = ~This is getting boring.
+
+~
+@139  = ~Monkeyflip~
+@140  = ~Kick to the Shin~
+@141  = ~You continue to impress me
+
+Which technique will you try now)~
+@142  = ~Oh Please!
+
+Which technique will you try now)~
+@143  = ~YAWN!!!
+
+Which technique will you try now)~
+@144  = ~Dragon Punch~
+@145  = ~Whirlwind Kick~
+@146  = ~Hundred Hand Slap~
+@147  = ~Scissor Knee~
+@148  = ~Spinning Lariat~
+@149  = ~Tiger Uppercut~
+@150  = ~Are we fighting or dancing?
+
+Which technique will you try now)~
+@151  = ~Shadow Slide~
+@152  = ~Friendship~
+@153  = ~Babality~
+@154  = ~Leg Takedown~
+@155  = ~Air Throw~
+@156  = ~Shadow Kick~
+@157  = ~What now tough guy?
+
+Which technique will you try now)~
+@158  = ~Powerbomb~
+@159  = ~Drunken Monkey~
+@160  = ~Wushu Kick~
+@161  = ~Razor Kick~
+@162  = ~Eagle Claw~
+@163  = ~Ouch, that kinda hurt!!
+
+Which technique will you try now)~
+@164  = ~Stone Cold Stunner~
+@165  = ~Clothesline~
+@166  = ~Razor's Edge~
+@167  = ~Praying Mantis~
+@168  = ~Diamond Cutter~
+@169  = ~Sleeper Hold~
+@170  = ~Are we fighting or dancing?
+
+~
+@171  = ~Scorpion Deathlock~
+@172  = ~Ouch, that kinda hurt!!!
+
+~
+@173  = ~YAWN!!!!!!!!!!
+
+~
+@174  = ~BAH, I work up more of a sweat when I thumb wrestle a toddler.
+
+~
+@175  = ~You might as well give up your life of adventuring and take a job in a kitchen if that is the extent of your skills.
+
+~
+@176  = ~Risng Uppercut~
+@177  = ~A human, a dwarf and an elf walk into a bar this one time...
+
+~
+@178  = ~Tell me when you are ready to begin.
+
+~
+@179  = ~Frankensteiner~
+@180  = ~Gorilla Press~
+@181  = ~You are starting to piss me off!!!
+
+~
+@182  = ~Bionic Elbow~
+@183  = ~Reverse Frankensteiner~
+@184  = ~Kabuki Superkick~
+@185  = ~Sharpshooter~
+@186  = ~Wow, you actually gave me quite a workout there. Well like I promised, here you go.~
+@187  = ~Thank you.~
+@188  = ~You're back! Want to wrestle?~
+@189  = ~I don't think that's a good idea right now.~
+@190  = ~Man am I bored. Nobody around here has challenged me as much as you did, plus I miss my frogs and pet Bot. Want to wrestle again? I don't have a prize, but we could wrestle for fun.~
+@191  = ~That first time you beat me must have been beginner's luck, because that was too easy.~
+@192  = ~Wow, you actually gave me quite a workout there.~
+@193  = ~Heck yeah, I worked you.~
+@194  = ~What now tough guy?
+
+~

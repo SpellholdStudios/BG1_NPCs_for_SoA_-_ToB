@@ -1,0 +1,11 @@
+IF
+Global("StartEndBios","AR6200",1)
+InParty("7XFALD")
+Global("7XFALDBio","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("7XFALDBio","GLOBAL",1)
+TextScreen("FaldEp")
+SmallWait(1)
+Continue()
+END

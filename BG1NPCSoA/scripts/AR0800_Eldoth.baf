@@ -1,0 +1,11 @@
+IF
+TimeOfDay(NIGHT)
+Global("EldothExists","AR0800",0)
+!StateCheck("7XSKI",CD_STATE_NOTVALID)InParty("7XSKI")
+
+THEN
+RESPONSE #100
+SetGlobal("EldothExists","AR0800",1)
+CreateCreature("7XCRE6",[1523.1449],13)
+Continue() 
+END

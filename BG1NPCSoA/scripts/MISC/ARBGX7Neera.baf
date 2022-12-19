@@ -1,0 +1,10 @@
+IF
+AreaCheck("ARBGX7")
+Global("7xLaaliGOOD","GLOBAL",1)
+Global("7xLaaliNeeraRomanceReaction","ARBGX7",0)
+See(Player1)
+OR(2) Global("NeeraRomanceActive","GLOBAL",1) Global("NeeraRomanceActive","GLOBAL",2)
+THEN
+	RESPONSE #100
+StartDialogNoSet("Player1")
+END

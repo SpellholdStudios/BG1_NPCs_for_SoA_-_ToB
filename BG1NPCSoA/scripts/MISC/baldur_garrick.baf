@@ -1,0 +1,21 @@
+IF
+  CombatCounter(0)
+  Global("GarrickBardQuest","GLOBAL",2)
+THEN
+	RESPONSE #100
+	SetGlobal("GarrickBardQuest","GLOBAL",3)
+    FadeToColor([30.0],0)
+    Wait(1)
+END
+
+IF
+  CombatCounter(0)
+  Global("GarrickBardQuest","GLOBAL",4)
+THEN
+	RESPONSE #100
+	ActionOverride(Player1,SetDialog("PLAYER1"))
+	ActionOverride(Player1,StartDialog("Player1",Myself))
+
+END
+
+

@@ -1,0 +1,126 @@
+// For new locations in EE - check if there are already pvrz files with the same name so that there are no conflicts with other mods
+DEFINE_ACTION_FUNCTION FC_COPY_TIS_PVRZ
+	INT_VAR
+		delete_original=0 // 1 - delete original pvrz
+	STR_VAR
+		tis_pvrz_path = ""
+		path_to_vanilla_tis = "" // using if Not find free pvrz index
+		tis_name = "" // original tis-name
+		tis_name_target = "" // target tis-name. if tis_name_target = "" => tis_name_target = tis_name
+		target_path = "override"
+BEGIN
+	ACTION_IF ( ~%tis_name_target%~ STR_EQ ~~ ) BEGIN OUTER_SPRINT tis_name_target ~%tis_name%~ END
+	
+	ACTION_CLEAR_ARRAY FC_PVRZ_PAGE_ARRAY
+	ACTION_CLEAR_ARRAY FC_OFFSET_ARRAY
+	
+	OUTER_PATCH_SAVE pvr_name_old ~%tis_name%~ BEGIN
+		DELETE_BYTES 1 1
+	END
+	OUTER_PATCH_SAVE pvr_name ~%tis_name_target%~ BEGIN
+		DELETE_BYTES 1 1
+	END
+	
+	OUTER_SET original = 0
+	
+	ACTION_IF ( FILE_EXISTS ~%tis_pvrz_path%/%tis_name%.tis~ ) BEGIN
+		COPY ~%tis_pvrz_path%/%tis_name%.tis~ ~%target_path%/%tis_name_target%.tis~
+			READ_LONG 0x8  "tiles_cnt"
+			READ_LONG 0x10 "tiles_off"
+			READ_LONG 0xc  "tiles_length"
+			SET x = 0
+			SET z = 0
+			FOR ( i = 0 ; i < tiles_cnt ; ++i ) BEGIN
+				SET offset = tiles_off + tiles_length * i
+				READ_LONG offset pvr_pg
+				DEFINE_ASSOCIATIVE_ARRAY FC_OFFSET_ARRAY BEGIN ~%offset%~ => ~%pvr_pg%~ END
+				PATCH_IF !( VARIABLE_IS_SET $FC_PVRZ_PAGE_ARRAY( ~%pvr_pg%~ ) ) BEGIN
+					PATCH_IF ( pvr_pg < 10 ) BEGIN SPRINT pgi ~0%pvr_pg%~ END ELSE BEGIN SPRINT pgi ~%pvr_pg%~ END
+					PATCH_IF ( NOT FILE_EXISTS_IN_GAME ~%pvr_name%%pgi%.PVRZ~ ) BEGIN
+						SET z = pvr_pg
+						DEFINE_ASSOCIATIVE_ARRAY FC_PVRZ_PAGE_ARRAY BEGIN ~%pvr_pg%~ => ~%z%~    END
+					END ELSE BEGIN
+						SET z = z + 1
+						FOR ( j = z ; j < 100 ; ++j ) BEGIN
+							PATCH_IF ( z < 10 ) BEGIN SPRINT pgi ~0%z%~ END ELSE BEGIN SPRINT pgi ~%z%~ END
+							PATCH_IF ( NOT FILE_EXISTS_IN_GAME ~%pvr_name%%pgi%.PVRZ~ ) BEGIN
+								DEFINE_ASSOCIATIVE_ARRAY FC_PVRZ_PAGE_ARRAY BEGIN ~%pvr_pg%~ => ~%j%~    END
+								SET j = 100
+							END ELSE BEGIN
+								SET z = z + 1
+							END
+						END
+					END
+				END
+			END
+			PATCH_IF ( z > 99 ) BEGIN SET original = 1 END
+			PHP_EACH FC_OFFSET_ARRAY AS offset => value BEGIN
+				SET new_value = 0
+				PATCH_IF ( VARIABLE_IS_SET $FC_PVRZ_PAGE_ARRAY( ~%value%~ ) ) BEGIN
+					SET new_value = $FC_PVRZ_PAGE_ARRAY( ~%value%~ )
+				END
+				WRITE_LONG ~%offset%~ ~%new_value%~
+			END
+
+		ACTION_IF ( NOT original ) BEGIN
+			ACTION_PHP_EACH FC_PVRZ_PAGE_ARRAY AS source => dest BEGIN
+				ACTION_IF ( source < 10 ) BEGIN OUTER_SPRINT sourceX ~0%source%~ END ELSE BEGIN OUTER_SPRINT sourceX ~%source%~ END
+				ACTION_IF ( dest   < 10 ) BEGIN OUTER_SPRINT destX   ~0%dest%~   END ELSE BEGIN OUTER_SPRINT destX   ~%dest%~   END
+				ACTION_IF ( FILE_EXISTS ~%tis_pvrz_path%/%pvr_name_old%%sourceX%.PVRZ~ ) BEGIN
+					PRINT ~%pvr_name_old%%sourceX%.PVRZ => %target_path%/%pvr_name%%destX%.PVRZ~
+					SILENT
+						COPY ~%tis_pvrz_path%/%pvr_name_old%%sourceX%.PVRZ~ ~%target_path%/%pvr_name%%destX%.PVRZ~
+						ACTION_IF ( delete_original ) BEGIN
+							DELETE ~%tis_pvrz_path%/%pvr_name_old%%sourceX%.PVRZ~
+						END
+					VERBOSE
+				END
+			END
+		END ELSE BEGIN
+			PRINT ~Not find free PVRZ index...~
+			ACTION_IF ( ~%path_to_vanilla_tis%~ STR_CMP ~~ ) BEGIN
+				ACTION_IF ( FILE_EXISTS ~%path_to_vanilla_tis%/%tis_name%.tis~ ) BEGIN
+					PRINT ~Using vanilla TIS...~
+					COPY ~%path_to_vanilla_tis%/%tis_name%.tis~ ~%target_path%/%tis_name_target%.tis~
+				END
+			END
+		END
+	END
+END
+
+//Correction of Usability parameters for druid / shaman-related scimitars and axes on the EE version
+DEFINE_PATCH_FUNCTION GET_BIT
+INT_VAR
+	number = 0
+	nth_bit = 0
+RET
+	bit_value
+BEGIN
+	SET bit_value = (number >> nth_bit) & 1
+END
+
+DEFINE_PATCH_FUNCTION SCIMITAR_AXE_USABILITY
+	STR_VAR itype = "scimitar" //axe, arrow
+BEGIN
+	PATCH_IF ( GAME_IS ~bg2ee eet~ ) BEGIN
+		READ_BYTE 0x21 bits
+		LPF GET_BIT INT_VAR number = bits nth_bit = 6 RET bit_value END
+		PATCH_IF ( bit_value ) BEGIN WRITE_BYTE 0x21 ( bits - 64 ) END
+		SET class = 21
+		SET string = 103061
+		PATCH_IF ( ~%itype%~ STR_EQ ~axe~ ) OR ( ~%itype%~ STR_EQ ~arrow~ ) BEGIN
+			SET class = 11
+			SET string = 1080
+		END
+		LPF ADD_ITEM_EQEFFECT
+			INT_VAR
+				opcode = 319
+				target = 1
+				parameter1 = class
+				parameter2 = 5
+				timing = 2
+				special = string
+				insert_point = 0
+		END
+	END
+END

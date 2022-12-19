@@ -1,0 +1,10 @@
+IF
+AreaCheck("AR6001")!StateCheck("7XQUAY",CD_STATE_NOTVALID)InParty("7XQUAY") InMyArea("7XQUAY")
+  Global("QuayleAR6001","AR6001",0)
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+  SetGlobal("QuayleAR6001","AR6001",1)
+  Wait(1)
+  Interact([PC])
+END

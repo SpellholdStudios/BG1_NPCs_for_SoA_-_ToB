@@ -1,0 +1,143 @@
+// Bear
+IF 
+Global("WaterGardensBear","GLOBAL",4)
+Global("7xBorivikBearExists","ARBGX7",1)
+THEN
+  RESPONSE #100
+SetGlobal("7xBorivikBearExists","ARBGX7",2)
+ActionOverride("7xBear1",DestroySelf())
+END
+
+// Borivyk
+IF 
+Global("7xBorivikFirstTalk","ARBGX7",0)
+THEN
+  RESPONSE #100
+SetGlobal("7xBorivikFirstTalk","ARBGX7",1)
+Explore()
+CreateCreature("7xNOBLE8",[405.270],7)
+CreateCreature("7xMaid",[433.303],8)
+SmallWait(3)
+ActionOverride("7XNOBLE8",FaceObject("7xBoriv"))
+ActionOverride("7xMaid",FaceObject("7xBoriv")) 
+END
+
+IF 
+Global("NobleBorivykTalk","ARBGX7",3)
+THEN
+  RESPONSE #100
+ActionOverride("7XNOBLE8",EscapeArea()) 
+ActionOverride("7xMaid",EscapeArea()) 
+Wait(2)
+SetGlobal("NobleBorivykTalk","ARBGX7",4)
+ActionOverride("7xBoriv",StartDialogNoSet(Player1))
+END
+
+IF 
+Global("NobleBorivykTalk","ARBGX7",6)
+THEN
+  RESPONSE #100
+ActionOverride("7XNOBLE8",EscapeArea()) 
+ActionOverride("7xMaid",EscapeArea()) 
+Wait(2)
+SetGlobal("NobleBorivykTalk","ARBGX7",7)
+ActionOverride("7xBoriv",StartDialogNoSet(Player1))
+END
+
+// Bear
+IF 
+Global("WaterGardensBear","GLOBAL",1) 
+GlobalTimerExpired("WaterGardensBearTimer","GLOBAL")
+Global("7xBorivikBearExists","ARBGX7",0)
+THEN
+  RESPONSE #100
+SetGlobal("7xBorivikBearExists","ARBGX7",1)
+Explore()
+CreateCreature("7xBear1",[519.241],0)
+SmallWait(3)
+ActionOverride("7xBear1",FaceObject("7xBoriv"))
+END
+
+
+
+// Laalia
+IF 
+Global("7xLaaliGOOD","GLOBAL",0)
+Global("7xLaaliExists","ARBGX7",0)
+THEN
+  RESPONSE #100
+SetGlobal("7xLaaliExists","ARBGX7",1)
+CreateCreature("7XLaal",[304.672],7)
+END
+
+
+IF 
+Global("7xLaaliGOOD","GLOBAL",2)
+THEN
+  RESPONSE #100
+ClearAllActions() 
+SetGlobal("7xLaaliGOOD","GLOBAL",3)
+StartCutSceneMode()
+HideGUI()
+MultiPlayerSync()
+StorePartyLocations()
+Wait(2)
+FadeFromColor([20.0],0)
+ActionOverride(Player1,LeaveAreaLUA("7xLaal","",[312.345],8))
+UnhideGUI()
+EndCutSceneMode()
+END
+
+IF 
+Global("7xLaaliGOOD","GLOBAL",8)
+THEN
+  RESPONSE #100
+ClearAllActions() 
+SetGlobal("7xLaaliGOOD","GLOBAL",9)
+StartCutSceneMode()
+HideGUI()
+MultiPlayerSync()
+StorePartyLocations()
+Wait(2)
+FadeFromColor([20.0],0)
+ActionOverride(Player1,LeaveAreaLUA("7xLaal","",[312.345],8))
+UnhideGUI()
+EndCutSceneMode()
+END
+
+// Laalia's maid
+IF 
+Global("7xLaaliGOOD","GLOBAL",12)
+Global("7xLaaliMaidExists","ARBGX7",0)
+RealGlobalTimerExpired("7xLaaliGoodTimer1","GLOBAL")
+THEN
+  RESPONSE #100
+SetGlobal("7xLaaliMaidExists","ARBGX7",1)
+CreateCreature("7XLaalS",[304.672],7)
+END
+
+IF 
+Global("7xLaaliGOOD","GLOBAL",13)
+THEN
+  RESPONSE #100
+ClearAllActions() 
+SetGlobal("7xLaaliGOOD","GLOBAL",14)
+StartCutSceneMode()
+HideGUI()
+MultiPlayerSync()
+StorePartyLocations()
+Wait(2)
+FadeFromColor([20.0],0)
+ActionOverride(Player1,LeaveAreaLUA("7xLaal","",[312.345],8))
+UnhideGUI()
+EndCutSceneMode()
+END
+
+IF 
+Global("7xLaaliGOOD","GLOBAL",12)
+Global("7xLaaliAgainTalk","GLOBAL",1)
+
+THEN
+  RESPONSE #100
+SetGlobal("7xLaaliAgainTalk","GLOBAL",0)  
+END  

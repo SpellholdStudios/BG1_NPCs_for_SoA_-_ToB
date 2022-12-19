@@ -1,0 +1,24 @@
+
+
+
+IF 
+Global("Draggore","GLOBAL",1)
+
+
+THEN
+  RESPONSE #100
+CreateCreature("7XCRE29",[4063.1003],3)
+SetGlobal("Draggore","GLOBAL",2)
+Continue()
+END
+
+IF
+	TimeOfDay("NIGHT")
+	Global("YDWARF2Ar1200","GLOBAL",0)
+	PartyHasItem("YDWARF1")
+
+THEN
+	RESPONSE #100
+		CreateCreatureObjectOffScreen("7XCRE23",Player1,0,0,0)
+		SetGlobal("YDWARF2Ar1200","GLOBAL",2)
+END

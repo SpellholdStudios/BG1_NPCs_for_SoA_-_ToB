@@ -1,0 +1,13 @@
+IF
+Global("7xDeekinDestroys","ARBGX4",0)
+Exists("DEEKIN")
+THEN
+RESPONSE #100
+ActionOverride("DEEKIN",DestroySelf())
+SetGlobal("7xDeekinDestroys","ARBGX4",1)
+END
+
+
+
+
+

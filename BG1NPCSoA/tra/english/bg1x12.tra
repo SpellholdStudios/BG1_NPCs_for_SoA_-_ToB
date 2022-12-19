@@ -1,0 +1,341 @@
+// Borivyk
+@0 = ~This is outrageous! You shameless scoundrel, you shipped me a crazy animal!~
+@1 = ~Calm yourself, milord.~
+@2 = ~"Calm myself"?! After your monster ran like crazy all over the house, ruined the silk curtains, drank my tea, and also broke the priceless vase my great-grandfather bequeathed to me?~
+@3 = ~Ahem. (Yes, that ugly ancient pot should have been broken a long time ago!)~
+@4 = ~*Turning to her haughtily* Did you say something?~
+@5 = ~Oh no, sir, nothing.~
+@6 = ~That's it. Give me Pepper, girlfriend. *Takes the monkey from the maid*~
+@7 = ~I understand, milord. Here is your money. I'll find another host for Pepper - one that is... uh... not so demanding.~
+@8 = ~What?! Is that all? What about compensation for damages?~
+@9 = ~Unfortunately there will be no compensation, milord. *Strokes the monkey* I warned you several times that Pepper has a playful and restless character, and that it can be difficult to get used to him. I even tried to dissuade you from buying him, but you wanted to impress your spouse with a living gift that you didn’t want to listen to anything I had to say. So you are to blame.~
+@10 = ~*Scoffs* Oh, you rascal!~
+@11 = ~*Sigh* Well, you, <PRO_SIRMAAM>, seem to be an itinerant adventurer. What do you think, looking at this situation from the outside?~
+@12 = ~I think you're right. You took the animal back and returned the money that the gentleman paid, that's enough.~
+@13 = ~Outrageous! How dare you... you peasant! Do you even know who I am and who my ancestors were?~
+@14 = ~Do you know who I am? I assure you that the best thing for you is to NEVER find out who my father was.~
+@15 = ~I was raised by a worthy man, a sage and a great mage. It's not for you to compare me with your relatives. Leave this merchant alone.~
+@16 = ~I could care less if you remember all your ancestors down to the seventh generation, you imbecile. They won't come running to save you when I smash you to the ground.~
+@17 = ~What difference does it make who you are? You are in the wrong, and you should have to honor to admit it.~
+@18 = ~Okay, okay... I'm degrading myself by wasting precious time arguing with you rapscallions. Rejoice, foolish trader, today I am ready to show everyone my generosity!~
+@19 = ~*The nobleman leaves, while the monkey makes faces at him behind his back*~
+@20 = ~Thanks mate! That's the trouble with those noblemen! I really didn't want to sell Pepper to him, but he managed to talk me into it. And then you saw how he spoke... Totally rude...~
+@21 = ~Speaking about manners, where are mine? Allow me to introduce myself. My name is Borivyk. I'm here, as you can see, selling these cute little animals. Do you need a pet by chance?~
+@22 = ~A person who keeps animals captive and profits from them deserves no respect in my opinion.~
+@23 = ~Do you keep all these beasts in captivity? How cruel!~
+@24 = ~I don't think it's proper to sell sentient beings, especially of those from nature herself.~
+@25 = ~Typical human, entertainment is to sell the beautiful creations of nature for profit. You should be ashamed!~
+@26 = ~Uh no no no. No to worry, I don't harm those little animals, trust me.~
+@27 = ~When Tiax rules, all the animals in the Realms will fight for the right to eat leftovers from his table! Mighty lions will bring him slippers and have them place them on his tired feet!!~
+@28 = ~Tiax also wanted to see the famous flying elephant show, but the circus doesn't have that anymore! Maybe you have a flying elephant, merchant? At least one?~
+@29 = ~Uh... I'm afraid I've already sold out all of my flying elephants. (What nonsense is this gnome talking about?)~
+@30 = ~Fool! You had a chance to please Tiax the Mighty and get a generous reward, but you missed it!~
+@31 = ~I could use a donkey to transport my belongings and not be so encumbered. (My back is already aching from carrying all my essential supplies!)~
+@32 = ~I've been suggesting buying a horse for a long time so we don't have to walk everywhere anymore!~
+@33 = ~Unfortunately, I don't sell horses or donkeys - I only sell small animals that the nobles like to keep in their homes or gardens.~
+@34 = ~Oh, how about a puppy...? Could I procure one, my merchant friend?~
+@35 = ~I think I can sir! What breed would you like the puppy to be?~
+@36 = ~The breed is inconsequential. I don't even need the whole thing, just the head should suffice. I need his brains you see... One noblewoman asked me for a slimming potion, and without dog brains, it would be impossible for me to brew it, you know.~
+@37 = ~Xzar, you're absolutely terrible! Shut up!~
+@38 = ~Oh gods! I hope you're joking, my lord! Although just in case, I have changed my mind about selling you a dog.~
+@39 = ~Where do you get your live goods?~
+@40 = ~I pick up abandoned critters or buy kittens and puppies for next to nothing, which were going to be drowned... Well, sometimes in the woods I stumble upon a cub whose mother has been killed. Sometimes I buy animals from other merchants and sell them for more.~
+@41 = ~But here in the Water Gardens, rich people take them to their homes and take good care of them there. Not all nobles are like the previous one... And if I let my pets go free, they would die, because they were not accustomed to freedom and an independent life. If I were rich, I would open something like a shelter for them. Until then, this will have to do.~
+@42 = ~With that being said, would you be interested in taking a look at my little fuzzies?~
+@43 = ~I would say you're wrong, merchant. If you knew what kind of temper this monkey had, it would have been better not to sell it at all. You must pay for the damages.~
+@44 = ~*Joyful* Indeed... a thousand... no, two thousand gold pieces!~
+@45 = ~I... I don't have that kind of money sir.~
+@46 = ~Then pay whatever you have.~
+@47 = ~Come on, come on, shell out merchant.~
+@48 = ~Ugh! Fine! Take my two hundred gold and you won't get another coin from me. Do with it what you want then you lout!~
+@49 = ~Hold your tongue! Very well merchant, I'm feeling somewhat generous today and I forgive you and your huge debt.~
+@50 = ~Ahem. (Such a brat!)~
+@51 = ~What are you all mumbling there, you obnoxious girl?~
+@52 = ~You misheard, my lord.~
+@53 = ~Very well then. I'm leaving.~
+@54 = ~*Exits while whistling happily. The monkey makes faces at him behind his back*~
+@55 = ~*The merchant turns away in annoyance. By the looks of it, he obviously won't be selling any of his pets to you anytime soon*~
+@56 = ~Only two thousand? Okay, monkey hater, I want to help this merchant. I will give you the money and once you have it, get out.~
+@57 = ~You're obviously not skilled with manners, but... I will forgive you! Two thousand and you have yourself a deal, ha!~
+@58 = ~A thousand, did you say? What nonsense. Here, take this money and get out of here.~
+@59 = ~You're a bit rude, but... I forgive you! (A thousand coins, wow...)~
+@60 = ~*Looking at you* Ahem. (You're such fools!)~
+@62 = ~Hey, what are you doing? I am very grateful for your assistance, but giving so much money to such an idiot is...~
+@63 = ~Oh, nevermind that. Besides there is nothing to talk about, so how about you show me your pets.~
+@64 = ~My money, and I'll do what I want with it.~
+@65 = ~Very well, it shall be as you say. Although thanks regardless. Would you like to see my pets?~
+@66 = ~You didn't care who you sold Pepper to, did you? You just wanted to make money for your poor monkey? Why even sell a living being to such an idiot?~
+@67 = ~*Scoffs* I do beg your pardon?~
+@68 = ~That's not true. He said that he wanted to surprise and please his wife, who would certainly find a common connection with a cute monkey. I believed him when he said that some women really know how to influence animals.~
+@69 = ~All right then. I'm sorry sir, but you'll have to leave this man alone.~
+@70 = ~You still have to pay. This will teach you to think about who you are selling live goods to.~
+@71 = ~What?~
+@72 = ~Listen, stop this argument. I'll buy the monkey. Come to me, Pepper.~
+@73 = ~Great idea. With some skill, this monkey can be used as a replacement for a "Chaotic Commands" incantation. (And of course, she looks more intelligent than her brothers which is beneficial so that I have to drag her around everywhere)~
+@74 = ~<CHARNAME> don't be careless! Buying a monkey on a whim? Remember that it's not a toy!~
+@75 = ~That's right! Tiax will teach this monkey to crack nuts for him and pick fruits from trees!~
+@76 = ~Why do we need a monkey? I've never heard of anything more idiotic in my life!~
+@77 = ~I think she could be trained to sneak open windows in houses and... ahem, check for desirables, then she'll be very useful to us.~
+@78 = ~*You are trying to take the monkey out of the hands of the petting merchant. Pepper looks at you seriously, and then clings to Borivik and tightly hugs his neck *~
+@79 = ~*Weeping slightly* Ah, Pepper, so you don't want to leave me? What a fool I was when I sold you to that Nobleman! Forgive me, friend! I will never part with you ever again.~
+@80 = ~*Sigh of relief* I definitely like this turn of events.~
+@81 = ~Do you want you and Pepper to become inseparable like Minsc and Boo? Well, almost like Minsc and Boo, because there is no friendship in the world equal to the friendship of a ranger and a hamster!~
+@82 = ~What a touching predicament! Of course, such friends cannot be separated.~
+@83 = ~Oh! I will never sell you to anyone again.~
+@84 = ~Oh, what a shame! I really wanted my own monkey. Although obviously, Pepper will be better with you.~
+@85 = ~I hope so. When an animal becomes attached to its owner, giving it to someone else is an unforgivable mistake.~
+@86 = ~Hey! Are you listening? I want to buy this monkey!~
+@87 = ~Sorry, but no. Pepper doesn't want you, and I refuse to sell him - period. If you wish, look at my other pets.~
+@88 = ~Eh, what about my money?~
+@89 = ~Your claims are, quite frankly, unsubstantiated. Go now and don't bother this merchant again.~
+@90 = ~Again! Honestly, we're starting to get tired of you complaining. Go on your way.~
+@91 = ~Get the hell out of here.~
+@92 = ~How dare you, you low class peasant! Yes, I... Yes, you!.. You still... Hmm... I mean, you will all pay for this!~
+@93 = ~Uh... hee... hee hee! Damn cough... (hee hee)~
+@94 = ~Shut up, you mischievous girl! And quickly, follow me...~
+
+//After some time, if Borivik was forced to pay
+@95 = ~What do you want?~
+@96 = ~Stop it, please don't get mad. You asked my opinion and you heard it. Now let me buy something from you.~
+@97 = ~You are right I suppose. Very well then, come see how good my animals are!~
+@98 = ~I've been thinking... and I've decided that I was wrong. Hold on, I'll refund you 200 gold.~
+@99 = ~*Cheerful* I appreciate the gesture but it will not be necessary. I will not be poorer from this loss, but thanks to this incident, I realized how attached Pepper and I are to each other. I won't sell him to anyone else, ever. Come take a look at my pets if you want.~
+@100 = ~Nothing.~
+@101 = ~Then move along.~
+@102 = ~I'm leaving now.~
+@103 = ~Good riddance.~
+@104 = ~You're just an idiot. I don't need anything from you.~
+@105 = ~*Borivyk turns away and Pepper bares his teeth at you. They won't talk to you anymore*~
+
+// Options
+@106 = ~Why not?~
+@107 = ~Not now. I'd rather you tell me if there's any new rumors.~
+@108 = ~Sometime later. You'd better tell me how Pepper is doing.~
+@109 = ~No, I don't need anything, thanks.~
+//@110   = ~~
+
+// Rumors
+@111 = ~Well, there's talk of a heroic figure appearing in Athkatla. Also they had something to do with the city of Baldur's Gate. Hmm...? Why are you looking at me like that? Wait a minute... don't tell me that is you is it? Haha, I won't be surprised if it was.~
+@112 = ~A friend of mine told me that there is something weird going on with the animals in Trademeet. This is bad, very bad. Would you like to find out what it is?~
+@113 = ~There isn't much to say. Well perhaps, for example, the middle daughter of Lady Marville ran away with her brother's valet. Stupid girl! What will they live on... eck... I'm not one for these stories about love. *He sighs heavily, thinking deeply about something*~
+@114 = ~It is rumored that the younger Williams' trips to the Five Flagons ended up challenging his great uncle to a duel over some actress! What a bunch of fools. Luckily, no one was hurt, but the reputation of the Williams family is tarnished.~
+@115 = ~I've been told about the guild war... there's some horror going on at night. I don't want to go into all this to be honest. I just hope all these night warriors don't get here.~
+@116 = ~The Blaine maid is such a friendly, kind girl! I gave her a squirrel, which I found wounded in the forest and fostered back to good health. Such a pretty, red-haired... girl, not the squirrel, but they are indeed both cute!~
+@117 = ~Can you believe it? Someone has nailed a red dragon in the Windspear Hills! Yes, they lie, I suppose, is it even possible to knock down such a terrifying beast? I remember, when it happened to me once... a friend of mine and I got together to tie it inside out... and what are you grinning at?~
+@118 = ~Lady Hailosse is said to be having an affair with her teacher! If these rumors reach the university leadership, she will most certainly be fired.~
+@119 = ~If you want free food, try asking for a dinner party at Lady Goldsword's. Usually only the elite are invited to them, but maybe you'll get lucky.~
+@120 = ~I suggest you go to the Blue Unicorn, a tavern opened by Ricster Hawlight, a former adventurer. He is said to be from a lower class, but he made a living by selling artifacts he found on his travels.~
+@121 = ~Lord Samnus' eldest daughter ran away with some vagrant artist who he later abandoned her. She returned home, but Lord Samnus disinherited her part of the family wealth and she will have to live in poverty and make do with just one house in the suburbs! Poor girl!~
+@122 = ~A playwright from Baldur's Gate lives here in the Water Gardens, Sir Lornis. He married the daughter of Lord Cornish, who forces him to spend all his free time with her. Since then, he has not written a single play! No wonder they say that the marriage bed is the grave of art.~
+@123 = ~Hmm, let me think...~
+
+// Shop
+@124 = ~It's always good to see you! Would you like to see my pets again?~
+@125 = ~Here, look at what I have...~
+@126 = ~Hmm, there's nothing of interest to me here, unfortunately. Maybe next time.~
+@127 = ~*Look at the rabbit*~
+@128 = ~*Look at the ferret*~
+@129 = ~*Look at the bird*~
+@130 = ~His name is Marcel, <PRO_SIRMAAM>. It only costs 200 gold.~
+@131 = ~Perhaps I'll buy it.~
+@132 = ~No thanks, I'm not interested in buying it.~
+@133 = ~Okay, good luck with your travels then.~
+
+// Rabbit
+@134 = ~Very good! I hope you will be as happy with Marcel as Marcel is with you. Just don't try to let him out, he'll die out there no doubt.~
+@135 = ~Oh, <CHARNAME>, look at that adorable bunny! What's his name?~
+@136 = ~His name is Marcel, young lady. It only costs 200 gold.~
+@137 = ~He's adorable... <CHARNAME>, let's buy him.~
+@138 = ~Adorable indeed. Very well, I will buy him.~
+@139 = ~T-thank you <CHARNAME>. I will make sure to take good care of it.~
+@140 = ~Aerie, we'll buy a rabbit later.~
+@141 = ~*Sighs* O-Okay... I understand.~
+@142 = ~Let's buy it and then fry it. It'll be a great dinner!~
+@143 = ~*Worried* H-how dare you?! Don't say that!~
+@144 = ~T-That was a very bad joke! I don't think we should buy a rabbit if that is how you are going to act.~
+@145 = ~Don't worry, nothing will happen to him. I Promise. So how much for it?~
+@146 = ~Well... if you say so...~
+@147 = ~As you know.~
+@148 = ~*sighs sadly*~
+@149 = ~Aerie, calm down! Let's get out of here.~
+@150 = ~Wow! You bought Marcel after all. T-thank you, I'm so happy!~
+@151 = ~Oh, <CHARNAME>, w-what a pretty rabbit you have! What's his name?~
+@152 = ~Marcel.~
+@153 = ~May I pet him?~
+@154 = ~Of course!~
+@155 = ~*Aerie happily caresses Marcel*~
+@156 = ~You can even take it and take care of it yourself if you want.~
+@157 = ~R-really? Thank you very much, <CHARNAME>! Come here little Marcel...~
+@158 = ~I don't think so.~
+@159 = ~*Aerie looks at Marcel sadly*~
+@160 = ~Don't you dare touch him, he's mine!~
+@161 = ~Sorry, Aerie, it was just a joke.~
+@162 = ~I don't have enough money.~
+@163 = ~Not to worry, return anytime, <PRO_SIRMAAM>.~
+@164 = ~*Take Marcel back*~
+
+// Monkey
+@165 = ~*Pepper is jumping happily, it looks like he's fine*~
+@166 = ~Hehe, okay, Pepper. Such a prankster! Do you wish to feed him something? Apples are his favorite!~
+@167 = ~He's kind of quiet today. Hope he didn't get sick. I am well versed in animal illnesses and I see that Pepper does not seem to be sick... Maybe he needs a girlfriend? hmm...~
+@168 = ~*Pepper hands you a big pear*~
+@169 = ~Oh, Pepper decided to treat you! Seems he feels that you are genuinely interested in him.~
+@170 = ~*Pepper puts a feather hat on his head and shows off in front of you*~
+@171 = ~This little scoundrel stole that customer's hat! And she liked him so much that he did not want to give it away. I had to pay for it... Oh well, it's okay I suppose, it basically turns out I gave Pepper a present.~
+
+// Monkey Quest
+@172 = ~Oh, Pepper is not well! I was just about to ask someone to watch over my menagerie, and then you came along...~
+@173 = ~Can you do me a favor? Won't you come over to our priestess to ask her for Pepper's medicine? Her name is D'nala Shalandalan. The temple is nearby and the entrance to it is to the left of the main square of the Water Gardens.~
+@174 = ~Yes, of course I'll help.~
+@175 = ~No, I'm sorry, I don't have time to be doing this.~
+@176 = ~We spoke to the priestess and she gave me this medicine for the monkey. Here, take this.~
+@177 = ~Oh thank you mate! You came back just in time as Pepper's condition seems to be getting worse, but now we will cure him!~
+@178 = ~*Borivyk gives the monkey the medicine. Everything should be fine now, according to the priestess*~
+@179 = ~Deekin to think that the boss is doing well. To help such a good merchant! Borivyk loves poor little animals, finds a home for them, the owner does... Deekin's little heart rejoices at such a big deal. Oh boss... Deekin wants a cute ferret for himself!~
+@180 = ~Thank you very much! I'll be waiting to hear from you.~
+@181 = ~Okay, I'll try to find it myself when I'm done with my work, but if you happen to meet a priestess, please convey my request to her.~
+
+// Cat
+@182 = ~That's great! You'll be visiting me more often now, won't you? In fact, you should buy a pet from me to celebrate. The little animal will bring happiness to your new home. Do you have someone there to take care of the animal while you are away?~
+@183 = ~Yes, I have a butler. What animal would you suggest?~
+@184 = ~Sorry, but I don't want to buy a pet yet.~
+@185 = ~Oh, what a pity. Well, if you change your mind, you know where to find me.~
+@186 = ~The ideal animal for a new apartment is a cat. A house without a cat is not a house.~
+@187 = ~Only 50 gold and it's yours.~
+@188 = ~Now I have an apartment in the Water Gardens as well.~
+@189 = ~Aw, the cat is very cute indeed. Alright, I will buy it.~
+@190 = ~She will be delivered to your house, and the butler will take care of everything. His name is Jeeves, right? I know this fellow and I already knew what apartment he was care taking in.~
+
+// Bear Quest
+@191 = ~A friend promised me a bear here. In a couple of days it will arrive. Apparently the bear good, he says, and calm. However, the wife of the friend of mine is pregnant, so they are afraid to leave a growing beast at their home. So he thought about whether to sell it to the circus, or to me.~
+@192 = ~I'll take it, I guess, the circus is hard on the animals.~
+@193 = ~RFFF! Rrrr!~
+@194 = ~You are quite right, sir bear. It's wrong to make a she-bear work to entertain circus spectators.~
+@195 = ~Remember when I told you about the bear cub? Here he is, look!~
+@196 = ~That's a "she", actually. It turned out it was a girl. She's cute, right?~
+@197 = ~Sniff-sniff! Rrrr!~
+@198 = ~Sniff! Grrr!~
+@199 = ~I think this cutie will turn into a full grown she-bear very soon. Also it would be nice to find a buyer for her from those who know how to handle dangerous animals. A ranger or a druid perhaps...~
+@200 = ~I'm afraid to sell it to someone here, she can easily finish off those sissy nobles later if something goes wrong. A beast is a beast after all.~
+@201 = ~Actually, perhaps you can do me a favor? Could you ask around and see if can you meet someone suitable?~
+@202 = ~I'll try, but I don't promise anything.~
+@203 = ~I'm sorry, but I don't have time to look for a bear owner.~
+@204 = ~Fair enough, I hope you do find someone, and if so, you know where to find me.~
+@205 = ~I understand, although if you do find someone on your travels, you know where to find me.~
+@206 = ~How are you trading?~
+@207 = ~Grrr. Rrrr.~
+@208 = ~Greetings, traveler! Is there anything I can do to help?~
+@209 = ~Who are you and what are you doing here?~
+@210 = ~No, I don't think so, I will take my leave of you now.~
+@211 = ~Safe travels to you then friend.~
+@212 = ~My name is Natas and I am a ranger from a village north of here. I heard rumors that the animals from the Druid Grove were attacking the people of Trademeet for some reason, and I found it strange. I decided to come here and find out if this is true. I also took my companion wolf on the road with me.~
+@213 = ~But as we approached the gate, the wolf quickened its pace and ran ahead of me... and was suddenly killed by the archers defending Trademeet. They were already accustomed to shooting at all animals that approached the city. I still can’t recover from grief, because I raised him and remembered him as a little wolf cub...~
+@214 = ~While I'm staying in the city, I'll rest after my long journey, buy gifts for relatives and friends, and then return to our village. I did not help anyone, and even lost a true friend. Damn the day I decided to come here!~
+@215 = ~Actually, I have a suggestion if you are willing to hear it.~
+@216 = ~I'm sorry for your loss, but I have to go. Good luck.~
+@217 = ~Very well I'm listening, what do you have to say?~
+@218 = ~An animal dealer from Athkatla asked me to find an owner for a pet bear. No one wants to keep her in the city, and the dealer can’t let her go into the forest by herself, because she is completely tame and not used to the wild.~
+@219 = ~Are you proposing that I take the animal with me?~
+@220 = ~Yes, you know how to handle such animals. Otherwise, this bear will be sent to a circus or something worse.~
+@221 = ~Yes, because someone just needs to take care of. If you help this bear, then the sadness of your recent loss will not be so strong.~
+@222 = ~Yes, if you can handle it. She eats a lot of food and the cost of maintaining her will be high though.~
+@223 = ~No, I shouldn't have suggested that. You probably don't want to deal with her.~
+@224 = ~I'm not afraid of challenges and I know how to handle animals. I think I can make friends with this bear. It's worth a try.~
+@225 = ~What is the merchant's name?~
+@226 = ~His name is Borivyk, and he sells various pets to the nobles in the Water Gardens in Athkatla.~
+@227 = ~Okay, I'll go to Athkatla and get the bear. I hope I can help her. Thank you for your suggestion.~
+@228 = ~Thank you mate! That ranger named Natas came to me and took the she-bear. I hope they find some common ground. Thank you for solving this problem for me!~
+
+// Baby dragon
+@229 = ~Inferior woman! Since Tiax decided that, then it can't be a bad idea! Every word of his greatness will someday be carved into granite plinths all over Faerun!~
+@230 = ~Hey merchant! Tiax the Great himself visited your shop! Forget about simple cats and dogs, Tiax needs an animal worthy of his greatness! Like a dragon!~
+@231 = ~Uh... I don't have any dragons, sir... just this one. It was given to me by a wanderer from the east. This dragon is small but very useful and funny.~
+@232 = ~No one buys it from me, as it is dangerous to keep such an animal at home. So I can give it to you for free if you take good care of it.~
+@233 = ~Excellent! When the hour of Tiax's reign comes, this dragon will have grown to full size! And then Tiax will sit on his back and be able to fly around all the lands of Faerun, instilling fear in the hearts of all his subjects!~
+@234 = ~Ahem... I'm not sure he'll grow bigger... but miracles do happen. Don't forget to feed him twice a day sir.~
+@235 = ~Tiax, are you sure it's a good idea to bring a dragon with you, even if it's a small one?~
+@236 = ~If this will take your mind off your chatter even for a little while, then I say go ahead gnome!~
+@237 = ~What a pretty baby dragon!~
+@238 = ~Gods, I thought you couldn't get any dumber, but you never cease to amaze me, Tiax.~
+@239 = ~Do whatever you want, just make sure he doesn't get into my backpack and take my food!~
+@240 = ~One of my cousins also wanted to have a little dragon to protect him from creditors and breathe fire on them. However, when he found out that they were planning to tax the house of dragons for breeding, he changed his mind and bought a dog instead. Alas, then this dog ate half of his goods in the store and he sold it to a wizard who was passing through the city, and then it turned out that...~
+@241 = ~Silence yourself you talkative gnome! Tiax the Wise is not interested in your stories, he wants to play with his dragon!~
+@242 = ~Tiax has decided that this dragon will be called Ilimaris. Tiax likes this name, and whatever he likes must be respected!~
+@243 = ~Now you will serve me, dragon! Get in my backpack!~
+
+// Bird
+@244 = ~Look at this lovely bird... It's from Calimshan, I got it by luck. Her name is Leila. And how she sings, just listen! It seems to me that there is even some kind of magic in her singing... It costs 200 gold.~
+@245 = ~Yes, the bird is really good. I'll take it.~
+@246 = ~And that's a wise decision!~
+@247 = ~No, I'm not interested in birds yet.~
+@248 = ~*The merchant hands you the bird and you carefully place it on top of your backpack. She won't fly away because her wings are clipped.*~
+
+// Rumors (additions)
+@249 = ~I heard a rumor that a brave ranger and his pet bear had saved a village that had been attacked by bandits. I really want to think that this is OUR ranger and his glorious brown girl. If so, that would mean we did everything right.~
+
+// Ferret
+@250 = ~Look how pretty! This is a little ferret, his name is Pong. He is not as ugly as Pepper, but you will never get bored with him either.~
+@251 = ~Well, let's try to get to know Pong. I buy it!~
+@252 = ~Well done! You'll see, you'll make friends.~
+@253 = ~Oh, you know, there's enough trouble now without the brisk animals... maybe later.~
+@254 = ~As you wish, but I think they'll buy it from me soon.~
+
+// additions
+@255 = ~I'm sorry <CHARNAME> I didn't know he meant that much to you.~
+@256 = ~Do whatever ye wish gnome, just make sure the lil beast doesn't get into me pack and steal me food!~
+
+// NEW (v.14)
+@257 = ~*This is your house cat. She looks well-groomed and happy with her life*~
+@258 = ~*Pet the cat*~
+@259 = ~*Feed the cat*~
+@260 = ~Oh, you are such a sweet kitty!~
+@261 = ~*Scratch behind the cat's ear*~
+@262 = ~You cats are strange animals indeed.~
+@263 = ~*Leave the cat alone*~
+@264 = ~*Cat purrs contentedly*~
+@265 = ~*The cat eats willingly but slowly*~
+@266 = ~*The cat starts rubbing against your leg*~
+@267 = ~*The cat squints her eyes and expresses its affection to you in every possible way*~
+@268 = ~Meow...~
+
+// Quest about a snake and a parrot
+@269 = ~It's always good to see you! But ah, here's the thing... can you help me again?~
+@270 = ~Why not?~
+@271 = ~No, I don't have time right now.~
+@272 = ~Very well then, another time perhaps.~
+@273 = ~Thank you! I don't think it will be difficult for you. One of my regular clients spent, it seems, half of her fortune on cats and dogs, but now she wants something exotic, and as luck would have it, right now I have nothing to offer her.~
+@274 = ~This is where you come in. I need your assistance in finding me some interesting pets. Even though the lady is a little capricious, she at least takes good care of her pets.~
+@275 = ~Okay, I'll try.~
+@276 = ~M-maybe we should stop by the circus? We have always kept a variety of animals and birds.~
+@277 = ~Hello Quayle, I need to ask a favor of you. I need an animal or bird for a wealthy woman willing to take good care of a new pet. Maybe there is someone in the circus who are ready to part with one for coin?~
+@278 = ~Ah, good to see you <CHARNAME>. Hmm, we have a lot of beasts scattered about and we have not done a full count yet. You could try asking our artists, perhaps one of them will have something suitable?~
+@279 = ~Yes...?~
+@280 = ~No, I can't help you, sorry.~
+@281 = ~Hmm... Well then... I won't sell you anyone, but rather make a riddle. Without legs, but dancing - who is it? ~
+@282 = ~Rope.~
+@283 = ~Cooking pan.~
+@284 = ~Snake.~
+@285 = ~Broom.~
+@286 = ~A writing pen.~
+@287 = ~Perhaps it could, but don't you need something alive?~
+@288 = ~That's right, it's a snake. How beautifully she wriggles, as if dancing an exquisite dance! Here, take her. Although do be gentle with her, and you don't have to worry, she's not poisonous at all.~
+@289 = ~Here's the exotic animal you asked for.~
+@290 = ~Oh, and what do we have here? Hmm... hmm... not poisonous, you say? But there is a problem you see, I'm afraid I can't explain this to my client. When she sees a snake, she will faint at first, and only then will she start to figure out how safe she is.~
+@291 = ~In the meantime though, I thank you, and I'll buy this cute snake from you and find a good owner for it, but I still don't know what to do with that lady. Maybe ask somewhere else? Curious animals and birds live in distant lands, what if someone brought a living curiosity from there?~
+@292 = ~Ahoy matey, what be ya needin' from me?~
+@293 = ~*You notice the most beautiful, brightest, and most colorful bird you've ever seen perched on the sailor's shoulder. She suddenly screams* Talos strike you! Yo ho ho and a bottle of rum!~
+@294 = ~Watcha be looking at me talking friend like that mate? Do ya like 'er? Perhaps, if ya be wantin' I could sell 'er to ya eh? If ye be interested, I could sell 'er fer 100 gold. Tis a fair price if I be sayin' so myself aye?~
+@295 = ~Very well, 100 gold it is.~
+@296 = ~I think I will pass.~
+@297 = ~Here, she be yers now.~
+@298 = ~*Parrot screaming* Nice weather today!~
+@299 = ~Whatever ya say.~
+@300 = ~Oh! A Parrot... Wow, this is exactly what I needed! What a handsome...~
+@301 = ~*Parrot screams* Talos strike you! Get out to the sahuagin!~
+@302 = ~...~
+@303 = ~Is there anything else you can say, handsome?~
+@304 = ~*Parrot screaming* Good morning! Nice weather today. Yo ho ho!~
+@305 = ~Ah, okay... maybe it'll do. Thank you, <CHARNAME>. Here is the reimbursement of expenses and labor. Please do come again in the future if your are in the area.~
+@306 = ~Thank you! If you find someone, bring it to me!~
+@307 = ~Excuse me, I need to ask you a favor. I am looking for an animal or bird for a wealthy woman as a pet. She is willing to take care of it and make sure it has a good home.~
+@308 = ~Hmm... Well then... I won't sell you anything, but rather... ask via riddle. I am without legs, but can still dance, who am I?~

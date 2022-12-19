@@ -1,0 +1,60 @@
+IF 
+    True() 
+THEN 
+    RESPONSE #100 
+CutSceneID(Player1)
+FadeToColor([20.0],0) 
+Wait(2) 
+LeaveAreaLUA("AR0406","",[2621.1541],0) 
+Wait(2)
+FadeFromColor([20.0],0)
+Wait(2)
+EndCutSceneMode()
+END
+
+IF 
+    True() 
+THEN 
+    RESPONSE #100
+CutSceneID(Player2)
+Wait(2)
+LeaveAreaLUA("AR0406","",[2525.1343],0)
+END
+
+IF 
+    True() 
+THEN 
+    RESPONSE #100
+CutSceneID(Player3)
+Wait(2)
+LeaveAreaLUA("AR0406","",[2874.1362],0)
+END
+
+IF 
+    True() 
+THEN 
+    RESPONSE #100
+CutSceneID(Player4)
+Wait(2)
+LeaveAreaLUA("AR0406","",[2732.1546],0)
+END
+
+IF 
+    True() 
+THEN 
+    RESPONSE #100
+CutSceneID(Player5)
+Wait(2)
+LeaveAreaLUA("AR0406","",[2597.1370],0)
+END
+
+IF 
+    True() 
+THEN 
+    RESPONSE #100
+CutSceneID(Player6)
+Wait(2)
+LeaveAreaLUA("AR0406","",[2827.1394],0)
+END
+
+

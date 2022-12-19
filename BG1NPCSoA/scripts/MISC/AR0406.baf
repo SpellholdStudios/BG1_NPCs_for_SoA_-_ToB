@@ -1,0 +1,12 @@
+IF 
+Global("GarrickBardQuest","GLOBAL",5)
+!Exists("7xnekto")
+THEN
+  RESPONSE #100
+CreateCreature("7xnekto",[1081.560],5)
+Continue()
+END
+
+
+
+

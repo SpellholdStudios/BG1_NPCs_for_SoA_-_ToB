@@ -1,0 +1,35 @@
+BEGIN ~7Xcre80~
+
+
+IF ~NumTimesTalkedTo(0)~ THEN BEGIN INTRO
+SAY @0 
+IF ~~ THEN REPLY @1 GOTO NEXT1
+IF ~~ THEN REPLY @2 GOTO NEXT2
+IF ~~ THEN REPLY @3 GOTO NEXT1
+IF ~~ THEN REPLY @4 GOTO NEXT1
+IF ~~ THEN REPLY @5 GOTO NEXT2
+IF ~~ THEN REPLY @6 GOTO NEXT1
+
+END 
+
+IF ~~ THEN BEGIN NEXT2
+SAY @7 
+IF ~~ THEN GOTO NEXT1
+END
+
+IF ~~ THEN BEGIN NEXT1
+SAY @8
+=
+@9
+=
+@10
+=
+@11 
+IF ~~ THEN DO ~SetGlobal("KrenImar","GLOBAL",2)CreateCreature("UDMIND01",[341.1201],13)
+CreateCreature("COWLED",[660.1415],6)
+CreateCreature("COWLED",[721.981],3)
+CreateCreatureOffScreen("COWLED",0)
+Enemy()~ EXIT
+END
+
+

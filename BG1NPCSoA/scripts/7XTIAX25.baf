@@ -1,0 +1,35 @@
+IF
+AreaCheck("AR5500")!StateCheck("7XTIAX",CD_STATE_NOTVALID)InParty("7XTIAX")
+  Global("TiaxAR5500","AR5500",0)
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+  SetGlobal("TiaxAR5500","AR5500",1)
+  Wait(1)
+  Interact([PC])
+END
+
+IF
+AreaCheck("AR4500")
+Dead("chalcy02")
+InParty("7XTIAX") !StateCheck("7XTIAX",CD_STATE_NOTVALID)
+Global("TiaxAR4500battle","AR4500",0)
+CombatCounter(0)
+THEN
+  RESPONSE #100
+  SetGlobal("TiaxAR4500battle","AR4500",1)
+  RealSetGlobalTimer("TiaxAR4500battleTimer","LOCALS",5) 
+END
+
+IF
+AreaCheck("AR4500")
+Dead("chalcy02")
+RealGlobalTimerExpired("TiaxAR4500battleTimer","LOCALS") 
+InParty("7XTIAX") !StateCheck("7XTIAX",CD_STATE_NOTVALID)
+Global("TiaxAR4500battle","AR4500",1)
+CombatCounter(0)
+THEN
+  RESPONSE #100
+ StartDialogNoSet(Player1)
+END
+

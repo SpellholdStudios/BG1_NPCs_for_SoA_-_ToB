@@ -1,0 +1,35 @@
+IF
+	AreaCheck("AR2600")
+    Global("BG1XLNF","GLOBAL",2)
+	!See([ENEMY])
+THEN
+	RESPONSE #100
+	MoveToObject(Player1)
+END
+
+IF
+	OR(2)
+	Global("BG1XLNF","GLOBAL",1)
+	Global("BG1XLNF","GLOBAL",0)
+	See([PC])
+THEN
+	RESPONSE #100
+		StartDialogNoSet([PC])
+END
+
+IF
+Global("BG1XLNF","GLOBAL",2)
+Dead("7XCRE68")
+See([PC])
+THEN
+	RESPONSE #100
+		StartDialogNoSet([PC])
+END
+
+IF
+Global("BG1XLNF","GLOBAL",3)
+See([PC])
+THEN
+	RESPONSE #100
+		StartDialogNoSet([PC])
+END

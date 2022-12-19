@@ -1,0 +1,13 @@
+IF
+Global("BG1X1","GLOBAL",2)
+RealGlobalTimerExpired("AuctionStartTimer","GLOBAL") 
+AreaCheck("ARBGX2")
+!StateCheck(Player1,CD_STATE_NOTVALID)
+  Global("LadyExists","ARBGX2",1)
+  CombatCounter(0)
+  See(Player1)
+THEN
+  RESPONSE #100
+  SetGlobal("LadyExists","ARBGX2",2)
+  StartDialogNoSet(Player1)
+END

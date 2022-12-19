@@ -1,0 +1,17 @@
+IF
+	InPartyAllowDead("7XTIAX")
+	Global("Tiax1SummonedTOB","GLOBAL",1)
+THEN
+	RESPONSE #100
+		ActionOverride("7XTIAX",ChangeAIScript("7XTIAX25",OVERRIDE))
+		SetGlobal("Tiax1SummonedTOB","GLOBAL",2)
+END
+
+IF
+	InPartyAllowDead("7XTIAX")
+	Global("Tiax1SummonedTOB","GLOBAL",0)
+THEN
+	RESPONSE #100
+		ActionOverride("7XTIAX",ChangeAIScript("7XTIAX25",OVERRIDE))
+		SetGlobal("Tiax1SummonedTOB","GLOBAL",2)
+END

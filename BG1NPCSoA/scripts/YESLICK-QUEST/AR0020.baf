@@ -1,0 +1,15 @@
+
+
+IF
+	Global("YDWARF1","GLOBAL",1)
+THEN
+	RESPONSE #100
+		CreateCreature("7XCRE22",[565.485],13)
+		SetGlobal("YDWARF1","GLOBAL",2)
+END
+
+
+
+
+
+

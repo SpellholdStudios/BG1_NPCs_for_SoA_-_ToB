@@ -1,0 +1,187 @@
+IF
+  PartyHasItem("ring39")
+!StateCheck("7XTIAX",CD_STATE_NOTVALID)InParty("7XTIAX")
+  Global("TiaxRingofGaxx","LOCALS",0)
+THEN
+ RESPONSE #100
+ SetGlobal("TiaxRingofGaxx","LOCALS",1)
+  Interact([PC])
+END
+
+
+IF
+
+AreaCheck("AR1800")!StateCheck("7XTIAX",CD_STATE_NOTVALID)InParty("7XTIAX")
+  Global("tiaxAR1800","GLOBAL",0)
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+  SetGlobal("tiaxAR1800","GLOBAL",1)
+    Interact([PC])
+END
+
+IF
+	ReputationLT(Player1,4)
+	ReputationGT(Player1,1)
+Global("TiaxRepTalk2","Locals",0)
+	!StateCheck("7XTIAX",CD_STATE_NOTVALID)InParty("7XTIAX")
+	See(Player1)
+	CombatCounter(0)
+	
+THEN
+	RESPONSE #100
+	SetGlobal("TiaxRepTalk2","Locals",1)
+    Interact([PC])
+END
+
+
+IF
+	ReputationLT(Player1,7)
+	ReputationGT(Player1,3)
+	Global("TiaxRepTalk1","Locals",0)
+	!StateCheck("7XTIAX",CD_STATE_NOTVALID)InParty("7XTIAX")
+	See(Player1)
+	CombatCounter(0)
+	
+THEN
+	RESPONSE #100
+	SetGlobal("TiaxRepTalk1","Locals",1)
+    Interact([PC])
+END
+
+IF
+
+AreaCheck("AR0300")!StateCheck("7XTIAX",CD_STATE_NOTVALID)InParty("7XTIAX")
+  Global("tiaxAR0300","GLOBAL",0)
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+  SetGlobal("tiaxAR0300","GLOBAL",1)
+    Interact([PC])
+END
+
+IF
+
+AreaCheck("AR0800")!StateCheck("7XTIAX",CD_STATE_NOTVALID)InParty("7XTIAX")
+  Global("tiaxAR0800","GLOBAL",0)
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+  SetGlobal("tiaxAR0800","GLOBAL",1)
+    Interact([PC])
+END
+
+
+IF
+
+AreaCheck("AR0700")!StateCheck("7XTIAX",CD_STATE_NOTVALID)InParty("7XTIAX")
+  Global("tiaxAR0700","GLOBAL",0)
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+  SetGlobal("tiaxAR0700","GLOBAL",1)
+    Interact([PC])
+END
+
+IF
+
+AreaCheck("AR0400")!StateCheck("7XTIAX",CD_STATE_NOTVALID)InParty("7XTIAX")
+  Global("tiaxAR0400","GLOBAL",0)
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+  SetGlobal("tiaxAR0400","GLOBAL",1)
+    Interact([PC])
+END
+
+IF
+
+AreaCheck("AR0406")!StateCheck("7XTIAX",CD_STATE_NOTVALID)InParty("7XTIAX")
+  Global("tiaxAR0406","GLOBAL",0)
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+  SetGlobal("tiaxAR0406","GLOBAL",1)
+    Interact([PC])
+END
+
+IF
+
+AreaCheck("AR0404")!StateCheck("7XTIAX",CD_STATE_NOTVALID)InParty("7XTIAX")
+  Global("tiaxAR0404","GLOBAL",0)
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+  SetGlobal("tiaxAR0404","GLOBAL",1)
+    Interact([PC])
+END
+
+IF
+
+AreaCheck("AR0701")!StateCheck("7XTIAX",CD_STATE_NOTVALID)InParty("7XTIAX")
+  Global("tiaxAR0701","GLOBAL",0)
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+  SetGlobal("tiaxAR0701","GLOBAL",1)
+    Interact([PC])
+END
+
+IF
+
+AreaCheck("AR0300")!StateCheck("7XTIAX",CD_STATE_NOTVALID)InParty("7XTIAX")
+  Global("tiaxAR0300","GLOBAL",0)
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+  SetGlobal("tiaxAR0300","GLOBAL",1)
+    Interact([PC])
+END
+
+IF
+
+AreaCheck("AR1106")!StateCheck("7XTIAX",CD_STATE_NOTVALID)InParty("7XTIAX")
+  Global("tiaxAR1106","GLOBAL",0)
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+  SetGlobal("tiaxAR1106","GLOBAL",1)
+    Interact([PC])
+END
+
+
+IF
+
+AreaCheck("AR1401")!StateCheck("7XTIAX",CD_STATE_NOTVALID)InParty("7XTIAX")
+  Global("tiaxAR1401","GLOBAL",0)
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+  SetGlobal("tiaxAR1401","GLOBAL",1)
+    Interact([PC])
+END
+
+
+// Water Gardens
+IF
+AreaCheck("ARBGX2")!StateCheck("7XTIAX",CD_STATE_NOTVALID)InParty("7XTIAX")
+  Global("TiaxARBGX2","ARBGX2",0)
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+  SetGlobal("TiaxARBGX2","ARBGX2",1)
+  RealSetGlobalTimer("TiaxARBGX2TalkTimer","GLOBAL",10) 
+END
+
+IF
+AreaCheck("ARBGX2")
+!StateCheck("7XTIAX",CD_STATE_NOTVALID)InParty("7XTIAX")
+  Global("TiaxARBGX2","ARBGX2",1)
+  RealGlobalTimerExpired("TiaxARBGX2TalkTimer","GLOBAL") 
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+  SetGlobal("TiaxARBGX2","ARBGX2",2)
+  Wait(1)
+  StartDialogNoSet(Player1)
+END

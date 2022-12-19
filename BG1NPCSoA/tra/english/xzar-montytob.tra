@@ -1,0 +1,194 @@
+@0    = ~Tell me about, Xzar, the Zhentarim wizard.~
+@1    = ~You mean, Xzar, the Butcher of Baldur's Gate and Athkatla? He is a psychopathic killer that preys on his victims without remorse.~
+@2    = ~It is unknown how many innocent people have ended up as experiments on one of his operating tables, but his killing sprees have become worse and more frequent as he loses what little is left of his sanity.~
+@3    = ~None of that can be proven.~
+@4    = ~Bring me the Zhentarim assassin, Montaron..~
+@5    = ~Bring me Xzar, the insane Zhentarim wizard..~
+@6    = ~I should have known that you did not have the, HEART, for this line of work.~
+@7    = ~Stay where you are, Xzar.~
+@8    = ~Just wait here until I need you.~
+@9    = ~Wait in the pocket plane until I come to get you.~
+@10   = ~Your words are ambrosia!~
+@11   = ~You know where you find me, when you get some SPINE! Bwhahahahaha!~
+@12   = ~Shall me go on another murder spree, Bhaalspawn? Oh, I can hardly wait to hear the screams of terror! Bwhahahahaha!!!~ [XZAR29]
+@13   = ~Sorry, I don't have room for you, Xzar.~
+@14   = ~Grab your equipment and let's go.~
+@15   = ~Well then... run rabbit, run.~
+@16   = ~RUN RABBIT!~ [XZAR37]
+@17   = ~Good! It's about time that we all find out if you really have the, STOMACH, for this sort of thing.~
+@18   = ~Jaheira, have I ever told you about my masterpiece, the fishboy?~
+@19   = ~Leave me alone, Zhentarim, I have no time for your insane ramblings.~
+@20   = ~Yes.. It seems that two sailors came stumbling out drunk of the Sea's Bounty Tavern and started making a ruckus in the alley.~
+@21   = ~Being the conscientious neighbor that I am, I could not have those louts making noise and waking everyone, so I did what any other reasonable person would have done.~ [XZAR24]
+@22   = ~I drugged them both and took them hostage.~
+@23   = ~You are a sick bastard.~
+@24   = ~Wait a second.. I have not even got to the juicy part yet. BWhahahaha!~ [XZAR26]
+@25   = ~You see.. I had been planning on creating something special.. So I chopped them to pieces, and slapped some fish parts unto them.~
+@26   = ~It was my finest creation.~
+@27   = ~One day, Zhentarim, you will be brought to justice for the way you have corrupted nature.~
+@28   = ~You know, Imoen, if you were so intent on giving up your soul, you could have told me...~
+@29   = ~Afterall, there is more then one way to extract a soul from a body! BWHahahaha!!~
+@30   = ~One of these days, Xzar, you are going to catch a magic missle in the face for all the evil that you have done..~
+@31   = ~I just hope I am there to see it.~
+@32   = ~I remember this little girl that used to talk tough like you.. Sweet girl.. pretty...~
+@33   = ~That is until I cut off her lower jaw and paraded her naked corpse throughout the slums for all to see!~ [XZAR39]
+@34   = ~You are one sick bastard, Xzar! I hope that you rot in a shallow grave!~
+@35   = ~You first... Bwhahahaha!!!!~
+@36   = ~Every time I think of what those butchers did to you, Aerie, it breaks my heart.~
+@37   = ~I would have cut your wings off much more cleanly and left little to no scarring.~
+@38   = ~You are sick!~
+@39   = ~Yes.. sick of sloppy work! They could have at least stitched you up correctly.~
+@40   = ~Would you look at that amateur work! That's is likely to get an infection!~
+@41   = ~I'm just going to ignore you from now on, Xzar. I have learned that nothing good comes from speaking to you.~
+@42   = ~Oh really? And what if I told you that I could replace your wings?~ [XZAR17]
+@43   = ~I don't want anything from you! I don't want to be an abomination in your image!~
+@44   = ~Come now, all my previous clients were thrilled with the work that I did...~
+@45   = ~At least the ones that survived.. BWHahahaha!!~
+@46   = ~If you don't leave me alone, I am going to have to tell <CHARNAME> of your disruptive behavior.~
+@47   = ~Have it your way, Aerie.~
+@48   = ~<CHARNAME> should have slain you back in Baldur's Gate, Zhentarim, and saved us from all your wickedness.~
+@49   = ~I would like to see you say that after I shrink your head, pigsticker.~
+@50   = ~Your primitive magic does not frighten me, witch doctor.~
+@51   = ~No? Perhaps making a voodoo doll in your image and dangling it over a candle might change your mind.~
+@52   = ~You may be able to scare women and children with your crazy voices and horror stories, but I see through your facade. You are nothing more than a coward!~
+@53   = ~Your tidings ring false, oh knight, for I have not killed a woman in almost a month.~
+@54   = ~Mark my words, Zhentarim, if you continue in your evil ways, you and I shall solve our differences through battle.~
+@55   = ~You know, Monty, if you ever wanted to be taller it would be no problem. It would just require a little sewing...~
+@56   = ~The only painful part would be when I saw your existing legs off.. But you know what they say.. no pain, no gain! Bwhahahaha!~
+@57   = ~Don't be fuckin' stupid, wizard! I'd never let ya any where near me with a surgical knife.~
+@58   = ~Did I say anything about a knife? I said a saw!~
+@59   = ~I wish you would listen Monty.. Attention to detail is important when committing murder with the intention of not getting caught.~
+@60   = ~Ya don't have ta tell me! I'm a fuckin' assassin, ye bloody fool!~
+@61   = ~Temper, temper, Monty.. I wouldn't want you to expire from a heart attack brought on from your incessant anger.~
+@62   = ~At least not until i finish making the potion that will turn you into my undead puppet! BwhahaHAHAHAHA!~ [XZAR20]
+@63   = ~I'm nobodies puppet, wizard!~
+@64   = ~What the?~
+@65   = ~Who in the bloody hell, put these goblin fingers in my satchel?~
+@66   = ~Calm yourself, Monty! I thought you might want a snack for the road, is all.~ [XZAR17]
+@67   = ~No, I don't want ta eat any fuckin' goblin fingers! What, do ya think that I'm a bloody freak, like you?~
+@68   = ~The thought had crossed my mind, once or twice.~
+@69   = ~Stay out of my things, wizard! This be your last warning!~
+@70   = ~UGH! I'm not feelin' too good!~
+@71   = ~*spit* What did ya put in that stew ye gave me, wizard?~
+@72   = ~Mmmmm.. I was afraid you might have an allergic reaction to the leeches I added.~
+@73   = ~Leeches!~
+@74   = ~Why, yes. Have you seen how red your face turns when you get upset, Monty?~
+@75   = ~Tis a sure sign that you have way too much blood. I thought that feeding you a few leeches would alleviate the problem.~
+@76   = ~Well ya thought wrong, motherfucker!~
+@77   = ~*Yelch*~
+@78   = ~UGH! Ye bastard! I'm going to stick my dagger in our back one of these days for this!~
+@79   = ~Really now? Is that gratitude that you give a friend that is trying to save your life, Monty?~ [XZAR27]
+@80   = ~*ralph* Uuuuuu... *spit*~
+@81   = ~Shut up!~
+@82   = ~Bwhahaha! Monty, do you remember those children that we lured into my house with a trail of candy treats?~ [XZAR29]
+@83   = ~How could I forget, you only bring it up five times a bloody day?~
+@84   = ~Bwhahaha! They sure got something that they were not expecting that day!~
+@85   = ~Yer a sick fuckin' bastard, ya know that, Xzar?~
+@86   = ~Mmmm... come now. Let's not forget the part you played in that mousy little game! Your hands are as bloody as mine are on that one, friend!~
+@87   = ~I only helped lure them there. Ye did the rest yerself, ye fucking coward!~
+@88   = ~Bwhahahaha!~
+@89   = ~Are ye bloody mad? Who is gonna save yer bloody neck without me around? Don't be forgettin' who it is that be takin' down all them traps we come across, aye?~
+@90   = ~On second thought, never mind.~
+@91   = ~I'll have to just take my chances. Wait here until I need you.~
+@92   = ~Sorry, I'll have to just take my chances. Wait in the pocket plane until I come to get you.~
+@93   = ~That's what I bloody thought!~
+@94   = ~Yer a fuckin' cunt bastard! Ya know that?~
+@95   = ~Let me guess.. Ya got yer self in a bloody mess and now ya need me ta help ya get back on yer feet?~
+@96   = ~No, just wanted to say, hi.~
+@97   = ~Well then, bugger off! Ya miserable cunt!~
+@98   = ~I'll join ya alright, but don't go start actin' like a daft cunt.. okay?~
+@99   = ~It's even more dangerous ta wake me during a nap, ya stupid fuck.~
+@100  = ~Shut yer yap and get me an ale, ya wanker!~
+@101  = ~How about a bottle of yer finest wine and a night with yer best lookin' wench fer starters.~
+@102  = ~Do I look like a fucking Bhaalspawn, ye cunt?~
+@103  = ~What the fuck!?!~
+@104  = ~You again! What the bloody hell do ye want from me?~
+@105  = ~Grab your gear, Montaron, I need your thief skills. I will answer your questions later.~
+@106  = ~I can't explain now, but for the time being, I need you to stay here.~
+@107  = ~Okay, I'll save yer arse, AGAIN!~
+@108  = ~Yer a bloody fool!~
+@109  = ~Why in the bloody hell did ya summon me, if ye were just gonna have me sit around like a statue? Do I look like fuckin' Branwen ta you?~
+@110  = ~Just grab your stuff and let's get going.~
+@111  = ~Just stay put for now.~
+@112  = ~It's about bloody time!.~
+@113  = ~Motherfucker!~
+@114  = ~Ahhh... Yes! Somehow I knew that the next time that we spoke it would be in the burning inferno of hell.~ [XZAR29]
+@115  = ~So.. what's new?~
+@116  = ~I need you help, Xzar. Grab your equipment and come with me, I will explain everything later.~
+@117  = ~I guess it will give me a chance to collect body parts from exotic places.~
+@118  = ~Very well.. Lead on!~
+@119  = ~At least being here will give me time to see where my soul will burn for all eternity.~
+@120  = ~Are we to join forces once more? I cannot wait to go on another killing spree with the Lord of Murder!~
+@121  = ~This is going to be fun.. Bwhahahahaha!!!~ [XZAR40]
+@122  = ~That is okay. I can sit here and watch these hell fires burn, forever. Bwhahahaha!!~
+
+//NEW (v.11)
+
+// Volo (Montaron)
+@123 = ~Tell me about Montaron, the Zhentarim hitman.~
+@124 = ~Speak quietly! There are so many horror stories associated with this name that I decided not to risk it and burned all the pages of his life that I had previously kept.~
+@125 = ~I would not want to be his next victim if he suddenly thinks that I have blabbed too much about his business. I've heard that even some people in the Zhentarim itself are afraid of him.~
+@126 = ~You're not as stupid as I first thought, scribbler! So I won't rip your belly open yet, live some more!~ [monty28]
+
+// Melissan
+@127 = ~Greetings from Lord Manshoon himself, bitch! Yes <CHARNAME>, I told you I’m not just helping you. The Zhentarim have their own score with this beast, and you better not know the details.~ [MONTY03]
+@128 = ~Agent of Zhentarim? Here? <CHARNAME>, if you travel with people like him, then I underestimated your danger. But even the entire Zhentarim wouldn't help you today, much less this little monster.~ 
+@129 = ~He's not alone here, witch. Soon the order of the Zhentarim will be executed, and I will find out all your secrets, hee-hee-hee! I have some brain worms that I can put into your eyes and ears that will make you tell me everything you know, and I will become even more powerful!~ [xzar20]
+@130 = ~You're a sick man insane one, so I shall kill you first!~ 
+@131 = ~I found you, witch. Soon the Zhentarim's order will be fulfilled and you will die, and I will find out all your secrets, hee-hee-hee! I have some brain worms that I can put into your eyes and ears that will make you tell me everything you know, and I will become even more powerful!~ [xzar20]
+
+// Draconis (Xzar)
+@132 = ~This thing is dead! The body parts of such monsters will fetch a hefty price in certain circles.~ [Xzar33]
+
+// Final (Montaron's Romance)
+@133 = ~Well, it's time to decide, right?~
+@134 = ~I completed my mission and I will still get out of here and return to Zhentil Keep, so do as you like!~
+@135 = ~How has it come to this, Montaron? I thought that we would stay together, because we love each other so much! I even chose a house with a garden for us.~
+@136 = ~Fuff! What's all this caboodle, bitch?~ [MONTY16]
+@137 = ~Why did I fall in love with you? You know how they say: "Love hurts".~
+
+// Melissan in Saradush (Montaron's line)
+@138 = ~Melissan, eh? *Mutters something* Yeah, the description fits, but not right now. The time has not come yet.~
+
+// Final (Montaron's Romance, addition)
+@139 = ~Child of Bhaal, now is not the time for love talks!~
+
+// Dialogue with Montaron about Melissan
+@140 = ~Well, <CHARNAME>, have ya already understood who Melissan is?~
+@141 = ~She is an honest woman who tries to help people! ~
+@142 = ~She's not saying something. She has her own goals.~
+@143 = ~She's a cheating bitch!~
+@144 = ~Why are you asking? Do you know something about her? Tell me. ~
+@145 = ~Ye're so dumb! How did you even survive if you can't see anything even under your nose, ya damn fool!~ 
+@146 = ~Ye are lucky to have someone like me covering your ass!~
+@147 = ~Wow! Even you noticed it! It looks like you're getting smarter from talking to me!~ [MONTY21]
+@148 = ~You're smarter than you look, dammit!~
+@149 = ~It be better if did not know all the details. For your own safety, I will only say that there are people, and very influential ones, who are interested in her.~
+@150 = ~They didn’t know where to look for her, and they didn’t tell whoever was looking for her would be sure. Only that there is a red-haired woman who asks everyone a lot about the Bhaalspawns.~
+@151 = ~I knew right away that she would find ye on her own, you just have to wait.~
+@152 = ~When I saw her in Saradush, I immediately suspected that it was her, but I wasn't sure, and I didn't want to draw attention to myself.~
+@153 = ~So you were assigned to find her? What is going to happen now?~
+@154 = ~Who is looking for her and why? ~
+@155 = ~So you used me as bait to find her? ~
+@156 = ~Why didn't you say anything right away? ~
+@157 = ~The less you know, the safer you are, <CHARNAME>. Only one thing is important - Now we both need to meet with her, for various reasons...~
+
+//NEW (v.11.6)
+@158 = ~Well, good wizards should know the truth you speak. But then again, what is the nature of truth? And how do wizards approach that nature? For that matter, how does nature approach wizards? In fact, is there truth in natural wizardry, or is there rather –~
+@159 = ~Bwhahahaha!~ [xzar3]
+@160 = ~You are such a healthy and strong woman, hmmm... Your internal organs will be very useful to me for my experiments. Do not be afraid, before you die you will not feel anything - I smeared the weapon with a special anesthetic ointment made from very useful mountain herbs!~
+@161 = ~That’s one of the most sedate deaths I know that retains any bit of style at all!~
+@162 = ~Please forgive the enthusiasm of my colleague, he can be quite passionate in his work you see.~
+@163 = ~Tough decision, yes? I had some instructions from Zhentarim on this occasion, but I have seem to have misplaced them. So I won't be able help you with this, <CHARNAME>.~ [XZAR17]
+
+// NEW (v.12)
+@164 = ~No, I'm not a child of Bhaal, I'm on my own! ~ [XZAR25]
+@165 = ~He wasn't talking to you, fool! ~ [MONTY41]
+@166 = ~Yes, I also often dissected the hearts of my victims and stored them in glass jars. True, I did not set them on fire, as this Yaga-Shura did. He has a fascinating method, I should try this too to see if it provides any favorable benefits.~
+
+// NEW (v.13.3)
+@167 = ~What? An Imp is a blacksmith? If that is the case then I might as well be called a knight in shinning armor. Crazed necromancers, giant space hamsters, kobold bards, now this! What's next? Cyric in the form of a cow mending my pantaloons?~
+@168 = ~*Spits at his feet and steps aside*~ [MONTY41]
+@169 = ~Montaron, your diminutive mind is simply INCREDIBLE! Why must you annoy me so!?~ [XZAR27]
+@170 = ~Get away from me you idiot! I've not time to listen to yer rot! *Foul language is heard while Montaron retreats*~
+@171 = ~Yes, I understand exactly what you mean, friend!~

@@ -1,0 +1,20 @@
+
+
+IF 
+Global("AloraQuest","AR0706",0)
+!Exists("7XALORA")
+
+
+THEN
+  RESPONSE #100
+CreateCreature("7XCRE69",[444.451],9)
+SetGlobal("AloraQuest","AR0706",2)
+Continue()
+END
+
+
+
+
+
+
+

@@ -1,0 +1,31 @@
+
+IF 
+Global("DestroyTrademeet","GLOBAL",7)
+!InMyArea("7XFALD")
+Global("CreateFaldornSoA","GLOBAL",0)
+
+THEN
+  RESPONSE #100
+CreateCreature("7XCRE72",[970.482],3)
+SetGlobal("CreateFaldornSoA","GLOBAL",1)
+Continue()
+END
+
+IF 
+Global("DestroyTrademeet","GLOBAL",10)
+!InMyArea("7XFALD")
+Global("CreateFaldornSoA","GLOBAL",0)
+
+THEN
+  RESPONSE #100
+CreateCreature("7XCRE72",[970.482],3)
+SetGlobal("CreateFaldornSoA","GLOBAL",1)
+Continue()
+END
+
+
+
+
+
+
+

@@ -1,0 +1,13 @@
+IF 
+Global("WaterGardensBear","GLOBAL",2)
+Global("7xRangerExists","AR2000",0)
+THEN
+  RESPONSE #100
+SetGlobal("7xRangerExists","AR2000",1)
+CreateCreature("7xRanger",[1693.3148],0)
+END
+
+
+
+
+

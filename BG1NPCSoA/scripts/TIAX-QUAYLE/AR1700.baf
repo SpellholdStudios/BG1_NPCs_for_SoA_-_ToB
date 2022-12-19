@@ -1,0 +1,10 @@
+IF 
+Global("FIDDLEQuest","GLOBAL",2)
+
+THEN
+  RESPONSE #100
+CreateCreature("BG1X18",[2807.2118],0)
+SetGlobal("FIDDLEQuest","GLOBAL",3)
+Continue()
+END
+

@@ -1,0 +1,387 @@
+@0    = ~...*cough*..~
+@1    = ~Halt, be you friend or foe?~
+@2    = ~*cough*..~
+@3    = ~I am in need of aid.~
+@4    = ~Ajantis, is that you? Thank the gods, you are alive! It's me, <CHARNAME>.~
+@5    = ~<CHARNAME>? Thank merciful Helm!~
+@6    = ~Yes, it's me. How can this be, I saw your body?~
+@7    = ~Since Firkraag deceived us into attacking one another, I have been trapped in this world of misery. The dragon had his priests resurrect me so that he could learn more about you. Seems it is quite intent on destroying you.. *cough*~
+@8    = ~When he tired of asking me about you *cough* Firkraag had me tossed in his accursed dungeon, watched over by that villainous fiend, Tazok. He entertained himself by torturing me. My body is broken, but my spirit is lifted just by knowing that you smote down that evil beast.~
+@9    = ~Please forgive me Ajantis. That fiend Firkraag will pay for his treachery!~
+@10   = ~Serves you right for wandering these woods without a magic-user.~
+@11   = ~There is nothing to forgive old friend. Firkraag is the one who caused this tragedy, and he alone shall pay. I swear on the souls of my fallen brethren of the Radiant Heart, that I shall send that foul beast back into the darkest region of the abyss from which it came! *cough* *cough* Evil will always fail against courage and honor!~
+@12   = ~If you are to be useful to me you need your rest.~
+@13   = ~Slow down Ajantis.. you can barely walk! Are you well enough to travel?~
+@14   = ~You are right, of course. We were naive to think we could stand against the power of an ancient dragon, however the demon beast must pay for this great misdeed.~
+@15   = ~I swear on the souls of my fallen brethren of the Radiant Heart, that I shall send that foul beast back into the darkest region of the abyss from which it came! *cough* *cough* Evil will always fail against courage and honor!~
+@16   = ~Thanks for the concern but we must act quickly against this foul beast. Every day it creates more misery, fear and hatred amongst the people of Amn. Firkraag only took over the Windspear Hills after financially ruining the rightful owner of the lands, Garren Windspear.~
+@17   = ~The dragon also has many human followers that worship like a god, infiltrating the governments of cities in dozens of lands, spreading fear and injustice wherever they go. If we linger further thousands more may fall upon the misfortune caused by this wickedness. No.. we must act now. The evil demon must be purged. *cough* *cough*~
+@18   = ~Very well since I can't talk you out of it, welcome aboard Ajantis.~
+@19   = ~Sorry, you are no good to me if you are hurt.~
+@20   = ~Sorry, I have no room for you at the moment.~
+@21   = ~As it should be! Let us go!~
+@22   = ~In that case I will make my way to the Hall of the Radiant Heart. It's good to see you <CHARNAME>, may Helm watch over you during your travels.~
+@23   = ~<CHARNAME>, a thousand blessings from Helm onto you. I can never thank you enough for rescuing me from the clutches of that demon spawn, Tazok. Do you need my assistance? I would me more than grateful if you gave me this chance to repay you.~
+@24   = ~Welcome aboard Ajantis. I could use an experienced adventurer like you.~
+@25   = ~Sorry Ajantis, I don't have the room for you at the moment.~
+@26   = ~But... but... we were a team, we were bound by... by honor! Sigh... Why is everything always so complicated?~
+@27   = ~Sorry, but I have to make room for others.~
+@28   = ~Can't you just wait for me here?~
+@29   = ~On second thought, I still need you.~
+@30   = ~I'm sorry I have much evil to fight and have no time for idleness. Evil must be purged without mercy and as a knight, there are always many tasks that must be looked after.~
+@31   = ~Well.. I wish you safety in your travels, for the roads are very dangerous. I shall return to the Hall of the Radiant Heart, find me there if you should ever require my services. May Helm watch over you.~
+@32   = ~In that case I will return to the Hall of the Radiant Heart. May Helm watch over you during your travels.~
+@33   = ~Maybe some other time.~
+@34   = ~Oh my, Ajantis Ilvastarr!~ [imoen#]
+@35   = ~So wonderful to see you again.~
+@36   = ~M'lady has changed much since I last set eyes upon you.~
+@37   = ~How the passing time changes our recollections. Isn't it true, my fair lady Imoen?~
+@38   = ~Really? What do you mean by that?~
+@39   = ~You are a most beautiful lady, miss., but traveling with <CHARNAME> has also matured you beyond your years.~
+@40   = ~You talking about my scar, aren't you?~
+@41   = ~Haha.. No M'lady, that.. to me, tis but a mark of your gaining wisdom from your experiences.~
+@42   = ~I was just giving you due praise for all that you have accomplished in the short time we have known one another.~
+@43   = ~You were nothing more than a petty thief when we first met so long ago, but you worked hard and learned magic and are now progressing faster than most mages who dedicate themselves solely to their studies, the whole time while adventuring with <CHARNAME>. It is remarkable, what you have been able to achieve.~
+@44   = ~Meh.. What can I say? I'm a fast learner.~ [imoen%]
+@45   = ~M'lady Jaheira, it grieves my heart to hear about your fallen husband Khalid. He was a kind and noble man who did not deserve to die at the hands of an evil tyrant like Jon Irenicus.~
+@46   = ~Please Ajantis, save your words. I don't want you to think that I am without feeling..but the truth is, that even nature has trouble healing some wounds.~
+@47   = ~I understand Jaheira, let us forget I ever brought it up and move onward.~
+@48   = ~Agreed.~
+@49   = ~So Dark Elf, our paths cross once more. I am not sure why <CHARNAME> continues to put trust in you but I see through your lies.~
+@50   = ~I see that you are as ignorant as ever, you foolish male surfacer. Some things never change..~
+@51   = ~I am warning you Dark Elf, stay away from me or by Helm, you will feel my blade.~
+@52   = ~Your threats are useless paladin. Save them for the mighty goblins that you so inspire fear into.~
+@53   = ~M'Lord Firecam, tis an honor to fight at your side.~
+@54   = ~Ajantis, I give many blessed thanks to Helm for you giving you another chance to fight by my side. You have made everyone in the Order proud with all you have accomplished.~
+@55   = ~Fighting alongside <CHARNAME> to rid the Sword Coast of bandits and helping to bring down Sarevok.. There has been many a night that a bard has entertained us at the Hall with one of your heroic ballads.~
+@56   = ~Your words are too kind sir.~
+@57   = ~Come, tell me of your adventures as we travel onward. We have much to discuss.~
+@58   = ~Korgan, there is not but good and evil and I suspect you are..~
+@59   = ~EVIL!~
+@60   = ~Aye.. what's it ta ya?.~
+@61   = ~Yes.. the stench of evil clings to you in the most vile manner. Associating myself with you is beneath my honor for evil must be purged wherever it is found, even among companions.~
+@62   = ~Purge this..~
+@63   = ~*burp*~
+@64   = ~I think it would be wise for you to improve your conduct while in this party.~
+@65   = ~Hehe.. you sure sound convinced of yerself, ya do. Ye might make a fine dwarf. Strong in the head, even if yer sword arm is not so good. Bah! Murder or theft.. I'll do as I please!~
+@66   = ~I can bear no more, your actions fly in the face of everything Helm holds sacred!~
+@67   = ~Egad! I have offended one of the great knights of the Order of the Most Radiant Heart. I am quivering' in me boots..~
+@68   = ~I will not take these insults to my honor, draw steel and we will settle this dispute once and for all!~
+@69   = ~Ehhh.. On second thought, maybe I was a bit quick to judge, SIR Knight. I apologize.~
+@70   = ~With Helm's blessing. Evil will always fail against courage and honor.~
+@71   = ~Ahh, the famous Ajantis Ilvastarr, back from the dead it would seem.~
+@72   = ~Anomen Delryn, it is good to see you again brother. How are have things with you?~
+@73   = ~Things are well, although they might be better if <CHARNAME> stopped letting in all these charity cases into the group. You should see what passes for a warrior in this day of age.~
+@74   = ~Whomever <CHARNAME> chooses to adventure, I will fight without quarrel, so long as we fight for justice and freedom.~
+@75   = ~It is an honor to fight by your side Sir Ilvastarr.~
+@76   = ~Ajantis Ilvastarr! By the glory of Helm! I had heard tidings that you had been killed in some unfortunate accident!~
+@77   = ~That story would be true, were it not for the bravery and friendship of <CHARNAME>.~
+@78   = ~Praise unto you <CHARNAME>, for saving a follower of the the Vigilant One.~
+@79   = ~This is a joyous day! Ajantis Ilvastarr walks among us! It is an honor to be in your presence..~
+@80   = ~Sir William Reirrac, tis a pleasure to see you once more. I heard about your incident with the manticore.~
+@81   = ~Twas nothing whence compared to your adventures. It's great to see you.. The entire Order sends you good wishes.~
+@82   = ~Hail! Sir Ajantis Ilvastarr! It is a privilege and an honor sir, to serve with one that has performed such legendary deeds.~
+@83   = ~Your words honor me.~
+@84   = ~Torm's blessing upon you <CHARNAME>, for bringing Sir Ilvastarr back to us!~
+@85   = ~You hear that <CHARNAME>? They honor us you.~
+@86   = ~Ajantis Ilvastarr, I salute you! It is a privilege and an honor sir, to serve with the paladin that fought alongside  <CHARNAME> in Baldur's Gate. Torm's blessing upon you.~
+@87   = ~Oh my! I canna believe my eyes! Sir Ajantis Ilvastarr, the paladin hero of the Sword Coast!! It is a pleasure to meet you sir!~
+@88   = ~The pleasure is mine. Do tell me though, what is your name squire?~
+@89   = ~I'm Squire Melvin, sir.~
+@90   = ~Ahhh.. Squire Melvin. Are you not the squire that was a fishmonger not long ago?~
+@91   = ~Tis I, sir.~
+@92   = ~Yes, I am familiar with your tale. I am glad that the Order is rewarding the hardworking people that choose to live righteously, like yourself.~
+@93   = ~Thank you sir, I'll do all I can to repay this honor that has been bestowed unto me.~
+@94   = ~Carry on, Squire Melvin. May mighty Helm watch over you.~
+@95   = ~Sir Ilvastarr, Sir Ilvastarr!! You don't know how many times a bard has kept us entertained by telling of your adventures on the Sword Coast.~
+@96   = ~Hello again, Squire Melvin.~
+@97   = ~Oh please, don't you have time to share a few stories of your travels with <CHARNAME> in Baldur's Gate? Please, please, please!~
+@98   = ~Perhaps some other time, Melvin, right now, me and <CHARNAME> have an important quest that must be taken care of without haste!~
+@99   = ~*sigh* I understand. *sigh* Just the life of a squire, I guess.. I hope one day, I become knighted as well, so I can create some heroic stories of my own.~
+@100  = ~It is an honor sir to serve along side you, Sir Ajantis Ilvastarr. When we got word that you had been slain in battle by the treachery of Firkraag, the entire hall mourned greatly. Thank Tyr, we are all glad to have you back.~
+@101  = ~It is an honor to be amongst such fine people as you, Sir Zarath.~
+@102  = ~May the Maimed God bring a severe punishment upon the evil-doers who masterminded this tragedy.~
+@103  = ~My congratulations to you, Sir Anomen, Knight of the Order. I always had faith in you.~
+@104  = ~My thanks, Sir Ilvastarr. I feel very satisfied and pleased to have achieved this honor.~
+@105  = ~Ah.. at last your test has arrived. I wish you the best of luck, though I doubt you will need it. Traveling with you has shown me that you have the makings of a fine knight, my friend.~
+@106  = ~Thank you, Sir Ilvastarr, your words give me strength.~
+@107  = ~(Ajantis Ilvastarr, a paladin of the Order of the Radiant Heart.)~
+@108  = ~Ready for the final challenge, Ajantis?~
+@109  = ~Yes, I am. Let us venture forward, for time is short.~
+@110  = ~Torm's blessing upon thee, Ajantis, and welcome to the great Order.~
+@111  = ~Thank you, Sir Sir Mardus. It is great to be back.~
+@112  = ~May duty prevail..~
+@113  = ~Sir Ilvastarr, tis an honor to serve at your side.~
+@114  = ~It is good to see you once more, Sir Mardus.~
+@115  = ~May duty prevail, my friend. Torm's blessing upon thee.~
+@116  = ~Ajantis Ilvastarr! The task of being a paladin is not easy, but your legendary adventures with <CHARNAME> bring great honor unto all of The Most Noble Order of the Radiant Heart. It is good to have you back!~
+@117  = ~Thank you, Sir Ryan Trawl, it is a pleasure to serve with you.~
+@118  = ~The scribes have been adding chapters to the chronicles of heroic deeds. You have been keeping them very busy.~
+@119  = ~With the Vigilant One, Helm as my guide, anything is possible.~
+@120  = ~Go well, Sir Ajantis and Torm bless thee.~
+
+// NEW (v.13.4)
+
+// Ajantis - PC 1
+@121 = ~*Suppresses out a light sigh*~
+@122 = ~Ajantis, is there something wrong?~
+@123 = ~It's good that you're trying to contain your emotions, paladin, because it sickens me otherwise.~
+@124 = ~*Ignore Ajantis*~
+@125 = ~Wrong? Yes... Shame and insecurity gnaw at me. An evil deceitful creature pitted us against a monstrous illusion and I, a paladin, failed to recognize it. This makes me doubt that I… am worthy of the path I have decided to devote my life to.~
+@126 = ~Ajantis, everyone has the right to make a mistake, people make mistakes all the time. After all, paladins are not controlled golems, you are alive, and something can always go wrong. Don't torture yourself. The fact that you are here now means that Helm is with you and he is continuing to bless you to this day.~
+@127 = ~*Ajantis faintly smiles*~
+@128 = ~Thank you, <CHARNAME>. My memory will keep your wise words.~
+@129 = ~Look, I don't know what to say to you, honestly. I just want to say don't worry so much. Everything is formed, and I am your friend, and I will always support you.~
+@130 = ~Thank you, <CHARNAME>. You have a kind heart, and you too, can always count on my friendship.~
+@131 = ~Keep it simple Ajantis. Besides, it has already come and gone, why bother with hindsight?~
+@132 = ~I'm afraid you don't understand. I feel like I betrayed Helm, by failing to protect myself or those who were with me. Yet... however... actually, enough about that. Sorry for wasting your time.~
+@133 = ~To be honest I'm not all that surprised. After all, Firkraag is a mighty red dragon, and you are still a young lad who has just embarked on his path to the service of Helm. No wonder you lost, so don't fret about it, relax, and work on yourself, there will still be time to make up for it.~
+@134 = ~*Smiles bitterly* That's good advice, by the way. I'll try to follow it.~
+@135 = ~Ugh, the spiritual anguish of paladins! I don't understand any of this.~
+@136 = ~My apologies for bringing it up <CHARNAME>. *Ajantis pauses and turns away*~
+@137 = ~My apologies, <CHARNAME>, I had no intention of making you ill, so I hope you feel better soon.~
+@138 = ~*Ajantis lowers his head and turns away*~
+
+// Ajantis - female PC
+@139 = ~<CHARNAME>, if you don't mind me saying, but you are quite the lovely lady.~
+@140 = ~<CHARNAME>, if you don't mind me saying, but... you are amazing. I never tire of admiring you.~
+@141 = ~Thank you for the compliment Ajantis, and if you don't mind me saying, you are an attractive young man yourself. I'm glad we stand by one another.~
+@142 = ~*Blushes* I didn't really expect to hear that... but I'm glad I did.~
+@143 = ~As to be expected of you Ajantis. Paladins are always very gallant.~
+@144 = ~But what I'm telling you is the truth. Not only are you attractive but your leadership skills are also quite admirable, and I'm happy to follow you, <CHARNAME>.~
+@145 = ~But I'm telling you the truth, you are a rare beauty, and your leadership abilities cannot be matched, which makes me happy to follow you... not to lose my head.~
+@146 = ~I'm not in the mood for compliments right now. After interacting with Irenicus, my beauty... faded a bit.~
+@147 = ~My apologies my lady, I was just being sincere with you, but if it hurts you... The best excuse would be to help you find this mage and make him answer for everything he has done!~
+@148 = ~You used to say those words often. It's unfortunate that we met like this when there is nothing between us.~
+@149 = ~*Rubs fingers at temples* Oh... After all this, I feel completely emasculated. I remember <CHARNAME>, I remember, but I... seemed to have become different, and everything that filled my heart froze, deadened. Please give me time! Maybe we'll get back to this conversation.~
+@150 = ~Never try to flirt with me again, paladin!~
+@151 = ~I didn't try, I just... Very well, <CHARNAME>, My apologies for antagonizing you.~
+
+// Bodhi side
+@152 = ~Oh... it's all clear to me. I made a mistake by joining you, <CHARNAME>. It's a pity... I thought better of you <CHARNAME>, but you must do what you need to do, and now our paths must diverge. Farewell <CHARNAME> I wish you luck in your future.~
+
+// Thieves side
+@153 = ~This is not what I dreamed of when I swore to follow Helm's path. But by joining you, I pledged to protect you <CHARNAME>, and I will protect you from these dark people, if necessary. I will stay by your side if only for this purpose.~
+
+//In the Underdark/
+@154 = ~We're in the Underdark... I can't believe it, and we follow the path of cunning... but it seems to me that we still have to draw the sword, and more than once.~
+@155 = ~I wish your premonitions came true. My hands are itching to send at least one of these creatures to the spider goddess herself.~
+@156 = ~If it comes down to battle, I'll be glad. After all, I'm a warrior of Helm, not a spy.~
+@157 = ~It would be better if this didn't happen. I don't want unnecessary bloodshed.~
+@158 = ~Very well <CHARNAME> I understand. I will be careful.~
+@159 = ~Maybe. But you know, I actually envy the strength and resourcefulness of these shameless yet lovable creatures.~
+@160 = ~*Has a confused expression* Seriously <CHARNAME> I just can't understand you sometimes.~
+
+// Elhan
+@161 = ~Noble Elhan. I don't think we should be subjected to such an intrusive procedure. I am Sir Ajantis Ylvastar, Helm's humble servant, and I can vouch for my...~
+@162 = ~I'm sorry, Sir Ajantis, but you have just emerged from the Underdark and very rarely do innocent beings emerge from that pit. This is why you must be tested to make sure you are not an agent of that despicable place.~
+@163 = ~Very well then, do as you please. My friends and I have nothing to hide.~
+
+// Hell
+@164 = ~What... is this?! Our path eventually led... here? Oh Helm! My Helm, you won't leave me here, will you? Well regardless, even if this is to be my fate, I'm ready to serve you in Hell too!~
+
+// Ajantis - Nalia
+@165 = ~You know, Lady Nalia, I was thinking... If your fast-paced nature were a little less chaotic, you could become a paladin. Goodness and justice are inherent in you, and you do not like to sit idly by.~
+@166 = ~*Smiles* That's great to hear from you, Sir Ajantis! But I am who I am. I cannot become a paladin, but I can be a friend of a paladin. My magic is always at your service. sir.~
+@167 = ~Thank you my lady. My sword will always protect you, noble lady Nalia.~
+@168 = ~Deal!~
+
+// Ajantis - Aerie
+@169 = ~How wonderful, that in our world of cruelty and ugliness to find such beauty...~
+@170 = ~Oh? Are you t-talking about me, Ajantis? But what you see... is not all my beauty.~
+@171 = ~Sorry if my words remind you of your lost wings again, Aerie. But you are a wonderful lady! Your face pleases the eyes, and your heart pleases the souls of people.~
+@172 = ~T-Thank you sir. I'm really embarrassed... but thank you!~
+
+// Ajantis - PC 2
+@173 = ~<CHARNAME> do you think we understand each other better now? We went through similar trials; torture, imprisonment... now I think that I could share your pain with you... if you let me. After all, you have a very difficult path ahead of you.~
+@174 = ~Thank you my friend, but no, if anything I should be taking on some of your pain. Willingly or unwittingly, I am the reason that such an ordeal has been brought to you, and for that I am sorry.~
+@175 = ~It's not your fault! And there's no point in asking for forgiveness, but still... your words are important to me. Thank you.~
+@176 = ~Don't think about such things. We will still rejoice, suffer, support each other and have fun together. When needed, we will fight side by side, and then we will celebrate the victory in the nearest tavern. It's just life...~
+@177 = ~Yes, that's life, and in your words perhaps, there is some truth to what you're saying now... I'll try to accept it, <CHARNAME>.~
+@178 = ~What are you trying to say Ajantis? That you want to be my friend? We are already friends. What happened through Firkraag's fault did nothing to change my attitude towards you, Sir Ajantis. I trust you.~
+@179 = ~Thank you <CHARNAME>, I appreciate your friendship and honesty.~
+@180 = ~My pain? What are you talking about? There is no longer any pain. I'm not such a weakling to sag and cry. I don't need your compassion.~
+@181 = ~I see... sorry for starting this conversation then.~
+@182 = ~Pain? My head aches right now. Let's talk about this later, shall we?~
+@183 = ~Does your head hurt? *Heals you with the laying on of his hands* Is it easier now? See, it may be just a little, but I can help you.~
+@184 = ~Let's just do our thing without further ado. It will be for the best.~
+@185 = ~Oh, I see <CHARNAME>, if that is what you wish so be it. *Ajantis closes in on himself*~
+@186 = ~I don't have time for more paladin boredom again. Ajantis, back off.~
+@187 = ~*Ajantis doesn't answer and keeps to himself*~
+
+// Turning PC into a Slayer
+@188 = ~That's... how did this happen? <CHARNAME>! What became of you?... That is... the cursed legacy of Bhaal isn't it? Perhaps someday it will consume you! No! This cannot be, our mission now as your companions is to make sure that we don't lose you to this... essence and make sure this will not happen again!~
+
+// Tree of Life
+@189 = ~(Before you is Ajantis, a man of honor, a paladin devoted to Helm. Despite his youth, he has already suffered the vicissitudes of fate that mocked you both. After all, Ajantis once died in a skirmish with you and was resurrected by the enemy to be tortured and mocked. Is it worth it now to drag him along into a new test, which may be fatal for all involved in it?)~
+@190 = ~Ajantis, your god Helm needs you alive. Go back to your ministry, my friend. This is not your fight.~
+@191 = ~I have a personal score to settle with Irenicus. It's not right to drag you along to help me clear it up. Honestly, I'll understand if you don't want to move on.~
+@192 = ~Ajantis... it would have been much more difficult if you weren't around. Thank you for everything you have done. Are you ready to put your life on the line to help me battle this mage?~
+@193 = ~<CHARNAME>.... Your fight is my fight too. Believe me, I am honored to be with you now, for better or for worse and these are not just words. So let's go, it's time to bring the wrath of righteousness and justice to Irenicus. And may Helm protect us all!~
+
+// Ajantis - female PC
+@194 = ~Ajantis, if you're trying to get back to what was between us in this way, it's in vain. We are no longer the same boy and girl that met in the vicinity of Baldur's Gate and decided to fight the bandits together. We both went through trials, through pain and despair... we became different.~
+@195 = ~Indeed <CHARNAME>... I too, feel like there's no going back, and yet I always liked you, as I like you now. *He takes your hand and lightly touches your fingers with his lips* It's a commonplace phrase, let's just be friends. For now this is the most suitable... and what will happen next, time will tell.~
+@196 = ~Thank you for understanding Sir Ajantis.~
+@197 = ~Oh, you don't have to be so formal <CHARNAME>. I just said what I was feeling looking at you now. Maybe it was inappropriate? If so, my apologies then, but... there is something in you that is not subject to words... but perhaps that is for another day, so with that I will remain silent now.~
+
+// After the battle with Bodhi, if it involved Shadow Thieves
+@198 = ~Amazing! I never thought that I would fight those vile creatures of evil side by side with the Shadow Thieves. I'm a little... discouraged.~
+@199 = ~I didn't really want to address them, but you've seen how powerful these vampires were, and it wasn't superfluous to ask for their assistance.~
+@200 = ~I still have my doubts on what a paladin should have done in this scenario. The thief covered my back, and I protected him with my sword... the same thief who, perhaps tomorrow, will steal, or kill... and yet together we overcame a terrible evil. I guess I should just thank Helm for this right now.~
+@201 = ~Have you finally begun to realize that the world isn't just black and white?~
+@202 = ~I started to understand this a long time ago, but I still have trouble seeing gray. I have always believed that the world is divided into good and evil. It's hard for me to find any other shades in it, you see. Also is it necessary to strive to look for grains of good in evil, which at that time will stab you in the back? Yes, there's a lot more food for thought in all of this...~
+@203 = ~To be honest, I think the Shadow Thieves are great group of guys, much more useful than paladins.~
+@204 = ~And yet with that view of things, you still don't ask me to leave your company? I'm sorry to hear this, but if their agility and swiftness attracts you so much that you do not notice that in paladins there is a simple desire to make life around them even a little better, then what can I do? *Sigh* I suppose I can only do my best, regardless of circumstance.~ 
+
+// Reaction to Keldorn's quest
+@205 = ~*Ajantis frowns* What a pity we couldn't help Sir Keldorn, <CHARNAME>. Perhaps the advice you gave him could have been better thought out. It breaks my heart to think about what he's feeling right now... How hard it must be for him.~ 
+@206 = ~*Ajantis smiles* <CHARNAME>, thank you very much for helping Sir Keldorn. I love and appreciate this man very much, and I was worried about how his difficult situation would be resolved. Your leadership has proved to provide the best outcome!~ 
+
+// Ajantis - PC 3
+@207 = ~*Ajantis raises his head and looks up somewhere before looking down again. You can you hear a sigh of relief escape from his chest. It was as if he stepped out of a cramped room or received a long awaited answer to some important question.*~
+@208 = ~Ajantis, I think you're thawing. When I found you in that vile dungeon, you were like a shadow of your current self. Glad to see that you are doing well.~
+@209 = ~Yes... I'm starting to calm down and my spirit is getting stronger. I was tormented by questions... For example, about death. Previously, many blamed me for sometimes unjustifiably risking my life, but I thought... it's so wonderful to die in the fight against evil with a weapon in your hand, with the name of Helm on your spirit. Then the day came when I took you for evil and found death, but did not appear before my god, but found myself in the clutches of a cruel enemy. Since then, I haven't stopped thinking about it.~
+@210 = ~Do you blame Helm for not saving you?~
+@211 = ~Never, I would never blame Helm for anything, and lately, I don't seem to blame myself anymore.~
+@212 = ~So what has caused you to change now?~
+@213 = ~I have changed my state of mind. I try and look forward to the future and bless Helm for each day that I am alive outside of that dungeon.~
+@214 = ~Weren't you just playing the role of a knight though?~
+@215 = ~Are you saying that I PLAYED knight? No. All my ideals remained with me, I believe in what I believed in.~
+@216 = ~I get it now... whereas fighting evil used to be my biggest passion, now I just want to help those who need it. The Guard of gods calls me to this, this is my duty, and now this is my strongest desire. I needed to feel weak and hopeless in order to finally begin to have heartfelt compassion for others.~
+@217 = ~Are you saying that fighting evil is no longer an end in itself for you?~
+@218 = ~Probably so. I just want to be there when someone is feeling bad and assist as much as I can. You can’t save everyone in the world, but I will try to do what I can with the help of Helm. Alsp, thank you for listening <CHARNAME>, it really means a lot to me.~ 
+@219 = ~You always had a good heart, Ajantis.~
+@220 = ~Thank you, <CHARNAME>, but even so, I didn't use it well. Still, I have a lot to think about. At least now I feel much better thanks to you.~
+@221 = ~Just don't go from one extreme to the other. It would be better for you to learn how to just live... like all normal people.~
+@222 = ~Oh <CHARNAME>, look around you. How many normal people do you see in your mind. I am sure that everyone has their own dream, even if it is not realized. I dream of making the world a better place for everyone in it, even if its only a little bit better. Is that such a bad thing? I'm sure Helm won't leave me in this pursuit.~
+@223 = ~Good, evil... Such an ordeal would teach another person to finally think about one's self and leave the world alone with its problems.~
+@224 = ~<CHARNAME>, I am who I am. A paladin's service is not a whim for me. We look at the world differently, and you can hardly force me to look at it through your eyes. Although still, I stay with you... as long as you need me.~
+@225 = ~You can't decide how to live right. Your quest will be in vain, I spoke to you about this.~
+@226 = ~*Portrays a gloomy expression* Yes, in vain indeed.~
+@227 = ~*You care about what's going on with Ajantis, but you're not friendly enough to want to ask him anything. After all, he could now pray to Helm. Better leave him alone.*~
+@228 = ~*You don't care what happens to Ajantis. The main thing is that his hand is still firmly holding the sword. You don't pay attention to him anymore.*~
+
+// Appendices
+@229 = ~Hey, you're the same knight who attacked me in the form of a monster!~
+@230 = ~Gods, are you still alive, paladin?!~
+@231 = ~Firkraag is already dead. He paid with his life for his betrayal and evil.~
+@232 = ~I swear on the souls of my fallen brethren of the Radiant Heart, that I shall send that foul beast back into the darkest region of the abyss from which it came! *cough* *cough* Evil will always fail against courage and honor! <CHARNAME>, let me... travel with you to thank you for this feat!~
+
+// Ajantis - PC (after Underdark)
+@233 = ~*Sighs deeply*~
+@234 = ~Oh, how great! It seems that tests are given to us so that we learn to appreciate everything that surrounds us. After the darkness and horrors of the Underdark, even the sun hidden behind the clouds rejoices no less than a fine day, violets seem more beautiful than roses, and peasant girls are more attractive than duchesses. This is the kind of life that simply doesn't exist anywhere else.~
+@235 = ~I agree with you, I'm feeling the same way right now.~
+@236 = ~I'm glad that we think alike. It was nice to share my feelings with you.~
+@237 = ~Violets have always been as good as roses, and peasant women are certainly nicer than duchesses, and cloudy weather is a true comfort after the heat. It's a pity you had to be among the drow to understand such simple things.~
+@238 = ~Maybe <CHARNAME>, but what's wrong with the fact that some aspects of life are revealed to someone only with experience? Plus it's different for all of us, isn't that right?~
+@239 = ~Ajantis! I still can’t come to my senses after that “nice” walk underground, and here you are talking about violets and peasant women. Can't this wait?~
+@240 = ~I'm Sorry. I just wanted to share with you... However, I often lack endurance myself. I'm sorry that the Underdark has affected you this way and I'm willing to help if I can.~
+@241 = ~Is that so? Haha... I thought you dreamed of returning to the Underdark to wipe out all the evil you could get your hands on.~
+@242 = ~Laugh if you want <CHARNAME>, but I say what I feel. Yes, I would be glad if many drow were killed by my sword, if I could help those unfortunates whom they have harmed, but I followed you and did what was required of me. There is no need to humiliate a comrade in arms with ridicule.~
+@243 = ~This is all nonsense. I would like to return to the Underdark. Life is much more interesting there.~
+@244 = ~*Stares at you strictly* I don't understand you sometimes <CHARNAME>. I'm sorry but I have no answer to that statement.~
+@245 = ~Ajantis, stop philosophizing. There is no time for this.~
+@246 = ~Very well <CHARNAME>, my apologies, let us just continue on our way then.~
+@247 = ~*You pretend not to hear Ajantis*~
+@248 = ~*Ajantis looks at you intently before stepping aside.*~
+
+// NEW (v.14)
+// Ajantis - Minsc 1 (before going to bed)
+@249 = ~Minsc thinks the young knight can be trusted with Boo.~
+@250 = ~Is that so? Are you truly ready to entrust your little friend to me, Minsc?~
+@251 = ~Yes, you can hold Boo, stroke his fur and wish him good dreams.~
+@252 = ~*Takes Boo into his palms with a smile* It's a great honor, Minsc.~
+@253 = ~Maybe you can just say that Minsc and Boo are friends of Ajantis.~
+@254 = ~I'm happy to assure you that the feeling is mutual. The friendship of such virtuous warriors as Minsc and Boo means a lot to me.~
+
+// Ajantis - Minsc 2
+@255 = ~Boo feels the young knight is being weighed down by something. Boo is never wrong, but now Minsc wants him to be wrong.~
+@256 = ~Thank you Minsc. Everything is fine. It's just... I couldn't help but think of my home in Waterdeep. Sometimes this painful feeling overwhelms me involuntarily. I want to look again at the places dear to my heart and hug my relatives.~
+@257 = ~I understand. Rashemen seems so far away that sometimes it starts to sting in the eyes. But this is what Boo and I thought about; Someday we will still return home and invite you to visit, my friend. Then after that, you can invite Minsc and Boo to Waterdeep.~
+@258 = ~That sounds like an excellent idea my friend. Minsc and Boo will always be honored guests in my house.~
+
+// Ajantis - PC 4
+@259 = ~*You notice that Ajantis is a little behind and is looking at something in the grass. Approaching him, you see that the face of the young warrior softened and a slight smile appeared on his lips. Obviously, a bright large butterfly with an unusual pattern on its wings attracted his attention. *~
+@260 = ~What a beauty...~
+@261 = ~*Staring at the butterfly* Really, it's very beautiful... it's rare.~
+@262 = ~A butterfly? For some reason, it seems to me that her contemplation again led you to philosophical reflections.~
+@263 = ~A guy in heavy armor looking at a butterfly? Funny.~
+@264 = ~Ajantis, there's no time to be distracted by nonsense.~
+@265 = ~Seeing you like this, leaning over a butterfly with a dreamy and pensive look, I remember the days gone by... We were both different back then, but remember, we still enjoyed looking at nature together, looking at the stars...~
+@266 = ~You are an elf. No wonder you have a subtle sense of beauty.~
+@267 = ~You have elven blood in you. No wonder you have a subtle sense of beauty.~
+@268 = ~You have a subtle sense of beauty, <CHARNAME>.~
+@269 = ~And as I admire this little wonder of nature, my doubts begin to creep in again. Everything beautiful in this world is so fragile and short-lived... can I become a true protector for him? The way the guardian god wants his followers to be?~
+@270 = ~Stop doubting yourself, Ajantis. Otherwise, I will decide that any major failure is capable of knocking you out of the saddle for a long time, if not forever.~
+@271 = ~That's not true. It's just that my mission seems to me more and more grandiose, and human forces - more and more limited. But that's what faith is all about, isn't it?~
+@272 = ~You can. I see that you are still ready to rush to the defense of a friend, and a beautiful lady, and even a fragile butterfly. And Helm won't leave you if you believe in him so fervently, Ajantis.~
+@273 = ~Thank you, <CHARNAME>. I am very glad to hear it from you.~
+@274 = ~Yes, beauty is short-lived, yes, the age of this lovely butterfly is short, but many other butterflies will be born, and many wonderful things will be renewed. Do not be discouraged and do not try to embrace the immensity. Enough work for your paladin age.~
+@275 = ~To be fully invested in what you can do now and not aim for the unattainable? Is that what you want to say? I need to think...~
+@276 = ~Can you at least admire a butterfly without thinking too much about it?~
+@277 = ~*Suddenly cheerful smile* Apparently not. That's the kind of person I am. Bear with me, <CHARNAME>.~
+@278 = ~Yes, perhaps. I admire this little wonder of nature, and doubts begin to overcome me again. Everything beautiful in this world is so fragile and short-lived... can I become a true protector for him? The way the guardian god wants his followers to be?~
+@279 = ~What makes you laugh so hard, <CHARNAME>? The human heart tends to respond to beauty. And mine, I dare to hope, is not upholstered in iron.~
+@280 = ~Okay, don't be offended. You seem to be thinking about something again?~
+@281 = ~Come on, there's no time to be distracted by nonsense.~
+@282 = ~*Ajantis turns away with a sigh*~
+@283 = ~<CHARNAME>... I can't. I can't talk about it. Your closeness made me dizzy, and everything seemed so clear, unshakable... My heart breaks when I think that we could be together, but...~
+@284 = ~Please stop. What was - then passed. ~
+@285 = ~Alas, it is. And if you let me, we won't talk about it anymore.~
+@286 = ~But I believed you. I thought you loved me.~
+@287 = ~I still love you, but still... No, I can't... Forgive me, <CHARNAME>.~
+@288 = ~Ajantis, don't over complicate things. We're good friends now, and that's great.~
+@289 = ~*Inspired* I think so too. And I'm very happy that we met again.~
+
+// Ajantis - Yoshimo
+@290 = ~Yoshimo...let me have a word with you. *pulls the bounty hunter aside* It sounds unpleasant, but I think you're hiding something.~
+@291 = ~Ah, you're right, young paladin! There are many dark secrets in the soul of the great Yoshimo.~
+@292 = ~*Annoyed* Don't try to confuse me or make fun of me. Paladins can sense bad intentions.~
+@293 = ~*Chuckling* So did you have a revelation? Well, if I planned a robbery of the Promenade trading shop behind the back of the charnames, you will prevent it, right?~
+@294 = ~*Sad* I'd like to think you're a good person, Yoshimo. I enjoy your company, but... Yes, rest assured, I'll be on guard.~
+@295 = ~As you know, Ajantis, as you know...~
+
+// Ajantis - Keldorn 2
+@296 = ~Sir Keldorn... you haven't spoken to me at all lately.~
+@297 = ~Is it, Ajantis? It seems like only the day before yesterday I told you about my trips...~
+@298 = ~*Slightly embarrassed* Oh sir, you know what I mean?~
+@299 = ~*Chuckling* Yes, of course, my boy. But I will no longer judge your actions. You are no longer my squire, you are a full member of our order. Until you embark on the wrong path - and I believe that this will never happen - you will not hear instructions and moralizing from me.~
+@300 = ~So you think I'm worthy of serving as a paladin?~
+@301 = ~Yes, Sir Ajantis. Despite doubts, you do not change your brave and kind heart. And it will take you further... Just be yourself, and may Helm protect you.~
+
+// Ajantis - Anomen 2 (kind)
+@302 = ~Tell me, brother of faith, do I think you're hesitating in the way of serving our god?~
+@303 = ~That's what it looks like to you, Anomen. Yes, I have thought about many things, but, as before, I accept Helm's dogma in my heart and remember to be vigilant.~
+@304 = ~Glad to hear it. For me, as for you, Ajantis, Sir Keldorn Firecam has always been the model of the paladin, and, to be honest, I always thought that you imitated him in everything.~
+@305 = ~I hope I emulate - in valor and upholding the laws of honor. But I am not Sir Keldorn, and I have my way. Don't you?~
+@306 = ~The way to serve the Guardian God seems clear to me, but there are too many other temptations on the path the charname leads us to take. You never know what tomorrow holds for you. I hope you and I, brother-helmit, do not deviate from the right path.~
+
+// Ajantis - Anomen 2 (Chaotic Neutral)
+@307 = ~Looks like the day isn't far off when you'll give up on Helm's service, Ajantis.~
+@308 = ~It only seems to you, Anomen. Yes, I have thought about many things, but, as before, I accept Helm's dogma in my heart and remember to be vigilant.~
+@309 = ~We'll see. Frankly, I always thought you were imitating Sir Keldorn Firecam in everything.~
+@310 = ~I hope I emulate - in valor and upholding the laws of honor. But I am not Sir Keldorn, and I have my own way. You've chosen your own path...~
+@311 = ~*Annoyed* Don't remind me again of my failure, sir knight.~
+@312 = ~But I didn't mean to... I'm sorry, Anomen.~
+
+// Ajantis - Aerie 2
+@313 = ~Ajantis, can I ask you a weird question?~
+@314 = ~Of course, Lady Aerie, any question.~
+@315 = ~Oh, Ajanhis, I'm not a lady... I j-just wanted to ask - have you ever flown?~
+@316 = ~I should give some thought to my answer. Perhaps... yes.~
+@317 = ~That was around Baldur's Gate. I protected a farmer's family from bandits and escorted home... I remember that woman's eyes filled with tears of gratitude... and when her little daughter hugged me with her arms with all her might, I...~
+@318 = ~My heart went flying high... and it seemed to me that I was flying above the trees, straight into the clouds... I felt as if Helm himself had touched me.~
+@319 = ~That's... strange. I was g-told that one could fly without wings. Since then, I sometimes ask this question to people. And s-sometimes they answer me: yes. But these answers are so different... I will try to understand it all. And I thank you for your reply.~
+@320 = ~You can, Aerie. One way or another, but someday you will fly again.~
+@321 = ~I... will believe it.~
+
+// Ajantis - Wilson
+@322 = ~Amazing! I would never have thought that I would have to travel with such an intelligent bear.~
+@323 = ~Uff?~
+@324 = ~No, I can't say anything bad about your kind, just remembering an unfortunate encounter on the northern Sword Coast. Then I was hunting down bandits and accidentally came across a ferocious bear. I miraculously managed to defeat him. The trusty sword served me well.~
+@325 = ~Rrrr.~
+@326 = ~Believe me, I'm sorry that this happened too. But the bears in those woods are nothing like you. It is difficult to negotiate with them if you are not a druid or a ranger.~
+@327 = ~Groaah!~
+@328 = ~Yes, he defended his territory and I defended my life. This was a fair fight. And I turned out to be stronger.~
+@329 = ~Sniff sniff.~

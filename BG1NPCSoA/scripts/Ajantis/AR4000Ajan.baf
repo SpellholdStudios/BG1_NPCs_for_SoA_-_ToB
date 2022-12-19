@@ -1,0 +1,17 @@
+IF
+	InPartyAllowDead("7XAJAN")
+	Global("AjantisSummonedToB","GLOBAL",1)
+THEN
+	RESPONSE #100
+		ActionOverride("7XAJAN",ChangeAIScript("7XAjan25",OVERRIDE))
+		SetGlobal("AjantisSummonedToB","GLOBAL",2)
+END
+
+IF
+	InPartyAllowDead("7XAJAN")
+	Global("AjantisSummonedToB","GLOBAL",0)
+THEN
+	RESPONSE #100
+		ActionOverride("7XAJAN",ChangeAIScript("7XAjan25",OVERRIDE))
+		SetGlobal("AjantisSummonedToB","GLOBAL",2)
+END

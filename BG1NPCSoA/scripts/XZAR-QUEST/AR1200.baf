@@ -1,0 +1,11 @@
+IF 
+Global("XZARQUESTSTART","GLOBAL",1)
+ Global("XZARMulaheyCREATE","GLOBAL",0)
+
+THEN
+  RESPONSE #100
+CreateCreature("7xcre79",[4325.681],3)
+SetGlobal("XZARMulaheyCREATE","GLOBAL",2)
+Continue()
+END
+

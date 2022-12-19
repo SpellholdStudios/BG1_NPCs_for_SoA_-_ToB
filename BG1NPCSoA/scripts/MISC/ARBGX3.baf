@@ -1,0 +1,46 @@
+IF
+
+InMyArea("PLTAX01")
+
+THEN
+
+RESPONSE #10
+
+Wait(15)
+ActionOverride("KPRUNNER",MoveToPoint([436.585]))
+Wait(10)
+ActionOverride("KPRUNNER",DisplayStringHead(Myself,@1751)
+Wait(2)
+ActionOverride("RIGEN01",DisplayStringHead(Myself,@1752)
+Wait(3)
+
+RESPONSE #10
+    Wait(15)
+ActionOverride("CLGIJJ01",DisplayStringHead(Myself,@1753)  
+Wait(4)
+ActionOverride("PLTAX01",DisplayStringHead(Myself,@1754)
+Wait(2)
+ActionOverride("RIGEN01",DisplayStringHead(Myself,@1755)
+Wait(3)
+
+RESPONSE #10
+    Wait(10)
+    ActionOverride("CLGIJJ01",DisplayStringHead(Myself,@1756)
+Wait(2)
+    ActionOverride("PLTAX01",DisplayStringHead(Myself,@1757)
+Wait(2)
+ActionOverride("RIGEN01",DisplayStringHead(Myself,@1758)
+Wait(3)
+
+  RESPONSE #10
+    Wait(5)
+ActionOverride("RIGEN01",DisplayStringHead(Myself,@1759)
+Wait(2) 
+    ActionOverride("PLTAX01",DisplayStringHead(Myself,@1760)
+Wait(10)
+END
+
+
+
+
+

@@ -1,0 +1,26 @@
+
+
+
+
+IF 
+Global("7XCRE91EXISTS","GLOBAL",0)
+
+
+THEN
+  RESPONSE #100
+CreateCreature("7Xcre91",[3687.1614],0)
+SetGlobal("7XCRE91EXISTS","GLOBAL",1)
+Continue()
+END
+
+IF 
+Global("7XCRE93EXISTS","GLOBAL",0)
+
+
+THEN
+  RESPONSE #100
+CreateCreature("7Xcre93",[3405.513],3)
+SetGlobal("7XCRE93EXISTS","GLOBAL",1)
+Continue()
+END
+

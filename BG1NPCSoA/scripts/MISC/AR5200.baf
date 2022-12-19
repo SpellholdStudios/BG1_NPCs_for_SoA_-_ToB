@@ -1,0 +1,29 @@
+
+
+
+
+IF 
+InParty("7XSHAR")Global("SharSevenSisters","GLOBAL",0)
+
+
+THEN
+  RESPONSE #100
+CreateCreature("7Xcre89",[1775.367],0)
+SetGlobal("SharSevenSisters","GLOBAL",1)
+Continue()
+END
+
+
+
+
+IF
+  Global("AR5200Bask","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AR5200Bask","GLOBAL",1)
+    CreateCreature("7XCRE45",[1829.1151],0)
+    CreateCreature("7XCRE45",[1680.1212],0)
+    CreateCreature("7XCRE45",[397.838],0)
+    CreateCreature("7XCRE45",[69.925],0)
+Continue()
+END

@@ -1,0 +1,19 @@
+IF 
+Global("XzarMonty","GLOBAL",0)
+Global("LyrosJob","GLOBAL",3)
+!Exists("7XMONT")
+!Exists("7XXZAR")
+
+
+THEN
+  RESPONSE #100
+CreateCreature("7XCRE74",[270.433],11)
+CreateCreature("7XCRE75",[181.388],7)
+SetGlobal("XzarMonty","GLOBAL",2)
+Continue()
+END
+
+
+
+
+

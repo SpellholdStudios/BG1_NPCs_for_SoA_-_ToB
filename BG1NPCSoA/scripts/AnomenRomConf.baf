@@ -1,0 +1,13 @@
+IF
+OR(2) Global("AnomenRomanceActive","GLOBAL",1) Global("AnomenRomanceActive","GLOBAL",2) 
+Global("MontyRomanceActive","GLOBAL",2) 
+Global("MontyRomanceAnomenTalk","LOCALS",0)
+See(Player1)
+InParty(Myself)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("MontyRomanceAnomenTalk","LOCALS",1)
+ActionOverride(Myself,StartDialogNoSet(Player1))
+END

@@ -1,0 +1,10 @@
+IF 
+Global("MaralieF","GLOBAL",0)
+
+THEN
+  RESPONSE #100
+CreateCreature("Maralie",[210.429],9)
+SetGlobal("MaralieF","GLOBAL",1)
+Continue()
+END
+

@@ -1,0 +1,21 @@
+IF 
+Global("7XGAZIBCreated","GLOBAL",0)
+
+THEN
+  RESPONSE #100
+CreateCreature("7XGAZIB",[464.225],0)
+SetGlobal("7XGAZIBCreated","GLOBAL",1)
+Continue()
+END
+
+IF 
+Global("OldQuayleGone","GLOBAL",1)
+Global("QuayleCREATIONcomment","AR0607",0)
+
+THEN
+  RESPONSE #100
+SetGlobal("QuayleCREATIONcomment","AR0607",1)  
+DisplayStringHead(Player1,@9000) 
+Wait(3)
+END
+

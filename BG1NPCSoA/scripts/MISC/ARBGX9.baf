@@ -1,0 +1,13 @@
+IF 
+Global("WaterGardensCondominium","GLOBAL",3)
+Global("7xCondoCAT","ARBGX9",0)
+THEN
+  RESPONSE #100
+SetGlobal("7xCondoCAT","ARBGX9",1)
+CreateCreature("7xCAT",[728.471],0)
+END
+
+
+
+
+

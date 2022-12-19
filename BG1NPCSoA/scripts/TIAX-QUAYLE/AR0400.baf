@@ -1,0 +1,10 @@
+IF 
+Global("FiddleBender","GLOBAL",0)
+
+THEN
+  RESPONSE #100
+CreateCreature("7xOSWALD",[3613.1778],6)
+SetGlobal("FiddleBender","GLOBAL",1)
+Continue()
+END
+

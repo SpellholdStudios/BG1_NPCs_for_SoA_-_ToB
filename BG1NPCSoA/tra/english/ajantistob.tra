@@ -1,0 +1,64 @@
+@0    = ~Bring me, Ajantis Ilvastarr.~
+@1    = ~Are you sure that this is the wisest course of action? I would not want you overcome by evil in my absence.~
+@2    = ~On second thought, Ajantis, stay with the party for now.~
+@3    = ~Just wait here awhile, Ajantis.~
+@4    = ~Go back to the pocket plane and wait there for me.~
+@5    = ~Duty to one's cause outweighs all.~ [ajantis_]
+@6    = ~I do not agree with this, but the decision is yours to make. You know where to find me when you need me.~
+@7    = ~Evil shall not rest.. and neither can we. Shall we join forces once more and wreak havoc unto those that prey on the innocent?~ [ajantisH]
+@8    = ~I need your help, Ajantis, but we are going to do things, my way.~
+@9    = ~Sorry Ajantis, but you are going to have to continue waiting for the time being.~
+@10   = ~Welcome aboard, Ajantis.~
+@11   = ~By Helm! What evil is this?~
+@12   = ~I'll explain later, Ajantis.~
+@13   = ~Tis no evil, Ajantis, just me, <CHARNAME>.~
+@14   = ~<CHARNAME>? Ha! I should have known. Who else would summon me to the pit of the Abyss to take part in a perilous quest?~
+@15   = ~Very well, shall we be off? There is still much evil to be defeated.~
+@16   = ~Grab your gear, Ajantis, and let's move out.~
+@17   = ~I am going to need you to wait here for now.~
+@18   = ~May the Vigilant One watch over us during our adventures.~
+@19   = ~Wait here, in this damp pit while you march of to adventure and glory? Would you rather not have me fighting at your side?~
+@20   = ~On second thought Ajantis, I'd rather have you with me on this quest.~
+@21   = ~Sorry, I don't have the room for you at the moment.~
+@22   = ~You are the leader here and I will respect your wish, but I do not agree with this decision.~
+@23   = ~I am glad to see you again. Shall we join forces and rid the world of evil together?~
+@24   = ~Come with me, Ajantis, and be ready to find honor and glory!~
+@25   = ~Sorry, but you are going to have to wait here for a short while longer.~
+@26   = ~I renew my objection to this decision.~
+
+// NEW (v.13.4)
+// Volo
+@27 = ~Tell me about Ajantis, a paladin of the Order of the Radiant Heart.~
+@28 = ~Ajantis, the brave and romantic, the knight against evil and the protector of the innocent. His noble family from Waterdeep can be proud of such a scion.~
+@29 = ~Sir Keldorn Faercam raised Ajantis to be a worthy knight. He has a pure soul and a warm heart, and if something is missing, then everything will come with age. He carries out his service as a paladin not for the sake of loud glory, but because of the love of his god Helm, and such devotion is always rewarded in one way or another. People will chant the name of Sir Ajantis Ylvastarr in the years to come.~
+@30 = ~*Takes a small bow* I thank you for the praise Volo, although It almost feels... like it's about someone else, but I will do my best to live up to those kind words.~
+
+// Ajantis - GG
+@31 = ~I wonder how Helm felt when he killed Mystra?~
+@32 = ~What are you thinking about all of a sudden?~
+@33 = ~Thinking of you reminds me of things like this.~
+@34 = ~Hmm... is it because of me that you are drawn to such thoughts?~
+@35 = ~Yes, that's right.~
+@36 = ~No one seems to think about such things. Or they will answer that Helm did not feel anything. He is the god of debt. He was following orders. The deities stands above our usual sensations, passions, and reasoning, but who can know for sure, except for Helm himself? Also you... you're only one step away from accepting divinity. Will you also become some kind of force? Or magnitude? Will you lose your current personality, or will you rise above yourself?~
+@37 = ~Yes. To rise above is exactly what I want.~
+@38 = ~I see, perhaps there is more for me to ponder in the up and coming days then.~
+@39 = ~Do you truly believe that is going to be the end result?~
+@40 = ~At least I think it will. Although no one knows for sure do they?~
+@41 = ~I have no desire to becoming a god.~
+@42 = ~Perhaps that would be the best solution for you.~
+@43 = ~Although I can certainly see and acknowledge your power, but for me, you are <PRO_RACE>, with whom we traveled, fought, shared bread around the campfire... I will be sad if you become... someone else. After all, having become a deity, it will no longer be you. But this is, of course, only your choice, I just... I just wanted to tell you for some reason.~
+@44 = ~Helm is a stubborn fool. I don't understand how normal people can worship him.~
+@45 = ~<CHARNAME>, you're talking about the god that I have dedicated my life too! Is it really that hard to show a modicum of respect? If that is the way you see it then so be it, I don't want to talk about anything with you anymore.~
+
+//Ajantis - Imoen
+@46 = ~*Imoen sneaks up on Ajantis, but he turns around just in time and almost grabs her arm. The girl manages to dodge.*~
+@47 = ~Wow! I never knew a paladin could be that perceptive. Even a smart girl like me can't sneak up on them.~
+@48 = ~*Smiles* You are forgetting what Helm teaches us, my dear lady; be vigilant!~
+@49 = ~Hee hee... When did you suddenly decide to be so vigilant?~
+@50 = ~When your pretty face assumes such an innocent expression, it becomes immediately clear that something is not clean.~
+@51 = ~You have changed, Ajantis! Before, you would have definitely fallen to my guile... maybe you're growing up?~
+@52 = ~As are you, my lady Imoen. Traveling with <CHARNAME> has changed us all in one way or another, but admit that you wanted to steal from me?~
+@53 = ~That's the whole point! Do not pull, but toss. This is…~
+@54 = ~*She opens her hand and shows Ajantis the pearl*. I procured it on the coast near Baldur's Gate and managed to save it. It's like a memory of that story... the Iron Crisis, the bandits, running after Sarevok... It affected you too. Then it all began, and it will end very soon... somehow it will end. Although for some reason I don't want to keep it anymore. It's not that I'm giving it to you because I don't need it anymore... it's just... I don't know how to say it... I...~
+@55 = ~*Takes the pearl that Imoen hands him* I understand, my lady. I will accept this pearl from you as a gift, as a memory of past adventures, and I will carefully guard it. Thank you my lady for this gift.~
+@56 = ~You're welcome. Hey, in exchange for the pearl will you give me a grateful kiss on the cheek? Haha, don't worry, you don't have to blush like that! I'm kidding, I'm kidding, I'm kidding.~

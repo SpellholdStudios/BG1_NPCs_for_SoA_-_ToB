@@ -1,0 +1,86 @@
+IF
+PartyRested()
+AreaType(OUTDOOR)
+See(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+CombatCounter(0)
+Global("PcCoranChat1","GLOBAL",0)
+THEN
+ RESPONSE #100
+ SetGlobal("PcCoranChat1","GLOBAL",1)
+ StartDialogNoSet(Player1)
+END
+
+
+IF
+
+InParty("7XCORAN")!StateCheck("7XCORAN",CD_STATE_NOTVALID)
+AreaCheck("AR2600")
+See(Player1)
+  Global("CoranHome","GLOBAL",0)
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+  SetGlobal("CoranHome","GLOBAL",1)
+    StartDialogNoSet(Player1)
+END
+
+
+
+IF
+AreaType(FOREST) AreaType(OUTDOOR)
+See(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+InParty("7XCORAN")!StateCheck("7XCORAN",CD_STATE_NOTVALID)
+!AreaCheck("AR2600")
+Global("PcCoranChat2","GLOBAL",0)
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+  SetGlobal("PcCoranChat2","GLOBAL",1)
+    StartDialogNoSet(Player1)
+END
+
+IF
+InParty("7XCORAN")!StateCheck("7XCORAN",CD_STATE_NOTVALID)
+!AreaCheck("AR2600")
+See(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+RealGlobalTimerExpired("CoranPCTalkTimer","GLOBAL") 
+CombatCounter(0) 
+AreaType(OUTDOOR)
+OR(3)
+Global("CoranIsTalking","GLOBAL",0)
+Global("CoranIsTalking","GLOBAL",2)
+Global("CoranIsTalking","GLOBAL",4)
+THEN
+  RESPONSE #100
+   IncrementGlobal("CoranIsTalking","GLOBAL",1)
+   StartDialogNoSet(Player1)
+END
+
+// Armour
+IF
+OR(12)
+HasItemEquiped("PLAT04",Myself)
+HasItemEquiped("PLAT07",Myself)
+HasItemEquiped("PLAT09",Myself)
+HasItemEquiped("PLAT14",Myself)
+HasItemEquiped("PLAT16",Myself)
+HasItemEquiped("PLAT23",Myself)
+HasItemEquiped("PLAT98",Myself)
+HasItemEquiped("PLAT99",Myself)
+HasItemEquiped("LEAT10",Myself)
+HasItemEquiped("LEAT20",Myself)
+HasItemEquiped("CHAN01",Myself)
+HasItemEquiped("CHAN04",Myself)
+See(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+InParty("7XCORAN")!StateCheck("7XCORAN",CD_STATE_NOTVALID)
+Global("PcCoranChatArmour","LOCALS",0)
+CombatCounter(0)
+THEN
+  RESPONSE #100
+  SetGlobal("PcCoranChatArmour","LOCALS",1)
+    StartDialogNoSet(Player1)
+END

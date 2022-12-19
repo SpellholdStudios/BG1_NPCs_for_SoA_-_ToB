@@ -1,0 +1,58 @@
+IF
+Dead("Torgal")
+OR(3) AreaCheck("AR1300") AreaCheck("AR1302") AreaCheck("AR1306")
+InParty("7XGAR") !StateCheck("7XGAR",CD_STATE_NOTVALID)
+See("7XGAR")
+InParty("Nalia")!StateCheck("Nalia",CD_STATE_NOTVALID)
+Global("GarrNaliaCastle","GLOBAL",2)
+THEN
+  RESPONSE #100
+SetGlobal("GarrNaliaCastle","GLOBAL",3)
+RealSetGlobalTimer("GarrNaliaCastleTalkTimer","GLOBAL",100) 
+END
+
+
+IF
+RealGlobalTimerExpired("GarrNaliaCastleTalkTimer","GLOBAL") 
+InParty("7XGAR") !StateCheck("7XGAR",CD_STATE_NOTVALID)
+See("7XGAR")
+InParty("Nalia")!StateCheck("Nalia",CD_STATE_NOTVALID)
+Global("GarrNaliaCastle","GLOBAL",3)
+CombatCounter(0)
+THEN
+  RESPONSE #100
+Interact("7XGAR")
+END
+
+IF
+RealGlobalTimerExpired("GarrNaliaCastleTalkTimer","GLOBAL") 
+InParty("7XGAR") !StateCheck("7XGAR",CD_STATE_NOTVALID)
+See("7XGAR")
+InParty("Nalia")!StateCheck("Nalia",CD_STATE_NOTVALID)
+AreaCheck("AR2500")
+Global("ElhanFinishedSpeaking","GLOBAL",1)
+Global("GarrickNaliaRomance","GLOBAL",2)
+OR(2)
+Global("GarrickNaliaUnderdarkTalk","GLOBAL",1)
+Global("GarrickNaliaUnderdarkTalk","GLOBAL",2)
+CombatCounter(0)
+THEN
+  RESPONSE #100
+SetGlobal("GarrickNaliaUnderdarkTalk","GLOBAL",3)  
+Interact("7XGAR")
+END
+
+// After Quest
+IF
+Global("GarrickBardQuest","GLOBAL",13)
+AreaType(OUTDOOR)
+InParty("7XGAR") !StateCheck("7XGAR",CD_STATE_NOTVALID)
+InParty("Nalia")!StateCheck("Nalia",CD_STATE_NOTVALID)
+See("7XGAR")
+Global("GarrNaliaAfterQuest","LOCALS",0)
+CombatCounter(0)
+THEN
+  RESPONSE #100
+SetGlobal("GarrNaliaAfterQuest","LOCALS",1)
+Interact("7XGAR")
+END

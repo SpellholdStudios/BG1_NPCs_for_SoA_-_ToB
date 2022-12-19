@@ -1,0 +1,20 @@
+
+IF 
+Dead("cefald01")
+!InMyArea("7XFALD")
+Global("CreateFaldornSoA","GLOBAL",0)
+
+THEN
+  RESPONSE #100
+CreateCreature("7XCRE72",[3885.650],3)
+SetGlobal("CreateFaldornSoA","GLOBAL",1)
+Continue()
+END
+
+
+
+
+
+
+
+

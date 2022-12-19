@@ -1,0 +1,31 @@
+@0    = ~Please don't blame me for trying to get you killed <CHARNAME>. You must understand.. I was bitten by a moon beast a few moons ago, was turned into a werewolf, driven by of blood and carnage. It was the damn lycan blood rage...~ [SAFANAG]
+@1    = ~Sometimes the rage was so uncontrollable.. you would slice your own loved ones into shreds, feast on them, then wake the next morning without remembering what happened...~
+@2    = ~I am not proud of what I have done and for what it is worth, I am sorry. But you have nothing to fear. I am all cured now of that terrible affliction.~
+@3    = ~Don't worry about it Safana, no harm done.~
+@4    = ~I hope you learned a valuable lesson.~
+@5    = ~I should kill you!~
+@6    = ~I suppose I deserve that. If that's the way you want to be, then I guess this is goodbye.~ [SAFANAT]
+@7    = ~I did, I did..~ [SAFANAS]
+@8    = ~By being forced to stay inside the temple like we have it has given me time to reflect on my life.. Where is it going, what do I want, what am I doing to get it? In all the soul searching I realized that I did not really like who I was becoming and that it was time for a change.~ [SAFANAT]
+@9    = ~Part of that change is trying to rectify the wrongs I have done upon others, in this case, that being you <CHARNAME>. From this point onward, I swear by Black Alaric's locker, I will fight by your side until my life debt is paid in full.~ [SAFANAI]
+@10   = ~Safana, you would be of great use. Please come with me.~
+@11   = ~Maybe some other time.~
+@12   = ~<CHARNAME>, command me in all ways. I am at your service.~ [SAFANAI]
+@13   = ~If that's the way you want to be, then I guess this is goodbye.~
+@14   = ~You want me to leave? I guess I was wrong in my initial assessment, you're nothing but a spineless, impotent coward!~
+@15   = ~Sorry, but yes. I will come find you when I need your services again.~
+@16   = ~Just wait here for a bit, I'll be back for you shortly~
+@17   = ~No, your services are still required.~
+@18   = ~Hello again. Have you rethought my offer to join your group?~ [SAFAN04]
+@19   = ~Come with me and we shall find great wealth and adventure.~
+@20   = ~You've made the right decision, but now we should talk about the leadership of this group, I think it needs overhauling.~ [SAFANAB]
+@21   = ~If that's the way you want to be, anyways, I've tried to guide this group in the right direction, but I'm tired of trying, so I guess this is goodbye. Find me at Waukeen's Promenade if you should require my services, I have some shopping to do.~
+
+// NEW (v.11.7)
+// SoD. If GlobalGT("bd_safana_romanceactive","global",1)
+@22 = ~Please don't blame me for everything I've done, <CHARNAME>. For acting like the bitch I was then, a long time ago... ~
+@23 = ~It's just... It's more complicated than I expected. I do not like to be dependent on men, or have feelings for men, and when I started to feel something for you... It scared me. I never thought I would say this, but it's true.~
+@24 = ~You didn't get it, but you were charming. So beautiful, attentive, somewhat innocent, and I... I resisted as best I could. I told myself that I should hate you. It was a weakness that I tried to avoid in any way, even this cruel one.~ [SAFAN01]
+@25 = ~I know it was stupid, but the only solution I could think of was to make you hate me yourself. That story with Voghiln and what I told you... I acted disgustingly. It was all one big mistake. I didn't want to betray you, but I forced myself to do it, and now I regret it. We should cherish those we care about - Coran taught me this. ~
+@26 = ~I know our chances are lost, but I hope you can forgive me. I've changed. I will never do that again, please trust me, if you can.~
+@27 = ~What about that incident in the Tethyr forest... I was bitten by a moon beast a few moons ago, was turned into a werewolf, driven by of blood and carnage. It was the damn lycan blood rage...~ [SAFANAG]

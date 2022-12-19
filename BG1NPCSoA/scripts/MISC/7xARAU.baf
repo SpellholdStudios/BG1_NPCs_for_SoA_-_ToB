@@ -1,0 +1,668 @@
+// Pantaloons
+IF
+Global("7xAuctionGoldsword","GLOBAL",2)
+Global("7xAuctionGoldswordRassadka","7xARAU",0)
+THEN
+RESPONSE #100
+SetGlobal("7xAuctionGoldswordRassadka","7xARAU",1)
+HideGUI()
+Explore()
+CreateCreature("7XNOBLE1",[633.481],9) // Madam Rosalinde
+CreateCreature("7XNOBLE2",[660.501],9) // Sir Berwin
+CreateCreature("noblem3",[789.561],7) // Lord Ofal
+CreateCreature("7XCRE42",[727.546],8) // Matilda
+CreateCreature("7XCRE30",[784.646],7) // Lady Janillyn
+CreateCreature("7XCRE48",[792.578],7) // Lady Ravhana
+CreateCreature("7XCRE97",[730.630],8) // Lord Charles
+SmallWait(2)
+ActionOverride(Player1,SetDialog("PLAYER1"))
+ActionOverride("7XNOBLE2",Polymorph(STATIC_NOBLE_MAN_CHAIR)) // Sir Berwin
+ActionOverride("7XNOBLE1",Polymorph(STATIC_NOBLE_WOMAN_CHAIR)) // Madam Rosalinde
+ActionOverride("noblem3",Polymorph(STATIC_NOBLE_MAN_CHAIR)) // Lord Ofal
+SmallWait(2)
+END
+
+
+IF
+Global("7xAuctionGoldsword","GLOBAL",2)
+Global("7xAuctionGoldswordRassadka","7xARAU",1)
+THEN
+RESPONSE #100
+SetGlobal("7xAuctionGoldsword","GLOBAL",3)
+ActionOverride("7XNOBLE2",FaceObject("7xAUCTIO")) // Sir Berwin
+ActionOverride("7XNOBLE1",FaceObject("7xAUCTIO")) // Madam Rosalinde
+ActionOverride("noblem3",FaceObject("7xAUCTIO")) // Lord Ofal
+ActionOverride("BG1X1",FaceObject("7xAUCTIO")) // Lady Janillyn
+ActionOverride("BG1X23",FaceObject("7xAUCTIO")) // Lady Ravhana
+ActionOverride("7XCRE97",FaceObject("7xAUCTIO")) // Lord Charles
+ActionOverride("BG1X13",FaceObject("7xAUCTIO")) // Matilda
+Wait(1)
+UnhideGUI()
+ActionOverride("7xAUCTIO",StartDialogNoSet(Player1))
+END
+
+
+IF
+Global("7xAuctionGoldsword","GLOBAL",4)
+THEN
+RESPONSE #100
+HideGUI()
+SetGlobal("7xAuctionGoldsword","GLOBAL",5)
+ActionOverride("7XNOBLE1",DestroySelf()) 
+ActionOverride("7XNOBLE2",DestroySelf()) 
+ActionOverride("noblem3",DestroySelf()) 
+ActionOverride("BG1X13",DestroySelf())
+ActionOverride("BG1X1",DestroySelf())
+ActionOverride("BG1X23",DestroySelf())
+ActionOverride("7XCRE97",DestroySelf()) 
+FadeFromColor([20.0],0)
+SetGlobalTimer("7xAuctionNEWStartTimer","GLOBAL",ONE_DAY)
+SmallWait(5)
+RestorePartyLocations()
+UnhideGUI()
+END
+
+// Axe
+
+IF
+Global("7xAuctionAxeHell","GLOBAL",2)
+THEN
+RESPONSE #100
+SetGlobal("7xAuctionAxeHell","GLOBAL",3)
+Explore()
+CreateCreature("7XNOBLE4",[633.481],8) // Corius
+CreateCreature("7XTUFUS",[660.501],8) // Tufus
+CreateCreature("7XNOBLE5",[889.561],6) // Canvor
+CreateCreature("7XNOBLE6",[727.546],8) // Sirus
+CreateCreature("7XCRE42",[784.646],7) // Matilda
+CreateCreature("7Xcre49",[792.578],7) // Aliella
+CreateCreature("7XCRE97",[730.630],7) // Lord Charles
+CreateCreature("NOBLEM3",[899.555],6) // Lord Ofal
+ActionOverride(Player1,SetDialog("PLAYER1"))
+SmallWait(5)
+ActionOverride("7XNOBLE4",Polymorph(STATIC_NOBLE_MAN_CHAIR)) // Corius
+ActionOverride("7XNOBLE5",Polymorph(STATIC_NOBLE_MAN_CHAIR)) // Canvor
+ActionOverride("7XNOBLE6",Polymorph(STATIC_NOBLE_MAN_CHAIR)) // Sirus
+ActionOverride("BG1X17",Polymorph(STATIC_NOBLE_WOMAN_CHAIR)) // Aliella
+ActionOverride("noblem3",Polymorph(STATIC_NOBLE_MAN_CHAIR)) // Lord Ofal
+Wait(1)
+ActionOverride("noblem3",FaceObject("7xAUCTIO"))
+ActionOverride("7XNOBLE4",FaceObject("7xAUCTIO")) 
+ActionOverride("7XNOBLE5",FaceObject("7xAUCTIO")) 
+ActionOverride("7XNOBLE6",FaceObject("7xAUCTIO")) 
+ActionOverride("BG1X13",FaceObject("7xAUCTIO"))
+ActionOverride("BG1X17",FaceObject("7xAUCTIO")) // Aliella
+ActionOverride("7XCRE97",FaceObject("7xAUCTIO")) 
+ActionOverride("7XTUFUS",FaceObject("7xAUCTIO")) 
+Wait(1)
+UnhideGUI()
+ActionOverride("7xAUCTIO",StartDialogNoSet(Player1))
+END
+
+IF
+Global("7xAuctionAxeHell","GLOBAL",4)
+THEN
+RESPONSE #100
+SetGlobal("7xAuctionAxeHell","GLOBAL",5)
+StartCutSceneMode()
+HideGUI()
+Wait(2)
+FadeFromColor([20.0],0)
+ActionOverride("Korgan",Rest())
+ActionOverride("Korgan",JumpToPoint([972.463]))
+ActionOverride("7XTUFUS",JumpToPoint([959.479]))
+SmallWait(5)
+ActionOverride("noblem3",FaceObject("Korgan"))
+ActionOverride("7XNOBLE4",FaceObject("Korgan")) 
+ActionOverride("7XNOBLE5",FaceObject("Korgan")) 
+ActionOverride("7XNOBLE6",FaceObject("Korgan")) 
+ActionOverride("BG1X13",FaceObject("Korgan"))
+ActionOverride("BG1X17",FaceObject("Korgan"))
+ActionOverride("7XCRE97",FaceObject("Korgan")) 
+SmallWait(5)
+StartCutScene("7xAxHell")
+END
+
+IF
+Global("7xAuctionAxeHell","GLOBAL",5)
+Dead("7XTUFUS")
+THEN
+RESPONSE #100
+SetGlobal("7xAuctionAxeHell","GLOBAL",6)
+SmallWait(5)
+ActionOverride("7XNOBLE4",StartDialogNoSet(Player1))
+END
+
+IF
+Global("7xAuctionAxeHell","GLOBAL",7)
+THEN
+RESPONSE #100
+SetGlobal("7xAuctionAxeHell","GLOBAL",8)
+HideGUI()
+SetGlobalTimer("7xAuctionNEWStartTimer","GLOBAL",ONE_DAY)
+ActionOverride("noblem3",DestroySelf())
+ActionOverride("7XNOBLE4",DestroySelf()) 
+ActionOverride("7XNOBLE5",DestroySelf()) 
+ActionOverride("7XNOBLE6",DestroySelf()) 
+ActionOverride("BG1X13",DestroySelf())
+ActionOverride("BG1X17",DestroySelf())
+ActionOverride("7XCRE97",DestroySelf()) 
+FadeFromColor([20.0],0)
+%baf_string1%
+SmallWait(5)
+UnhideGUI()
+RestorePartyLocations()
+END
+
+
+// Poems
+
+IF
+Global("7xAuctionPoems","GLOBAL",2)
+THEN
+RESPONSE #100
+SetGlobal("7xAuctionPoems","GLOBAL",3)
+Explore()
+CreateCreature("7XSAREZ",[870.397],0) // Sarezil
+CreateCreature("7XNOBLE2",[660.501],10) // Sir Berwin
+CreateCreature("7XCRE48",[784.646],7) // Lady Ravhana
+CreateCreature("7Xcre49",[792.578],7) // Aliella
+CreateCreature("7XCRE97",[730.630],7) // Lord Charles
+CreateCreature("NOBLEM3",[899.555],6) // Lord Ofal
+ActionOverride(Player1,SetDialog("PLAYER1"))
+ActionOverride("noblem3",Polymorph(STATIC_NOBLE_MAN_CHAIR)) // Lord Ofal
+ActionOverride("7XNOBLE2",Polymorph(STATIC_NOBLE_MAN_CHAIR)) // Sir Berwin
+Wait(1)
+ActionOverride("7XNOBLE2",FaceObject("7XSAREZ"))
+ActionOverride("BG1X23",FaceObject("7XSAREZ")) 
+ActionOverride("BG1X17",FaceObject("7XSAREZ")) 
+ActionOverride("7XCRE97",FaceObject("7XSAREZ")) 
+ActionOverride("noblem3",FaceObject("7XSAREZ")) 
+Wait(1)
+UnhideGUI()
+ActionOverride("7XSAREZ",StartDialogNoSet(Player1))
+END
+
+IF
+Global("7xAuctionPoems","GLOBAL",4)
+THEN
+RESPONSE #100
+SetGlobal("7xAuctionPoems","GLOBAL",5)
+HideGUI()
+SetGlobalTimer("7xAuctionNEWStartTimer","GLOBAL",ONE_DAY)
+FadeFromColor([20.0],0)
+ActionOverride("7XSAREZ",DestroySelf()) 
+ActionOverride("7XNOBLE2",DestroySelf())
+ActionOverride("BG1X23",DestroySelf()) 
+ActionOverride("BG1X17",DestroySelf()) 
+ActionOverride("7XCRE97",DestroySelf()) 
+ActionOverride("noblem3",DestroySelf()) 
+SmallWait(5)
+UnhideGUI()
+RestorePartyLocations()
+END
+
+// Mirror
+IF
+Global("7xAuctionMirror","GLOBAL",2)
+THEN
+RESPONSE #100
+SetGlobal("7xAuctionMirror","GLOBAL",3)
+Explore()
+CreateCreature("BNOBLE1",[633.481],9) // Lord Feveron
+CreateCreature("BNOBLE2",[660.501],9) // Lady Diana
+CreateCreature("noblem3",[789.561],8) // Lord Ofal
+CreateCreature("noblew3",[785.547],8) // Lady Sharin Ofal
+CreateCreature("7XCRE42",[727.546],7) // Matilda
+CreateCreature("7XNOBLE6",[784.646],8) // Lord Sirus
+CreateCreature("7XNOBLE3",[792.578],8) // Lady Tandolane
+CreateCreature("7XCRE97",[730.630],8) // Lord Charles
+CreateCreature("7Xcre49",[792.578],8) // Aliella
+ActionOverride(Player1,SetDialog("PLAYER1"))
+SmallWait(5)
+ActionOverride("noblem3",Polymorph(STATIC_NOBLE_MAN_CHAIR)) // Lord Ofal
+ActionOverride("noblew3",Polymorph(STATIC_NOBLE_WOMAN_CHAIR)) // Lady Sharin Ofal
+ActionOverride("7XNOBLE6",Polymorph(STATIC_NOBLE_MAN_CHAIR)) // Lord Sirus
+Wait(1)
+ActionOverride("feveron",FaceObject("7xAUCTIO")) // Lord Feveron
+ActionOverride("diana",FaceObject("7xAUCTIO")) // Lady Diana
+ActionOverride("noblem3",FaceObject("7xAUCTIO")) // Lord Ofal
+ActionOverride("noblew3",FaceObject("7xAUCTIO")) // Lady Sharin Ofal
+ActionOverride("BG1X13",FaceObject("7xAUCTIO")) // Matilda
+ActionOverride("BG1X17",FaceObject("7xAUCTIO")) // Aliella
+ActionOverride("7XNOBLE6",FaceObject("7xAUCTIO")) // Lord Sirus
+ActionOverride("7XNOBLE3",FaceObject("7xAUCTIO"))  // Lady Tandolane
+ActionOverride("7XCRE97",FaceObject("7xAUCTIO")) // Lord Charles
+Wait(1)
+UnhideGUI()
+ActionOverride("7xAUCTIO",StartDialogNoSet(Player1))
+END
+
+IF
+Global("7xAuctionMirror","GLOBAL",4)
+THEN
+RESPONSE #100
+SetGlobal("7xAuctionMirror","GLOBAL",5)
+StartCutSceneMode()
+HideGUI()
+Wait(1)
+CreateCreature("7Xcre85",[550.494],12) // Lord Paris
+ActionOverride("7XCRE85",MoveToPoint([756.422]))
+Wait(4)
+EndCutSceneMode()
+ActionOverride(Player1,SetDialog("PLAYER1"))
+UnhideGUI()
+ActionOverride("7XCRE85",StartDialogNoSet(Player1))
+END
+
+IF
+Global("7xAuctionMirror","GLOBAL",6)
+THEN
+RESPONSE #100
+SetGlobal("7xAuctionMirror","GLOBAL",7)
+HideGUI()
+ActionOverride("feveron",DestroySelf()) // Lord Feveron
+ActionOverride("diana",DestroySelf()) // Lady Diana
+ActionOverride("noblem3",DestroySelf()) // Lord Ofal
+ActionOverride("noblew3",DestroySelf()) // Lady Sharin Ofal
+ActionOverride("BG1X13",DestroySelf()) // Matilda
+ActionOverride("BG1X17",DestroySelf()) // Aliella
+ActionOverride("7XNOBLE6",DestroySelf()) // Lord Sirus
+ActionOverride("7XNOBLE3",DestroySelf()) // Lady Tandolane
+ActionOverride("7XCRE97",DestroySelf()) // Lord Charles
+ActionOverride("7XCRE85",DestroySelf()) // Lord Paris
+FadeFromColor([20.0],0)
+SetGlobalTimer("7xAuctionNEWStartTimer","GLOBAL",ONE_DAY)
+SmallWait(5)
+UnhideGUI()
+RestorePartyLocations()
+END
+
+// Diadema
+
+IF
+Global("7xAuctionDiadema","GLOBAL",2)
+THEN
+RESPONSE #100
+SetGlobal("7xAuctionDiadema","GLOBAL",3)
+Explore()
+CreateCreature("7XDILIN",[870.397],0) // Dilindal
+CreateCreature("7XNOBLE7",[633.481],9) // Lady Elgie
+CreateCreature("7XNOBLE2",[660.501],10) // Sir Berwin
+CreateCreature("7XCRE48",[784.646],7) // Lady Ravhana
+CreateCreature("BNOBLE1",[792.578],7) // Lord Feveron
+CreateCreature("BNOBLE2",[730.630],7) // Lady Diana
+CreateCreature("NOBLEM3",[899.555],6) // Lord Ofal
+CreateCreature("noblew3",[785.547],8) // Lady Sharin Ofal
+CreateCreature("PEHLLUS",[727.546],7) // Pellus Tanislove
+CreateCreature("7XNOBLE5",[889.561],6) // Canvor
+ActionOverride(Player1,SetDialog("PLAYER1"))
+ActionOverride("noblem3",Polymorph(STATIC_NOBLE_MAN_CHAIR)) // Lord Ofal
+ActionOverride("7XNOBLE2",Polymorph(STATIC_NOBLE_MAN_CHAIR)) // Sir Berwin
+Wait(1)
+ActionOverride("7XNOBLE2",FaceObject("7XDILIN"))
+ActionOverride("BG1X23",FaceObject("7XDILIN")) 
+ActionOverride("feveron",FaceObject("7XDILIN")) 
+ActionOverride("diana",FaceObject("7XDILIN")) 
+ActionOverride("PEHLLUS",FaceObject("7XDILIN")) 
+ActionOverride("noblem3",FaceObject("7XDILIN")) 
+ActionOverride("noblew3",FaceObject("7XDILIN")) 
+ActionOverride("7XNOBLE7",FaceObject("7XDILIN")) // Lady Elgie
+ActionOverride("7XNOBLE5",FaceObject("7XDILIN")) // Canvor 
+Wait(1)
+UnhideGUI()
+ActionOverride("7XDILIN",StartDialogNoSet(Player1))
+END
+
+IF
+Global("7xAuctionDiadema","GLOBAL",4)
+THEN
+RESPONSE #100
+SetGlobal("7xAuctionDiadema","GLOBAL",5)
+HideGUI()
+SetGlobalTimer("7xAuctionNEWStartTimer","GLOBAL",ONE_DAY)
+FadeFromColor([20.0],0)
+ActionOverride("7XDILIN",DestroySelf()) 
+ActionOverride("7XNOBLE2",DestroySelf())
+ActionOverride("BG1X23",DestroySelf()) 
+ActionOverride("feveron",DestroySelf()) // Lord Feveron
+ActionOverride("diana",DestroySelf()) // Lady Diana
+ActionOverride("noblem3",DestroySelf()) // Lord Ofal
+ActionOverride("noblew3",DestroySelf()) // Lady Sharin Ofal
+ActionOverride("PEHLLUS",DestroySelf()) 
+ActionOverride("7XNOBLE7",DestroySelf()) // Lady Elgie
+ActionOverride("7XNOBLE5",DestroySelf()) // Canvor
+SmallWait(5)
+UnhideGUI()
+RestorePartyLocations()
+END
+
+
+// Aromat
+IF
+Global("7xAuctionAromat","GLOBAL",2)
+THEN
+RESPONSE #100
+SetGlobal("7xAuctionAromat","GLOBAL",3)
+Explore()
+CreateCreature("7XNOBLE1",[633.481],9) // Madam Rosalinde
+CreateCreature("7XNOBLE2",[660.501],9) // Sir Berwin
+CreateCreature("noblem3",[789.561],7) // Lord Ofal
+CreateCreature("7XCRE42",[727.546],8) // Matilda
+CreateCreature("7XCRE30",[784.646],7) // Lady Janillyn
+CreateCreature("7XCRE48",[792.578],7) // Lady Ravhana
+CreateCreature("7XCRE97",[730.630],8) // Lord Charles
+SmallWait(2)
+ActionOverride(Player1,SetDialog("PLAYER1"))
+ActionOverride("7XNOBLE2",Polymorph(STATIC_NOBLE_MAN_CHAIR)) // Sir Berwin
+ActionOverride("7XNOBLE1",Polymorph(STATIC_NOBLE_WOMAN_CHAIR)) // Madam Rosalinde
+ActionOverride("noblem3",Polymorph(STATIC_NOBLE_MAN_CHAIR)) // Lord Ofal
+SmallWait(2)
+ActionOverride("7XNOBLE2",FaceObject("7xAUCTIO")) // Sir Berwin
+ActionOverride("7XNOBLE1",FaceObject("7xAUCTIO")) // Madam Rosalinde
+ActionOverride("noblem3",FaceObject("7xAUCTIO")) // Lord Ofal
+ActionOverride("BG1X1",FaceObject("7xAUCTIO")) // Lady Janillyn
+ActionOverride("BG1X23",FaceObject("7xAUCTIO")) // Lady Ravhana
+ActionOverride("7XCRE97",FaceObject("7xAUCTIO")) // Lord Charles
+ActionOverride("BG1X13",FaceObject("7xAUCTIO")) // Matilda
+Wait(1)
+UnhideGUI()
+ActionOverride("7xAUCTIO",StartDialogNoSet(Player1))
+END
+
+
+IF
+Global("7xAuctionAromat","GLOBAL",4)
+THEN
+RESPONSE #100
+SetGlobal("7xAuctionAromat","GLOBAL",5)
+HideGUI()
+ActionOverride("7XNOBLE1",DestroySelf()) 
+ActionOverride("7XNOBLE2",DestroySelf()) 
+ActionOverride("noblem3",DestroySelf()) 
+ActionOverride("BG1X13",DestroySelf())
+ActionOverride("BG1X1",DestroySelf())
+ActionOverride("BG1X23",DestroySelf())
+ActionOverride("7XCRE97",DestroySelf()) 
+FadeFromColor([20.0],0)
+SetGlobalTimer("7xAuctionNEWStartTimer","GLOBAL",ONE_DAY)
+SmallWait(5)
+UnhideGUI()
+RestorePartyLocations()
+END
+
+// Cloak
+IF
+Global("7xAuctionCloak","GLOBAL",2)
+THEN
+RESPONSE #100
+SetGlobal("7xAuctionCloak","GLOBAL",3)
+Explore()
+CreateCreature("7XNOBLE8",[870.397],0) // Lord Samnus
+CreateCreature("7XNOBLE7",[633.481],9) // Lady Elgie
+CreateCreature("7XNOBLE2",[660.501],10) // Sir Berwin
+CreateCreature("7XCRE48",[784.646],7) // Lady Ravhana
+CreateCreature("BNOBLE1",[792.578],7) // Lord Feveron
+CreateCreature("BNOBLE2",[730.630],7) // Lady Diana
+CreateCreature("7XNOBLE9",[899.555],6) // Sir Robin
+CreateCreature("7XNOBL10",[785.547],8) // Lady Barvicia
+CreateCreature("PEHLLUS",[727.546],7) // Pellus Tanislove
+CreateCreature("7XNOBLE5",[889.561],6) // Canvor
+ActionOverride(Player1,SetDialog("PLAYER1"))
+ActionOverride("7XNOBLE2",Polymorph(STATIC_NOBLE_MAN_CHAIR)) // Sir Berwin
+Wait(1)
+ActionOverride("7XNOBLE2",FaceObject("7XNOBLE8"))
+ActionOverride("BG1X23",FaceObject("7XNOBLE8")) 
+ActionOverride("feveron",FaceObject("7XNOBLE8")) 
+ActionOverride("diana",FaceObject("7XNOBLE8")) 
+ActionOverride("PEHLLUS",FaceObject("7XNOBLE8")) 
+ActionOverride("7XNOBLE9",FaceObject("7XNOBLE8")) // Sir Robin 
+ActionOverride("7XNOBL10",FaceObject("7XNOBLE8")) // Lady Barvicia
+ActionOverride("7XNOBLE7",FaceObject("7XNOBLE8")) // Lady Elgie
+ActionOverride("7XNOBLE5",FaceObject("7XNOBLE8")) // Canvor 
+Wait(1)
+UnhideGUI()
+ActionOverride("7XNOBLE7",StartDialogNoSet(Player1))
+END
+
+IF
+Global("7xAuctionCloak","GLOBAL",4)
+THEN
+RESPONSE #100
+SetGlobal("7xAuctionCloak","GLOBAL",5)
+HideGUI()
+SetGlobalTimer("7xAuctionNEWStartTimer","GLOBAL",ONE_DAY)
+FadeFromColor([20.0],0)
+ActionOverride("7XNOBLE8",DestroySelf()) 
+ActionOverride("7XNOBLE2",DestroySelf())
+ActionOverride("BG1X23",DestroySelf()) 
+ActionOverride("feveron",DestroySelf()) // Lord Feveron
+ActionOverride("diana",DestroySelf()) // Lady Diana
+ActionOverride("7XNOBLE9",DestroySelf()) // Sir Robin
+ActionOverride("7XNOBL10",DestroySelf()) // Lady Barvicia
+ActionOverride("PEHLLUS",DestroySelf()) 
+ActionOverride("7XNOBLE7",DestroySelf()) // Lady Elgie
+ActionOverride("7XNOBLE5",DestroySelf()) // Canvor
+SmallWait(5)
+UnhideGUI()
+RestorePartyLocations()
+END
+
+
+// Pendant
+IF
+Global("7xAuctionPendant","GLOBAL",2)
+THEN
+RESPONSE #100
+SetGlobal("7xAuctionPendant","GLOBAL",3)
+Explore()
+CreateCreature("7XNOBLE1",[633.481],9) // Madam Rosalinde
+CreateCreature("7XNOBLE2",[660.501],9) // Sir Berwin
+CreateCreature("noblem3",[789.561],7) // Lord Ofal
+CreateCreature("7XNOBL11",[727.546],8) // Lord Gridenbulb
+CreateCreature("7XCRE30",[784.646],7) // Lady Janillyn
+CreateCreature("7XCRE48",[792.578],7) // Lady Ravhana
+CreateCreature("7XCRE97",[730.630],8) // Lord Charles
+SmallWait(2)
+ActionOverride(Player1,SetDialog("PLAYER1"))
+ActionOverride("7XNOBLE2",Polymorph(STATIC_NOBLE_MAN_CHAIR)) // Sir Berwin
+ActionOverride("7XNOBLE1",Polymorph(STATIC_NOBLE_WOMAN_CHAIR)) // Madam Rosalinde
+ActionOverride("noblem3",Polymorph(STATIC_NOBLE_MAN_CHAIR)) // Lord Ofal
+SmallWait(2)
+ActionOverride("7XNOBLE2",FaceObject("7xAUCTIO")) // Sir Berwin
+ActionOverride("7XNOBLE1",FaceObject("7xAUCTIO")) // Madam Rosalinde
+ActionOverride("noblem3",FaceObject("7xAUCTIO")) // Lord Ofal
+ActionOverride("BG1X1",FaceObject("7xAUCTIO")) // Lady Janillyn
+ActionOverride("BG1X23",FaceObject("7xAUCTIO")) // Lady Ravhana
+ActionOverride("7XCRE97",FaceObject("7xAUCTIO")) // Lord Charles
+ActionOverride("7XNOBL11",FaceObject("7xAUCTIO")) // Lord Gridenbulb
+Wait(1)
+UnhideGUI()
+ActionOverride("7xAUCTIO",StartDialogNoSet(Player1))
+END
+
+
+IF
+Global("7xAuctionPendant","GLOBAL",4)
+THEN
+RESPONSE #100
+SetGlobal("7xAuctionPendant","GLOBAL",5)
+HideGUI()
+ActionOverride("7XNOBLE1",DestroySelf()) 
+ActionOverride("7XNOBLE2",DestroySelf()) 
+ActionOverride("noblem3",DestroySelf()) 
+ActionOverride("7XNOBL11",DestroySelf()) // Lord Gridenbulb
+ActionOverride("BG1X1",DestroySelf())
+ActionOverride("BG1X23",DestroySelf())
+ActionOverride("7XCRE97",DestroySelf()) 
+FadeFromColor([20.0],0)
+SetGlobalTimer("7xAuctionNEWStartTimer","GLOBAL",ONE_DAY)
+SmallWait(5)
+UnhideGUI()
+RestorePartyLocations()
+END
+
+// Sapfir
+IF
+Global("7xAuctionSapfir","GLOBAL",2)
+THEN
+RESPONSE #100
+SetGlobal("7xAuctionSapfir","GLOBAL",3)
+Explore()
+CreateCreature("7XNOBLE1",[633.481],9) // Madam Rosalinde
+CreateCreature("7XNOBLE2",[660.501],9) // Sir Berwin
+CreateCreature("noblem3",[789.561],7) // Lord Ofal
+CreateCreature("7XNOBL12",[727.546],8) // Lord Dilbaram
+CreateCreature("7XCRE30",[784.646],7) // Lady Janillyn
+CreateCreature("7XCRE48",[792.578],7) // Lady Ravhana
+CreateCreature("7XCRE97",[730.630],8) // Lord Charles
+SmallWait(2)
+ActionOverride(Player1,SetDialog("PLAYER1"))
+ActionOverride("7XNOBLE2",Polymorph(STATIC_NOBLE_MAN_CHAIR)) // Sir Berwin
+ActionOverride("7XNOBLE1",Polymorph(STATIC_NOBLE_WOMAN_CHAIR)) // Madam Rosalinde
+ActionOverride("noblem3",Polymorph(STATIC_NOBLE_MAN_CHAIR)) // Lord Ofal
+SmallWait(2)
+ActionOverride("7XNOBLE2",FaceObject("7xAUCTIO")) // Sir Berwin
+ActionOverride("7XNOBLE1",FaceObject("7xAUCTIO")) // Madam Rosalinde
+ActionOverride("noblem3",FaceObject("7xAUCTIO")) // Lord Ofal
+ActionOverride("BG1X1",FaceObject("7xAUCTIO")) // Lady Janillyn
+ActionOverride("BG1X23",FaceObject("7xAUCTIO")) // Lady Ravhana
+ActionOverride("7XCRE97",FaceObject("7xAUCTIO")) // Lord Charles
+ActionOverride("7XNOBL12",FaceObject("7xAUCTIO")) // Lord Dilbaram
+Wait(1)
+UnhideGUI()
+ActionOverride("7xAUCTIO",StartDialogNoSet(Player1))
+END
+
+
+IF
+Global("7xAuctionSapfir","GLOBAL",4)
+THEN
+RESPONSE #100
+SetGlobal("7xAuctionSapfir","GLOBAL",5)
+HideGUI()
+ActionOverride("7XNOBLE1",DestroySelf()) 
+ActionOverride("7XNOBLE2",DestroySelf()) 
+ActionOverride("noblem3",DestroySelf()) 
+ActionOverride("7XNOBL12",DestroySelf()) // Lord Dilbaram
+ActionOverride("BG1X1",DestroySelf())
+ActionOverride("BG1X23",DestroySelf())
+ActionOverride("7XCRE97",DestroySelf()) 
+FadeFromColor([20.0],0)
+SetGlobalTimer("7xAuctionNEWStartTimer","GLOBAL",ONE_DAY)
+SmallWait(5)
+UnhideGUI()
+RestorePartyLocations()
+END
+
+// Boots
+IF
+Global("7xAuctionBoots","GLOBAL",2)
+THEN
+RESPONSE #100
+SetGlobal("7xAuctionBoots","GLOBAL",3)
+Explore()
+CreateCreature("7XNOBLE7",[633.481],9) // Lady Elgie
+CreateCreature("7XNOBL13",[660.501],10) // Sir Binky Buffon
+CreateCreature("7XCRE48",[784.646],7) // Lady Ravhana
+CreateCreature("BNOBLE1",[792.578],7) // Lord Feveron
+CreateCreature("BNOBLE2",[730.630],7) // Lady Diana
+CreateCreature("NOBLEM3",[899.555],6) // Lord Ofal
+CreateCreature("noblew3",[785.547],8) // Lady Sharin Ofal
+CreateCreature("PEHLLUS",[727.546],7) // Pellus Tanislove
+CreateCreature("7XNOBLE5",[889.561],6) // Canvor
+SmallWait(2)
+ActionOverride(Player1,SetDialog("PLAYER1"))
+ActionOverride("7XNOBL13",Polymorph(STATIC_NOBLE_MAN_CHAIR)) // Binky Buffon
+ActionOverride("7XNOBLE1",Polymorph(STATIC_NOBLE_WOMAN_CHAIR)) // Madam Rosalinde
+ActionOverride("noblem3",Polymorph(STATIC_NOBLE_MAN_CHAIR)) // Lord Ofal
+SmallWait(2)
+ActionOverride("7XNOBL13",FaceObject("7xAUCTIO"))
+ActionOverride("BG1X23",FaceObject("7xAUCTIO")) 
+ActionOverride("feveron",FaceObject("7xAUCTIO")) 
+ActionOverride("diana",FaceObject("7xAUCTIO")) 
+ActionOverride("PEHLLUS",FaceObject("7xAUCTIO")) 
+ActionOverride("noblem3",FaceObject("7xAUCTIO")) 
+ActionOverride("noblew3",FaceObject("7xAUCTIO")) 
+ActionOverride("7XNOBLE7",FaceObject("7xAUCTIO")) // Lady Elgie
+ActionOverride("7XNOBLE5",FaceObject("7xAUCTIO")) // Canvor 
+Wait(1)
+UnhideGUI()
+ActionOverride("7xAUCTIO",StartDialogNoSet(Player1))
+END
+
+
+IF
+Global("7xAuctionBoots","GLOBAL",4)
+THEN
+RESPONSE #100
+SetGlobal("7xAuctionBoots","GLOBAL",5)
+HideGUI()
+ActionOverride("7XNOBL13",DestroySelf())
+ActionOverride("BG1X23",DestroySelf()) 
+ActionOverride("feveron",DestroySelf()) // Lord Feveron
+ActionOverride("diana",DestroySelf()) // Lady Diana
+ActionOverride("noblem3",DestroySelf()) // Lord Ofal
+ActionOverride("noblew3",DestroySelf()) // Lady Sharin Ofal
+ActionOverride("PEHLLUS",DestroySelf()) 
+ActionOverride("7XNOBLE7",DestroySelf()) // Lady Elgie
+ActionOverride("7XNOBLE5",DestroySelf()) // Canvor
+FadeFromColor([20.0],0)
+SetGlobalTimer("7xAuctionNEWStartTimer","GLOBAL",ONE_DAY)
+SmallWait(5)
+UnhideGUI()
+RestorePartyLocations()
+END
+
+// Elminster's hat
+IF
+Global("7xAuctionHat","GLOBAL",2)
+THEN
+RESPONSE #100
+SetGlobal("7xAuctionHat","GLOBAL",3)
+Explore()
+CreateCreature("7XNOBLE1",[633.481],9) // Madam Rosalinde
+CreateCreature("7XNOBLE2",[660.501],9) // Sir Berwin
+CreateCreature("noblem3",[789.561],7) // Lord Ofal
+CreateCreature("7XCRE42",[727.546],8) // Matilda
+CreateCreature("7XCRE30",[784.646],7) // Lady Janillyn
+CreateCreature("7XCRE48",[792.578],7) // Lady Ravhana
+CreateCreature("7XCRE97",[730.630],8) // Lord Charles
+SmallWait(2)
+ActionOverride(Player1,SetDialog("PLAYER1"))
+ActionOverride("7XNOBLE2",Polymorph(STATIC_NOBLE_MAN_CHAIR)) // Sir Berwin
+ActionOverride("7XNOBLE1",Polymorph(STATIC_NOBLE_WOMAN_CHAIR)) // Madam Rosalinde
+ActionOverride("noblem3",Polymorph(STATIC_NOBLE_MAN_CHAIR)) // Lord Ofal
+SmallWait(2)
+ActionOverride("7XNOBLE2",FaceObject("7xAUCTIO")) // Sir Berwin
+ActionOverride("7XNOBLE1",FaceObject("7xAUCTIO")) // Madam Rosalinde
+ActionOverride("noblem3",FaceObject("7xAUCTIO")) // Lord Ofal
+ActionOverride("BG1X1",FaceObject("7xAUCTIO")) // Lady Janillyn
+ActionOverride("BG1X23",FaceObject("7xAUCTIO")) // Lady Ravhana
+ActionOverride("7XCRE97",FaceObject("7xAUCTIO")) // Lord Charles
+ActionOverride("BG1X13",FaceObject("7xAUCTIO")) // Matilda
+Wait(1)
+UnhideGUI()
+ActionOverride("7xAUCTIO",StartDialogNoSet(Player1))
+END
+
+
+IF
+Global("7xAuctionHat","GLOBAL",4)
+THEN
+RESPONSE #100
+SetGlobal("7xAuctionHat","GLOBAL",5)
+HideGUI()
+ActionOverride("7XNOBLE1",DestroySelf()) 
+ActionOverride("7XNOBLE2",DestroySelf()) 
+ActionOverride("noblem3",DestroySelf()) 
+ActionOverride("BG1X13",DestroySelf())
+ActionOverride("BG1X1",DestroySelf())
+ActionOverride("BG1X23",DestroySelf())
+ActionOverride("7XCRE97",DestroySelf()) 
+FadeFromColor([20.0],0)
+SetGlobalTimer("7xAuctionNEWStartTimer","GLOBAL",ONE_DAY)
+SmallWait(5)
+UnhideGUI()
+RestorePartyLocations()
+END

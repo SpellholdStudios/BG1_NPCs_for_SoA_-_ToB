@@ -1,0 +1,15 @@
+
+
+IF 
+Global("LanfearCreate","AR0709",0)
+InParty("7XCORAN")InParty("7XSAFA")
+!StateCheck("7XSAFA",CD_STATE_NOTVALID)
+!StateCheck("7XCORAN",CD_STATE_NOTVALID)
+
+THEN
+  RESPONSE #100
+CreateCreature("7XCRE66",[417.670],0)
+SetGlobal("LanfearCreate","AR0709",1)
+Continue()
+END
+

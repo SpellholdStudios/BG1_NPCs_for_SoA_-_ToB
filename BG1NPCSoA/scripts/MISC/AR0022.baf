@@ -1,0 +1,19 @@
+
+
+IF 
+Global("BG1X32","GLOBAL",77)
+
+THEN
+  RESPONSE #100
+CreateCreature("7XCRE81",[817.334],0)
+CreateCreature("7XCRE82",[762.409],0)
+SetGlobal("BG1X32","GLOBAL",78)
+Continue()
+END
+
+
+
+
+
+
+

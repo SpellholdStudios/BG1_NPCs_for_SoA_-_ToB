@@ -1,0 +1,9 @@
+
+IF
+Global("BRANWExists","AR0900",0)
+THEN
+RESPONSE #100
+SetGlobal("BRANWExists","AR0900",1)
+CreateCreature("7XCRE5",[2435.1264],3)
+Continue() 
+END

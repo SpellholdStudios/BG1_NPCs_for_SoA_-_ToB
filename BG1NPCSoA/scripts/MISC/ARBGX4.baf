@@ -1,0 +1,64 @@
+IF
+InMyArea("KGSTO2")
+
+THEN
+
+RESPONSE #10
+  Wait(15)
+ActionOverride("7XCREDD",DisplayStringHead(Myself,@1761) 
+Wait(2)
+    ActionOverride("KGSTO2",DisplayStringHead(Myself,@1762)
+Wait(2)
+ActionOverride("KGSTO2",MoveToPoint([919.372]))
+Wait(4)
+ActionOverride("ARENA1",DisplayStringHead(Myself,@1763)
+Wait(20)  
+
+RESPONSE #10
+    Wait(15)
+ActionOverride("ARENA1",DisplayStringHead(Myself,@1763)  
+Wait(2)
+ActionOverride("LTALOS",DisplayStringHead(Myself,@1764)
+Wait(2)
+RESPONSE #10
+Wait(5)
+ActionOverride("7XCRE38",DisplayStringHead(Myself,@1765)
+Wait(2)
+    ActionOverride("TRTAVP01",DisplayStringHead(Myself,@1766)
+
+RESPONSE #10
+    Wait(5)
+ActionOverride("7XCRE34",DisplayStringHead(Myself,@1767)
+Wait(1)
+    ActionOverride("BDACT05",DisplayStringHead(Myself,@1768)
+Wait(3)
+    ActionOverride("TRTAVP01",DisplayStringHead(Myself,@1766)
+Wait(2)
+ActionOverride("BDACT04",DisplayStringHead(Myself,@1769)
+Wait(15)
+
+  RESPONSE #10
+    Wait(10)
+ActionOverride("7XCRE98",DisplayStringHead(Myself,@1770) 
+Wait(2)
+ActionOverride("KGSTO2",MoveToPoint([1039.493]))
+Wait(5)
+ActionOverride("KGSTO2",DisplayStringHead(Myself,@1771)
+Wait(3)
+ActionOverride("7XCREDD",DisplayStringHead(Myself,@1772)
+Wait(5) 
+
+  RESPONSE #10
+Wait(25)
+NoAction() 
+
+  RESPONSE #10
+Wait(10)
+NoAction()
+END 
+
+
+
+
+
+

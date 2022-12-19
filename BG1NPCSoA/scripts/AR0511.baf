@@ -1,0 +1,10 @@
+IF 
+ Global("SILKEFight","GLOBAL",0)
+InParty("7XGAR")
+!StateCheck("7XGAR",CD_STATE_NOTVALID)
+THEN
+  RESPONSE #100
+CreateCreature("7XCRE7",[932.599],3)
+SetGlobal("SILKEFight","GLOBAL",2)
+Continue()
+END

@@ -1,0 +1,60 @@
+/* GET_SCRIPT_BLOCK */
+DEFINE_PATCH_FUNCTION GET_SCRIPT_BLOCK
+INT_VAR
+	start_offset = 0
+	reverse = 0
+STR_VAR
+	search_regexp = ~~
+RET
+	script_block
+	start_offset
+	end_offset
+BEGIN
+	SET offset = start_offset
+	PATCH_IF (offset < 0) BEGIN SET offset = 0 END
+	PATCH_IF (offset > BUFFER_LENGTH) BEGIN SET offset = BUFFER_LENGTH END
+	
+	TEXT_SPRINT script_block ~~
+	SET start_offset = "-1"
+	SET end_offset = "-1"
+	
+	PATCH_IF (NOT ~%search_regexp%~ STR_EQ ~~) BEGIN
+		PATCH_IF (reverse) BEGIN
+			SET offset = RINDEX_BUFFER(~%search_regexp%~ offset)
+		END ELSE BEGIN
+			SET offset = INDEX_BUFFER(~%search_regexp%~ offset)
+		END
+		
+		PATCH_IF (offset >= 0) BEGIN
+			SET ofsStart = RINDEX_BUFFER(~^IF$~ offset)
+			PATCH_IF (ofsStart >= 0) BEGIN
+				SET ofsEnd = INDEX_BUFFER(~^END$~ offset)
+				PATCH_IF (ofsEnd >= 0) BEGIN
+					SET ofsEnd += 3
+					READ_ASCII ofsStart script_block (ofsEnd - ofsStart)
+					SET start_offset = ofsStart
+					SET end_offset = ofsEnd
+				END
+			END
+		END
+	END
+END
+
+DEFINE_ACTION_FUNCTION CLEAR_SCRIPT_BLOCKS
+INT_VAR
+	reverse = 0
+STR_VAR
+	search_text = ~~
+BEGIN
+	COPY_EXISTING_REGEXP ~.*\.bcs~ ~override~
+		DECOMPILE_AND_PATCH BEGIN
+			SET start_offset = BUFFER_LENGTH - 1
+			WHILE (start_offset >= 0) BEGIN
+				LPF GET_SCRIPT_BLOCK INT_VAR reverse start_offset STR_VAR search_regexp = EVAL ~%search_text%~ RET start_offset end_offset END
+				PATCH_IF start_offset >= 0 BEGIN
+					DELETE_BYTES start_offset (end_offset - start_offset)
+				END
+			END
+		END
+		BUT_ONLY_IF_IT_CHANGES
+END

@@ -1,0 +1,10 @@
+IF 
+Global("WaterGardens","GLOBAL",0)
+
+THEN
+  RESPONSE #100
+CreateCreature("7XCRE31",[3317.2860],3)
+CreateCreature("7XCRE32",[3787.2219],3)
+SetGlobal("WaterGardens","GLOBAL",1)
+Continue()
+END

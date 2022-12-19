@@ -1,0 +1,12 @@
+IF
+AreaCheck("ARBGX2")
+PartyHasItem("PLATPANT")
+NumTimesTalkedToGT(0)
+Global("HenryPantaloonsComment","ARBGX2",0)
+CombatCounter(0)
+See(Player1)
+THEN
+  RESPONSE #100
+  SetGlobal("HenryPantaloonsComment","ARBGX2",1)
+  StartDialogNoSet(Player1)
+END

@@ -1,0 +1,15 @@
+// Melissan (Pocket Plane)
+
+IF
+	OR(2)
+	Dead("balth") // standard 
+	Global("fin_balth_checkpoint_passed","GLOBAL",1) // Ascension compatibility
+	InParty("7XFALD") InMyArea("7XFALD") !StateCheck("7XFALD",CD_STATE_NOTVALID)
+	Global("FaldornMelissan","AR4500",0)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	!ActuallyInCombat()
+THEN
+	RESPONSE #100
+	SetGlobal("FaldornMelissan","AR4500",1)
+    ActionOverride("7XFALD",StartDialogNoSet("Player1"))
+END

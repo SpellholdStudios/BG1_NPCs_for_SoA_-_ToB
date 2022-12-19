@@ -1,0 +1,13 @@
+
+
+IF 
+Global("7xcsqmCreate","GLOBAL",0)
+
+
+THEN
+  RESPONSE #100
+CreateCreature("7xcsqm",[679.501],0)
+SetGlobal("7xcsqmCreate","GLOBAL",1)
+Continue()
+END
+

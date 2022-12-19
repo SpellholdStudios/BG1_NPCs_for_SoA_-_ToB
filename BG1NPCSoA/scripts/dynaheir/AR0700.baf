@@ -1,0 +1,14 @@
+
+IF 
+Global("DynaheirCreation","GLOBAL",0)
+!Exists("7XDYNAX")
+
+
+THEN
+  RESPONSE #100
+CreateCreature("7XDYNAx",[2583.2108],2)
+SetGlobal("DynaheirCreation","GLOBAL",1)
+Continue()
+END
+
+

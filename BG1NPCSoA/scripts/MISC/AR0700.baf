@@ -1,0 +1,31 @@
+
+
+
+IF
+!Exists("BG1X6")
+!Exists("BG1X25")
+TimeOfDay(NIGHT)
+Global("BG1X5","GLOBAL",5)
+!Global("7XCRE35","AR0700",1)
+!Global("7XCRE46","AR0700",1)
+THEN
+RESPONSE #100
+  CreateCreature("7XCRE35",[4953.670],8) // Bookkeeper
+  CreateCreature("7XCRE46",[3708.1079],3) // Firebead Elvenhair
+  SetGlobal("7XCRE35","AR0700",1)
+  SetGlobal("7XCRE46","AR0700",1)
+  Continue()
+END
+
+
+
+IF
+	TimeOfDay("NIGHT")
+	Global("YDWARF2Ar0700","GLOBAL",0)
+	PartyHasItem("YDWARF1")
+
+THEN
+	RESPONSE #100
+		CreateCreatureObjectOffScreen("7XCRE23",Player1,0,0,0)
+		SetGlobal("YDWARF2Ar0700","GLOBAL",2)
+END

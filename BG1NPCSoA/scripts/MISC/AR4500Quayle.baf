@@ -1,0 +1,9 @@
+IF
+	InPartyAllowDead("7XQUAY")
+	Global("QuayleSummonedTOB","GLOBAL",1)
+THEN
+	RESPONSE #100
+		ActionOverride("7XQUAY",ChangeAIScript("7XQUAY25",OVERRIDE))
+		SetGlobal("QuayleSummonedTOB","GLOBAL",2)
+END
+

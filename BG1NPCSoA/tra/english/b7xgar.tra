@@ -1,0 +1,542 @@
+// HaerDalis - Garrick
+@0 = ~Haer'Dalis... ~
+@1 = ~You have my full attention, my young colleague.~
+@2 = ~Tell me, Haer'Dalis, do I truly have real minstrel talent?~
+@3 = ~Oh...? I thought you had no doubt about that.~
+@4 = ~I doubt it sometimes, to be honest. I just hide it carefully. But you traveled through the Planes, saw and heard a lot, and finally you yourself are very talented. I will be able to appreciate your... as befits... well... your honestly...~
+@5 = ~My inspired child, I can say one thing; talent is half the battle. You can't do without it, but you have to work hard to polish this diamond to a breathtaking shine. Everyone has heard about it, but not everyone is using it in practice. Stubbornly, do not indulge yourself, and you will conquer Faerun.~
+@6 = ~Oh thanks! ~
+@7 = ~Yes, one of the best artists on all the Planes is telling you this! *Laughs* Don't be offended that I tease you a little, spring bird, I really believe in your gift and your future.~
+@8 = ~Thank you, Haer'Dalis. Think we'll be friends?~ [GARRICK4]
+@9 = ~No doubt about it, friend.~
+
+// Aerie - Garrick 2 (after Underdark)
+@10 = ~Aerie, how are you feeling?~
+@11 = ~I... not bad. Why are you asking?~
+@12 = ~Because I read that avariel elves do not tolerate confined spaces, and I wondered how you endured all these horrible adventures in the Underdark... without a sky above your head.~
+@13 = ~I don't know myself. M-maybe I'm not as much an avariel as I used to be? I felt very b-bad. But I endured. I just couldn't let everyone down. I tried to think of good things... I even tried... to appreciate the beauty of all those glowing mushrooms, carved columns... but I was so happy to be on the surface again!~
+@14 = ~You're good person, Aerie. I feel very humbled to be travelling with someone such as you.~
+@15 = ~*Smiles* Thank you. You shouldn't overpraise me, although i do appreciate your participation in this group and your courtesy towards me. I Hope you can give me a couple of pages in your book?~
+@16 = ~You can have as many as you want, Aerie! After all, overcoming yourself is real heroism, and everyone should know about real heroes.~ [GARRICKU]
+@17 = ~*Smiles*~
+
+// Imoen - Garrick
+@18 = ~Hey Sir Garrick! ~
+@19 = ~I'm listening, sly little girl.~ [GARRICKG]
+@20 = ~I'm not that little, plus I have a question for you.~
+@21 = ~Yes? ~
+@22 = ~A very important question.~
+@23 = ~I have no doubt about it.~
+@24 = ~A very, very, very important question. Where about does the brave Sir Garrick place in his book Imoen the Magnificent?~
+@25 = ~Imoen the... what?~
+@26 = ~Imoen the Mag-nif-i-cent! A brave heroine, under whose tutelage <CHARNAME> confronted the powerful and insidious Sarevok. It cannot be that you do not praise this heroine in your composition, as she deserves right?~
+@27 = ~You're confusing something. After all, <CHARNAME> would have failed on that tremendous adventure had it not been for the guidance of Sir Garrick. ~
+@28 = ~Sir, let me disagree with you. You clearly underestimate Imoen's influence on the critical events of the time when she and her aide <CHARNAME> ended the war between Amn and Baldur's Gate. ~
+@29 = ~Remember that it's Sir Garrick...~
+@30 = ~Listen, SIR! Imoen is not only gorgeous but also generous. She agrees to share with you a part of her brilliant fame... Even half the glory, if you sing poetry of her amazing beauty, flexibility and grace, sleight of hand (although the latter, you could probably keep that part out) and place these verses in your book.~
+@31 = ~But there is to be one condition. Poems should be, like Imoen herself; mag-nif-i-cent.~
+@32 = ~Gladly, my heroic lady!~
+@33 = ~That's great. I knew that we would agree on this. He he... Garrick, you're a remarkable guy.~
+@34 = ~Also what is great is that we're friends, aren't we? Good, kind, powerful friends whose union can shake the world!~
+
+// Viconia - Garrick
+@35 = ~Viconia, you belong to House De'Vir, right? It has a dark history, right? I heard...~
+@36 = ~Shut up iblith. The fact that an insignificant rivvil like you managed to hear something about my house somewhere out of the corner of his ear does not give him the right to rant about what he does not understand at all.~
+@37 = ~I just wanted to ask...~
+@38 = ~I'm not going to satisfy your pathetic curiosity. ~
+@39 = ~Listen, Viconia... It is as fate dictated that you live among the landlings you despise. But we have something new for you. Your people, they say, do not have such concepts as kindness, friendship, love... So why not try to comprehend all this, at least a little? What if you like it?~
+@40 = ~As I said before iblith, I'm not going to satisfy your pathetic curiosity.~
+@41 = ~*Viconia gives Garrick a contemptuous look and turns away* ~
+
+// Dorn - Garrick
+@42 = ~*Looks grimly at Garrick* So what is this misunderstanding doing in our group?~
+@43 = ~Dorn, aren't you on the wrong foot? Well after thinking about it, you probably have been all the time though.~
+@44 = ~Don't mock me, you lout. I'll knock you down with one strike. You are such a pitiful sight, a man who thinks he is doing a great thing by singing songs.~
+@45 = ~A pitiful sight indeed, a blockhead who does not realize what beauty and pure joy are.~
+@46 = ~Talk, talk, talk... I refuse to listen to your drivel, pathetic one.~
+@47 = ~Enjoy your day too. ~
+
+// Anomen - Garrick
+@48 = ~Anomen... May I ask, why did you decide to become a knight?~ [GARRICKX]
+@49 = ~You may ask, but I have no desire to answer this question for you.~
+@50 = ~Why is your response so unfriendly?~ [GARRICK8]
+@51 = ~Fine, what do you want to hear, bard?~
+@52 = ~I thought you tasted for fame. I could compose a song about your exploits. But I wanted to start from early childhood.~ [GARRICKY]
+@53 = ~Then remember to write about my mother's death. And about how my drunken of a father, having found me reading a chivalric novel, tore it out of my hands and threw it into the fire and abused me for it. Then write about how he insulted my sister, who tried to intercede for me. Also one day... No what, enough, just leave me be.~
+@54 = ~Anomen, it's very sad to hear all this. But if you are offended by your father, why do you repeat his behavior?~
+@55 = ~What are you talking about, Garrick? ~
+@56 = ~You are just as willing to offend anyone who annoys you in any way, even if no one is to blame but you. Although that won't protect yourself from that old pain, and you won't be able to hide from the world's anger.~
+@57 = ~I refuse to listen to any more of your nonsense. As I said before, leave me be.~
+@58 = ~Still, you are thinking, I can see it. In the meantime, I will compose a bright and kind song about you!~
+
+// Neera - Garrick
+@59 = ~Aye Garrick! I'm sorry... I'm sorry, I didn't mean it.~
+@60 = ~Oh, Neera, this is my manuscript. You almost burned it.~ [GARRICKL]
+@61 = ~Yes... I see. I just... wanted to put some magical protection on you. After all, enemies can appear at any moment, and you are so fragile... and it would not hurt you. But you see... *With tears in her voice* It's always like this for me...~
+@62 = ~Thank you for your concern, Neera, but do not worry. You will see, next time you will succeed.~ [GARRICK4]
+@63 = ~*Smiles* Thank you for your support, Garrick. You are very good friend.~
+
+// Cernd - Garrick
+@64 = ~Don't you think, bard, that all your songs are losing out to the natural music of nature? Even the most inspired compositions of people are nothing in front of the murmur of a stream or the sounds of a night forest... ~
+@65 = ~Yes Cernd, sometimes it does occurs to me. But this is what I thought: Why not consider people as a part of nature, and their songs as a continuation of its enchanting sound?~ [GARRICKN]
+@66 = ~People bring too much aggressive passion to what they do.~
+@67 = ~But nature can also be aggressively passionate. You know that.~
+@68 = ~Yes, but nature is much more honest. However... I'm not saying I don't like your songs at all, Garrick. At least when you sing, I don't want to cover my ears.~
+
+// Rasaad - Garrick
+@69 = ~I want to tell you, young poet, that Selune's light shines upon you. ~
+@70 = ~There is a lot of praise in your lips, Rasaad. You are so deeply devoted to your deity. I also honor Milil, the god of songs and poetry, but far from becoming a priest or a monk.~
+@71 = ~You are already serving your god in the most pleasing way for him. Happy are the people who have found their true path in this life. ~
+
+
+// Nalia - Garrick 1
+@72 = ~Garrick...~
+@73 = ~Yes, Nalia?~ [GARRICKG]
+@74 = ~I should probably apologize again... for my aunt. Well, she is who she is. But I thought you were hurt by her appeal. ~
+@75 = ~No, no, Nalia, you don't have to apologize at all. You are absolutely right, she is so... Many nobles grow up with similar beliefs and pass them on to their children. I just involuntarily remembered how difficult it was to perform in front of aristocrats who liked to emphasize that the artists, in their opinion, were rabble and fit only to entertain them. They gave us the payment for the performance as a donation... but this is all in the past, and it is not worth mentioning at all.~
+@76 = ~Although I am also a noblewoman, this way of thinking is alien to me! I will never humiliate a person for their poverty or simple origin. I... my mother was not at all like Aunt Delcia, she loved people and helped them as best she could, and I try to be like her.~
+@77 = ~I wouldn't even think of comparing you to your aunt. We barely know each other, but I feel that you are a kind and glorious person. A bard's sense, you know...~
+@78 = ~Thank you Garrick! You are also good, it is so pleasant and easy to talk to you, but best we get going. Let's chat some more in the future.~
+@79 = ~I'd love to!~ [GARRICKS]
+
+// Nalia - Garrick 2
+@80 = ~Garrick, can I talk to you for a bit? ~
+@81 = ~Of course, my lady!~ [GARRICKG]
+@82 = ~*Laughs* Oh Sir Garrick, you have great manners, but I wanted to talk about not-so-pleasant things...~
+@83 = ~Last time you said it hurt you when arrogant listeners paid to perform as if they were giving alms. But if alms are given to those who need them, just like that, without swagger? That doesn't mean you're humiliating the poor, is it?~
+@84 = ~Honestly, I don’t know how I would answer if I didn’t know what hunger was. It was a very short period in my life when I had to part with the troupe in which I played. Until the lead met a woman for whom he began to work, he performed as best he could. And now I understand: if you share from the heart with those who are in need, there can be no humiliation here.~
+@85 = ~Oh, Garrick. Maybe I seem to you a naive girl who plays charity out of boredom, having no idea what real need and suffering are? I know a lot of people look at me like that.~
+@86 = ~No, of course not! It is called very simply, a kind heart. True, I never asked for alms. I sang, played and somehow earned money for a stew in a tavern. And then everything changed for the better.~
+@87 = ~Yet your life hasn't been easy... compared to mine. ~
+@88 = ~Or maybe just the opposite? I didn't lose loved ones. And I really sympathize with you. ~
+@89 = ~Thank you Garrick. We've haven't known each other for so long, but I feels we've been friends for a long time.~
+@90 = ~I feel the same way.~
+
+// Wilson - Garrick
+@91 = ~Snorty-growl. Grr. Moan.~
+@92 = ~Yes, my furry friend. You are absolutely right. It is unfair that bears cannot be bards, although many of them are quite talented. ~
+@93 = ~I think the audience is simply not ready yet to appreciate the talent of the bear poet without prejudice due to his formidable appearance and voice. But in the future, anything is possible. ~
+@94 = ~Sniff-sniff...~
+@95 = ~I don't think you should try this now, Wilson. Try reading your poems to me first! The brave Sir Garrick will assess your abilities impartially and tell you if they are ready to be presented to the public.~ [GARRICKK]
+@96 = ~Wff... Rff...! Sniff. Sniff.~
+@97 = ~Wrr. Snort. Snuff. Snuff.~
+@98 = ~Hmm... You rhymed everything so skillfully as if you were at Waterdeep Bard College. ~
+@99 = ~But the metaphors you used do need some more work. Comparison of women's eyes with raspberries does not sound very good, I think. But you are clearly talented, my furry friend!~
+@100 = ~Snort, rff!~
+
+@101  = ~Could we stop here for the night? I simply must have a chance to catch up on my annotation.~
+@102  = ~No, you pathetic male! Don't any of your songs tell of the fate of adventurers foolish enough to camp in an area littered with troll dung?~
+@103  = ~Edwin Odesseiron, the wizard of red,~
+@104  = ~Has a big ego, as big as his head.~ [garrickp]
+@105  = ~That was the worst rhyme I have ever heard.. a zero out of ten!!~
+@106  = ~Ugh! Bother me no more, bardling. I have better things to do than to listen to your amateurish songs.~
+@107  = ~Everyone's a critic!~
+@108  = ~But you know.. you really should think about shaving off that beard, it's SOooo out of style.~
+@109  = ~Try a nice mustache or even a well trimmed goatee.. maybe with a nice new bull nose ring.~
+@110  = ~Whatever you do, you just have to learn dress with the times Edwin, I mean that whole robed wizard thing is such a cliche.~
+@111  = ~Remember, just because you were born two centuries ago, it doesn't mean you have to still dress that way.~
+@112  = ~Bah, I am no simpleton that cares about mindless fashion trends.~
+@113  = ~Well maybe you should be, because frankly, I find it a tad embarrassing to travel with you when you are dressed so shabbily.~
+@114  = ~(To think that this fool could possibly be embarrassed by anyone else, is thoroughly remarkable)~
+@115  = ~Hmmm... I often wonder why <CHARNAME> did not just slay you along with Silke Rosena, the treacherous harlot you once worked for? It would have saved me a lot of headache.~
+@116  = ~The only thing I can think of, is that <PRO_HESHE> felt sorry for you and took you in like one does a stray cat.~
+@117  = ~Meh.. I had no idea what Silke was planning and <CHARNAME> can probably spot a real talent when <PRO_HESHE> sees one.~
+@118  = ~Plus someone like <CHARNAME>, that is going to have tales sung about them for years to come, needs the best, hardest working bard in the business to record every heroic act.~
+@119  = ~Hardest working? You? Is all that singing, robbing you of what little brain power you have left bardling?~
+@120  = ~Edwin Odesseiron, wore a cloak the color rose,~
+@121  = ~His ego grew and grew, just like his fat nose!~
+@122  = ~Excuse me, Yoshimo.~ [garrickx]
+@123  = ~Yes?~
+@124  = ~Are you familiar the Legendary Ballad of Brave Sir Garrick?~ [Garrickq]
+@125  = ~The what?~
+@126  = ~It's a story that deals with my favorite hero of all..~
+@127  = ~ME!~ [Garrickp]
+@128  = ~*Sigh* I think I've heard enough already!~
+@129  = ~Nonsense!~ [Garrickz]
+@130  = ~You see it starts way back when I was still back with the Dale Wind Troubadours.~
+@131  = ~After getting wise to their thieving, I was about to leave when destiny brought <CHARNAME> to me.~ [Garrickn]
+@132  = ~<CHARNAME> begged me to join their party, and even though I could see that <PRO_HESHE> was pretty green to adventuring, I decided to give <PRO_HIMHER> a chance.~ [Garrick5]
+@133  = ~That's when things get really exciting.~
+@134  = ~I can tell this is going to take a while..~
+@135  = ~Ugh!! And me without any poison to drink!~
+@136  = ~Brave Sir Garrick and the Mighty Minsc, fighting evil together once more!~ [Garrickp]
+@137  = ~Do not forget the valor of Boo.~ [TTMINS91]
+@138  = ~How could I forget your furry little friend?~
+@139  = ~Yes, together, Brave Sir Garrick, Minsc and the Boo shall give evil a good butt-kicking!~ [garrickj]
+@140  = ~Hahaha! Your words fill Boo with great joy!!~
+@141  = ~We shall defeat all our enemies and then slander them in song and dance.~
+@142  = ~Oh, what glorious times we shall have!~ [Garrickh]
+@143  = ~Boo and I want our own ballad.~
+@144  = ~A brilliant idea! I shall call it, The Tale Of Minsc and Boo, the heroic duo, you wish you knew!~
+@145  = ~Boo likes it!~
+@146  = ~There once was a man named Minsc, who fight evils for fun, because evil stinks!~
+@147  = ~Haha!~
+@148  = ~Minsc always traveled with his friend Boo, a space hamster from a galaxy.. blue?~
+@149  = ~Boo thinks it could use some work.~
+@150  = ~Meh.. that's just of the top of my head.~
+@151  = ~Give me some time to put some stuff onto parchment, then we'll talk.~
+@152  = ~It's really too bad you are such a Serious Sheila, Viconia, otherwise I just might give you the chance to spend a romantic evening with a charming bard.~ [garrickx]
+@153  = ~Delusional one, the only time I would ever even smile at you, was if you were being stoned to death.~
+@154  = ~Must you always be so barbaric?~
+@155  = ~Can't you at least try to fight off your natural drow instincts and try to enjoy yourself every now and again?~
+@156  = ~Arrrr.. By Shar, why must <CHARNAME> bring along every damned fool he meets by the roadside that wants to join?~
+@157  = ~You know, you are pretty when you are mad?~
+@158  = ~But then again, you are always mad.. So I guess it works for you.~
+@159  = ~You are an idiot!~
+@160  = ~Keldorn, tell me the truth.. do you think I have what it takes to be part of the Order of the Radiant Heart?~ [garrickx]
+@161  = ~Hmmm.. people should stick to what they are best equipped for, Garrick.~
+@162  = ~You are a good bard.~
+@163  = ~Yes, yes, I know, I have the best voice in in the whole of Faerûn, that is true, but I am always looking for outlets to expand my horizons.~
+@164  = ~I don't want to feel limited in my career choices and would like to think that no challenge is beyond me.~
+@165  = ~Ah, then why not take up painting?~
+@166  = ~So what you are saying is..~
+@167  = ~I stand no chance.~
+@168  = ~Sorry Garrick, but I don't think being a knight suits you.~
+@169  = ~It takes many years of hard work and dedication to achieve knighthood.~
+@170  = ~Meanwhile you cannot even stay interested in the same girl for more than a passing minute.~
+@171  = ~But I am a different man now!~
+@172  = ~The days when Sir Brave Garrick was a womanizing fool are over my friend!~
+@173  = ~From now on, I vow to be a different type of fool altogether!~ [Garrickp]
+@174  = ~Of that, I have no doubt, but I still do not think..~
+@175  = ~Oh come on! It will make the perfect ending to the newest ballad of Brave Sir Garrick.~
+@176  = ~I can see it now, riding my brave donkey to the hall and being knighted in front of the entire order.~
+@177  = ~Young friend, I must confess, I find your outlook on life both humorous and refreshing and though you may not be cut out to be a knight, but you will always be a welcome guest at the High Hall of the Radiant Heart.~
+@178  = ~Your tales and merriment will always have a home there.~
+@179  = ~Thank You Sir Firecam, but I intend to prove you wrong.. that Brave Sir Garrick has what it takes to be a knight.~
+@180  = ~Did I mention that you must be at least forty years of age to become a fully-fledged knight of the Order?~
+@181  = ~Forty? Hmmm... Like I was saying..~
+@182  = ~I want to prove I have what it takes to join the youth ranks of the Radiant Heart.~
+@183  = ~Ah Garrick, did I tell you that I once knew a blue-haired bard?~
+@184  = ~Jansen, you liar! No you did not!~ [garrickc]
+@185  = ~Liar? Bah, what do you know?~
+@186  = ~Swifty McCloud was his name, I knew him quite well as a matter of fact. He used to hang out with my sister's cousin's friend. Twas a young human, hailing from Damara.~
+@187  = ~The last time two we heard you tell us that one, it was your brother's neighbor's cousin, and he came from Dambrath!~
+@188  = ~Well.. that's not what's important anyway.~
+@189  = ~*a-hem* Anyways.. I did not say that the blue was his natural hair color. The lad used to dye it. He wore blue shirts, with blue plants and boots of azure.~
+@190  = ~He would tell everyone he was a tiefling and had his other quirks, but that there was the best bard I ever heard sing, he was.~
+@191  = ~Better than Brave Sir Garrick? Are you out of your mind? Fine, if he was SOooo great, how come I've never heard of him?~ [garrickz]
+@192  = ~I am amazed that something could escape the recognition of the very cultured, Brave Sir Garrick.~
+@193  = ~No really.. that may have sounded sarcastic, but I really meant it.~
+@194  = ~Meh.. probably nothing more than a run-of-the-mill turnip seller.~ [garrick7]
+@195  = ~Best singer..~
+@196  = ~EVER!~
+@197  = ~Yes, she was small,
+
+But she could out fight them all,~ [garrickp]
+@198  = ~That halfling girl named Mazzy
+
+Used to drive the young boys cra-ZZY~
+@199  = ~By Arvoreen's sweet mercy, what a horrible rhyme!~
+@200  = ~Look, no offense, Garrick, but for the time being, could you just stop with all the rhyming?~
+@201  = ~I am trying to keep focused so that we are prepared for the next battle.~
+@202  = ~I'm sorry Mazzy, but I tend to rhyme when I get nervous. It happens a lot when I go adventuring.~
+@203  = ~How do you feel about me whistling instead? I do a nice rendition of the Jolly Dragon!~ [Garrickp]
+@204  = ~Uh! Is it at all possible that you could just stay quiet?~
+@205  = ~Well, what if I sung a ballad about weapon training?~
+@206  = ~Garrick! Just please, try and stay silent for a few minutes.~
+@207  = ~*yawn* As you wish, Miss Mazzy but personally, I find that quite boring and frankly, a bit rude.~
+@208  = ~Minsc.. how do you want to be portrayed in the newest ballad of Brave Sir Garrick.. as a raging berserker of justice or the noble ass kicker?~ [Garrickp]
+@209  = ~Perhaps a little of both are in order.. but once again, you are forgeting the valor of Boo.~
+@210  = ~Don't worry, I chronicled the adventures of Boo in great detail so that his great deeds will not go unknown!~
+@211  = ~Great fun! Right Boo?~ [MINSC12]
+@212  = ~Mazzy, you may be a small woman, but you have a big part in the newest edition of the Ballad of Brave Sir Garrick!~ [garrickq]
+@213  = ~Don't make jokes, Garrick, I'm not in the mood to put up with your antics right now.~
+@214  = ~It's not a joke, Miss Fentan.. I intend on making you a star!~
+@215  = ~Well, don't blame me if I don't quit my day job.~
+@216  = ~Sheesh, I tell her I am going to make her into a star and that is the gratitude I get?~
+@217  = ~You need to learn some manners, missy.~ [garrick8]
+@218  = ~Jan, you simply must tell me the recipe for your exquisite turnip cake so that I might include in the newest ballad of Brave Sir Garrick.~
+@219  = ~Sorry, but I can't be doing that. The Jansen turnip cake recipe has been a family secret for generations.~
+@220  = ~Be reasonable Jan!~
+@221  = ~Surely, for the good all of Faerun, the people must be made aware of your excellent turnip cakes.~
+@222  = ~It is like my Uncle Scratchy used to say.. Who is going to buy the cow if you give the milk away for free..~
+@223  = ~Mmmm.. or something like that.~
+@224  = ~Come on Jan! I'll toss in a couple verses about the cow if it seals the deal!~
+@225  = ~Holy Garl Glittergold! It was a metaphor, Garrick!~
+@226  = ~Eh?~
+@227  = ~Never mind.~
+@228  = ~So Garrick, since you are a bard, I'm certain that you are familiar with black lotus.~
+@229  = ~Brave Sir Garrick has no idea what you are talking about, Yoshimo.~ [Garrickq]
+@230  = ~No huh? Well, if you should wise up anytime that we are in Athkatla, I can point you to a few choice places where you can get quality stuff.~
+@231  = ~It's not like you to be giving advice if it does not turn a profit.. What's your cut?~ [Garrickp]
+@232  = ~Is it a crime to give some helpful advice to a fellow adventurer?~
+@233  = ~I don't know.. Something about me just feels wrong about this.~ [Garrickz]
+@234  = ~Minsc, must you always charge in and defeat all the enemies before I've had a chance to ready my weapon?~
+@235  = ~Leave some for the rest of us, will you?~
+@236  = ~Minsc and Boo are sorry, Brave Sir Garrick, but that is why we are here.~
+@237  = ~So that when evil rises out of the shadows of the darkness.. Minsc and Boo will give evil a righteous butt-kicking of goodness!~
+@238  = ~Yeah.. shadows, darkness, righteous butt-kicking.. I get it, Minsc.~
+@239  = ~Still, I can't help but feel that by you defeating all the enemies, that I am not really contributing to the group.~
+@240  = ~Do not be silly, Brave Sir Garrick!~
+@241  = ~There are few others that Minsc and Boo enjoy traveling with, not only because of you valor and courage in battle..~
+@242  = ~But because we enjoy your many ballads that you sing us at night.~
+@243  = ~They are pretty great, aren't they?~ [garrick7]
+@244  = ~What is that funny smell, Garrick?~
+@245  = ~Oh, must be the black root I smoked a few minutes ago.~
+@246  = ~Black ROOT!~
+@247  = ~Yes.. why? Care for some?~
+@248  = ~Are you mad? That stuff will make you stupid in the head!~
+@249  = ~Well my mother raised us on the stuff.~
+@250  = ~It's good for you, Jan. Helps me calm my nerves so that I can get creative and think of new sonnets to sing. For example...~
+@251  = ~I once knew a gnome named, Jan, who washed his face with a frying pan!~
+@252  = ~Poor fool! Seems the stuff has already rotted your mind!~
+
+// NEW (v.12)
+@253 = ~Garrick... You're a bard from the north, aren't you?~
+@254 = ~Yes my lady, and I'm at your service. Although let me guess: You want me to write a poem about you, but you are embarrassed to ask?~ [GARRICKG]
+@255 = ~No... I just wanted to get to know you better.~
+@256 = ~Oh, that's for the best... Today rhymes don't come to my mind at all, but soon I will begin to create my masterpieces again, and especially if you walk beside me. Even an orc would become a poet at the sight of your beauty.~ [GARRICKO]
+@257 = ~Oh! Thanks Garrick... *blushes*~
+@258 = ~Korgan, you're from the Underdark, right? ~
+@259 = ~How did you guess, jester? Found a book that boosts intelligence?~
+@260 = ~Ah, I appreciate your irony and your ability to cross verbal swords, but right now I just wanted to know a thing or two about life underground.~
+@261 = ~You wouldn't survive there alone for one day, being a weakling and such. The monsters from the Underdark would eat you for breakfast, and that is if they felt like being nice.~
+@262 = ~I doubt they would be interested in me - I'm so slim and graceful that there is almost no meat on my bones, but based on what you said, I would rather not get to know them and not check it out.~
+@263 = ~I was actually wondering something else: How do the dwarven underground cities have fun? Are there theaters, musicians, dinner parties? What kind of poetry is in vogue with dwarven bards? Perhaps battle poems?~
+@264 = ~Yes, we know how to have fun, and we do it the way you surfacers never dreamed of! Your theaters, where the actors grimace on stage to the laughter of the audience, complete nonsense!~
+@265 = ~Dwarves don't waste their time with such frivolous entertainment. If we sing songs, we do it in a tavern with a mug of ale in hand. The tavern is like a second home for us - There we communicate with our fellow clan members, play dice and tell stories. Dwarves also love competition - Sparring, tournament fights, gladiator fights and the like.~
+@266 = ~I disagree with you, my friend - Every method of relaxation has its own charm. It’s a shame you don’t know how to appreciate exquisite poetry.~
+@267 = ~For a dwarf, the best poetry is the clamor of battle and the sound of the hammer in the forge! ~
+@268 = ~So then every dwarf is a poet who creates his masterpieces in moments of battle? This is an interesting thought, you need to write this down, it may come in handy.~
+@269 = ~You see, I thought of writing a chapter on dwarves in my ballad on Brave Sir Garrick, but the problem is that I have never been to your cities and the public can catch me cheating. ~
+@270 = ~So I want to know more about your customs, and I would be honored to have you be my consultant.~ [GARRICKY]
+@271 = ~I've no time to be bothered about poetry this or poems that, go and bother someone else, ye fool!~
+
+// NEW (v.12.6)
+// Valygar - Garrick
+@272 = ~Valygar, you're thinking about something bad again. ~
+@273 = ~Is it that noticeable?~
+@274 = ~Of course, you are gloomy and your lips are tightly compressed. But listen to me... you, of course, have something to grieve about, no one argues, but don’t harass yourself like that.~
+@275 = ~The sun is still shining on us, and the birds are chirping just as loudly, and the foliage is rustling in the wind, as if singing a kind song. This world lives and breathes, and tries to please you somehow. Just try and smile back at it.~
+@276 = ~Strange, you say platitudes that I would disdain at any other time... but somehow they make sense in your mouth. Maybe because you yourself live like a bird or a leaf in the wind. You are a sunny guy full of life. And this is perhaps contagious.~ [GARRICKH]
+@277 = ~Oh, to hear that from you, Valygar... I'm glad if I could dispel your gloomy mood even a little.~
+@278 = ~*smiles* You did, you did. That is why the gods send us bards. You're doing your job well, Garrick. I wish you the best of luck.~
+
+// Nalia-Garrick 1 (in the castle)
+@279 = ~Wow, what a castle! Large and ancient, full of mysterious echoes of the past. Family portraits, antique furniture and forgotten secrets! How lovely. ~
+@280 = ~Garrick... ~
+@281 = ~Bookcases keep yellowed scrolls and tomes in worn bindings, and they contain legends, sagas, ballads... ramshackle pages...~
+@282 = ~Garrick, stop, stop. You're getting too carried away. Although, yes, you're right, our castle has all this and more, but now is not the time for that!~
+@283 = ~I know, I know. The castle has been captured by the enemy, and we are once again experiencing the most dangerous adventure! Don't worry, Nalia! After all, the great hero <CHARNAME> and the valiant Sir Garrick are with you. We will not let anyone offend you or your house. Trust me.~
+@284 = ~I believe you Garrick, thanks for the kind words, but now let's hurry, no matter what you say, my heart is beating with anxious anticipation...~
+@285 = ~Of course. Let's go!~ [GARRICKA]
+
+// Nalia-Garrick 2 (after freeing the castle)
+@286 = ~Garrick, you're looking at me like that... Let me guess. Would you like to share with me your sublime thoughts inspired by the beauties of nature? Or are they the poetic fruits of bardic inspiration?~
+@287 = ~No... Yes... That is, I wanted to say... again, all the words escaped out of my head, like when Cyrando... ugh! It's better not to think about it.~
+@288 = ~It's just, Nalia, I just want to say that I sympathize with you. I am very sorry that you had to go through such an ordeal. ~
+@289 = ~*Excited* Garrick...~
+@290 = ~No, wait. You see, I always thought that a lady in trouble was a very intriguing plot. Terrible trials, insidious enemies, noble saviors - this is great material, the audience is delighted with such stories. Well, and I'm glad, of course, that we helped you...~
+@291 = ~But I can see how frail you are... how nervous you are. So I would prefer that this never happened to you. I don't want such plots for my ballads. Not at this price. That's all.~
+@292 = ~*Smiling* Thank you. And yet, brave Sir Garrick, I am grateful that you were among those who helped me in difficult times. I will try to forget about the bad, and remember the good with pleasure. ~
+@293 = ~And am I one of the... good?~
+@294 = ~Of course!~
+@295 = ~Oh, I'm so happy! You inspired me, my lady, the first lines of the verse came by themselves!.. So where is my quill?~
+
+// Nalia-Garrick 3
+@297 = ~*Hums a funny song to himself*~
+@298 = ~Garrick! What... what are you singing? ~
+@299 = ~Ah... I learned this song in Baldur's Gate, it's about the founder of this city, the brave captain Balduran. Everyone there knows him.~
+@300 = ~Yes! Of course I remembered. I was still little when guests came to us from Brother Baldur. And one of them sang this song, paying tribute to the ancient wine from our cellars. Hee-hee... He repeated it several times, I memorized a couple of verses, and then I walked around and sang at the top of my voice. How angry my aunt was! She was terrified that a young lady sang something like that. It was not at all befitting a girl of noble blood.~
+@301 = ~These songs are the best! They strengthen and cheer up the spirit... they just make it fun.~
+@302 = ~*Squinting slyly* I knew it, Garrick. Even though you've been studying a volume of high elven poetry every day, songs like these are much closer to your heart.~
+@303 = ~*Embarrassed* Nalia... I... just...~
+@304 = ~Oh, don't be embarrassed. This is great. You are who you are. Stay that way.~
+@305 = ~You know what? Let's sing this song together!~
+@306 = ~Of course, come on! How does it start again...? Remind me. *Singing along with Garrick*~
+@307 = ~Thank you, Nalia. My how your eyes are shining...Just now when you were singing, you were so beautiful...!~ [GARRICK4]
+@308 = ~Er, no, I’m not saying that while you’re not singing, you’re ugly... very much... just art...it transforms... and anyway... no, you and the truth is always beautiful!~
+@309 = ~*Laughs* Oh, don't start... ~
+@310 = ~I am silent. I'd better try to compose a funny song myself. For you, Nalia. ~
+
+// Nalia-Garrick 4
+@311 = ~Garrick, what are these?~
+@312 = ~These are... well... daisies. Flowers.~
+@313 = ~We'll leave the botany lesson for later. Just tell me, you're not going to... ~
+@314 = ~Give them to you? Indeed I am.~
+@315 = ~Garrick, I... ~
+@316 = ~No, listen. I admire you. You could be one of those prime young ladies... eventually become your aunt Delcia. But instead you walk with us, expose yourself to danger and inconvenience, sometimes you spend the night under the open sky and eat whatever you have to. Because this is... freedom? Yes?~
+@317 = ~Yes, my dear poet. You guessed it right.~
+@318 = ~I love... people like you. You have a spirit of adventure, a spirit of a bard... even though you don't write poetry. Even then, I wanted to... Come on. Just take it. Please.~ [GARRICKU]
+@319 = ~*Accepting the flowers* Thank you, Garrick. I am very pleased, really. It's good to be understood.~
+@320 = ~Nalia, come forth, you and me... and, you don't need to say anything else. Although, we'd better get going, because <CHARNAME> is already looking at us in a strange way.~
+
+// Nalia-Garrick 5
+@321 = ~Nalia... You know... I wrote something here. Do you want to take a look? Actually, it was written for you... and about you. So only you just need to read it!~
+@322 = ~What an intriguing foreword, Garrick. Of course I want to read this! ~
+@323 = ~*Visibly agitated, hands out a piece of paper to Nalia*~
+@324 = ~Hmm... Yeah... Wow... Garrick, I don't even know what to say. ~
+@325 = ~Do you not like it?~
+@326 = ~You see, when poetry is dedicated to you, it's too pleasant and exciting to immediately begin to sort it out line by line and criticize. So first, I'll just say thank you from the bottom of my heart. But then...~
+@327 = ~(Sadly) So you didn't like it after all?~
+@328 = ~Garrick... dear Garrick, you don't have to practice these lush and banal comparisons! Especially, what are “eye like a diamond, lips like a coral”... this is not your style. And... it's not about me. I am not like this. It would be much more interesting to listen to the funny song that you promised to compose for me.~
+@329 = ~I'll write it! I will compose a song for you in which there will be laughter in every line! I promise. But, Nalia... I don't know how to say... ~
+@330 = ~Just say it as it is. How you think and feel. ~
+@331 = ~Then... You are the best, Nalia! I am so glad that you are now in my life, and I want it to be that way forever.~
+@332 = ~Garrick... You see how easy it is... But also how difficult it can be at the same time, yes? I understand. I am also very glad that fate brought us together.~
+@333 = ~So can I really hope... for... more? ~
+@334 = ~Of course you fool. Haven't you figured it out yet?~
+@335 = ~*Kisses Nalia on the cheek* So we'll continue this conversation later, right?~
+@336 = ~I'm sure of it. ~
+
+// Nalia-Garrick 6
+@337 = ~Nalia... sweet Nalia, what's wrong with you? Are you crying?~
+@338 = ~No, I just suddenly felt very sad. I do not know why. Not that I miss home... not at all. The former life does not attract me at all. But now I am in the shadow of <CHARNAME>, and this will not always be the case. So when the time comes, where will I go? Which road is mine? What am I even like?~
+@339 = ~Although this might be silly reasoning, because tomorrow we could be killed in a serious skirmish...~
+@340 = ~Oh, don't think about such things! You're just tired. Or maybe... are you lonely? But there is me! And I'm always here.~
+@341 = ~I know, Garrick, dear, I know. And believe me, I really appreciate it.~
+@342 = ~And I wrote a “laughing” song for you as I promised. But now is probably not the time...~ [GARRICKQ]
+@343 = ~(Nalia livens up a bit) It's always time!~
+@344 = ~Yes? Okay this is great! Then... listen.~
+@345 = ~When the green woods laugh with the voice of joy,
+And the dimpling stream runs laughing by;
+When the air does laugh with our merry wit,
+And the green hill laughs with the noise of it;~
+@346 = ~When the meadows laugh with lively green,
+And the grasshopper laughs in the merry scene,
+When Mary and Susan and Emily
+With their sweet round mouths sing 'Ha, Ha, He!'~
+@347 = ~When the painted birds laugh in the shade,
+Where our table with cherries and nuts is spread,
+Come live, and be merry, and join with me,
+To sing the sweet chorus of 'Ha, Ha, He!'~
+@348 = ~You... have dispelled my causeless sadness, Garrick...~
+@349 = ~*Nalia comes close to Garrick, he leans towards her, and their lips touch*~
+@350 = ~*Whispering* Did you like the song?~
+@351 = ~Yes. And I will never be sad again when you are around. ~
+@352 = ~I love you.~
+@353 = ~And I love you. Your song has a great ending! ~
+@354 = ~Ending? It's just the beginning.~ [GARRICKH]
+@355 = ~*Snuggling against Garrick's chest* And that's right! Let's pray to the gods to give us as much time as possible. To be together...~
+
+// Nalia-Garrick 7
+@356 = ~Nalia... can I have a minute of your time?~
+@357 = ~Of course, my nightingale, what do you want? ~
+@358 = ~Look... I found this. Maybe it will come in handy. Once upon a time, after all, you were fond of rogue art. ~
+@359 = ~A ring...?~
+@360 = ~Yes, I checked it carefully, there is no evil magic or trick here. And the enchantment on this ring will help you if you suddenly want to remember the past *Smiles*~
+@361 = ~Oh thank you! This is a great gift.~
+@362 = ~Is that truly a gift...? I would have thought a gift to be something I bought for you to your liking. However, I can't imagine what that could be...~
+@363 = ~Garrick, you're just lovely!~
+@364 = ~Nalia... you're not laughing at me, are you? ~
+@365 = ~Of course not. *Ruffles his hair* You're so cute! You yourself are the best gift for me. So don't worry.~
+@366 = ~And yet... You are indifferent to jewelry, and enchanted things like this ring are more a necessity in our business than a nice gift... ~
+@367 = ~Garrick... do you remember the lovely bouquet you gave me?~
+@368 = ~*Embarrassed* They were just daisies... You deserve gorgeous roses and orchids!~
+@369 = ~No, no. It was the most wonderful bouquet. Unfortunately, it faded, although I dried a few flowers in the book as a keepsake. If you want to give me something, get an unfading bunch of simple wildflowers. That will be the sweetest gift I've ever had.~
+@370 = ~Really? That's lovely! I will try, you can be sure of that. *kisses Nalia*~
+@371 = ~I don’t doubt or feel sad anymore, even when it’s not easy for me. I'm glad I met you along the way.~
+@372 = ~*Smiles* But we have to go. Let's not keep anyone waiting for us!~
+
+// Nalia-Garrick 8 (Underdark)
+@373 = ~Garrick... I want to squeeze your hand, but make it so that no one notices. For we are all drow at the moment, and drow do not hold hands.~
+@374 = ~This place wafts malice at it's core with the darkness that accompanies it. It makes me want the sun, but it would probably be better not to think about the sun here. It's unbearable. The gloom is everywhere... it seems that now it will shrink around us and suffocate us.~
+@375 = ~I also feel uneasy here, but hold on, my darling. Let's remember that sooner or later we'll get out of here safe and sound. And then we will be able to hold hands without fear.~ [GARRICKB]
+@376 = ~That's right. I hope we succeed down here with all my might, but I will never forget this eerie place. You see, when I sneaked out of the keep and watched the life of ordinary people, it seemed to me that I had seen enough of all sorts of calamities and injustice. But I couldn't even imagine what we have encountered here.~
+@377 = ~This are is just... too cruel. And it is so painful to realize that nothing can be done, nothing can be changed! We are drow while I just want to use my magic and... and...~
+@378 = ~Nalia... shhhh... Please calm down. Yes, we can’t do anything here, but we can try to survive, and return to the surface. Once there we can fight injustice and all kinds of evil for as far as we can go, and so it will be done! You have the Gallant Sir Garrick's word!~
+@379 = ~You're right. I should be careful not to let anyone down. Garrick, you are my sun, and with you I am brighter in this gloomy darkness. Thank you.~
+
+// Nalia-Garrick 9 (Underdark)
+@380 = ~Garrick, while I'm very pleased that you put your arm around my waist, I want to remind you that drow men don't do that! They may become furious for such a liberty and grow highly suspicious of us.~
+@381 = ~*Letting go of Nalia* Sorry, I forgot. I always want to hold you.~
+@382 = ~Well... to be honest... it's mutual. Although It would be much safer to give you a good slap in the face. It won't surprise anyone here.~
+@383 = ~A Slap in the face? To me? What for?~
+@384 = ~Who's staring at the female drow? They are pretty and dress quite revealingly, so I’m not surprised that some bard looks at them with their mouth open.~
+@385 = ~Sweetheart, you're exaggerating! Of course, such an exotic beauty attracts the eye, but... I don't like their faces. Too much arrogance and overbearing. And their cruelty creeps into those elven features.~
+@386 = ~No dear, the bard in me is rather indignant than admiring, so I don't deserve a slap from my beloved. And as you know, you can always trust your handsome man! Even though there may be a lot of women out there, there is only one Nalia, and she's mine! Really.~
+@387 = ~True, true. I love you, nightingale. ~
+@388 = ~As do I my love. Ah, I'd rather get out of here! I want the sun to light up your face as soon as possible, which I will kiss as long as I want, without looking back at any drow!~
+
+// Nalia-Garrick 10 (Exit from Underdark)
+@389 = ~The sky! The sky is over our heads! Praise to all the gods. Sometimes I was beginning to think that I would never see it again.~
+@390 = ~Hooray! Just as I said that we would get out of there safe and sound.~
+@391 = ~Yes, my sunny love, whose zest for life has not been shaken even by the deadly darkness of the Underdark! And I'm happy that your prediction came true.~
+@393 = ~I couldn't possibly be more joyous!~ [GARRICKH]
+@394 = ~*Grabs Nalia's hands and kisses her passionately*~
+@395 = ~You are crazy! They're looking at us...~
+@396 = ~Yes they are, and who cares. I'm tired of pretending and holding myself back. Kiss me, my love.~
+@397 = ~If you say so... then hold on! I will prove to you that I missed you as much... with all my heart. *She kisses Garrick fervently.* Although my nightingale, our love will have to wait for now for it is time for us to go.~
+@398 = ~Yes, exactly my love. Now that we are out of the Underdark, the world around us is smiling at us once again.~
+
+// Nalia-Garrick 11
+@399 = ~This magician, Irenicus, this grim figure... Sometimes it seems to me that his shadow looms somewhere ahead, teasing us and keeping us away. ~
+@400 = ~But now <CHARNAME> is getting closer to his goal. Sooner or later, we will fight this Irenicus.~
+@401 = ~And I hope we succeed. Oh how I am looking forward to this! For <CHARNAME>, for myself - and you, Garrick.~
+@402 = ~To say: We did it! Breathe freely and go on our own path?~
+@403 = ~Exactly.~
+@404 = ~Together?~
+@405 = ~Of course. You are truly dear to me.~
+@406 = ~As you are to me. Except I feel uneasy at the thought that we might part ways when <CHARNAME> says goodbye to us and travels his own way.~
+@407 = ~We will not part, Garrick. ~
+@408 = ~Nalia... You are a noblewoman and a high-flying bird. Maybe you won't want to-~
+@409 = ~*Gently puts her hand over his mouth* Not another word. We have already gone through so much and seen so much that the unnecessary was erased... even if it did matter, I only care about you... just you yourself. We're just a man and a woman, and nothing else matters.~
+@410 = ~*Garrick silently presses Nalia's hand to his lips and does not let go for a long time. Words are not needed now. After all, even bards have moments when silence becomes more valuable than words*~
+
+// Nalia-Garrick 12
+@411 = ~Nalia, I have a surprise for you! Remember when you said that you wanted to receive a bouquet of unfading flowers as a gift? I hope you haven't changed your mind?~
+@412 = ~Of course not!~
+@413 = ~Well hold on then, because this is for you.~
+@414 = ~Oh! What delightful wildflowers... and I sense they have a special magic... Thank you, thank you.~
+@415 = ~Do you like them? I collected them myself, and then I made an agreement in secret with one magician and now...~
+@416 = ~Wait, so you went to meet this magician when you secretly escaped from us recently? ~
+@417 = ~Oh? You noticed?~
+@418 = ~Of course, and I even intended to secretly follow you... but then I changed my mind. I didn't want to look genuinely jealous and I trust you.~
+@419 = ~Thank you! Trust is also a gift. One of the most valuable I think. ~
+@420 = ~Garrick, I promised you something. When we stop to rest... ~
+@421 = ~Nalia...~
+@422 = ~If you want... If you love me...~
+@423 = ~Yes...?~
+@424 = ~Then let everything else disappear for a while...~
+
+// Nalia-Garrick 13 (rest)
+@425 = ~Nalia, let's get away for a while. Certainly not too far from the camp for some monsters to disturb our privacy. ~
+@426 = ~So what does my knight want? ~
+@427 = ~That's what my lady ... *Hugs Nalia and starts dancing around her* ~
+@428 = ~Wow! I like it. When I was bored at the parties, I did not think that I would ever dance with my loved one in the open air... Thank you. By the way, you dance beautifully. You are very musical. ~
+@429 = ~I know that. ~
+@430 = ~You're also very humble! ~
+@431 = ~Well, now you're teasing me. ~
+@432 = ~Just a little bit. Never mind. I'm fine with you, and I don't want to leave here. ~
+@433 = ~Let's dance a little more. But then I need to make sure you get a good rest. ~
+@441 = ~This is exactly what I need. Truly, we have found each other in this world. ~
+
+// Nalia-Garrick (before the final battle with Bodhi)
+@442 = ~Bodhi... I can't tolerate her.~
+@443 = ~It's good that she didn't manage to persuade <CHARNAME> to work for her that time. ~
+@460 = ~I can't believe she was able to persuade <CHARNAME> to work for her that time. ~
+@444 = ~She and her vampires are depriving people of the many wonderful things - the joy of life, love, sunshine! Better to perish than suffer such a fate. Garrick, if you weren’t with me, I wouldn’t have felt this so keenly.~
+@445 = ~Don't be afraid my dear! I won't let a single vampire come near you. I'll cover you with myself if need be. Er... I talk too much. I hope you don't consider me a chatterbox?~
+@446 = ~No, Garrick. You are a brave young man, and I know that you are capable of protecting me. Just like I could for you, heh heh...~
+@447 = ~You're right, my beauty. Do not be afraid. These creatures will not take the sun away from us!~
+
+// NPC reactions to Garrick-Nalia romance
+@448 = ~Grr! Ye people are so funny - ya bother with trifles and give each other useless trinkets! We dwarves are much smarter. One of me friends, I remember, brought a moonshine still to me wife - that is a gift! A useful thing in the household, not like your slobbery trinkets, har har!!!~
+@449 = ~Korgan, I don't think Nalia would use a moonshine while we're on the road. But when we finish traveling, contact me friends - I can make this, and in your castle Nalia, you will always have the best turnip moonshine in the area! You open a tavern for the poor and you will treat everyone for free - then your subjects will carry you in their arms for joy, like my great-great-uncle Duduvar Jansen. True, he was not worn for joy, but, on the contrary, he was seized and carried out of the tavern until he drank everything alone. And he just wanted to celebrate his son's wedding and drink to the health of the young, and then he got too carried away. Besides, he forgot that the wedding was only a week later... Oh, and then he got in huge trouble with his wife about that!~
+@450 = ~Garrick, are you picking a gift for Nalia? There is one thing that is useful in the household and for the trade. A moonshine still! When we finish traveling, I can make one for you - and in your castle Nalia, you will always have the best turnip moonshine in the area! You open a tavern for the poor and you will treat everyone for free - then your subjects will carry you in their arms for joy, like my great-great-uncle Duduvar Jansen. True, he was not worn for joy, but, on the contrary, he was seized and carried out of the tavern until he drank everything alone. And he just wanted to celebrate his son's wedding and drink to the health of the young, and then he got too carried away. Besides, he forgot that the wedding was only a week later... Oh, and then he got in huge trouble with his wife about that!~
+@451 = ~Thanks for the offer, Jan. But I would probably refuse. I think it's better not to let the poor get drunk, but to help them live better and feed their families. ~
+@452 = ~The best gift for a woman is a sharp sword or dagger! To slice the throats of any idiotic fool!~
+@453 = ~Garrick, this be idiocy boy! Ye won't earn much on yer rhymes, but are ye ready to spend yer last coins on a woman?! Ye will never get rich this way!~
+@454 = ~*Sigh* (I'm so tired of these monkey's touchy-feely anecdotes!)~
+
+// Nalia-Garrick (Spellhold) 1
+@461 = ~Nalia, you know, I feel uncomfortable here anyway, but now it’s not at all good at the thought that if I hadn’t been careful in Athkatla, I could also have come here. Although, of course, I am not as good at magic as you are, but still...~
+@462 = ~I'm not a master myself yet. Mother wanted me to study magic, although in Amn they have long looked askance at magicians. But of course we didn't have any problems with the license. What if I was poor but loved magic... would I have ended up here?~
+@463 = ~It is unfair that some traitorous sorcerers in the past harassed practitioners of magic so much in those days... While this is a good way to knock out money with licenses, it’s not good for everyone else.~
+@464 = ~There is a lot of injustice in Athkatla. But now this city seems so far away... almost unattainable. And, of course, it's much better to be there than here.~
+@465 = ~Well, we’ll go back there or we’ll go to a nicer place, we won’t be stuck here forever.~
+@466 = ~Ah, Garrick, it's good that even in this dark place, you remain yourself. ~
+
+// Nalia-Garrick (Spellhold) 2
+@467 = ~Nalia, how are you? You weren't very scared when <CHARNAME>... became... that... thing!~
+@468 = ~Oh, Garrick, of course I was very scared, and who would not be scared? I hope so much that this does not happen again... just a memory makes it creepy.~
+@469 = ~Nalia, I...~
+@470 = ~Oh no, don't tell me you will protect me if <CHARNAME> transforms again. Run away from him no matter what happens.~
+@471 = ~But if he attacks you, I won't run away. I will protect you!~
+@472 = ~No Garrick, don't say anything more. I really hope <CHARNAME> can handle this. ~
+
+// Nalia-Garrick (after the quest)
+@473 = ~Garrick, Garrick... I still feel uneasy. Just think... I could have lost you! Not in battle, but... but... because of someone else's meanness, greed! No, I can't... ~
+@474 = ~Nalia, don't be upset, now everything is in order. Although being separated from you is the most cruel thing that could happen to me. ~
+@475 = ~Yes, if you were taken to Calimshan, I would have travelled around it all, even on foot, I would use all the magic available, and I wouldn't stop until I found you!~
+@476 = ~Nalia... No one has ever treated me the way you do. ~ [GARRICK4]

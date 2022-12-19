@@ -1,0 +1,102 @@
+IF
+
+InParty("7XELDOT")!StateCheck("7XELDOT",CD_STATE_NOTVALID)
+AreaCheck("ar0307")
+  Global("ELDOar0307","GLOBAL",0)
+  CombatCounter(0)
+
+THEN
+  RESPONSE #100
+  SetGlobal("ELDOar0307","GLOBAL",1)
+    Interact([PC])
+END
+
+IF
+
+InParty("7XELDOT")!StateCheck("7XELDOT",CD_STATE_NOTVALID)
+Global("BodhiAppear","GLOBAL",1)
+Global("EldothValenHypeTalk","GLOBAL",0)
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+  SetGlobal("EldothValenHypeTalk","GLOBAL",1)
+    Interact([PC])
+END
+
+IF
+TimeOfDay(DAY)
+Global("EldothExists","AR0800",1)
+!InParty("7XELDOT")
+
+THEN
+
+RESPONSE #100
+SetGlobal("EldothExists","AR0800",0)
+EscapeArea()
+Continue() 
+END
+
+IF
+
+InParty("7XELDOT")!StateCheck("7XELDOT",CD_STATE_NOTVALID)
+AreaCheck("arbgx4")
+  Global("ELDOarbgx4","GLOBAL",0)
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+  SetGlobal("ELDOarbgx4","GLOBAL",1)
+    Interact([PC])
+END
+
+IF
+
+InParty("7XELDOT")!StateCheck("7XELDOT",CD_STATE_NOTVALID)
+AreaCheck("ar0300")
+  Global("ELDOar0300","GLOBAL",0)
+  CombatCounter(0)
+
+THEN
+  RESPONSE #100
+  SetGlobal("ELDOar0300","GLOBAL",1)
+    Interact([PC])
+END
+
+IF
+
+InParty("7XELDOT")!StateCheck("7XELDOT",CD_STATE_NOTVALID)
+AreaCheck("ar0406")
+  Global("ELDOar0406","GLOBAL",0)
+  CombatCounter(0)
+
+THEN
+  RESPONSE #100
+  SetGlobal("ELDOar0406","GLOBAL",1)
+    Interact([PC])
+END
+
+
+IF
+
+InParty("7XELDOT")!StateCheck("7XELDOT",CD_STATE_NOTVALID)
+AreaCheck("ar0700")
+  Global("ELDOar0700","GLOBAL",0)
+  CombatCounter(0)
+
+THEN
+  RESPONSE #100
+  SetGlobal("ELDOar0700","GLOBAL",1)
+    Interact([PC])
+END
+
+IF
+
+InParty("7XELDOT")!StateCheck("7XELDOT",CD_STATE_NOTVALID)
+AreaCheck("arbgx7")
+  Global("ELDOarbgx7","GLOBAL",0)
+  CombatCounter(0)
+
+THEN
+  RESPONSE #100
+  SetGlobal("ELDOarbgx7","GLOBAL",1)
+    Interact([PC])
+END

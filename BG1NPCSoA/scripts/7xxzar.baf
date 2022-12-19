@@ -1,0 +1,212 @@
+// Human Flesh
+IF
+!StateCheck("7XXZAR",CD_STATE_NOTVALID)InParty("7XXZAR")
+!StateCheck(Player1,CD_STATE_NOTVALID)
+OR(2)
+PartyHasItem("leat21") 
+PartyHasItem("leat22")
+Global("XzarHumanFlesh","GLOBAL",0)
+THEN
+ RESPONSE #100
+ SetGlobal("XzarHumanFlesh","GLOBAL",1)
+  StartDialogNoSet(Player1)
+END
+
+// Illithid Lair
+IF
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck("7XXZAR",CD_STATE_NOTVALID)InParty("7XXZAR")
+AreaCheck("AR0711")
+  Global("XzarAR0711","AR0711",0)
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+  SetGlobal("XzarAR0711","AR0711",1)
+  RealSetGlobalTimer("XzarAR0711TalkTimer","GLOBAL",3) 
+END
+
+IF
+!StateCheck(Player1,CD_STATE_NOTVALID)
+InParty("7XXZAR")!StateCheck("7XXZAR",CD_STATE_NOTVALID)
+AreaCheck("AR0711")
+  Global("XzarAR0711","AR0711",1)
+  CombatCounter(0)
+  RealGlobalTimerExpired("XzarAR0711TalkTimer","GLOBAL") 
+THEN
+  RESPONSE #100
+  SetGlobal("XzarAR0711","AR0711",2)
+  StartDialogNoSet(Player1)
+END
+
+
+// Spellhold
+IF
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck("7XXZAR",CD_STATE_NOTVALID)InParty("7XXZAR")
+AreaCheck("AR1515")
+  Global("XzarAR1515","AR1515",0)
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+  SetGlobal("XzarAR1515","AR1515",1)
+  RealSetGlobalTimer("XzarAR1515TalkTimer","GLOBAL",2) 
+END
+
+IF
+!StateCheck(Player1,CD_STATE_NOTVALID)
+InParty("7XXZAR")!StateCheck("7XXZAR",CD_STATE_NOTVALID)
+AreaCheck("AR1515")
+  Global("XzarAR1515","AR1515",1)
+  CombatCounter(0)
+  RealGlobalTimerExpired("XzarAR1515TalkTimer","GLOBAL") 
+THEN
+  RESPONSE #100
+  SetGlobal("XzarAR1515","AR1515",2)
+  StartDialogNoSet(Player1)
+END
+
+
+// HaperLair
+IF
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck("7XXZAR",CD_STATE_NOTVALID)InParty("7XXZAR")
+AreaCheck("AR0308")
+  Global("XzarAR0308","AR0308",0)
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+  SetGlobal("XzarAR0308","AR0308",1)
+  RealSetGlobalTimer("XzarAR0308TalkTimer","GLOBAL",2) 
+END
+
+IF
+!StateCheck(Player1,CD_STATE_NOTVALID)
+InParty("7XXZAR")!StateCheck("7XXZAR",CD_STATE_NOTVALID)
+AreaCheck("AR0308")
+  Global("XzarAR0308","AR0308",1)
+  CombatCounter(0)
+  RealGlobalTimerExpired("XzarAR0308TalkTimer","GLOBAL") 
+THEN
+  RESPONSE #100
+  SetGlobal("XzarAR0308","AR0308",2)
+ StartDialogNoSet(Player1)
+END
+
+
+// Promenade
+IF
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck("7XXZAR",CD_STATE_NOTVALID)InParty("7XXZAR")
+AreaCheck("AR0700")
+  Global("XzarAR0700","AR0700",0)
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+  SetGlobal("XzarAR0700","AR0700",1)
+  RealSetGlobalTimer("XzarAR0700TalkTimer","GLOBAL",5) 
+END
+
+IF
+!StateCheck(Player1,CD_STATE_NOTVALID)
+InParty("7XXZAR")!StateCheck("7XXZAR",CD_STATE_NOTVALID)
+AreaCheck("AR0700")
+  Global("XzarAR0700","AR0700",1)
+  CombatCounter(0)
+  RealGlobalTimerExpired("XzarAR0700TalkTimer","GLOBAL") 
+THEN
+  RESPONSE #100
+  SetGlobal("XzarAR0700","AR0700",2)
+ StartDialogNoSet(Player1)
+END
+
+
+// Underdark
+IF
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck("7XXZAR",CD_STATE_NOTVALID)InParty("7XXZAR")
+AreaCheck("AR2100")
+  Global("XzarAR2100","AR2100",0)
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+  SetGlobal("XzarAR2100","AR2100",1)
+  RealSetGlobalTimer("XzarAR2100TalkTimer","GLOBAL",5) 
+END
+
+IF
+!StateCheck(Player1,CD_STATE_NOTVALID)
+InParty("7XXZAR")!StateCheck("7XXZAR",CD_STATE_NOTVALID)
+AreaCheck("AR2100")
+  Global("XzarAR2100","AR2100",1)
+  CombatCounter(0)
+  RealGlobalTimerExpired("XzarAR2100TalkTimer","GLOBAL") 
+THEN
+  RESPONSE #100
+  SetGlobal("XzarAR2100","AR2100",2)
+ StartDialogNoSet(Player1)
+END
+
+
+// Graveyard
+IF
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck("7XXZAR",CD_STATE_NOTVALID)InParty("7XXZAR")
+AreaCheck("ar0800")
+  Global("XzarAR0800","AR0800",0)
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+  SetGlobal("XzarAR0800","AR0800",1)
+  RealSetGlobalTimer("XzarAR0800TalkTimer","GLOBAL",3) 
+END
+
+IF
+!StateCheck(Player1,CD_STATE_NOTVALID)
+InParty("7XXZAR")!StateCheck("7XXZAR",CD_STATE_NOTVALID)
+AreaCheck("AR0800")
+  Global("XzarAR0800","AR0800",1)
+  CombatCounter(0)
+  RealGlobalTimerExpired("XzarAR0800TalkTimer","GLOBAL") 
+THEN
+  RESPONSE #100
+  SetGlobal("XzarAR0800","AR0800",2)
+  StartDialogNoSet(Player1)
+END
+
+// Bridge
+IF
+!StateCheck("7XXZAR",CD_STATE_NOTVALID)InParty("7XXZAR")
+AreaCheck("AR0500")
+  Global("XzarAR0500","AR0500",0)
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+  SetGlobal("XzarAR0500","AR0500",1)
+  RealSetGlobalTimer("XzarAR0500TalkTimer","GLOBAL",15) 
+END
+
+IF
+!StateCheck(Player1,CD_STATE_NOTVALID)
+InParty("7XXZAR")!StateCheck("7XXZAR",CD_STATE_NOTVALID)
+AreaCheck("AR0500")
+  Global("XzarAR0500","AR0500",1)
+  CombatCounter(0)
+  RealGlobalTimerExpired("XzarAR0500TalkTimer","GLOBAL") 
+THEN
+  RESPONSE #100
+  SetGlobal("XzarAR0500","AR0500",2)
+ StartDialogNoSet(Player1)
+END
+
+// AR0502
+IF
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck("7XXZAR",CD_STATE_NOTVALID)InParty("7XXZAR")
+AreaCheck("ar0502")
+  Global("Xzarar0502","AR0502",0)
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+  SetGlobal("Xzarar0502","AR0502",1)
+  StartDialogNoSet(Player1)
+END

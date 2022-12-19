@@ -1,0 +1,32 @@
+
+IF 
+Global("DestroyTrademeet","GLOBAL",3)
+
+
+THEN
+  RESPONSE #100
+ActionOverride("CELOGAN",ENEMY())
+ActionOverride("TRHMER01",ENEMY())
+ActionOverride("TRLGRD01",ENEMY())
+Continue()
+END
+
+IF 
+Global("DestroyTrademeet","GLOBAL",10)
+Global("dogar2007","GLOBAL",0)
+
+THEN
+  RESPONSE #100
+CreateCreatureOffScreen("NDOG",0)
+CreateCreatureOffScreen("NDOG",0)
+CreateCreatureOffScreen("NDOG",0)
+CreateCreatureOffScreen("NDOG",0)
+CreateCreatureOffScreen("NDOG",0)
+CreateCreatureOffScreen("NDOG",0)
+CreateCreatureOffScreen("NDOG",0)
+CreateCreatureOffScreen("NDOG",0)
+CreateCreatureOffScreen("NDOG",0)
+CreateCreatureOffScreen("NDOG",0)
+SetGlobal("dogar2007","GLOBAL",1)
+Continue()
+END

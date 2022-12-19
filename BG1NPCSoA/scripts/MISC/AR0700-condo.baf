@@ -1,0 +1,12 @@
+IF
+	GlobalGT("WaterGardensCondominium","GLOBAL",1)
+    Global("WaterGardensCondominium","AR0700",0)
+THEN
+	RESPONSE #100
+		CreateCreatureDoor("7XCRE99",[2861.546],0)  // Дживс
+		SetGlobal("WaterGardensCondominium","AR0700",1)
+END
+
+
+
+

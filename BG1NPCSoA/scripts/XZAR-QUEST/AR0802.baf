@@ -1,0 +1,11 @@
+IF
+Global("XZARQUESTSTART","GLOBAL",1)
+Global("XQLICHCREATE","GLOBAL",0)
+
+THEN
+  RESPONSE #100
+CreateCreature("XQLICH",[1014.592],6)
+SetGlobal("XQLICHCREATE","GLOBAL",2)
+Continue()
+END
+

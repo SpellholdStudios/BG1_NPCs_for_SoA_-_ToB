@@ -1,0 +1,48 @@
+IF
+	See(NearestEnemyOf(Myself))
+	!Range(NearestEnemyOf(Myself),13)
+THEN
+	RESPONSE #50
+		ReallyForceSpell(NearestEnemyOf(Myself),WIZARD_LIGHTNING_BOLT)  // SPWI308.SPL (Разряд молнии)
+		ReallyForceSpell(NearestEnemyOf(Myself),WIZARD_LIGHTNING_BOLT)  // SPWI308.SPL (Разряд молнии)
+		AttackReevaluate(NearestEnemyOf(Myself),5)
+	RESPONSE #50
+		ReallyForceSpell(NearestEnemyOf(Myself),CLERIC_CALL_LIGHTNING)  // SPPR302.SPL (Вызов молнии)
+		ReallyForceSpell(NearestEnemyOf(Myself),WIZARD_LIGHTNING_BOLT)  // SPWI308.SPL (Разряд молнии)
+		AttackReevaluate(NearestEnemyOf(Myself),5)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	!Range(NearestEnemyOf(Myself),7)
+	Range(NearestEnemyOf(Myself),12)
+THEN
+	RESPONSE #60
+		ReallyForceSpell(NearestEnemyOf(Myself),WIZARD_LIGHTNING_BOLT)  // SPWI308.SPL (Разряд молнии)
+		ReallyForceSpell(NearestEnemyOf(Myself),WIZARD_CHAIN_LIGHTNING)  // SPWI615.SPL (Цепь молний)
+		ReallyForceSpell(NearestEnemyOf(Myself),CLERIC_CALL_LIGHTNING)  // SPPR302.SPL (Вызов молнии)
+		AttackReevaluate(NearestEnemyOf(Myself),8)
+	RESPONSE #40
+		ReallyForceSpell(NearestEnemyOf(Myself),DRAGON_FEAR)  // SPIN895.SPL (Драконий ужас)
+		ReallyForceSpell(NearestEnemyOf(Myself),DRAGON_WING_BUFFET)  // SPIN695.SPL (Удар крылом)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Range(NearestEnemyOf(Myself),6)
+THEN
+	RESPONSE #10
+		ReallyForceSpell(Myself,WIZARD_STONE_SKIN)  // SPWI408.SPL (Каменная кожа)
+		Continue()
+	RESPONSE #30
+		ReallyForceSpell(NearestEnemyOf(Myself),WIZARD_SHOCKING_GRASP)  // SPWI115.SPL (Шокирующая хватка)
+		ReallyForceSpell(NearestEnemyOf(Myself),WIZARD_CHAIN_LIGHTNING)  // SPWI615.SPL (Цепь молний)
+		ReallyForceSpell(NearestEnemyOf(Myself),WIZARD_SHOCKING_GRASP)  // SPWI115.SPL (Шокирующая хватка)
+		AttackReevaluate(NearestEnemyOf(Myself),10)
+	RESPONSE #30
+		ReallyForceSpell(NearestEnemyOf(Myself),DRAGON_FEAR)  // SPIN895.SPL (Драконий ужас)
+		ReallyForceSpell(NearestEnemyOf(Myself),DRAGON_WING_BUFFET)  // SPIN695.SPL (Удар крылом)
+	RESPONSE #30
+		AttackReevaluate(NearestEnemyOf(Myself),20)
+END
+

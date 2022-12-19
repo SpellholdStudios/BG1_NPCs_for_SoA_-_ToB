@@ -1,0 +1,11 @@
+IF
+AreaCheck("AR0500") PartyHasItem("PLATPANT")
+Global("FeveronPantaloonsComment","AR0500",0)
+CombatCounter(0)
+See(Player1)
+THEN
+  RESPONSE #100
+  SetGlobal("FeveronPantaloonsComment","AR0500",1)
+  SmallWait(5)
+  StartDialogNoSet(Player1)
+END

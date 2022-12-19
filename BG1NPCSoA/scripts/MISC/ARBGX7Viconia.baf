@@ -1,0 +1,10 @@
+IF
+AreaCheck("ARBGX7")
+Global("7xLaaliGOOD","GLOBAL",1)
+Global("7xLaaliViconRomanceReaction","ARBGX7",0)
+See(Player1)
+Global("ViconiaRomanceActive","GLOBAL",2)
+THEN
+	RESPONSE #100
+StartDialogNoSet("Player1")
+END

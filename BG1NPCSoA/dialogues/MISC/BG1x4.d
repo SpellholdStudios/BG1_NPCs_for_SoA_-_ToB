@@ -1,0 +1,61 @@
+BEGIN ~BG1x4~
+
+IF ~NumTimesTalkedTo(0)~ THEN BEGIN Talk1
+SAY @0
+=
+@1
+=
+@2
+IF ~~ THEN REPLY @3 GOTO LEAVE
+IF ~~ THEN REPLY @4 GOTO SEER
+IF ~~ THEN REPLY @5 GOTO LICH
+IF ~~ THEN REPLY @6 GOTO QUESTION
+END
+
+IF ~~ THEN BEGIN QUESTION
+SAY @7
+=
+@8
+=
+@9
+IF ~~ THEN REPLY @3 GOTO LEAVE
+IF ~~ THEN REPLY @4 GOTO SEER
+END
+
+IF ~~ THEN BEGIN LEAVE
+SAY @10
+=
+@11
+=
+@9
+IF ~~ THEN DO ~CreateCreature("SNAKEB01",[322.469],0)
+CreateCreature("SNAKEB01",[185.381],0)
+CreateCreature("SNAKEB01",[894.360],0)
+CreateCreature("SNAKEB01",[542.594],0)
+Enemy()~ EXIT
+END
+
+IF ~~ THEN BEGIN SEER
+SAY @12
+=
+@13
+=
+@14
+=
+@15
+IF ~~ THEN DO ~CreateCreature("SNAKEB01",[322.469],0)
+CreateCreature("SNAKEB01",[185.381],0)
+CreateCreature("SNAKEB01",[894.360],0)
+CreateCreature("SNAKEB01",[542.594],0)
+Enemy()~ EXIT
+END
+
+IF ~~ THEN BEGIN LICH
+SAY @16
+=
+@8
+=
+@9
+IF ~~ THEN REPLY @3 GOTO LEAVE
+IF ~~ THEN REPLY @4 GOTO SEER
+END

@@ -1,0 +1,38 @@
+IF
+Global("GarrickNaliaRomance","GLOBAL",0)
+Global("StartEndBios","AR6200",1)
+InParty("7XGAR")
+Global("7XGARBio","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("7XGARBio","GLOBAL",1)
+TextScreen("GarrEp1")
+SmallWait(1)
+Continue()
+END
+
+IF
+Global("GarrickNaliaRomance","GLOBAL",2)
+Global("StartEndBios","AR6200",1)
+InParty("7XGAR")
+Global("7XGARBio","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("7XGARBio","GLOBAL",1)
+TextScreen("GarrEp2")
+SmallWait(1)
+Continue()
+END
+
+IF
+Global("GarrickNaliaRomance","GLOBAL",2)
+Global("StartEndBios","AR6200",1)
+InParty("Nalia")
+Global("7XNaliaBio","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("7XNaliaBio","GLOBAL",1)
+TextScreen("NaliaEp1")
+SmallWait(1)
+Continue()
+END

@@ -1,0 +1,12 @@
+IF 
+Global("XanQuest","AR0405",0)
+!Exists("7XXAN")
+!Exists("7XCRE80")
+
+THEN
+  RESPONSE #100
+CreateCreature("7XCRE76",[1221.1084],10)
+CreateCreature("7XCRE80",[390.1364],10)
+SetGlobal("XanQuest","AR0405",2)
+Continue()
+END

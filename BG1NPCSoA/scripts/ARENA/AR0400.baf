@@ -1,0 +1,9 @@
+IF 
+Global("FeynaQuest","GLOBAL",1)
+
+THEN
+  RESPONSE #100
+CreateCreature("7XCRE27",[1714.279],0)
+SetGlobal("FeynaQuest","GLOBAL",2)
+Continue()
+END

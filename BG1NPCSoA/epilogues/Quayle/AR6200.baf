@@ -1,0 +1,11 @@
+IF
+Global("StartEndBios","AR6200",1)
+InParty("7XQUAY")
+Global("7XQUAYBio","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("7XQUAYBio","GLOBAL",1)
+TextScreen("QuaEp")
+SmallWait(1)
+Continue()
+END

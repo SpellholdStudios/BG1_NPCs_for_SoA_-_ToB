@@ -1,0 +1,14 @@
+IF 
+Global("GarrickBardQuest","GLOBAL",7)
+Global("GarrickBardQuestThomasExists","AR0509",0)
+THEN
+  RESPONSE #100
+SetGlobal("GarrickBardQuestThomasExists","AR0509",1)  
+CreateCreature("7Xbard1",[597.646],10)
+Continue()
+END
+
+
+
+
+

@@ -1,0 +1,105 @@
+IF
+
+InParty("7XBRAN")!StateCheck("7XBRAN",CD_STATE_NOTVALID)
+ ReputationLT(Player1,9)
+Global("BranwenLowRepTalk","GLOBAL",0) 
+THEN
+ RESPONSE #100
+ SetGlobal("BranwenLowRepTalk","GLOBAL",1) 
+ Interact([PC])
+END
+
+IF
+
+CombatCounter(0)InParty("Minsc")HPPercentLT("Minsc",45)InParty("7XBRAN")!StateCheck("7XBRAN",CD_STATE_NOTVALID)
+!StateCheck("Minsc",CD_STATE_NOTVALID)!See([ENEMY])Global("BranMinscHurt","GLOBAL",0)
+
+THEN 
+  RESPONSE #100
+SetGlobal("BranMinscHurt","GLOBAL",1)
+ActionOverride("Minsc",Interact("7XBRAN"))
+
+END
+
+IF
+
+InParty("7XBRAN")!StateCheck("7XBRAN",CD_STATE_NOTVALID)
+AreaCheck("arbgx7")
+  Global("Branarbgx7","GLOBAL",0)
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+  SetGlobal("Branarbgx7","GLOBAL",1)
+    Interact([PC])
+END
+
+
+IF
+
+InParty("7XBRAN")!StateCheck("7XBRAN",CD_STATE_NOTVALID)
+AreaCheck("ar0902")
+  Global("Branar0902","GLOBAL",0)
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+  SetGlobal("Branar0902","GLOBAL",1)
+    Interact([PC])
+END
+
+IF
+
+AreaCheck("AR0801")
+Global("BranAR0801","GLOBAL",0)
+InParty("7XBRAN")!StateCheck("7XBRAN",CD_STATE_NOTVALID)
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+  SetGlobal("BranAR0801","GLOBAL",1)
+    Interact([PC])
+END
+
+IF 
+ReputationGT(Player1,12)
+Global("BranwenHighRep","GLOBAL",0)
+CombatCounter(0)
+InParty("7XBRAN")!StateCheck("7XBRAN",CD_STATE_NOTVALID)
+See(Player1) 
+
+THEN 
+  RESPONSE #100
+SetGlobal("BranwenHighRep","GLOBAL",1)
+Interact([PC])
+END 
+
+
+IF
+
+InParty("7XBRAN")!StateCheck("7XBRAN",CD_STATE_NOTVALID)
+AreaCheck("ar0300")
+  Global("Branar0300","GLOBAL",0)
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+  SetGlobal("Branar0300","GLOBAL",1)
+    Interact([PC])
+END
+
+IF
+	InParty("7XBRAN")  // Бранвен
+	!StateCheck("7XBRAN",CD_STATE_NOTVALID)  // Бранвен
+	Global("Player1AttackKnights","LOCALS",0)
+	OR(3)
+		AreaCheck("AR0900")  // Temple District
+		AreaCheck("AR0901")  // Temple of Helm
+		AreaCheck("AR0902")  // Temple of Lathander
+	OR(5)
+		Allegiance("helmkni1",ENEMY)  // Рыцарь Щита
+		Allegiance("helmpr",ENEMY)  // Сэр Лотиран
+		Allegiance("latkni01",ENEMY)  // Рыцарь Утра
+		Allegiance("dawnmas",ENEMY)  // Служитель Зари Крил
+		Allegiance("acolyte2",ENEMY)  // Зареносец Альванна
+THEN
+  RESPONSE #100
+  SetGlobal("Player1AttackKnights","LOCALS",1)
+    StartDialogNoSet(Player1)
+END

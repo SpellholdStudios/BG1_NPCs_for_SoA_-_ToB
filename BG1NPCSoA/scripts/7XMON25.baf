@@ -1,0 +1,26 @@
+IF
+Dead("yaga01")
+OR(2)
+Dead("Sendai")
+Dead("Abazigal")
+InParty("7XMONT") InMyArea("7XMONT") !StateCheck("7XMONT",CD_STATE_NOTVALID)
+  Global("7XMONT25MelissanTalk","GLOBAL",0)
+  CombatCounter(0)
+  !See([ENEMY])
+THEN
+  RESPONSE #100
+  SetGlobal("7XMONT25MelissanTalk","GLOBAL",1)
+  RealSetGlobalTimer("7XMONT25MelissanTimer","GLOBAL",100)
+END
+
+IF
+RealGlobalTimerExpired("7XMONT25MelissanTimer","GLOBAL")
+InParty("7XMONT") InMyArea("7XMONT") !StateCheck("7XMONT",CD_STATE_NOTVALID)
+  Global("7XMONT25MelissanTalk","GLOBAL",1)
+  CombatCounter(0)
+  !See([ENEMY])
+THEN
+  RESPONSE #100
+  SetGlobal("7XMONT25MelissanTalk","GLOBAL",2)
+  StartDialogNoSet([PC])
+END

@@ -1,0 +1,44 @@
+IF 
+Global("GarrickBardQuest","GLOBAL",8)
+
+THEN
+  RESPONSE #100
+CreateCreature("7Xgarib",[589.465],0)
+SetGlobal("GarrickBardQuest","GLOBAL",9)
+Continue()
+END
+
+IF 
+Global("GarrickBardQuest","GLOBAL",11)
+
+THEN
+  RESPONSE #100
+ClearAllActions() 
+ActionOverride("7Xgarib",DestroySelf())
+Wait(1)
+FadeFromColor([20.0],0)
+ActionOverride(Player1,LeaveAreaLUA("AR0022","",[349.407],8))
+ActionOverride(Player2,LeaveAreaLUA("AR0022","",[353.463],8))
+ActionOverride(Player3,LeaveAreaLUA("AR0022","",[455.400],8))
+ActionOverride(Player4,LeaveAreaLUA("AR0022","",[327.485],8))
+ActionOverride(Player5,LeaveAreaLUA("AR0022","",[514.428],8))
+ActionOverride(Player6,LeaveAreaLUA("AR0022","",[541.393],8))
+END
+
+IF 
+Global("GarrickBardQuest","GLOBAL",10)
+Global("GarrickBardQuestAr0020","AR0020",0)
+Dead("7Xgarib")
+THEN
+  RESPONSE #100
+    ActionOverride(Player1,SetDialog("PLAYER1"))
+	SetGlobal("GarrickBardQuestAr0020","AR0020",1)
+	ActionOverride(Player1,StartDialog("Player1",Myself))
+END
+
+
+
+
+
+
+

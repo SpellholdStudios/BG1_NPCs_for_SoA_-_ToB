@@ -1,0 +1,21 @@
+IF 
+Global("KaratakExists","ARBGX4",0)
+
+THEN
+  RESPONSE #100
+SetGlobal("KaratakExists","ARBGX4",1)
+CreateCreature("7XCRE10",[300.651],0)
+Continue()
+END
+
+IF
+Global("ARENAFIGHT","GLOBAL",2)
+Dead("7XCRE14")
+Dead("7XCRE15")
+Dead("7XCRE16")
+
+THEN
+  RESPONSE #100
+ActionOverride("ARENA1", StartDialogNoSet(Player1))
+END
+

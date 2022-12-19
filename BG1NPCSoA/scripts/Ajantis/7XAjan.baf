@@ -1,0 +1,119 @@
+IF
+InParty("7XAJAN")!StateCheck("7XAJAN",CD_STATE_NOTVALID)
+See(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+RealGlobalTimerExpired("AjantisPCTalkTimer","GLOBAL") 
+CombatCounter(0) 
+AreaType(OUTDOOR)
+OR(4)
+Global("AjantisIsTalking","GLOBAL",0)
+Global("AjantisIsTalking","GLOBAL",2)
+Global("AjantisIsTalking","GLOBAL",4)
+Global("AjantisIsTalking","GLOBAL",6)
+THEN
+  RESPONSE #100
+   IncrementGlobal("AjantisIsTalking","GLOBAL",1)
+   StartDialogNoSet(Player1)
+END
+
+IF
+PartyRested()
+AreaType(OUTDOOR)
+InParty("7XAJAN")!StateCheck("7XAJAN",CD_STATE_NOTVALID)
+See(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+RealGlobalTimerExpired("AjantisPCTalkTimer","GLOBAL") 
+CombatCounter(0) 
+Gender(Player1,FEMALE)
+Global("AjantisIsTalking","GLOBAL",8)
+THEN
+  RESPONSE #100
+   IncrementGlobal("AjantisIsTalking","GLOBAL",1)
+   StartDialogNoSet(Player1)
+END
+
+// Underdark
+IF
+InParty("7XAJAN")!StateCheck("7XAJAN",CD_STATE_NOTVALID)
+AreaCheck("AR2200")
+CombatCounter(0) 
+Global("AjantisUnderdarkTalking","AR2200",0)
+THEN
+  RESPONSE #100
+   SetGlobal("AjantisUnderdarkTalking","AR2200",1)
+   RealSetGlobalTimer("AjantisUnderdarkTimer","AR2200",10) 
+END
+
+IF
+InParty("7XAJAN")!StateCheck("7XAJAN",CD_STATE_NOTVALID)
+AreaCheck("AR2200")
+See(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+CombatCounter(0) 
+Global("AjantisUnderdarkTalking","AR2200",1)
+RealGlobalTimerExpired("AjantisUnderdarkTimer","AR2200") 
+THEN
+  RESPONSE #100
+  SetGlobal("AjantisUnderdarkTalking","AR2200",2)
+   StartDialogNoSet(Player1)
+END
+
+// Ajantis-PC talk after battle with Bodhi (Aran side)
+IF
+GlobalGT("ShadowFightBodhi","GLOBAL",0) 
+Global("7xAjantisAfterBodhi","GLOBAL",0)
+Dead("c6bodhi")
+InParty("7XAJAN")!StateCheck("7XAJAN",CD_STATE_NOTVALID)
+AreaCheck("AR0809")
+See(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+CombatCounter(0) 
+THEN
+  RESPONSE #100
+  SetGlobal("7xAjantisAfterBodhi","GLOBAL",1)
+  StartDialogNoSet(Player1)
+END
+
+// Ajantis reaction to Keldorn quest
+IF
+OR(2)
+Global("LadyMaria","GLOBAL",4)
+Global("LadyMaria","GLOBAL",5)
+Global("7xAjantisKeldornQuest","GLOBAL",0)
+InParty("7XAJAN")!StateCheck("7XAJAN",CD_STATE_NOTVALID)
+See(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+CombatCounter(0) 
+THEN
+  RESPONSE #100
+  SetGlobal("7xAjantisKeldornQuest","GLOBAL",1)
+  StartDialogNoSet(Player1)
+END
+
+
+
+// After Underdark
+IF
+InParty("7XAJAN")!StateCheck("7XAJAN",CD_STATE_NOTVALID)
+Global("chapter","GLOBAL",%bg2_chapter_6%) 
+CombatCounter(0) 
+Global("AjanAfterUnderdarkTalking","GLOBAL",0)
+THEN
+  RESPONSE #100
+   SetGlobal("AjanAfterUnderdarkTalking","GLOBAL",1)
+   RealSetGlobalTimer("AjantisAfterUnderdarkTimer","GLOBAL",10) 
+END
+
+IF
+InParty("7XAJAN")!StateCheck("7XAJAN",CD_STATE_NOTVALID)
+Global("chapter","GLOBAL",%bg2_chapter_6%) 
+See(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+CombatCounter(0) 
+Global("AjanAfterUnderdarkTalking","GLOBAL",1)
+RealGlobalTimerExpired("AjantisAfterUnderdarkTimer","GLOBAL") 
+THEN
+  RESPONSE #100
+  SetGlobal("AjanAfterUnderdarkTalking","GLOBAL",2)
+   StartDialogNoSet(Player1)
+END

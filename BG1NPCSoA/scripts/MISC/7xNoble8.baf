@@ -1,0 +1,11 @@
+IF
+AreaCheck("ARBGX7")
+Global("NobleBorivykTalk","ARBGX7",0)
+CombatCounter(0)
+LOS(Player1,5)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+THEN
+  RESPONSE #100
+  SetGlobal("NobleBorivykTalk","ARBGX7",1)
+  StartDialogNoSet(Player1)
+END

@@ -1,0 +1,14 @@
+
+IF
+Global("CoranCity","GLOBAL",1)
+Global("SafanaExists","AR0408",0)
+Dead("C6SAFA")
+
+THEN
+RESPONSE #100
+SetGlobal("CoranCity","GLOBAL",2)
+SetGlobal("SafanaExists","AR0408",2)
+CreateCreature("7XCRE63",[312.354],13)
+CreateCreature("7XCRE62",[351.330],13)
+Continue() 
+END

@@ -1,0 +1,26 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("7XTUFUS")  
+		SmallWait(10)
+		AttackOneRound("Korgan")  
+		AttackOneRound("Korgan") 
+		AttackOneRound("Korgan")  
+		AttackOneRound("Korgan")  
+		AttackOneRound("Korgan")  
+END
+
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("Korgan")  
+		AttackOneRound("7XTUFUS")  
+		AttackOneRound("7XTUFUS")  
+		AttackOneRound("7XTUFUS")  
+		Kill("7XTUFUS") 
+		EndCutSceneMode()
+		UnhideGUI()
+END
+

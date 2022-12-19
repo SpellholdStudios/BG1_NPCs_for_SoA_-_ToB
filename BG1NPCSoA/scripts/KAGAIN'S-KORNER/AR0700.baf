@@ -1,0 +1,22 @@
+
+IF 
+Global("kagainQuest","GLOBAL",0)
+
+THEN
+  RESPONSE #100
+CreateCreature("7XCRE96",[1453.3158],10)
+CreateCreature("7XCRE95",[1915.3313],0)
+CreateCreature("7XCRE71",[2733.3168],2)
+CreateCreature("Kgsto1",[1992.2904],6)
+CreateCreature("Kgsto3",[2401.3237],4)
+CreateCreature("Kgsto4",[1219.3312],8)
+CreateCreature("SLEEPDW",[1178.3262],8)
+CreateCreature("PPTOWN1",[1288.3194],13)
+CreateCreature("KAYSMG02",[1667.3116],10)
+CreateCreature("KAYSMG03",[2156.3146],8)
+CreateCreature("PIRCOR01",[1893.3386],12)
+CreateCreature("COW",[1338.3217],13)
+SetGlobal("kagainQuest","GLOBAL",1)
+Continue()
+END
+

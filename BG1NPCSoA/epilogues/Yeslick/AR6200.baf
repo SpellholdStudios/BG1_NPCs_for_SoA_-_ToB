@@ -1,0 +1,11 @@
+IF
+Global("StartEndBios","AR6200",1)
+InParty("7XYES")
+Global("7XYESBio","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("7XYESBio","GLOBAL",1)
+TextScreen("YeslEp")
+SmallWait(1)
+Continue()
+END

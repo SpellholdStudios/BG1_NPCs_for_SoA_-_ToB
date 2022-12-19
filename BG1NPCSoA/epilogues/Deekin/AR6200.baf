@@ -1,0 +1,11 @@
+IF
+Global("StartEndBios","AR6200",1)
+InParty("DEEKIN")
+Global("7XDEEKINBio","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("7XDEEKINBio","GLOBAL",1)
+TextScreen("DeekEp")
+SmallWait(1)
+Continue()
+END

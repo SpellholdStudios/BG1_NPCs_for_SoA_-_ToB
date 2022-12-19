@@ -1,0 +1,17 @@
+IF 
+    True() 
+THEN 
+    RESPONSE #100 
+CutSceneID(Player1)
+FadeToColor([20.0],0) 
+Wait(2) 
+LeaveAreaLUA("AR0406","",[2608.1523],13)
+Wait(2)
+MoveViewPoint([2608.1523],INSTANT)
+FadeFromColor([20.0],0)
+Wait(2)
+EndCutSceneMode()
+END
+
+
+

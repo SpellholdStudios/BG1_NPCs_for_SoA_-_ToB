@@ -1,0 +1,12 @@
+IF 
+Global("XMMM1","GLOBAL",0)
+
+
+
+THEN
+  RESPONSE #100
+CreateCreature("XMMM1",[641.469],3)
+SetGlobal("XMMM1","GLOBAL",1)
+Continue()
+END
+

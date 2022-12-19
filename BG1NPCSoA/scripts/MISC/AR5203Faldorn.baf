@@ -1,0 +1,32 @@
+// YagaShura is dead
+
+IF
+	Dead("yaga01")
+	Global("SaradushSacked","GLOBAL",1)
+	Global("FaldornYagaShura","AR5203",0)
+	InParty("7XFALD") InMyArea("7XFALD") !StateCheck("7XFALD",CD_STATE_NOTVALID)
+THEN
+	RESPONSE #100
+	SetGlobal("FaldornYagaShura","AR5203",1)
+    RealSetGlobalTimer("FaldornYagaShuraTimer","GLOBAL",3)
+	Continue() 
+END
+
+IF
+    RealGlobalTimerExpired("FaldornYagaShuraTimer","GLOBAL")
+	Global("FaldornYagaShura","AR5203",1)
+THEN
+	RESPONSE #100
+	SetGlobal("FaldornYagaShura","AR5203",2)
+	Continue()
+END
+
+IF
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	!ActuallyInCombat()
+	InParty("7XFALD") InMyArea("7XFALD") !StateCheck("7XFALD",CD_STATE_NOTVALID)
+	Global("FaldornYagaShura","AR5203",2)
+THEN
+	RESPONSE #100
+ActionOverride("7XFALD",StartDialogNoSet("Player1"))
+END

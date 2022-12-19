@@ -1,0 +1,14 @@
+IF
+Global("TiaxAR4500Talk","AR4500",1)
+InParty("7XTIAX") !StateCheck("7XTIAX",CD_STATE_NOTVALID)
+THEN
+  RESPONSE #100
+    StartCutSceneMode()
+	CutSceneID(Player1)
+    FadeToColor([20.0],0) 
+    ActionOverride("7XTIAX",JumpToPoint([3237.2391]))
+	SetGlobal("TiaxAR4500Talk","AR4500",2)
+	Wait(1)
+	EndCutSceneMode()
+	ActionOverride("CHALCY01",StartDialogNoSet("7XTIAX"))
+END

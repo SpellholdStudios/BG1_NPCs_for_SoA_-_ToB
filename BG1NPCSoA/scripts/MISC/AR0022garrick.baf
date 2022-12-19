@@ -1,0 +1,68 @@
+IF 
+Global("GarrickBardQuest","GLOBAL",10)
+Global("GarrickAR0022Exists","AR0022",0)
+!InParty("7XGAR")
+
+THEN
+  RESPONSE #100
+MoveGlobal("AR0022","7XGAR",[321.354])  // Garrick
+SetGlobal("GarrickAR0022Exists","AR0022",1)
+END
+
+IF 
+Global("GarrickBardQuest","GLOBAL",11)
+Global("GarrickAR0022Exists","AR0022",0)
+!InParty("7XGAR")
+
+THEN
+  RESPONSE #100
+SetGlobal("GarrickAR0022Exists","AR0022",1) 
+MoveGlobal("AR0022","7XGAR",[321.354])  
+CreateCreature("7Xgarib",[416.337],0)
+ActionOverride("7XGAR",DialogueInterrupt(FALSE))
+END
+
+IF 
+Global("GarrickBardQuest","GLOBAL",11)
+Global("GarrickBardQuestAr0020","AR0022",0)
+Dead("7Xgarib")
+!InParty("7XGAR")
+CombatCounter(0)
+THEN
+  RESPONSE #100
+    ActionOverride(Player1,SetDialog("PLAYER1"))
+	ActionOverride("7XGAR",DialogueInterrupt(TRUE))
+	SetGlobal("GarrickBardQuestAr0020","AR0022",1)
+	ActionOverride(Player1,StartDialog("Player1",Myself))
+END
+
+IF 
+Global("GarrickBardQuest","GLOBAL",12)
+CombatCounter(0)
+!InParty("7XGAR")
+Global("GarrickBardQuestAr0020-1","AR0022",0)
+THEN
+  RESPONSE #100
+SetGlobal("GarrickBardQuestAr0020-1","AR0022",1)  
+ActionOverride("7XGAR",StartDialogueNoSet(Player1))
+END
+
+IF 
+Global("GarrickBardQuest","GLOBAL",14)
+Dead("7Xgarib")
+CombatCounter(0)
+!InParty("7XGAR")
+Global("GarrickBardQuestAr0020-2","AR0022",0)
+THEN
+  RESPONSE #100
+SetGlobal("GarrickBardQuestAr0020-2","AR0022",1)    
+ActionOverride("7XGAR",StartDialogueNoSet(Player1))
+END
+
+
+
+
+
+
+
+

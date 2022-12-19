@@ -1,0 +1,11 @@
+IF
+AreaCheck("AR5200")
+See("ysgp03")
+InParty("DEEKIN") !StateCheck("DEEKIN",CD_STATE_NOTVALID)
+Global("DeekinTibitTalk","AR5200",0)
+THEN
+  RESPONSE #100
+ SetGlobal("DeekinTibitTalk","AR5200",1)
+ ActionOverride("ysgp03",StartDialogNoSet("DEEKIN"))
+END
+

@@ -1,0 +1,26 @@
+
+
+IF 
+Global("7xGladiators","AR0406",0)
+
+THEN
+  RESPONSE #100
+SetGlobal("7xGladiators","AR0406",1)  
+CreateCreature("7XCRE21",[2132.1215],13)
+CreateCreature("7XCRE52",[2222.1119],14)
+CreateCreature("7XCRE52",[2279.1071],15)
+CreateCreature("7XCRE52",[2223.1528],10)
+CreateCreature("7XCRE52",[2518.1745],8)
+CreateCreature("7XCRE26",[2082.1335],12)
+CreateCreature("7XCRE83",[2026.1245],12)
+Continue()
+END
+
+IF 
+!Dead("7XCRE84")
+Global("FEYNA","GLOBAL",77)
+
+THEN
+  RESPONSE #100
+ActionOverride("FEYNA",StartDialogNoSet("7XCRE84"))
+END

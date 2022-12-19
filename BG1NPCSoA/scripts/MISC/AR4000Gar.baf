@@ -1,0 +1,17 @@
+IF
+	InPartyAllowDead("7XGAR")
+	Global("GarrickTOBSummon","GLOBAL",1)
+THEN
+	RESPONSE #100
+		ActionOverride("7XGAR",ChangeAIScript("7XGar25",OVERRIDE))
+		SetGlobal("GarrickTOBSummon","GLOBAL",2)
+END
+
+IF
+	InPartyAllowDead("7XGAR")
+	Global("GarrickTOBSummon","GLOBAL",0)
+THEN
+	RESPONSE #100
+		ActionOverride("7XGAR",ChangeAIScript("7XGar25",OVERRIDE))
+		SetGlobal("GarrickTOBSummon","GLOBAL",2)
+END

@@ -1,0 +1,40 @@
+IF 
+Dead("sqsah01")
+Global("SafanaQUEST","GLOBAL",4)
+
+THEN
+  RESPONSE #100
+SetGlobal("SafanaQUEST","GLOBAL",5)
+AddJournalEntry(@1804,QUEST_DONE)
+Continue()
+END
+
+
+IF 
+Global("SafanaQUEST","GLOBAL",3)
+
+THEN
+  RESPONSE #100
+		SetGlobal("SafanaQUEST","GLOBAL",4)
+		StartCutSceneMode()
+		MultiPlayerSync()
+		CutSceneId(Player1)
+		CreateCreatureObject("bdoffscr",Player1,0,0,0) 
+		ApplySpellRES("bdoffscr","bdoffscr")  
+		SmallWait(1)
+		ScreenShake([20.20],20)
+		Wait(1)
+		FadeToColor([20.20],0)
+		CreateCreatureObject("7xcre65","7XSAFA",0,0,0)  // Дьявол из глубины
+		CreateCreatureObject("SAHAMB04","7XSAFA",0,0,0)  // Сахуагин
+		CreateCreatureObject("SAHAMB04",Player1,0,0,0)  // Сахуагин
+		CreateCreatureObject("SAHAMB04","bdoffscr",0,0,0)  // Сахуагин
+		CreateCreatureObject("SAHAMB04","7XSAFA",0,0,0)  // Сахуагин
+		CreateCreatureObject("SAHAMB05","bdoffscr",0,0,0)  // Сахуагин
+		CreateCreatureObject("SAHAMB05","7XSAFA",0,0,0)  // Сахуагин
+		CreateCreatureObject("SAHAMB05","DOOR0302",0,0,0)  // Сахуагин
+		CreateCreatureObject("SAHAMB05",Player1,0,0,0)  // Сахуагин
+		EndCutSceneMode()
+		Wait(2)
+		ActionOverride("sqsah01",StartDialogNoSet([PC]))
+END

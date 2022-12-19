@@ -1,0 +1,24 @@
+
+
+
+IF 
+Global("DestroyTrademeet","GLOBAL",3)
+
+THEN
+  RESPONSE #100
+ActionOverride("TRGENI03",ENEMY())
+ActionOverride("TRGENI01",ENEMY())
+Continue()
+END
+
+IF 
+Global("DestroyTrademeet","GLOBAL",10)
+Global("dogar2014","GLOBAL",0)
+
+THEN
+  RESPONSE #100
+CreateCreatureOffScreen("NDOG",0)
+CreateCreatureOffScreen("NDOG",0)
+SetGlobal("dogar2014","GLOBAL",1)
+Continue()
+END

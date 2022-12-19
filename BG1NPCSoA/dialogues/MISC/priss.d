@@ -1,0 +1,1 @@
+ALTER_TRANS PRISSBEGIN 7 ENDBEGIN 0 ENDBEGIN "ACTION" ~SetGlobal("RumarDidSpeak","AR0406",1) ActionOverride("Rumar",EscapeAreaMove("ARBGX4",444,522,0)) EscapeAreaMove("ARBGX4",396,523,0)~ END

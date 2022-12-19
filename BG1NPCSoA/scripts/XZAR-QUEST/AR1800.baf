@@ -1,0 +1,11 @@
+IF 
+Global("XZARQUESTSTART","GLOBAL",1)
+ Global("XZARTrollCREATE","GLOBAL",0)
+
+THEN
+  RESPONSE #100
+CreateCreature("xqtroll",[1401.1199],3)
+SetGlobal("XZARTrollCREATE","GLOBAL",2)
+Continue()
+END
+

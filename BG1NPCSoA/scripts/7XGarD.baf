@@ -1,0 +1,27 @@
+// This is dream script 
+IF
+InParty("7XGAR")!StateCheck("7XGAR",CD_STATE_NOTVALID)
+See("Nalia")
+InParty("Nalia") !StateCheck("Nalia",CD_STATE_NOTVALID)
+Global("GarrickNaliaRomance","GLOBAL",2)
+AreaType(FOREST)
+Global("GarrickNaliaEveningTalk","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("GarrickNaliaEveningTalk","GLOBAL",1)
+Interact("Nalia")
+END
+
+// Garrick's quest
+IF
+InParty("7XGAR")!StateCheck("7XGAR",CD_STATE_NOTVALID)
+GlobalTimerExpired("GarrickQuestTalkTimer","GLOBAL") 
+CombatCounter(0) 
+!AreaType(DUNGEON)
+Global("GarrickBardQuest","GLOBAL",0)
+
+THEN
+  RESPONSE #100
+  SetGlobal("GarrickBardQuest","GLOBAL",1)
+  StartDialogNoSet(Player1)
+END

@@ -1,0 +1,18 @@
+IF
+	GlobalGT("Chapter","GLOBAL",%bg2_chapter_5%)
+	AreaType(OUTDOOR)
+	AreaType(CITY)
+	CombatCounter(0)
+	PartyHasItem("PLATPANT")
+	Global("DruzersSpawn","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("DruzersSpawn","GLOBAL",1)
+		CreateCreatureObject("bdoffscr",Player1,0,0,0)  
+		ApplySpellRES("bdoffscr","bdoffscr") 
+		SmallWait(1)
+		CreateCreatureObject("7xDruzer","bdoffscr",0,0,0)  
+		ActionOverride("7xDruzer",Dialog(Player1))
+END
+
+

@@ -1,0 +1,406 @@
+// Underdark
+
+IF
+InParty("7XGAR")!StateCheck("7XGAR",CD_STATE_NOTVALID)
+AreaCheck("AR2100")
+Global("GARRAR2100","AR2100",0)
+CombatCounter(0) 
+THEN
+  RESPONSE #100
+   SetGlobal("GARRAR2100","AR2100",1)
+   RealSetGlobalTimer("GarrickUnderdarkTalkTimer","GLOBAL",8)
+END
+
+IF
+RealGlobalTimerExpired("GarrickUnderdarkTalkTimer","GLOBAL") 
+InParty("7XGAR")!StateCheck("7XGAR",CD_STATE_NOTVALID)
+AreaCheck("AR2100")
+Global("GARRAR2100","AR2100",1)
+See(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+CombatCounter(0) 
+THEN
+  RESPONSE #100
+   StartDialogNoSet(Player1)
+END
+
+
+// Five Flagons Theater
+IF
+InParty("7XGAR")!StateCheck("7XGAR",CD_STATE_NOTVALID)
+AreaCheck("AR0510")
+  Global("GARRAR0510","AR0510",0)
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+  SetGlobal("GARRAR0510","AR0510",1)
+    StartDialogNoSet(Player1)
+END
+
+
+// Promenade
+IF
+InParty("7XGAR")!StateCheck("7XGAR",CD_STATE_NOTVALID)
+AreaCheck("AR0700")
+  Global("GARRAR0700","AR0700",0)
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+  SetGlobal("GARRAR0700","AR0700",1)
+    StartDialogNoSet(Player1)
+END
+
+
+// Demon Plane
+IF
+Dead("TANAR")
+InParty("7XGAR")!StateCheck("7XGAR",CD_STATE_NOTVALID)
+AreaCheck("AR0414")
+  Global("GARRAR0414","AR0414",0)
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+  SetGlobal("GARRAR0414","AR0414",1)
+   StartDialogNoSet(Player1)
+END
+
+// CrookedCrane
+IF
+InParty("7XGAR")!StateCheck("7XGAR",CD_STATE_NOTVALID)
+AreaCheck("AR0021")
+  Global("GARRAR0021","AR0021",0)
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+  SetGlobal("GARRAR0021","AR0021",1)
+  StartDialogNoSet(Player1)
+END
+
+// GovernmentAreaSong
+IF
+InParty("7XGAR")!StateCheck("7XGAR",CD_STATE_NOTVALID)
+AreaCheck("AR1000")
+  Global("GARRAR1000","AR1000",0)
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+  SetGlobal("GARRAR1000","AR1000",1)
+  StartDialogNoSet(Player1)
+END
+
+// CityGates
+IF
+InParty("7XGAR")!StateCheck("7XGAR",CD_STATE_NOTVALID)
+AreaCheck("AR0020")
+  Global("GARRAR0020","AR0020",0)
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+  SetGlobal("GARRAR0020","AR0020",1)
+  StartDialogNoSet(Player1)
+END
+
+// FiveFlagons
+IF
+InParty("7XGAR")!StateCheck("7XGAR",CD_STATE_NOTVALID)
+AreaCheck("AR0509")
+  Global("GARRAR0509","AR0509",0)
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+  SetGlobal("GARRAR0509","AR0509",1)
+  StartDialogNoSet(Player1)
+END
+
+// Water Gardens, RedLion
+IF
+InParty("7XGAR")!StateCheck("7XGAR",CD_STATE_NOTVALID)
+AreaCheck("arbgx3")
+  Global("GARRarbgx3","arbgx3",0)
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+  SetGlobal("GARRarbgx3","arbgx3",1)
+  StartDialogNoSet(Player1)
+END
+
+
+// Tethyr Forrest
+
+IF
+InParty("7XGAR")!StateCheck("7XGAR",CD_STATE_NOTVALID)
+AreaCheck("AR2600")
+Global("GARRAR2600","AR2600",0)
+CombatCounter(0) 
+THEN
+  RESPONSE #100
+   SetGlobal("GARRAR2600","AR2600",1)
+   RealSetGlobalTimer("GarrickTethyrTalkTimer","GLOBAL",5)
+END
+
+IF
+RealGlobalTimerExpired("GarrickTethyrTalkTimer","GLOBAL") 
+InParty("7XGAR")!StateCheck("7XGAR",CD_STATE_NOTVALID)
+AreaCheck("AR2600")
+Global("GARRAR2600","AR2600",1)
+See(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+CombatCounter(0) 
+THEN
+  RESPONSE #100
+   StartDialogNoSet(Player1)
+END
+
+
+
+
+// Shar-Teel
+IF
+
+InParty("7XSHAR")!StateCheck("7XSHAR",CD_STATE_NOTVALID)
+InParty("7XGAR")!StateCheck("7XGAR",CD_STATE_NOTVALID)
+AreaCheck("AR1900")
+  Global("GARRAR1900","AR1900",0)
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+  SetGlobal("GARRAR1900","AR1900",1)
+  Interact("7XSHAR")
+END
+
+// Nalia Castle
+IF
+AreaCheck("AR1302") 
+!Dead("Torgal")
+InParty("7XGAR") !StateCheck("7XGAR",CD_STATE_NOTVALID)
+See("Nalia")
+InParty("Nalia")!StateCheck("Nalia",CD_STATE_NOTVALID)
+Global("GarrNaliaCastle","GLOBAL",0)
+CombatCounter(0)
+THEN
+  RESPONSE #100
+SetGlobal("GarrNaliaCastle","GLOBAL",1)
+Interact("Nalia")
+END
+
+// PC Friendship talks
+IF
+InParty("7XGAR")!StateCheck("7XGAR",CD_STATE_NOTVALID)
+See(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+RealGlobalTimerExpired("GarrickPCTalkTimer","GLOBAL") 
+CombatCounter(0) 
+AreaType(OUTDOOR)
+!AreaType(DUNGEON)
+OR(6)
+Global("GarrickFriendship","GLOBAL",0)
+Global("GarrickFriendship","GLOBAL",1)
+Global("GarrickFriendship","GLOBAL",2)
+Global("GarrickFriendship","GLOBAL",3)
+Global("GarrickFriendship","GLOBAL",4)
+Global("GarrickFriendship","GLOBAL",5)
+THEN
+  RESPONSE #100
+   StartDialogNoSet(Player1)
+END
+
+
+// Athkatla
+IF
+InParty("7XGAR")!StateCheck("7XGAR",CD_STATE_NOTVALID)
+See(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+RealGlobalTimerExpired("GarrickPCAtkhatlaTalkTimer","GLOBAL") 
+CombatCounter(0) 
+Global("GarrickPCAtkhatla","GLOBAL",0)
+OR(9)
+AreaCheck("AR0020")
+AreaCheck("AR0300")
+AreaCheck("AR0400")
+AreaCheck("AR0500")
+AreaCheck("AR0700")
+AreaCheck("AR0800")
+AreaCheck("AR0900")
+AreaCheck("AR1000")
+AreaCheck("ARBGX2")
+THEN
+  RESPONSE #100
+  SetGlobal("GarrickPCAtkhatla","GLOBAL",1)
+  StartDialogNoSet(Player1)
+END
+
+// Bodhi talk
+IF
+InParty("7XGAR")!StateCheck("7XGAR",CD_STATE_NOTVALID)
+See(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+CombatCounter(0) 
+!AreaType(DUNGEON)
+Global("GarrickPCBodhiTalk","GLOBAL",0)
+OR(8)
+Global("AerieVampire","GLOBAL",1)
+Global("AerieVampire","GLOBAL",2)
+Global("AnomenVampire","GLOBAL",1)
+Global("AnomenVampire","GLOBAL",2)
+Global("JaheiraVampire","GLOBAL",1)
+Global("JaheiraVampire","GLOBAL",2)
+Global("ViconiaVampire","GLOBAL",1)
+Global("ViconiaVampire","GLOBAL",2)
+THEN
+  RESPONSE #100
+   SetGlobal("GarrickPCBodhiTalk","GLOBAL",1)
+   StartDialogNoSet(Player1)
+END
+
+
+// Sahuagin City
+
+IF
+InParty("7XGAR")!StateCheck("7XGAR",CD_STATE_NOTVALID)
+AreaCheck("AR2300")
+Global("GARRAR2300","AR2300",0)
+See(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+CombatCounter(0) 
+OR(2)
+Global("senityilijob","GLOBAL",1)
+Global("senityilirefused","GLOBAL",1)
+
+THEN
+  RESPONSE #100
+  SetGlobal("GARRAR2300","AR2300",1)
+  SmallWait(5)
+  StartDialogNoSet(Player1)
+END
+
+// Quest
+IF
+  Global("GarrickBardQuest","GLOBAL",3)
+  Exists(Myself)
+THEN
+	RESPONSE #100
+GivePartyAllEquipment()
+LeaveParty()
+EscapeAreaMove("AR0602",-1,-1,N)  // Irenicus's Dungeon 1st Floor
+SetGlobal("GarrickBardQuest","GLOBAL",4)
+END
+
+// Forest
+
+IF
+  InParty("7XGAR")
+!StateCheck("7XGAR",CD_STATE_NOTVALID)
+  Global("GarrickPCTalkForest","GLOBAL",0)
+  AreaType(FOREST)
+  See(Player1)
+  !See([ENEMY])
+THEN
+  RESPONSE #100
+    SetGlobal("GarrickPCTalkForest","GLOBAL",1)
+    RealSetGlobalTimer("GarrickPCTalkForestTimer","GLOBAL",14)
+END
+
+IF
+RealGlobalTimerExpired("GarrickPCTalkForestTimer","GLOBAL") 
+InParty("7XGAR")!StateCheck("7XGAR",CD_STATE_NOTVALID)
+AreaType(FOREST)
+Global("GarrickPCTalkForest","GLOBAL",1)
+See(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+CombatCounter(0) 
+THEN
+  RESPONSE #100
+  SetGlobal("GarrickPCTalkForest","GLOBAL",2)
+   StartDialogNoSet(Player1)
+END
+
+// Aran job talk
+IF
+InParty("7XGAR")!StateCheck("7XGAR",CD_STATE_NOTVALID)
+See(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+GlobalGT("AranJob","GLOBAL",0)
+CombatCounter(0) 
+!AreaType(DUNGEON)
+AreaType(OUTDOOR)
+Global("GarrickJobTalk","GLOBAL",0)
+THEN
+  RESPONSE #100
+   SetGlobal("GarrickJobTalk","GLOBAL",1)
+   StartDialogNoSet(Player1)
+END
+
+// Bodhi job talk
+IF
+InParty("7XGAR")!StateCheck("7XGAR",CD_STATE_NOTVALID)
+See(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+GlobalGT("BodhiJob","GLOBAL",0)
+CombatCounter(0) 
+!AreaType(DUNGEON)
+AreaType(OUTDOOR)
+Global("GarrickJobTalk","GLOBAL",0)
+THEN
+  RESPONSE #100
+   SetGlobal("GarrickJobTalk","GLOBAL",1)
+   StartDialogNoSet(Player1)
+END
+
+// Vellin spirit
+IF
+InParty("7XGAR")!StateCheck("7XGAR",CD_STATE_NOTVALID)
+AreaCheck("AR0800")
+  Global("GARRAR0800","AR0800",0)
+  Global("Littleman","GLOBAL",1)
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+  SetGlobal("GARRAR0800","AR0800",1)
+    StartDialogNoSet(Player1)
+END
+
+
+// Spellhold
+IF
+AreaCheck("AR1516") 
+InParty("7XGAR") !StateCheck("7XGAR",CD_STATE_NOTVALID)
+See("Nalia")
+InParty("Nalia")!StateCheck("Nalia",CD_STATE_NOTVALID)
+Global("GarrNaliaSpellhold","AR1516",0)
+CombatCounter(0)
+THEN
+  RESPONSE #100
+SetGlobal("GarrNaliaSpellhold","AR1516",1)
+Interact("Nalia")
+END
+
+IF
+AreaCheck("AR1500")
+Global("GarrickNaliaRomance","GLOBAL",2)
+GlobalGT("SelfTalk","GLOBAL",2)
+InParty("7XGAR") !StateCheck("7XGAR",CD_STATE_NOTVALID)
+See("Nalia")
+InParty("Nalia")!StateCheck("Nalia",CD_STATE_NOTVALID)
+Global("GarrNaliaSpellholdExit","AR1500",0)
+CombatCounter(0)
+THEN
+  RESPONSE #100
+SetGlobal("GarrNaliaSpellholdExit","AR1500",1)
+Interact("Nalia")
+END
+
+
+// Nalia Rejoin
+IF
+Global("KishNaliaThankedPC","GLOBAL",1)
+Global("RoenalConvict","GLOBAL",1)
+InParty("7XGAR") !StateCheck("7XGAR",CD_STATE_NOTVALID)
+See("Nalia")
+InParty("Nalia")!StateCheck("Nalia",CD_STATE_NOTVALID)
+Global("GarrNaliaSave","GLOBAL",0)
+CombatCounter(0)
+THEN
+  RESPONSE #100
+SetGlobal("GarrNaliaSave","GLOBAL",1)
+StartDialogNoSet("Nalia")
+END

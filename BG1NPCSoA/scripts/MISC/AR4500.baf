@@ -1,0 +1,10 @@
+IF 
+Global("ZOPANToB","GLOBAL",1)
+
+
+THEN
+  RESPONSE #100
+CreateCreature("7Xcre92",[1671.1287],0)
+SetGlobal("ZOPANToB","GLOBAL",2)
+Continue()
+END

@@ -1,0 +1,92 @@
+
+IF
+
+Global("TiaxQuayle","GLOBAL",0)
+InParty("7XQUAY")!StateCheck("7XQUAY",CD_STATE_NOTVALID)
+See("7XTIAX")InParty("7XTIAX")
+!StateCheck("7XTIAX",CD_STATE_NOTVALID)
+CombatCounter(0)
+!See([ENEMY])
+
+THEN
+  RESPONSE #100
+    ActionOverride("7XTIAX",Interact("7XQUAY"))
+END
+
+IF
+
+
+InParty("7XQUAY")!StateCheck("7XQUAY",CD_STATE_NOTVALID)
+AreaCheck("AR1002")
+  Global("7XQUAYAR1002","GLOBAL",0)
+ 
+ CombatCounter(0)
+THEN
+  RESPONSE #100
+  SetGlobal("7XQUAYAR1002","GLOBAL",1)
+    Interact([PC])
+END
+
+IF
+
+InParty("7XQUAY")!StateCheck("7XQUAY",CD_STATE_NOTVALID)
+NumInPartyGT("4")
+Global("7XQUAYGroupAdvice","GLOBAL",0)
+
+THEN
+  RESPONSE #100
+  SetGlobal("7XQUAYGroupAdvice","GLOBAL",1)
+  RealSetGlobalTimer("7XQUAYGroupTimer","GLOBAL",50)
+END
+
+IF
+RealGlobalTimerExpired("7XQUAYGroupTimer","GLOBAL")
+InParty("7XQUAY")!StateCheck("7XQUAY",CD_STATE_NOTVALID)
+NumInPartyGT("4")
+Global("7XQUAYGroupAdvice","GLOBAL",1)
+
+THEN
+  RESPONSE #100
+  SetGlobal("7XQUAYGroupAdvice","GLOBAL",2)
+    Interact([PC])
+END
+
+
+IF
+
+InParty("7XQUAY")!StateCheck("7XQUAY",CD_STATE_NOTVALID)
+OR(11)
+AreaCheck("AR0509")
+AreaCheck("AR0021")
+AreaCheck("AR0406")
+AreaCheck("AR0313")
+AreaCheck("AR0704")
+AreaCheck("AR0709")
+AreaCheck("AR0513")
+AreaCheck("AR1602")
+AreaCheck("AR1105")
+AreaCheck("AR2010")
+AreaCheck("AR2202")
+AreaCheck("ar0902")
+  Global("QuayleWineTalk","GLOBAL",0)
+See(Player1)
+CombatCounter(0)
+!See([ENEMY])
+
+THEN
+  RESPONSE #100
+  SetGlobal("QuayleWineTalk","GLOBAL",1)
+    Interact([PC])
+END
+
+IF
+AreaCheck("AR0700")
+See(Player1)
+!InParty(Myself)
+Global("QuayleCREATION","GLOBAL",1)
+CombatCounter(0)
+THEN
+  RESPONSE #100
+SetGlobal("QuayleCREATION","GLOBAL",2)
+StartDialogNoSet([PC])
+END

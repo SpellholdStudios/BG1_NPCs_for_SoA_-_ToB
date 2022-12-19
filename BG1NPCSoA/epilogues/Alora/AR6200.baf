@@ -1,0 +1,26 @@
+IF
+Global("StartEndBios","AR6200",1)
+InParty("7XALORA")
+Global("AloraEd","GLOBAL",3)
+!Global("EdwinRomanceActive","GLOBAL",2)
+Global("7XALORABio","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("7XALORABio","GLOBAL",1)
+TextScreen("Alor1Ep")
+SmallWait(1)
+Continue()
+END
+
+IF
+Global("StartEndBios","AR6200",1)
+InParty("7XALORA")
+!Global("AloraEd","GLOBAL",3)
+Global("7XALORABio","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("7XALORABio","GLOBAL",1)
+TextScreen("Alor2Ep")
+SmallWait(1)
+Continue()
+END

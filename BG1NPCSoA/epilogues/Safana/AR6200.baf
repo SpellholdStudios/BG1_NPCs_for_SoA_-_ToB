@@ -1,0 +1,11 @@
+IF
+Global("StartEndBios","AR6200",1)
+InParty("7XSAFA")
+Global("7XSAFABio","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("7XSAFABio","GLOBAL",1)
+TextScreen("SafaEp")
+SmallWait(1)
+Continue()
+END

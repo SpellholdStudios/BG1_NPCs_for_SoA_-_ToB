@@ -1,0 +1,31 @@
+// Draconis is dead
+
+IF
+	Dead("Bazdra02")
+	Global("Draconis_Dead_Xzar_Talk","AR6000",0)
+	InParty("7XXZAR") InMyArea("7XXZAR") !StateCheck("7XXZAR",CD_STATE_NOTVALID)
+THEN
+	RESPONSE #100
+	SetGlobal("Draconis_Dead_Xzar_Talk","AR6000",1)
+    RealSetGlobalTimer("DraconisDeadTalkXzarTimer","GLOBAL",3)
+	Continue() 
+END
+
+IF
+    RealGlobalTimerExpired("DraconisDeadTalkXzarTimer","GLOBAL")
+	Global("Draconis_Dead_Xzar_Talk","AR6000",1)
+THEN
+	RESPONSE #100
+	SetGlobal("Draconis_Dead_Xzar_Talk","AR6000",2)
+	Continue()
+END
+
+IF
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	!ActuallyInCombat()
+	InParty("7XXZAR") InMyArea("7XXZAR") !StateCheck("7XXZAR",CD_STATE_NOTVALID)
+	Global("Draconis_Dead_Xzar_Talk","AR6000",2)
+THEN
+	RESPONSE #100
+ActionOverride("7XXZAR",StartDialogNoSet("Player1"))
+END

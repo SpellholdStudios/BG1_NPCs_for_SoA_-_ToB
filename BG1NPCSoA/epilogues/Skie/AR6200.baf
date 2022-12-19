@@ -1,0 +1,11 @@
+IF
+Global("StartEndBios","AR6200",1)
+InParty("7XSKI")
+Global("7XSKIBio","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("7XSKIBio","GLOBAL",1)
+TextScreen("SkieEp")
+SmallWait(1)
+Continue()
+END

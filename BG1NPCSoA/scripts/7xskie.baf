@@ -1,0 +1,142 @@
+IF
+
+InParty("Nalia")
+!StateCheck("Nalia",CD_STATE_NOTVALID)!StateCheck("7XSKI",CD_STATE_NOTVALID)InParty("7XSKI")
+!Global("Chapter","GLOBAL",%bg2_chapter_5%)
+Global("NaliaKeepPlot","GLOBAL",1)
+Global("NaliaSkieKeepBanter","GLOBAL", 0)
+
+THEN 
+
+ RESPONSE #100
+
+	  SetGlobal("NaliaSkieKeepBanter","GLOBAL", 1)
+        ActionOverride("7XSKI",Interact("Nalia"))
+
+END
+
+IF
+
+Global("SkieEdwinaFemale","GLOBAL",0)
+    
+    InParty("Edwin")
+    !StateCheck("7XSKI",CD_STATE_NOTVALID)InParty("7XSKI")
+    Gender("Edwin",FEMALE)
+    See("Edwin")
+    !StateCheck("Edwin",STATE_SLEEPING)
+    CombatCounter(0)
+THEN
+    RESPONSE #100
+	  SetGlobal("SkieEdwinaFemale","GLOBAL",1)
+        ActionOverride("7XSKI",Interact("Edwin"))
+END
+
+
+IF
+
+InParty("Cernd")
+!StateCheck("7XSKI",CD_STATE_NOTVALID)InParty("7XSKI")
+Global("SkieCerndBaby","LOCALS",0)
+
+THEN
+  RESPONSE #100
+  SetGlobal("SkieCerndBaby","GLOBAL",1)
+    Interact([PC])
+END
+
+IF
+
+AreaCheck("ARbgx2")
+  Global("SkieARbgx2","GLOBAL",0)
+!StateCheck("7XSKI",CD_STATE_NOTVALID)InParty("7XSKI")
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+  SetGlobal("SkieARbgx2","GLOBAL",1)
+    Interact([PC])
+END
+
+
+IF
+
+AreaCheck("AR2200")
+  Global("SkieAR2200","GLOBAL",0)Global("SkieImoenBanter","GLOBAL",0)
+InParty("Imoen2")IsValidForPartyDialog("Imoen2")
+!StateCheck("7XSKI",CD_STATE_NOTVALID)InParty("7XSKI")
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+  SetGlobal("SkieAR2200","GLOBAL",1)
+    ActionOverride("7XSKI",Interact("Imoen2"))
+END
+
+IF
+
+!StateCheck("7XSKI",CD_STATE_NOTVALID)InParty("7XSKI")
+AreaCheck("AR0509")
+  Global("SkieAR0509","GLOBAL",0)
+InParty("Jaheira")
+See("Jaheira")!StateCheck("Jaheira",CD_STATE_NOTVALID)
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+  SetGlobal("SkieAR0509","GLOBAL",1)
+    ActionOverride("7XSKI",Interact("Jaheira"))
+END
+
+IF
+
+AreaCheck("AR0701")Global("SkieMinscBanter701","GLOBAL",0)!StateCheck("7XSKI",CD_STATE_NOTVALID)InParty("7XSKI")
+InParty("Minsc")See("Minsc")!StateCheck("Minsc",CD_STATE_NOTVALID)Global("SkieAR0701","GLOBAL",0)
+THEN
+
+  RESPONSE #100
+  SetGlobal("SkieAR0701","GLOBAL",1)
+    ActionOverride("7XSKI",Interact("Minsc"))
+END
+
+IF
+
+AreaCheck("AR2007")
+  Global("SkieAR2007","GLOBAL",0)
+!StateCheck("7XSKI",CD_STATE_NOTVALID)InParty("7XSKI")
+Global("SkieJaheiraAR2007","GLOBAL",0)InParty("Jaheira")
+See("Jaheira")!StateCheck("Jaheira",CD_STATE_NOTVALID)
+  CombatCounter(0)
+
+THEN
+  RESPONSE #100
+  SetGlobal("SkieAR2007","GLOBAL",1)
+    ActionOverride("7XSKI",Interact("Jaheira"))
+END
+
+IF
+
+Global("SkieCerndForest","LOCALS",0)
+AreaCheck("AR1900")
+  Global("SkieAR1900","GLOBAL",0)
+InParty("Cernd")!StateCheck("7XSKI",CD_STATE_NOTVALID)
+See("Cernd")
+!StateCheck("7XSKI",CD_STATE_NOTVALID)InParty("7XSKI")
+  CombatCounter(0)
+
+THEN
+  RESPONSE #100
+  SetGlobal("SkieAR1900","GLOBAL",1)
+    ActionOverride("7XSKI",Interact("Cernd"))
+END
+
+
+IF
+
+AreaCheck("AR2100")Global("SkieJaheiraAR2100","GLOBAL",0)
+  Global("SkieAR2100","GLOBAL",0)
+InParty("Jaheira")See("Jaheira")
+!StateCheck("Jaheira",CD_STATE_NOTVALID)
+!StateCheck("7XSKI",CD_STATE_NOTVALID)InParty("7XSKI")
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+  SetGlobal("SkieAR2100","GLOBAL",1)
+    ActionOverride("7XSKI",Interact("Jaheira"))
+END

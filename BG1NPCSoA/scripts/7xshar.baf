@@ -1,0 +1,299 @@
+IF 
+
+ReputationLT(Player1,3)
+Global("SharLowRepTalk","GLOBAL",2)
+
+THEN
+RESPONSE #100
+SetGlobal("SharLowRepTalk","GLOBAL",3)
+ Interact([PC])
+END
+
+IF
+
+InParty("7XSHAR")
+        !StateCheck("7XSHAR",CD_STATE_NOTVALID)
+ ReputationLT(Player1,9)
+Global("SharLowRepTalk","GLOBAL",0) 
+
+THEN
+ RESPONSE #100
+ SetGlobal("SharLowRepTalk","GLOBAL",1) 
+ Interact([PC])
+END
+
+
+IF
+	InParty("7XSHAR")
+        !StateCheck("7XSHAR",CD_STATE_NOTVALID)
+        InParty("Aerie")
+	Dead("Aerie")
+	Global("SharAerieDie","LOCALS",0)
+THEN
+	RESPONSE #100
+                SetGlobal("SharAerieDie","LOCALS",1)
+		Interact([PC])
+END
+
+
+
+IF
+        InParty("Minsc")
+	InParty(Myself)
+!StateCheck("7XSHAR",CD_STATE_NOTVALID)
+	Dead("Minsc")
+	Global("SharMinscDie","LOCALS",0)
+THEN
+	RESPONSE #100
+SetGlobal("SharMinscDie","LOCALS",1)
+		Interact([PC])
+END
+
+IF
+	InParty(Myself)
+!StateCheck("7XSHAR",CD_STATE_NOTVALID)
+        InParty("Aerie")
+	Dead("Aerie")
+	Global("SharAerieDie","LOCALS",0)
+THEN
+	RESPONSE #100
+SetGlobal("SharAerieDie","LOCALS",0)
+		Interact([PC])
+END
+
+
+IF
+	AreaCheck("AR1904")
+	Global("Shar1904troll","GLOBAL",0)
+	InParty("7XSHAR")
+        !StateCheck("7XSHAR",CD_STATE_NOTVALID)
+	Detect([PC])
+THEN
+	RESPONSE #100
+		Interact([PC])
+		SetGlobal("Shar1904troll","GLOBAL",1)
+END
+
+IF
+    Global("SharTeelEdwina","LOCALS",0)
+    InParty("Edwin")
+    InParty("7XSHAR")
+        !StateCheck("7XSHAR",CD_STATE_NOTVALID)
+    Gender("Edwin",FEMALE)
+    See("Edwin")!StateCheck("Edwin",CD_STATE_NOTVALID)
+    CombatCounter(0)
+THEN
+    RESPONSE #100
+	  SetGlobal("SharTeelEdwina","LOCALS",1)
+ActionOverride("7XSHAR",Interact("Edwin"))
+END
+
+
+IF
+    AreaCheck("AR0205")         
+    InParty("7XSHAR")
+    !StateCheck("7XSHAR",CD_STATE_NOTVALID)
+	Dead("UnseeingEye")
+    Global("SharKilledUnseeingEye","Locals",0)
+ THEN
+ 	RESPONSE #100
+	SetGlobal("SharKilledUnseeingEye","Locals",1)
+        Interact([PC])
+END
+
+IF
+InParty("7XSHAR")
+!StateCheck("7XSHAR",CD_STATE_NOTVALID)
+ PartyHasItem("sw2h10")
+ Global("SharTeelCarsomyr","LOCALS",0)
+THEN
+ RESPONSE #100
+ SetGlobal("SharTeelCarsomyr","LOCALS",1)
+ Interact([PC])
+END
+
+IF
+
+InParty("7XSHAR")
+!StateCheck("7XSHAR",CD_STATE_NOTVALID)
+ PartyHasItem("misc8t")
+ Global("SharTeelCerndBaby","LOCALS",0)
+THEN
+ RESPONSE #100
+ SetGlobal("SharTeelCerndBaby","LOCALS",1)
+ Interact([PC])
+END
+
+IF
+
+InParty("7XSHAR")
+!StateCheck("7XSHAR",CD_STATE_NOTVALID)
+PartyHasItem("misc9h")
+ Global("SharTeelNebHead","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("SharTeelNebHead","LOCALS",1)
+    Interact([PC])
+END
+
+IF
+  InParty("7XSHAR")
+!StateCheck("7XSHAR",CD_STATE_NOTVALID)
+  Global("SharElfForest","GLOBAL",0)
+  Race(Player1,ELF)
+  AreaType(FOREST)
+  See(Player1)
+  !See([ENEMY])
+THEN
+  RESPONSE #100
+    SetGlobal("SharElfForest","GLOBAL",1)
+    Interact([PC])
+END
+
+IF
+
+InParty("7XSHAR")
+!StateCheck("7XSHAR",CD_STATE_NOTVALID)
+AreaCheck("AR0201")
+  Global("SharAR0201","GLOBAL",0)
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+  SetGlobal("SharAR0201","GLOBAL",1)
+    Interact([PC])
+END
+
+IF
+
+InParty("7XSHAR")
+!StateCheck("7XSHAR",CD_STATE_NOTVALID)
+AreaCheck("AR0305")
+  Global("SharAR0305","GLOBAL",0)
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+  SetGlobal("SharAR0305","GLOBAL",1)
+    Interact([PC])
+END
+
+IF
+
+InParty("7XSHAR")
+!StateCheck("7XSHAR",CD_STATE_NOTVALID)
+See(Player1)
+!StateCheck(Player1,STATE_SLEEPING)
+Class(Player1,THIEF_ALL)
+AreaType(CITY)
+Global("SharTeelThiefTalk","GLOBAL",0)
+
+THEN
+  RESPONSE #100
+  SetGlobal("SharTeelThiefTalk","GLOBAL",1)
+    Interact([PC])
+END
+
+IF
+
+InParty("7XSHAR")
+!StateCheck("7XSHAR",CD_STATE_NOTVALID)
+PartyRested()
+See(Player1)
+!StateCheck(Player1,STATE_SLEEPING)
+Global("PCRestingShar","GLOBAL",0)
+
+THEN
+  RESPONSE #100
+  SetGlobal("PCRestingShar","GLOBAL",1)
+    Interact([PC])
+END
+
+
+IF
+
+InParty("7XSHAR")
+!StateCheck("7XSHAR",CD_STATE_NOTVALID)
+AreaType(FOREST)
+See(Player1)
+!StateCheck(Player1,STATE_SLEEPING)
+Global("SharTeelOutdoorTalk","LOCALS",0)
+
+THEN
+  RESPONSE #100
+  SetGlobal("SharTeelOutdoorTalk","LOCALS",1)
+    Interact([PC])
+END
+
+IF
+
+InParty("7XSHAR")
+!StateCheck("7XSHAR",CD_STATE_NOTVALID)
+AreaCheck("ARbgx2")
+  Global("SharARbgx2","GLOBAL",0)
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+  SetGlobal("SharARbgx2","GLOBAL",1)
+    Interact([PC])
+END
+
+IF
+
+InParty("7XSHAR")
+!StateCheck("7XSHAR",CD_STATE_NOTVALID)
+AreaCheck("AR0800")
+  Global("SharAR0800","GLOBAL",0)
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+  SetGlobal("SharAR0800","GLOBAL",1)
+    Interact([PC])
+END
+
+IF
+
+InParty("7XSHAR")
+!StateCheck("7XSHAR",CD_STATE_NOTVALID)
+AreaCheck("AR0903")
+  Global("SharAR0903","GLOBAL",0)
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+  SetGlobal("SharAR0903","GLOBAL",1)
+    Interact([PC])
+END
+
+IF
+
+InParty("7XSHAR")
+!StateCheck("7XSHAR",CD_STATE_NOTVALID)
+InParty("Korgan")
+!StateCheck("Korgan",CD_STATE_NOTVALID)InParty("7XSHAR")
+!StateCheck("7XSHAR",CD_STATE_NOTVALID)
+OR(6)
+AreaCheck("AR0406")
+AreaCheck("AR0509")
+AreaCheck("AR0313")
+AreaCheck("AR1105")
+AreaCheck("AR2010")
+AreaCheck("AR1602")
+Global("KorganSharTavern","GLOBAL",0)
+
+THEN
+  RESPONSE #100
+SetGlobal("KorganSharTavern","GLOBAL",1)
+    ActionOverride("7XSHAR",Interact("Korgan"))
+END
+
+IF
+AreaCheck("ar2100")
+InParty("7XSHAR")
+!StateCheck("7XSHAR",CD_STATE_NOTVALID)
+InParty("Viconia")!StateCheck("Viconia",CD_STATE_NOTVALID)
+  Global("Sharar2100","GLOBAL",0)
+  CombatCounter(0)
+
+THEN
+  RESPONSE #100
+  SetGlobal("Sharar2100","GLOBAL",1)
+   ActionOverride("7XSHAR",Interact("Viconia"))
+END

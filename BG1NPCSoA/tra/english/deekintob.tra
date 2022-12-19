@@ -1,0 +1,95 @@
+@0    = ~Bring me, Deekin Scalesinger.~
+@1    = ~Are ye sure you want Deekin to leave?~
+@2    = ~On second thought, Deekin, stay with the party for now.~
+@3    = ~Just wait here awhile, Deekin.~
+@4    = ~Go back to the pocket plane and wait there for me.~
+@5    = ~Oh thank you, thank you, thank you!~ [DEEKIN2]
+@6    = ~Okay, Deekin will wait here for you.~
+@7    = ~Oh Joy! It is so super duper great to see you again, <CHARNAME>.~
+@8    = ~How we team up again? I have been dying to get out there and steal something new for myself.~
+@9    = ~I need a good warrior like you around, Deekin. Grab your equipment and let's go.~
+@10   = ~Sorry Deekin, but you are going to have to continue waiting for the time being.~
+@11   = ~Welcome aboard, Deekin.~
+@12   = ~Don't tells the Boss, Imoen, but Deekin is a bit nervesy.~
+@13   = ~You mean you are nervous?~
+@14   = ~Hey! OH GOD! AAAAAAH! Quit biting my leg!~
+@15   = ~Sorrys. It make Deekin feels less nervesy when he bite down on something.~
+@16   = ~Well, can you have it not be my leg that you bite on?~
+@17   = ~Anyways, what was I say? Oh yeah. Why are you so nervous?~
+@18   = ~Deekin is nervesy because the end of the prophecy draws near and Deekin knows that a story this grand will have an epic finale with an epic battle!~
+@19   = ~Don't worry, Deekin. <CHARNAME> and I have good luck when we travel together. Nothing will happen to you so long as you are with us.~
+@20   = ~Deekin has a feeling that this is going to be the grandest adventure ever.~
+@21   = ~You may be right, Deekin. You may be right.~
+@22   = ~Deekin gots a bad feeling about this, Boss!~
+@23   = ~We is, doomed, Doomed, DOOMED!!!~
+@24   = ~These people be doomed, Doomed, DOOMED if they no get foods soon.~
+@25   = ~And unless you want to starve with them, I suggest you grab a pike and guard the wall. Defenders always get fed.~
+@26   = ~Deekin greets the noble hero!~ [DEEKIN1]
+@27   = ~No time for small talk now, Deekin, there are important things to take care of.~
+@28   = ~Deekin likes important things!~
+@29   = ~Grab your gear and get ready for the adventure of your life.~
+@30   = ~I am going to need you to wait here for now.~
+@31   = ~Let's talk about that later, shall we. Come on, we have much to do.~
+@32   = ~On second thought wait here awhile and I'll come back for you later.~
+@33   = ~Never minnd, Deekin, I have changed my mind. Let's go.~
+@34   = ~You want Deekin to join you?~
+@35   = ~Grab your things, Deekin, and get ready for the adventure of a lifetime.~
+@36   = ~Sorry, but you are going to have to wait here for a short while longer.~
+@37   = ~Okay, Deekin will wait here for you, boss.~
+
+// NEW (v.12.2)
+@38 = ~Tell me about Deekin.~
+@39 = ~Ahh, Deekin, the kobold bard, truly you are, well... Me to my Elminster, having escaped the icy clutches of his Wyrm overlord he stands now as slayer of demons and madmen and a hero to both Neverwinter and Amn.~
+@40 = ~Good things come in small packages they do Huzzah, err, Volo. Deekin can get you publisher's details.~
+
+// NEW (v.12.8)
+@41 = ~Deekin, what are you doing rummaging around our bags, I swear you'll get stuck one day especially if you keeping eating like that.~
+@42 = ~We keeps finding bits of dead heroes cloaks , old hammers and other stuff. I am sure the boss is picking any junk for that annoying butler.~
+@43 = ~Deekin, is that jealously I hear in your voice?~
+@44 = ~Deekin is worth 2... No! 7 of stupid imp butlers, who does he think he is anyway with those big eyes and magic powers. The boss has only one side kick and that's Deekin.~
+@45 = ~*Giggles* Not jealous at all...~
+@46 = ~Deekin sees that yous still not a lich Edwin. Did things go wrong again? Deekins surprised you haven't turned yourself into a girl again.~
+@47 = ~Imbecile I am one of greatest wizards to walk the realms! I WILL ascend to lichdom when I chose and not before... (It has nothing to do with that buxom tavern wench who smiles at me or the fact being stuck in a dank dreary tomb for centuries may not be as appealing as first thought.)~
+@48 = ~Hows you holding up, Imoen? You look so much better, now that you’ve got your soul back.~
+@49 = ~Yeah I do feel better, I mean physically at least. I just wish we could have sometime to enjoy it you know? We're dealing with Gods, demigods and everything in between now. Funny thing is all this craziness is centered on <CHARNAME>. Never thought the whole realm's future would be on <PRO_HISHER> shoulders. I can't let them do this alone, like or not this involves me too and I'm done just watching.~
+@50 = ~Deekin wishes he had a sister like you. Deekin had a brother once but old master fell asleep on him one night. Other members of the tribe says it was a great honor to be old masters pillow, but Deekin's not too sure.~
+@51 = ~Deeky I have a great idea for your next book; 1001 uses for turnips for the budding adventure. Subjects include the Patent pending Jansen home made turnip grade, throw one these boys at Johnny orc and watch him run around with his nose on fire. Then there's the Turnip armor +12.~
+@52 = ~Deekins never heard of a + 12 anything, big nose is lying again!~
+@53 = ~Oh I am certainly not lying, 12 is the amount of turnips you need to make the armor. Another thing, my nose isn't big it's perfect for a Jansen . If you want a big nose my great aunt Petunia's nose was so big she could smell a gibbering from 5 miles off. Well on a good day at least. If the gibbering was covered in dung and the wind was in the right direction.~
+@54 = ~Now back to the book... The third use for the humble turnip is Turnip grease, great for getting those squeaks out of your armor...~
+@55 = ~Deekin thinks he can hear the boss asking him for err something... Ohh yes boss, Deekin coming! Sorry, Big nose, but adventure calls and Deekin answers Huzzah!~
+@56 = ~So Deekin, here you are still jumping to whatever orders <CHARNAME> gives. If it wasn't so pathetic I think it would be funny. Do tell me, once <CHARNAME>’s little quest for godhood ends what will you do Deekin? Finally stand up for yourself or just give your leash to the next “Boss” that needs a raving sycophantic that needs their ego to be massaged every few hours?~
+@57 = ~Dead lady is mean, perhaps got out of her coffin the wrong way this morning, Deekin will do whatever Deekin feels like after this great adventure with or without bosses. Deekin will go were the winds of destiny takes him Huzzah!~
+@58 = ~Poor confused kobold. I’ve existed long enough to know that in this world they're two types of beings in the realms; Sheep or wolves, and dear Deekin, you're so much of a sheep Bhaal himself could've sheered you and made a fine pair of mittens out of you. Would it hurt for once to stand up for yourself Deekin? Try it one day, you might like it or you'll end like all the rest of sheep in world , in the bellies of the wolves.~
+@59 = ~So miss Nalia, now that you're an Archmage are you going to fireball all those bad nobles and mean wizards back at home?~
+@60 = ~If I had this power when I first set out all that time ago back with Torgal and the Yuan-ti, I think I would have said yes. It might have been the end of me but I think I would have though. I would have stroke a blow for the needy and died a martyr not like I had much of family left by then.~
+@61 = ~But now, I'm going to stay with <CHARNAME> and help him come to term with <HIS/HER> family and find a place in the world, seems only fair really, this ragtag group has become a family to a lot of us. Perhaps I couldn't save my father but I now have the power to safeguard my friends and prevent events from repeating themselves. Seeing what the passion and power Irenicus and Ellesime had and how it ended with neither of them getting what they wanted made me think about the long term effects of my actions.~
+@62 = ~But first we stop the bad guys right and steal their treasure. Huzzah!~
+@63 = ~Huzzah, indeed.~
+
+// NEW (v.13)
+@64 = ~So Boss this is “The End”? I guess that's okay, every tale needs The End or there would never be new tales, to start with once upon time. Deekin just asks which ever way the curtains falls, that Boss just remember this is your story and it should be you who chooses the ending not some dead god or mad seer, just you. Now stand tall boss and don't look back.~
+
+// NEW (v.13.3)
+@65 = ~Deekin sees how bored the big dragon is. Maybe Deekin will play and sing to make the dragon happier?~
+@66 = ~A kobold here in the Watcher's Keep who wishes to cheer me up with his melodies? This must be the start of madness... very well small one, boredom does overwhelm me at the moment, so play me a tune kobold and maybe I'll let you live. In fact I might even leave *you* with me as payment for the trouble you caused me.~
+@67 = ~*Starts to play and then stops* Deekin is very sorry, but Deekin is unwell, Deekin promises to play another time.~
+@68 = ~*Sniffs at Deekin* There's something about this little creature, something... I can't figure it out, perhaps I will let him live for now until I can contemplate a conclusion.~
+@69 = ~*The dragon either snarls or snorts* Ages of imprisonment in this accursed tower can take its toll on even an ancient dragon. Well, adventurers, whether you try to retrieve this mighty sword or I go to sleep, either option is fine for me at the moment.~
+
+@71 = ~*Staring at Deekin* Are you, brother?~
+@72 = ~Deekin is also a kobold, yes?~
+@73 = ~No... they are not relatives, but I have a feeling! My brothers, our legacy calls for blood, let's go!~
+@74 = ~What a remarkably clear speech for a kobold... But now we know for sure that Deekin is not just another offspring of you-know-who.~
+
+@75 = ~Deekin can sing... No! Deekin will no longer sing for evil dragons! Deekin is no longer afraid of them! Deekin himself is like a dragon, a good dragon! Strong dragon!~
+@76 = ~HAHAHAHA! I see you have powerful allies <CHARNAME>. So you're saying "Deekin's not afraid of dragons"? Well, commendable, but, to your regret, Abazigal is not afraid of pitiful kobolds. In fact my power is so superior to yours that I'm not even afraid of Tiamat herself fool!~
+
+@77 = ~Who is that with you? Isn't he one of those kobolds roaming the Marching Mountains a small pretender to the big throne?~
+@78 = ~*To your surprise, Deekin's eyes glow with a bright red flame as he speaks with the confidence of an ancient dragon* I am Deekin!~
+@79 = ~Indeed, I can clearly sense great potential in you, even more than most aspirants to the Throne of Bhaal itself.~
+@80 = ~You know, I'm the only one who doesn't visualize you as an incompetent miniscule monster, but something so much more. Join me Deekin, I will make you a dragon, or better yet - I will make you a dragon lord! The most ancient lizards will sing you lullabies, basking in your power! You, unlike your relatives, have a great gift - the right to choose, so choose your fate wisely talented one.~
+@81 = ~Deekin has already turned down the big Baatez, Deekin will say it again, now to the want to be goddess lady - no, Deekin has walked a new path together with <CHARNAME>.~
+@82 = ~It's funny to Deekin that everything repeats itself again, but apparently this is the path of Deekin, which he will have to go through more than once.~
+@83 = ~So be it. Although it's a pity your journey will end here, Deekin, and your eyes will never see the great destiny you were born to achieve.~
+@84 = ~Deekin agrees! The boss and Deekin are going to have great adventures, right?~

@@ -1,0 +1,25 @@
+IF
+
+InParty("7Xkaga")!StateCheck("7Xkaga",CD_STATE_NOTVALID)
+ PartyHasItem("misc9t")
+ Global("KagainDragonEggs","LOCALS",0)
+THEN
+ RESPONSE #100
+ SetGlobal("KagainDragonEggs","LOCALS",1)
+ Interact([PC])
+END
+
+
+IF
+
+InParty("7Xkaga")!StateCheck("7Xkaga",CD_STATE_NOTVALID)
+OR(2)
+AreaCheck("AR0900")
+AreaCheck("AR1000")
+  Global("KagainExtraAthkatlaDistricts","GLOBAL",0)
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+  SetGlobal("KagainExtraAthkatlaDistricts","GLOBAL",1)
+    Interact([PC])
+END

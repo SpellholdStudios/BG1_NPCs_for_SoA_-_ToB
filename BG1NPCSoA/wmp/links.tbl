@@ -1,0 +1,7 @@
+
+SRC_AREA     SRC_NWSE     TARGET_ARE   ENTRY_NAME   TRV_TIME     DEF_ENTRY    ENC1         ENC2         ENC3         ENC4         ENC5         ENC_PROB
+AR0020       N            ARBGX2       Entr07       0            1            N            N            N            N            N            0
+AR0020       S            ARBGX2       Entr07       0            1            N            N            N            N            N            0
+AR0400       N            ARBGX2       Entr07       0            1            N            N            N            N            N            0
+AR0400       S            ARBGX2       Entr07       0            1            N            N            N            N            N            0
+ARBGX2       N            AR0020       ExitNE       0            1            N            N            N            N            N            0

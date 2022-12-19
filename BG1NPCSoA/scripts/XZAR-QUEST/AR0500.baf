@@ -1,0 +1,10 @@
+IF 
+ Global("XZARnymph","GLOBAL",0)
+
+THEN
+  RESPONSE #100
+CreateCreature("XQNYMPH",[4956.2510],0)
+SetGlobal("XZARnymph","GLOBAL",2)
+Continue()
+END
+

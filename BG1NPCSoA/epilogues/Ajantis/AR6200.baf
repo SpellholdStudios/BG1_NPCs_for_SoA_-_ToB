@@ -1,0 +1,11 @@
+IF
+Global("StartEndBios","AR6200",1)
+InParty("7XAJAN")
+Global("7XAJANBio","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("7XAJANBio","GLOBAL",1)
+TextScreen("AjanEp")
+SmallWait(1)
+Continue()
+END

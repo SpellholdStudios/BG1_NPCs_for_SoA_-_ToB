@@ -1,0 +1,12 @@
+// This is dream script 
+IF
+CombatCounter(0) !See([ENEMY]) 
+InParty("Minsc") !StateCheck("Minsc",CD_STATE_NOTVALID)
+See("7XAJAN") 
+InParty("7XAJAN") !StateCheck("7XAJAN",CD_STATE_NOTVALID)
+Global("AjantisMinscBanter","GLOBAL",0)
+THEN
+RESPONSE #100
+  SetGlobal("AjantisMinscBanter","GLOBAL",1)
+  Interact("7XAJAN")
+END

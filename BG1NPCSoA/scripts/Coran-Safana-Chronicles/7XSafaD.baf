@@ -1,0 +1,16 @@
+IF
+InParty("7XSAFA")!StateCheck("7XSAFA",CD_STATE_NOTVALID)
+See(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+RealGlobalTimerExpired("SafanaPCTalkTimer","GLOBAL") 
+CombatCounter(0) 
+!AreaType(DUNGEON)
+OR(3)
+Global("SafanaPCStart","GLOBAL",0)
+Global("SafanaPCStart","GLOBAL",2)
+Global("SafanaPCStart","GLOBAL",4)
+THEN
+  RESPONSE #100
+   IncrementGlobal("SafanaPCStart","GLOBAL",1)
+   StartDialogNoSet(Player1)
+END

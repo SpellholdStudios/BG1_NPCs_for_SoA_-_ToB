@@ -1,0 +1,20 @@
+IF 
+ Global("YeslickExists","AR0500",0)
+
+THEN
+  RESPONSE #100
+CreateCreature("7XCRE2",[703.3739],7)
+SetGlobal("YeslickExists","AR0500",1)
+Continue()
+END
+
+IF
+	TimeOfDay("NIGHT")
+	Global("YDWARF2Ar0500","GLOBAL",0)
+	PartyHasItem("YDWARF1")
+
+THEN
+	RESPONSE #100
+		CreateCreatureObjectOffScreen("7XCRE23",Player1,0,0,0)
+		SetGlobal("YDWARF2Ar0500","GLOBAL",2)
+END

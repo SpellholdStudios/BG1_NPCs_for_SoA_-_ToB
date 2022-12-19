@@ -1,0 +1,13 @@
+
+IF 
+Global("AjantisCreation","GLOBAL",0)
+!Exists("7XAJAN")
+
+
+THEN
+  RESPONSE #100
+CreateCreature("7XCRE70",[2466.624],3)
+SetGlobal("AjantisCreation","GLOBAL",1)
+Continue()
+END
+

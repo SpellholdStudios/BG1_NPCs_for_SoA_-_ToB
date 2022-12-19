@@ -1,0 +1,224 @@
+
+BEGIN ~BG1X9~
+
+
+IF ~Global("BG1X9","GLOBAL",0)~ THEN BEGIN INTRO
+SAY @0
+=
+@1
+=
+@2
+=
+@3
+IF ~~ THEN REPLY @4 GOTO FULBERTnew1
+IF ~~ THEN REPLY @5 EXIT
+END
+
+IF ~~ THEN FULBERTnew1
+SAY @6
+=
+@7
+IF ~~ THEN REPLY @8 GOTO FULBERTnew2
+IF ~~ THEN REPLY @9 GOTO FULBERTnew2
+IF ~~ THEN REPLY @5 DO ~SetGlobal("BG1X9","GLOBAL",99)~EXIT
+END
+
+IF ~Global("BG1X9","GLOBAL",99)~ THEN BEGIN INTROx
+SAY @10
+=
+@11
+IF ~~ THEN REPLY @4 GOTO FULBERTnew1
+IF ~~ THEN REPLY @5 EXIT
+END
+
+IF ~~ THEN FULBERTnew2
+SAY @12
+IF ~~ THEN DO ~SetGlobal("FULBERT","GLOBAL",1)SetGlobal("BG1X9","GLOBAL",66)~ EXIT
+END
+
+IF ~Global("FULBERT","GLOBAL",1)~ THEN BEGIN Speak2Fulbert
+SAY @13
+=
+@14
+IF ~~ THEN EXIT
+END
+
+
+IF ~Global("FULBERT","GLOBAL",2)~ THEN BEGIN THANKYOU
+SAY @15
+=
+@16
+IF ~~ THEN DO ~SetGlobal("BG1X9","GLOBAL",1)SetGlobal("FULBERT","GLOBAL",3)~ 
+EXIT
+END
+
+
+
+IF ~Global("BG1X9","GLOBAL",1)RandomNum(6,1)~ THEN talk1
+SAY @17
+=
+@18
+IF ~~ THEN REPLY @19 GOTO talk3
+IF ~~ THEN REPLY @20 GOTO talk3
+IF ~~ THEN REPLY @21 GOTO talk3
+END
+
+IF ~Global("BG1X9","GLOBAL",1)RandomNum(6,2)~ THEN talk2
+SAY @22
+=
+@23
+IF ~~ THEN REPLY @24 GOTO talk4
+IF ~~ THEN REPLY @25 GOTO talk4
+IF ~~ THEN REPLY @26 GOTO talk4
+IF ~~ THEN REPLY @27 GOTO talk4
+IF ~~ THEN REPLY @28 GOTO talk4
+END
+
+
+IF ~~ THEN talk3
+SAY @29
+=
+@30
+=
+@31
+=
+@32
+=
+@33
+=
+@34
+IF ~~ THEN REPLY @35 EXIT
+IF ~~ THEN REPLY @36 EXIT
+IF ~~ THEN REPLY @5 EXIT
+IF ~PartyHasItem("ZEROCHAR")~ THEN REPLY @69 GOTO 7xMirrorHailossa
+END
+
+
+IF ~~ THEN talk4
+SAY @37
+=
+@38
+IF ~~ THEN EXIT
+END
+
+
+IF ~Global("BG1X9","GLOBAL",1)RandomNum(6,3)~ THEN talk5
+SAY @39
+=
+@40
+IF ~~ THEN REPLY @41 GOTO Crimmor
+IF ~PartyHasItem("ZEROCHAR")~ THEN REPLY @69 GOTO 7xMirrorHailossa
+IF ~~ THEN REPLY @5 EXIT
+END
+
+IF ~~ THEN Crimmor
+SAY @42
+=
+@43
+=
+@44
+IF ~~ THEN REPLY @45 GOTO platinum
+IF ~PartyHasItem("ZEROCHAR")~ THEN REPLY @69 GOTO 7xMirrorHailossa
+IF ~~ THEN REPLY @5 EXIT
+END
+
+
+IF ~Global("BG1X9","GLOBAL",1)RandomNum(6,4)~ THEN talk6
+SAY @46
+=
+@47
+=
+@48
+=
+@49
+=
+@50
+=
+@51
+=
+@52
+IF ~~ THEN EXIT
+END
+
+
+IF ~Global("BG1X9","GLOBAL",1)RandomNum(6,5)~ THEN talk9
+SAY @53
+=
+@54
+=
+@55
+IF ~~ THEN EXIT
+END
+
+
+IF ~Global("BG1X9","GLOBAL",1)RandomNum(6,6)~ THEN talk10
+SAY @56
+=
+@57
+IF ~~ THEN REPLY @45 GOTO platinum
+IF ~PartyHasItem("ZEROCHAR")~ THEN REPLY @69 GOTO 7xMirrorHailossa
+IF ~~ THEN REPLY @5 EXIT
+END
+
+
+IF ~~ THEN platinum
+SAY @58
+=
+@59
+IF ~~ THEN REPLY @60 GOTO scepter
+IF ~~ THEN REPLY @61 GOTO GEM
+IF ~~ THEN REPLY @62 GOTO QUILL
+IF ~PartyHasItem("ZEROCHAR")~ THEN REPLY @69 GOTO 7xMirrorHailossa
+IF ~~ THEN REPLY @5 EXIT 
+END
+
+IF ~~ THEN GEM
+SAY @63
+=
+@64
+IF ~~ THEN REPLY @60 GOTO scepter
+IF ~~ THEN REPLY @62 GOTO QUILL
+IF ~PartyHasItem("ZEROCHAR")~ THEN REPLY @69 GOTO 7xMirrorHailossa
+IF ~~ THEN REPLY @5 EXIT
+END
+
+IF ~~ THEN QUILL
+SAY @65
+=
+@66
+IF ~~ THEN REPLY @60 GOTO scepter
+IF ~~ THEN REPLY @61 GOTO GEM
+IF ~PartyHasItem("ZEROCHAR")~ THEN REPLY @69 GOTO 7xMirrorHailossa
+IF ~~ THEN REPLY @5 EXIT
+END
+
+IF ~~ THEN scepter
+SAY @67
+=
+@68
+IF ~~ THEN REPLY @61 GOTO GEM
+IF ~~ THEN REPLY @62 GOTO QUILL
+IF ~PartyHasItem("ZEROCHAR")~ THEN REPLY @69 GOTO 7xMirrorHailossa
+IF ~~ THEN REPLY @5 EXIT 
+END
+
+
+IF ~~ THEN 7xMirrorHailossa
+SAY @70
+IF ~Gender(Player1,MALE)~ THEN GOTO 7xMirrorHailossaMan
+IF ~Gender(Player1,FEMALE)~ THEN GOTO 7xMirrorHailossaWoman
+END
+
+IF ~~ THEN 7xMirrorHailossaMan
+SAY @71
+=@72
+=@73
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN 7xMirrorHailossaWoman
+SAY @74
+=@72
+=@73
+IF ~~ THEN EXIT
+END

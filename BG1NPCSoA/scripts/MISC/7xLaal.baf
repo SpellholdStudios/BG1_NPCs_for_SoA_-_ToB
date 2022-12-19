@@ -1,0 +1,141 @@
+// Laalia Talk in rooms
+IF
+Global("7xLaaliGOOD","GLOBAL",3)
+Global("7xLaaliRoom","7xLaal",0)
+THEN
+RESPONSE #100
+SetGlobal("7xLaaliRoom","7xLaal",1)
+HideGUI()
+Explore()
+ActionOverride("7xLaal",FaceObject(Player1))
+ActionOverride(Player1,FaceObject("7xLaal"))
+Wait(1)
+UnhideGUI()
+ActionOverride("7xLaal",StartDialogNoSet(Player1))
+END
+
+IF
+Global("7xLaaliGOOD","GLOBAL",9)
+THEN
+RESPONSE #100
+SetGlobal("7xLaaliGOOD","GLOBAL",10)
+HideGUI()
+Explore()
+ActionOverride("7xLaal",FaceObject(Player1))
+ActionOverride(Player1,FaceObject("7xLaal"))
+Wait(1)
+UnhideGUI()
+ActionOverride("7xLaal",StartDialogNoSet(Player1))
+END
+
+// Break
+IF
+Global("7xLaaliGOOD","GLOBAL",98)
+THEN
+RESPONSE #100
+HideGUI()
+SetGlobal("7xLaaliGOOD","GLOBAL",99)
+FadeFromColor([20.0],0)
+SmallWait(5)
+RestorePartyLocations()
+UnhideGUI()
+END
+
+// Mother
+IF
+Global("7xLaaliGOOD","GLOBAL",4)
+THEN
+RESPONSE #100
+HideGUI()
+SetGlobal("7xLaaliGOOD","GLOBAL",5)
+CreateCreatureObjectOffScreen("7XLaalM","7XLaal",0,0,0)
+Wait(1)
+UnhideGUI()
+ActionOverride("7XLaalM",StartDialogNoSet(Player1))
+END
+
+// End (good)
+IF
+Global("7xLaaliGOOD","GLOBAL",7)
+Global("7xLaaliGOODend","7xLaal",0)
+THEN
+RESPONSE #100
+HideGUI()
+SetGlobal("7xLaaliGOODend","7xLaal",1)
+FadeFromColor([20.0],0)
+SmallWait(5)
+RestorePartyLocations()
+UnhideGUI()
+END
+
+// End (finish)
+IF
+Global("7xLaaliGOOD","GLOBAL",70)
+THEN
+RESPONSE #100
+HideGUI()
+SetGlobal("7xLaaliGOOD","GLOBAL",71)
+FadeFromColor([20.0],0)
+SmallWait(5)
+RestorePartyLocations()
+UnhideGUI()
+END
+
+// End (2th talk end)
+IF
+Global("7xLaaliGOOD","GLOBAL",11)
+!Global("7xLaaliAgainTalk","GLOBAL",1)
+Global("7xLaaliVideo","7xLaal",0)
+THEN
+RESPONSE #100
+StartMovie("RestInn")
+Wait(1)
+SetGlobal("7xLaaliVideo","7xLaal",1)
+END
+
+IF
+Global("7xLaaliGOOD","GLOBAL",11)
+!Global("7xLaaliAgainTalk","GLOBAL",1)
+Global("7xLaaliVideo","7xLaal",1)
+THEN
+RESPONSE #100
+HideGUI()
+SetGlobal("7xLaaliGOOD","GLOBAL",12)
+FadeFromColor([20.0],0)
+SmallWait(5)
+RestorePartyLocations()
+UnhideGUI()
+END
+
+// End (After Laalia Maid talk)
+IF
+Global("7xLaaliGOOD","GLOBAL",14)
+Global("7xLaaliAgainTalk","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("7xLaaliVideo","7xLaal",0)
+ActionOverride("7xLaal",StartDialogNoSet(Player1))
+END
+
+IF
+Global("7xLaaliGOOD","GLOBAL",15)
+Global("7xLaaliAgainTalk","GLOBAL",1)
+Global("7xLaaliVideo","7xLaal",0)
+THEN
+RESPONSE #100
+StartMovie("RestInn")
+Wait(1)
+SetGlobal("7xLaaliVideo","7xLaal",1)
+END
+
+IF
+Global("7xLaaliGOOD","GLOBAL",15)
+Global("7xLaaliAgainTalk","GLOBAL",1)
+Global("7xLaaliVideo","7xLaal",1)
+THEN
+RESPONSE #100
+HideGUI()
+SetGlobal("7xLaaliGOOD","GLOBAL",12) // Return to 12
+RestorePartyLocations()
+UnhideGUI()
+END

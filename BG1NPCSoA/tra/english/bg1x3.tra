@@ -1,0 +1,43 @@
+@0    = ~If yer here, I'll take it ya spoke ta that runt, Bren and ya want ta go ta the Water Gardens, aye?~ [BARTN01]
+@1    = ~It will be twenty five gold coins if you want me ta show ya the way.~
+@2    = ~I spoke to no one. I ventured here on my own.~
+@3    = ~Perhaps some other time.~
+@4    = ~Here you are.~
+@5    = ~Suit yerself...~
+@6    = ~Alright then...~ [ACT_03]
+@7    = ~Here, I'll mark the way to the Water Gardens on yer map. I know a guard who will let yer in there for a small fee.~ [ACT_03E]
+@8    = ~Not ta worry though, ya can use them nice cobblestone boulevards in the Water Gardens ta reach almost anywhere in the city.~
+@9    = ~I'm gunna kill that lazy little bastard if he thinks I'm payin' him gold coins fer him ta be foolin' about with those friends of his.~
+@10   = ~Anyways, what is it going to be? Ya want ta enter er what?~
+/*
+@11   = ~Had a time did ya and let me guess, ya wants to go back aye?~
+@12   = ~Okay, no problem. The price is now fifty gold coins.~
+*/
+@13   = ~I refuse to pay that much!~
+
+/*
+@14   = ~Suit yourself.~
+@15   = ~Okay, ya know the routine. Fifty gold coins gets you to the Water Gardens. Just watch who you tell about this. We don't want the guards causing any trouble for us.~
+*/
+@16   = ~Okay, so what's it gonna be? Do ya want to visit the Water Gardens or are ya happy slumming it here with the beggars?~
+@17   = ~Enjoy yerself... an say hello ta that lovely wench, Dalindra, fer me.~ [BARTN04]
+@18   = ~Lady Goldsword throws the best parties in all of Athkatla.. It just ashame that my invitation got lost in the mail.~ [BARTN03]
+@19   = ~I once went ta a dinner party by some rich wizard that lived in the Government District. I tell you, I 'ave never seen such debauchery in my whole life.~ [BARTN02]
+@20   = ~His house was a palace, crawling with the most beautiful naked women! They was all dancing.. pleasuring themselves with snakes! I was 'aving the best time of me life, I was, until the guards realized that I was not supposed ta be in there and threw me out.~ [BARTN03]
+@21   = ~I later learned that the wizard got banished from the Government District fer some crimes. Too bad. I was hoping ta sneak into another party. Rumor has it that he has been hiding out in the Bridge district though. Hopefully he starts 'aving them parties again real soon!~ [ACT_03E]
+@22   = ~I 'ave seen that orc-faced, Fedorak, walking round the Slums like he owns the place. Makes me bloody sick!~ [BARTN03]
+@23   = ~The man is nothin' but a maggot pie served out of a dwarf's codpiece! He deals in child slavery. Probably sexually abuses the poor them too.~
+@24   = ~Hopefully someone gives that hog-lout exactly what he deserves!~ [ACT_03E]
+@25   = ~Hehehe! I made a killin' off of Salvatore bettin' on the fights at the Copper Coronet! Ya wanna know my secret?~ [BARTN02]
+@26   = ~I always bet on Brutax. He always wins!~ [ACT_03E]
+@27   = ~People say that the food at the Blue Unicorn is the best in the city, but I rather eat at the Dragon Restaurant at the Promenade instead.~ [THUMB03]
+@28   = ~That fancy food gives me diarrhea.~ [BARTN06]
+@29   = ~Dem trollops on the courtyard of the Water Gardens are right stupid. All they do is drink wine all day!~ [BARTN03]
+@30   = ~They don't even appreciate good music. Ricster Hawklight, the owner of the Blue Unicorn pays good coin ta have the best minstrels in the land play there, but all they want ta hear is that bloody fool Garrick of the Dale Wind Troubadours!~ [THUMB02]
+@31   = ~Ugh! Make me feel bloody sick ta my stomach!~ [BARTN06]
+@32   = ~I hear that Fulbert is planning on having Lord Abelard castrated if he touches his niece, Lady Hylosse.~ [BARTN01]
+@33   = ~Hehehehehe! Just wait till he finds out that she is carrying his child!~
+@34   = ~When coming back from temple the other mornin' I overheard two priests talkin' about a new terror from Waterdeep that was on its way 'ere ta Athkatla.~ [BARTN01]
+@35   = ~Don't remember the name they said.. Damn Draggone or somethin' like that. Ta be honest I don't bloody remember and I don't bloody care! If ye ask me its nothin' but a load of troll dung! They are usin' that story ta scare the sheep into payin' over more coin for protection from the gods. Bloody fools!~ [BARTN03]
+@36   = ~Mmmm.. I fancy me that sexy elven lass, Tanna, I do. I wonder if all the women of Hillsfar are as good as her?~ [BARTN04]
+@37   = ~Such a lovely flower as that should not be spend all her time in a dung heap like the Copper Coronet.~ [ACT_03E]
