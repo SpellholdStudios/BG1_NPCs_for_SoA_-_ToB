@@ -1,7 +1,6 @@
-# BG1_NPCs_for_SoA_-_ToB
-The new district of Athkatla (Water Gardens), as well as the old companions from BG1, who are back with you!
-
 # BG1 NPCs for SoA&ToB
+
+## The new district of Athkatla (Water Gardens), as well as the old companions from BG1, who are back with you!
 
 The mod adds to the game:
 1) Athkatla New Area - the luxurious Water Gardens, where all the rich and famous of Athkatla go to unwind. All the inhabitants of the Water Gardens have hundreds and thousands of lines of dialogue, and these lines will change with each new conversation. What's more - during the day and at night, the dialogues can also differ, so you can talk to every resident in the area many times at different times and enjoy many different lines! And in the mansion of Lady Goldsword, parties are held in the evening and at night, and guests come there!
