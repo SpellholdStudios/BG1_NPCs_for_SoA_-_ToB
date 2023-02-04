@@ -385,3 +385,136 @@
 @327 = ~Groaah!~
 @328 = ~Yes, he defended his territory and I defended my life. This was a fair fight. And I turned out to be stronger.~
 @329 = ~Sniff sniff.~
+
+// NEW (v.14.1)
+// Ajantis Quest
+// First dialogs
+@330 = ~Atkatla, at last! After being imprisoned, it was as if I looked at her with different eyes... ~
+@331 = ~By the way, <CHARNAME>, are you by any chance going to buy something from the vendors on the Promenade? However... I was just asking.~
+@332 = ~*Ajantis mumbles to herself as she walks past the sweets counter* No, that's not it...~
+@333 = ~Ajantis, what are you looking for on the candy stand? Swords and armor are elsewhere.~
+@334 = ~*Blushing slightly* I know, <CHARNAME>. I'm looking for... childhood memories.~
+@335 = ~Wow, does our paladin have a sweet tooth?~
+@336 = ~*Blushing slightly* No, I wouldn't. I'm just looking for... childhood memories.~
+@337 = ~Ajantis, are you looking for something among these sweets? Can you help?~
+@338 = ~Thank you, <CHARNAME>, but I don't think you can help me. Because I'm looking for... childhood memories.~
+@339 = ~Ajantis, hurry up, we won't wait forever for you.~
+@340 = ~What?.. Ah, I'm on my way.~
+@341 = ~Childhood memories? Are they so... sweet?~
+@342 = ~They are happy, <CHARNAME>. Mint candies... my little friend used to treat me to them. She was a tiny lady, but she loved simple sweets.~
+@343 = ~So you had a sweet tooth growing up?~
+@344 = ~Few kids don't like sweets, and I was no exception. But most of all I liked the mint candies that my little friend treated me to. She was a tiny lady, but she loved simple sweets.~
+@345 = ~I didn't like sweets when I was a kid. And I didn't like being treated to sweets.~
+@346 = ~I understand. But I was no exception in this sense. And most of all I liked the mint candies that my little friend treated me to. She was a tiny lady, but she loved simple sweets.~
+@347 = ~I see. These are your memories, they are of no interest to me.~
+@348 = ~Yes, yes, I'm on my way.~
+@349 = ~Are you friends with a girl?~
+@350 = ~What's wrong with that? There were other children in my environment, we had fun playing together. But that girl seemed to me the sweetest of all. This white dress, golden curls, ringing laughter ... Her family left Waterdeep before I went to Atkatla. I don't know what happened to her.~
+@351 = ~Girlfriend? So did you have a lady of the heart as a child?~
+@352 = ~I wouldn't call it that. Although that girl really was the cutest of all the children with whom I was friends. I still remember her white dress, her golden curls, her ringing laugh... Her family left Waterdeep before I went to Athkatla. I don't know what happened to her.~
+@353 = ~A tiny lady? Of course, you probably wouldn't hang out with a peasant girl.~
+@354 = ~<CHARNAME>, I don't see anything wrong with a child being friends with children from the parent's environment. We had fun playing together. And the girl I'm telling you about seemed to me the sweetest of all. I still remember her white dress, her golden curls, her ringing laugh... Her family left Waterdeep before I went to Athkatla. I don't know what happened to her.~
+@355 = ~Girlfriend? Mint candies? Kind of stupid...~
+@356 = ~*Offended* I wish I hadn't shared my memories with you.~
+@357 = ~She's a grown woman now, isn't she? Maybe already married...~
+@358 = ~Quite possibly. And I would really like her to be happy... yes, very much so. But come on, <CHARNAME>. They don't sell mint candies here anyway.~
+@359 = ~I hope your friend is doing well.~
+@360 = ~I really hope so too. That the gods will favor her and all my friends... But let's go, <CHARNAME>. They don't sell mint candies here anyway.~
+@361 = ~Do you miss her?~
+@362 = ~I would like to see her and my other friends. Maybe someday it will happen... But let's go, <CHARNAME>. They don't sell mint candies here anyway.~
+@363 = ~Why think about something long gone?~
+@364 = ~<CHARNAME>... don't you understand simple things? Anyway, okay, let's go. They don't sell mint candies here anyway.~
+
+// Meeting in the Slums
+@365 = ~That's enough! You have become stronger. Besides, I don't want to be stabbed with a sword by my old friend Ajantis.~
+@366 = ~H-how... What? Lady Katrina? Is it really you? No, It is Immpossible. But such a resemblance...~
+@367 = ~Everything is possible in this world, Ajantis. After all, it so happened that of all the paladins of the Order of the Radiant Heart, it was you who stood in my way. Twice I followed you in the Temple District... Oh, how I wanted to call you, greet you... give you mints. Alas, everything changes...~
+@368 = ~What will you do now? Throw me in jail?~
+@369 = ~I should... but... What's wrong with you, Lady Katrina?~
+@370 = ~What's wrong? Nothing special, the most ordinary thing in our circle. My family forced me into an arranged marriage, but I refused. And because the wishes of the "nice little lady" were ignored, I ran away from home.~
+@371 = ~I've had a lot to endure, Ajantis, but you know I've always been stubborn. And I was lucky - those thieves and beggars that I encountered turned out to be in many ways more honest and decent than secular scoundrels. They called me "Goldilocks". I don't regret going down this path... though I wouldn't turn down the opportunity to start over.~
+@372 = ~But how is that, Katrina? Have you contacted the robbers? Mind unbelievable! Do you rob, kill with them?~
+@373 = ~I'm too angry right now, I know. Everything that I lived before was distorted ... It was so difficult for me, but none of my secular friends wanted to figure out what was going on in my soul. However, I wanted to make an exception for you. I asked not to attack Ajantis Ilvastar, but they did not listen to me.~
+@374 = ~So now what? Katrina...~
+@375 = ~Goldilocks, by your leave. I would like to give you a choice, sir knight. For some time now, I've been dreaming of boarding a ship going to Maztica...~
+@376 = ~*Ajantis's face shows anguish* But I...let you go...it's illegal.~
+@377 = ~That's why I don't give you a choice. Not for myself, for you. Farewell, my old friend.~
+@378 = ~*Katrina throws a bottle of concoction on the ground before moving into the shadows and running away.*~
+@379 = ~*Breathing heavily* Ha... ha ha... Phew! What is this... K-katrina...~
+@380 = ~Ajantis, are you all right?~
+@381 = ~Yes... she threw some kind of potion at me. Now everything is all right. But I... I can't believe it. Katrina...~
+@382 = ~Unfortunately things happen in life.~
+@383 = ~Alas, yes. I would have loved to help Katrina... and at the same time, I had to try to slow her down. She became a criminal... But it's not for me to judge her.~
+@384 = ~Katrina robbed me of my choice. She did me a favor, truly. Because making such a choice... is impossible. For now, I can't say more. I have no words.~
+@385 = ~Would you send your childhood friend to prison?~
+@386 = ~No! I couldn't. But if I didn't do it of my own free will... oh!~
+@387 = ~Was that the mint girl? I feel for you, Ajantis.~
+@388 = ~Thank you my friend, I really need sympathy. I did not expect this. And I don't know what the right thing to do is.~
+@389 = ~Why didn't you even try to stop her?~
+@390 = ~As you can see, she left me no choice. But it seems to me... I still wouldn't be able to... For now, I can't say anything more. I have no words.~
+@391 = ~Gee! Okay, Ajantis, clean yourself up and let's move on.~
+@392 = ~Oh Helm... Katrina...~
+
+//Conversation after
+@393 = ~<CHARNAME>...~
+@394 = ~Yes? Do you want to talk to me?~
+@395 = ~Yes. I would like to speak out. You know, I was once asked a question - isn't it better to acquit several criminals than to convict one innocent? At the time, the question itself seemed absurd to me. I certainly believed in law and justice. And I still believe that the law must be observed, otherwise we will all come to chaos. But justice... If Katrina were condemned, would it be fair? I dont know. It's just that sometimes *he lowers his voice* it seems to me that some members of my Order are going down the wrong path in understanding goodness...~
+@396 = ~Your Order is a collection of hypocritical saints, and exceptions only prove the rule. Have you just started realizing this now?~
+@397 = ~You're certainly exaggerating, but now I'm seeing something... that I hadn't noticed before. I'll keep my thoughts to myself, but thanks for listening.~
+@398 = ~You hesitate, Ajantis. Feelings, yes, are very important... But there is a duty - and it is above all. Your duty as a guard is to protect citizens from criminals. You can't give vent to pity here.~
+@399 = ~That's the point, <CHARNAME>! I'm a paladin, not a city guard. What is the duty of a servant of good? Ruthlessly punish vice or give a chance for salvation, change of soul, when it seems possible? This case of Katrina... Goldilocks... made me look at a lot of things differently.~
+@400 = ~If Katrina had been convicted, it would have been fair in terms of the law. But you see, often justice is contrary to mercy. It seemed to me that this girl sincerely wants to start a new life. You should be glad that she now has such an opportunity, and calmly accept what has happened. And for misdeeds, let her be punished by another judge - conscience.~
+@401 = ~Ah, <CHARNAME>! Mercy... that's the main word. And for some reason it warms my heart. You see... I'm ready to look at a lot of things differently now.~
+@402 = ~Why are you making things complicated again? What happened, happened. Why torture yourself endlessly?~
+@403 = ~It's hard for me to explain this, <CHARNAME>. It's just... you have to understand everything. Bring back shattered ideals. Life can't be that easy. Well, what else can I say? Thank you for listening to me.~
+@404 = ~*You pretend not to notice Ajantis' attempts to speak to you.*~
+@405 = ~No, never mind.~
+
+//A day later
+@406 = ~I'm worried about Katrina. She contacted such people... Let's find out at the Docks if the ship has set sail for Maztica. I just want to make sure the girl is okay.~
+// Final, in the Docks
+@407 = ~Ajantis!~
+@408 = ~Unbelievable... we meet again, Katrina!~
+@409 = ~Yes, and just in time, I swear by all the gods! I just got attacked! But then these rascals saw that you were approaching and fled. Helm brought you to me again, and this time, like a true paladin, you saved a lady in need.~
+@410 = ~What happened?~
+@411 = ~I hurried out of Athkatla in the first boat I came across and lingered here, waiting for a suitable ship bound for Maztica. He had already appeared on the horizon, but I managed to quarrel with a scoundrel pirate who stuck to me, pretty much gone over. I would have dealt with him, but this coward called his friends...~
+@412 = ~You took such a risk, Katrina...~
+@413 = ~No more than ever.~
+@414 = ~Would you like to come home?~
+@415 = ~No way. It is better to perish in the depths of the sea.~
+@416 = ~So Maztica after all?~
+@417 = ~Yes. Are you letting me go?~
+@418 = ~I dare not delay you, Katrina. But I'm sad that you're going to such a troubled land.~
+@419 = ~Exactly! It is there that there are many glorious deeds for the adventurer. I learned how to fight for a reason, my friend.~
+@420 = ~I'm not the pretty girl in the white dress you used to know. There is no Katrina, there is Goldilocks, who is attracted by the blue sea and the mysterious jungle. Today's skirmish taught me a lesson, now I'll be more careful.~
+@421 = ~Goldilocks... well, so be it. Can I... ask you?..~
+@422 = ~Never again enter the path of crime? I will remember you, Ajantis, and hopefully this will help me resist the temptations.~
+@423 = ~Then... good luck.~
+@424 = ~*Lips lips lightly to Ajantis' cheek.* Take this ring as a memento of me. And more...~
+@425 = ~Mint candies...~
+@426 = ~Yes. Here I managed to get almost the same ones that we enjoyed with you once. Farewell, Ajantis.~
+@427 = ~*Katrina leaves*~
+@428 = ~It's like part of my childhood is gone with her... It turns out that growing up takes a lifetime. Now I want to be quiet for a while...~
+
+// NPC reactions
+@429 = ~How cute!~
+@430 = ~Girl, do you seriously think that the bandits are afraid of this weakling? Do not make me laugh! If they're afraid of anything, it's my sword!~
+@431 = ~They weren't afraid of the paladin, you stupid girl, but of Tiax the Mighty! The mere sight of Tiax strikes terror into the hearts of enemies!~
+@432 = ~Too bad they ran away! I just needed fresh organ donors, otherwise my supplies are running out.~
+@433 = ~I hope they didn't run away to call for reinforcements. Let's get out of here.~
+@434 = ~Minsc and Boo are not afraid of anyone! If someone threatens such a cute girl, we will come to the rescue too!~
+@435 = ~Ugh! I'm sick of your babbling now.~
+@436 = ~Rrroa!!~
+@437 = ~It's her again! (I was hoping that this stupid girl had already left and wouldn't waste my time anymore... I mean, ours time)~
+@438 = ~I hope she pays to save us!~
+@439 = ~Yes, I'm letting you go! Get out!~
+@440 = ~She wasn't talking to you, she was talking to me! Be silent!~
+@441 = ~You did well, brother Ajantis, to let her go. I believe in the sincerity of this girl and that she will no longer turn into the path of dishonor.~
+@442 = ~Thank you, Sir Keldorn. Your support means a lot to me.~
+@443 = ~Oh! You are not as stupid and ignorant as I thought, girl, since you thought to bring Tiax his favorite candies!~
+@444 = ~I didn't bring this for you, dwarf. And for someone I sincerely respect and appreciate.~
+@445 = ~So all our hard work was rewarded with a cheap ring and stupid candies?! Grrr!~
+@446 = ~I didn't expect you to be so romantic, Ajantis.~
+@447 = ~Ah, I will definitely compose a song based on this romantic story. But the ending will need to be changed - listeners love happy endings.~
+@448 = ~Understood. Your story is somewhat similar to mine. I also ran away from home and decided to live on my own - a life full of adventure and passion.~
+@449 = ~So this is for me?~
