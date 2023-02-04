@@ -1,6 +1,6 @@
 BACKUP ~BG1NPCSoA/backup~
 SUPPORT ~http://www.baldursgatemods.com/forums/index.php?board=133.0~
-VERSION ~14~
+VERSION ~14.1~
 
 AUTO_TRA ~BG1NPCSoA/tra/%s~
 
@@ -10123,6 +10123,13 @@ COPY_EXISTING ~sw1h01.itm~ ~override/7xbg1n.mrk~ // This file helps to determine
 APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~
 UNLESS ~CD_STATE_NOTVALID~
 
+APPEND ~gtimes.ids~ ~7200 ONE_DAY~ UNLESS ~ONE_DAY~
+
+ ACTION_IF GAME_IS "bg2ee eet" BEGIN
+  // If a EE-version is installed, change the journal entries to adapt it 
+  ADD_JOURNAL @1849 @1850 @1851 @1852
+END  
+
 
 COPY ~BG1NPCSoA/Cre/7XCRE70.cre~ ~override/7XCRE70.cre~
 SAY NAME1 @7450
@@ -10186,6 +10193,13 @@ PATCH_IF GAME_IS ~bg2ee eet~ BEGIN
 	END
 END
 
+COPY ~BG1NPCSoA/Cre/MISC/7XKatr.cre~ ~override/7XKatr.cre~
+SAY NAME1 @777
+SAY NAME2 @777
+
+COPY ~BG1NPCSoA/Cre/MISC/7XKatr1.cre~ ~override/7XKatr1.cre~
+COPY ~BG1NPCSoA/Cre/MISC/7XKatr2.cre~ ~override/7XKatr2.cre~
+
 LAF HANDLE_AUDIO STR_VAR audio_path = "BG1NPCSoA/sounds/Ajantis" oggdec_path = "BG1NPCSoA/sounds" END
 
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~IMOEN!.wav~ BEGIN
@@ -10211,7 +10225,8 @@ SAY NAME2 @793
 SAY UNIDENTIFIED_DESC @792
 LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@794" END
 
-
+EXTEND_TOP ~AR0300.bcs~ ~BG1NPCSoA/scripts/Ajantis/AR0300.baf~
+EXTEND_TOP ~AR0400.bcs~ ~BG1NPCSoA/scripts/Ajantis/AR0400.baf~
 EXTEND_TOP ~AR1202.bcs~ ~BG1NPCSoA/scripts/Ajantis/AR1202.baf~
 EXTEND_TOP ~AR4000.bcs~ ~BG1NPCSoA/scripts/Ajantis/AR4000Ajan.baf~
 EXTEND_TOP ~AR4500.bcs~ ~BG1NPCSoA/scripts/Ajantis/AR4500Ajan.baf~
@@ -10922,18 +10937,9 @@ ACTION_IF FILE_EXISTS_IN_GAME ~7XAJANB.dlg~ AND FILE_EXISTS_IN_GAME ~B7Xshar.dlg
 COMPILE ~%MOD_FOLDER%/crossbanter/ajantis-sharteel.d~ USING ~%MOD_FOLDER%/tra/%LANGUAGE%/crossbanter.tra~
 END
 
-// Smiling Imp's Shar-Teel - Jastey's Ajantis 
-ACTION_IF FILE_EXISTS_IN_GAME ~C#AjanB.dlg~ AND FILE_EXISTS_IN_GAME ~B7Xshar.dlg~ BEGIN
-COMPILE ~%MOD_FOLDER%/crossbanter/Jastey's Ajantis/ajantis-sharteel.d~ USING ~%MOD_FOLDER%/tra/%LANGUAGE%/crossbanter.tra~
-END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~7XSkiB.dlg~ AND FILE_EXISTS_IN_GAME ~7XAJANB.dlg~ BEGIN
 COMPILE ~%MOD_FOLDER%/crossbanter/ajantis-skie.d~ USING ~%MOD_FOLDER%/tra/%LANGUAGE%/crossbanter.tra~
-END
-
-// Smiling Imp's Skie - Jastey's Ajantis 
-ACTION_IF FILE_EXISTS_IN_GAME ~7XSkiB.dlg~ AND FILE_EXISTS_IN_GAME ~C#AjanB.dlg~ BEGIN
-COMPILE ~%MOD_FOLDER%/crossbanter/Jastey's Ajantis/ajantis-skie.d~ USING ~%MOD_FOLDER%/tra/%LANGUAGE%/crossbanter.tra~
 END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~7XKAGA.dlg~ AND FILE_EXISTS_IN_GAME ~7XALORAJ.dlg~ BEGIN
@@ -10960,10 +10966,6 @@ ACTION_IF FILE_EXISTS_IN_GAME ~7XAJANB.dlg~ AND FILE_EXISTS_IN_GAME ~7XBRANB.dlg
 COMPILE ~%MOD_FOLDER%/crossbanter/branwen-ajantis.d~ USING ~%MOD_FOLDER%/tra/%LANGUAGE%/crossbanter.tra~
 END
 
-// Smiling Imp's Branwen - Jastey's Ajantis 
-ACTION_IF FILE_EXISTS_IN_GAME ~C#AjanB.dlg~ AND FILE_EXISTS_IN_GAME ~7XBRANB.dlg~ BEGIN
-COMPILE ~%MOD_FOLDER%/crossbanter/Jastey's Ajantis/branwen-ajantis.d~ USING ~%MOD_FOLDER%/tra/%LANGUAGE%/crossbanter.tra~
-END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~7XQUAYB.dlg~ AND FILE_EXISTS_IN_GAME ~7XBRANB.dlg~ BEGIN
 COMPILE ~%MOD_FOLDER%/crossbanter/branwen-quayle.d~ USING ~%MOD_FOLDER%/tra/%LANGUAGE%/crossbanter.tra~
@@ -10977,22 +10979,12 @@ ACTION_IF FILE_EXISTS_IN_GAME ~7XXANB.dlg~ AND FILE_EXISTS_IN_GAME ~7XBRANB.dlg~
 COMPILE ~%MOD_FOLDER%/crossbanter/branwen-xan.d~ USING ~%MOD_FOLDER%/tra/%LANGUAGE%/crossbanter.tra~
 END
 
-// Smiling Imp's Branwen - Kulyok's Xan 
-ACTION_IF FILE_EXISTS_IN_GAME ~BO#XAN.dlg~ AND FILE_EXISTS_IN_GAME ~7XBRANB.dlg~ BEGIN
-COMPILE ~%MOD_FOLDER%/crossbanter/Kulyok's Xan/branwen-xan(kulyok's).d~ USING ~%MOD_FOLDER%/tra/%LANGUAGE%/crossbanter.tra~
-END
-
 ACTION_IF FILE_EXISTS_IN_GAME ~7XXZARB.dlg~ AND FILE_EXISTS_IN_GAME ~7XBRANB.dlg~ BEGIN
 COMPILE ~%MOD_FOLDER%/crossbanter/branwen-xzar.d~ USING ~%MOD_FOLDER%/tra/%LANGUAGE%/crossbanter.tra~
 END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~7XXANB.dlg~ AND FILE_EXISTS_IN_GAME ~B7XCoran.dlg~ BEGIN
 COMPILE ~%MOD_FOLDER%/crossbanter/coran-xan.d~ USING ~%MOD_FOLDER%/tra/%LANGUAGE%/crossbanter.tra~
-END
-
-// Smiling Imp's Coran - Kulyok's Xan 
-ACTION_IF FILE_EXISTS_IN_GAME ~BO#XAN.dlg~ AND FILE_EXISTS_IN_GAME ~B7XCoran.dlg~ BEGIN
-COMPILE ~%MOD_FOLDER%/crossbanter/Kulyok's Xan/coran-xan(kulyok's).d~ USING ~%MOD_FOLDER%/tra/%LANGUAGE%/crossbanter.tra~
 END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~7XXZARB.dlg~ AND FILE_EXISTS_IN_GAME ~B7XCoran.dlg~ BEGIN
@@ -11014,12 +11006,6 @@ END
 ACTION_IF FILE_EXISTS_IN_GAME ~7XXANB.dlg~ AND FILE_EXISTS_IN_GAME ~B7XGar.dlg~ BEGIN
 COMPILE ~%MOD_FOLDER%/crossbanter/garrik-xan.d~ USING ~%MOD_FOLDER%/tra/%LANGUAGE%/crossbanter.tra~
 END
-
-// Smiling Imp's Garrick - Kulyok's Xan 
-ACTION_IF FILE_EXISTS_IN_GAME ~BO#XAN.dlg~ AND FILE_EXISTS_IN_GAME ~B7XGar.dlg~ BEGIN
-COMPILE ~%MOD_FOLDER%/crossbanter/Kulyok's Xan/garrik-xan(kulyok's).d~ USING ~%MOD_FOLDER%/tra/%LANGUAGE%/crossbanter.tra~
-END
-
 
 ACTION_IF FILE_EXISTS_IN_GAME ~7XXZARB.dlg~ AND FILE_EXISTS_IN_GAME ~B7XGar.dlg~ BEGIN
 COMPILE ~%MOD_FOLDER%/crossbanter/garrik-xzar.d~ USING ~%MOD_FOLDER%/tra/%LANGUAGE%/crossbanter.tra~
@@ -11069,11 +11055,6 @@ ACTION_IF FILE_EXISTS_IN_GAME ~B7Xshar.dlg~ AND FILE_EXISTS_IN_GAME ~7XXANB.dlg~
 COMPILE ~%MOD_FOLDER%/crossbanter/sharteel-xan.d~ USING ~%MOD_FOLDER%/tra/%LANGUAGE%/crossbanter.tra~
 END
 
-// Smiling Imp's Sharteel - Kulyok's Xan 
-ACTION_IF FILE_EXISTS_IN_GAME ~B7Xshar.dlg~ AND FILE_EXISTS_IN_GAME ~BO#XAN.dlg~ BEGIN
-COMPILE ~%MOD_FOLDER%/crossbanter/Kulyok's Xan/sharteel-xan(kulyok's).d~ USING ~%MOD_FOLDER%/tra/%LANGUAGE%/crossbanter.tra~
-END
-
 ACTION_IF FILE_EXISTS_IN_GAME ~B7Xshar.dlg~ AND FILE_EXISTS_IN_GAME ~7XXZARB.dlg~ BEGIN
 COMPILE ~%MOD_FOLDER%/crossbanter/sharteel-xzar.d~ USING ~%MOD_FOLDER%/tra/%LANGUAGE%/crossbanter.tra~
 END
@@ -11100,11 +11081,6 @@ END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~7XXANB.dlg~ AND FILE_EXISTS_IN_GAME ~7XTIAXB.dlg~ BEGIN
 COMPILE ~%MOD_FOLDER%/crossbanter/tiax-xan.d~ USING ~%MOD_FOLDER%/tra/%LANGUAGE%/crossbanter.tra~
-END
-
-// Smiling Imp's Tiax - Kulyok's Xan 
-ACTION_IF FILE_EXISTS_IN_GAME ~BO#XAN.dlg~ AND FILE_EXISTS_IN_GAME ~7XTIAXB.dlg~ BEGIN
-COMPILE ~%MOD_FOLDER%/crossbanter/Kulyok's Xan/tiax-xan(kulyok's).d~ USING ~%MOD_FOLDER%/tra/%LANGUAGE%/crossbanter.tra~
 END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~B7XCoran.dlg~ AND FILE_EXISTS_IN_GAME ~B7XYES.dlg~ BEGIN
@@ -11143,11 +11119,6 @@ ACTION_IF FILE_EXISTS_IN_GAME ~BG1X20.dlg~ AND FILE_EXISTS_IN_GAME ~7XXANJ.dlg~ 
 COMPILE ~%MOD_FOLDER%/crossbanter/Water Gardens comments/GARDENS-xan.d~ USING ~%MOD_FOLDER%/tra/%LANGUAGE%/crossbanter.tra~
 END
 
-// Kulyok's Xan in Water Gardens
-ACTION_IF FILE_EXISTS_IN_GAME ~BG1X20.dlg~ AND FILE_EXISTS_IN_GAME ~O#XANJ.dlg~ BEGIN
-COMPILE ~%MOD_FOLDER%/crossbanter/Water Gardens comments/GARDENS-xan(kulyok's).d~ USING ~%MOD_FOLDER%/tra/%LANGUAGE%/crossbanter.tra~
-END
-
 ACTION_IF FILE_EXISTS_IN_GAME ~KGSTO2.dlg~ AND FILE_EXISTS_IN_GAME ~7XXZARJ.dlg~ BEGIN
 COMPILE ~%MOD_FOLDER%/crossbanter/Water Gardens comments/GARDENS-xzar.d~ USING ~%MOD_FOLDER%/tra/%LANGUAGE%/crossbanter.tra~
 END
@@ -11157,8 +11128,6 @@ ACTION_IF FILE_EXISTS_IN_GAME ~B7XSafa.dlg~ AND FILE_EXISTS_IN_GAME ~7XXZARB.dlg
 COMPILE ~%MOD_FOLDER%/crossbanter/xzar-safana.d~ USING ~%MOD_FOLDER%/tra/%LANGUAGE%/crossbanter.tra~
 END
 
-
-////////////
 
 ACTION_IF FILE_EXISTS_IN_GAME ~B7XGar.dlg~ AND FILE_EXISTS_IN_GAME ~B7XEldo.dlg~ BEGIN
 COMPILE ~%MOD_FOLDER%/crossbanter/garrik-eldoth.d~ USING ~%MOD_FOLDER%/tra/%LANGUAGE%/interbanter.tra~
@@ -11208,11 +11177,6 @@ ACTION_IF FILE_EXISTS_IN_GAME ~BDEEKIN.dlg~ AND FILE_EXISTS_IN_GAME ~7XXZARB.dlg
 COMPILE ~%MOD_FOLDER%/crossbanter/xzar-deekin.d~ USING ~%MOD_FOLDER%/tra/%LANGUAGE%/crossbanter.tra~
 END
 
-// Smiling Imp's Garrick - Kulyok's Coran 
-ACTION_IF FILE_EXISTS_IN_GAME ~BO#CORAN.dlg~ AND FILE_EXISTS_IN_GAME ~B7XGar.dlg~ BEGIN
-COMPILE ~%MOD_FOLDER%/crossbanter/Kulyok's Coran/garrik-coran(kulyok's).d~ USING ~%MOD_FOLDER%/tra/%LANGUAGE%/crossbanter.tra~
-END
-
 ACTION_IF FILE_EXISTS_IN_GAME ~7XKagaB.dlg~ AND FILE_EXISTS_IN_GAME ~B7XGar.dlg~ BEGIN
 COMPILE ~%MOD_FOLDER%/crossbanter/garrik-kagain.d~ USING ~%MOD_FOLDER%/tra/%LANGUAGE%/crossbanter.tra~
 END
@@ -11223,11 +11187,6 @@ END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~7XAJANB.dlg~ AND FILE_EXISTS_IN_GAME ~B7XGar.dlg~ BEGIN
 COMPILE ~%MOD_FOLDER%/crossbanter/ajantis-garrick.d~ USING ~%MOD_FOLDER%/tra/%LANGUAGE%/crossbanter.tra~
-END
-
-// Smiling Imp's Garrick - Jastey's Ajantis 
-ACTION_IF FILE_EXISTS_IN_GAME ~C#AjanB.dlg~ AND FILE_EXISTS_IN_GAME ~B7XGar.dlg~ BEGIN
-COMPILE ~%MOD_FOLDER%/crossbanter/Jastey's Ajantis/ajantis-garrick.d~ USING ~%MOD_FOLDER%/tra/%LANGUAGE%/crossbanter.tra~
 END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~B7XSafa.dlg~ AND FILE_EXISTS_IN_GAME ~B7XGar.dlg~ BEGIN
@@ -11246,11 +11205,6 @@ ACTION_IF FILE_EXISTS_IN_GAME ~7XTIAXB.dlg~ AND FILE_EXISTS_IN_GAME ~7XMONTB.dlg
 COMPILE ~%MOD_FOLDER%/crossbanter/montaron-tiax.d~ USING ~%MOD_FOLDER%/tra/%LANGUAGE%/crossbanter.tra~
 END
 
-// Smiling Imp's Montaron - Kulyok's Tiax
-ACTION_IF FILE_EXISTS_IN_GAME ~BO#TIAX.dlg~ AND FILE_EXISTS_IN_GAME ~7XMONTB.dlg~ BEGIN
-COMPILE ~%MOD_FOLDER%/crossbanter/Kulyok's Tiax/montaron-tiax(kulyok's).d~ USING ~%MOD_FOLDER%/tra/%LANGUAGE%/crossbanter.tra~
-END
-
 ACTION_IF FILE_EXISTS_IN_GAME ~7XAJANB.dlg~ AND FILE_EXISTS_IN_GAME ~BDEEKIN.dlg~ BEGIN
 COMPILE ~%MOD_FOLDER%/crossbanter/ajantis-deekin.d~ USING ~%MOD_FOLDER%/tra/%LANGUAGE%/crossbanter.tra~
 END
@@ -11259,16 +11213,11 @@ ACTION_IF FILE_EXISTS_IN_GAME ~7XAJANB.dlg~ AND FILE_EXISTS_IN_GAME ~B7XCoran.dl
 COMPILE ~%MOD_FOLDER%/crossbanter/ajantis-coran.d~ USING ~%MOD_FOLDER%/tra/%LANGUAGE%/crossbanter.tra~
 END
 
-// Smiling Imp's Ajantis - Kulyok's Coran
-ACTION_IF FILE_EXISTS_IN_GAME ~7XAJANB.dlg~ AND FILE_EXISTS_IN_GAME ~BO#CORAN.dlg~ BEGIN
-COMPILE ~%MOD_FOLDER%/crossbanter/Kulyok's Coran/ajantis-coran(kulyok's).d~ USING ~%MOD_FOLDER%/tra/%LANGUAGE%/crossbanter.tra~
-END
-
 ACTION_IF FILE_EXISTS_IN_GAME ~7XAJANB.dlg~ AND FILE_EXISTS_IN_GAME ~7XTIAXB.dlg~ BEGIN
 COMPILE ~%MOD_FOLDER%/crossbanter/tiax-ajantis.d~ USING ~%MOD_FOLDER%/tra/%LANGUAGE%/crossbanter.tra~
 END
 
-// Smiling Imp's Ajantis - Kulyok's Tiax
-ACTION_IF FILE_EXISTS_IN_GAME ~BO#TIAX.dlg~ AND FILE_EXISTS_IN_GAME ~7XAJANB.dlg~ BEGIN
-COMPILE ~%MOD_FOLDER%/crossbanter/Kulyok's Tiax/tiax(kulyok's)-ajantis.d~ USING ~%MOD_FOLDER%/tra/%LANGUAGE%/crossbanter.tra~
+// Kulyok's Xan in Water Gardens
+ACTION_IF FILE_EXISTS_IN_GAME ~BG1X20.dlg~ AND FILE_EXISTS_IN_GAME ~O#XANJ.dlg~ BEGIN
+COMPILE ~%MOD_FOLDER%/crossbanter/Water Gardens comments/GARDENS-xan(kulyok's).d~ USING ~%MOD_FOLDER%/tra/%LANGUAGE%/crossbanter.tra~
 END
