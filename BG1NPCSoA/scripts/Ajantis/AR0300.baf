@@ -1,0 +1,11 @@
+IF 
+InParty("7XAJAN") !StateCheck("7XAJAN",CD_STATE_NOTVALID)
+Global("AjantisQuest","GLOBAL",12)
+Global("ANKatrinaExists","AR0300",0)
+CombatCounter(0) 
+THEN
+  RESPONSE #100
+SetGlobal("ANKatrinaExists","AR0300",1)
+CreateCreature("7xKatr",[2171.3092],13)
+Continue()
+END

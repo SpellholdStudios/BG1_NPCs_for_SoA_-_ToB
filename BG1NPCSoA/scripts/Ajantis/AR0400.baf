@@ -1,0 +1,62 @@
+IF 
+InParty("7XAJAN") !StateCheck("7XAJAN",CD_STATE_NOTVALID)
+Global("AjantisQuest","GLOBAL",4)
+Global("7XKatrinaExists","AR0400",0)
+CombatCounter(0) 
+Global("AjantisAR0400TalkTimer","GLOBAL",0)
+THEN
+  RESPONSE #100
+  RealSetGlobalTimer("AjantisAR0400TalkTimer","GLOBAL",10) 
+END
+
+IF 
+InParty("7XAJAN") !StateCheck("7XAJAN",CD_STATE_NOTVALID)
+Global("AjantisQuest","GLOBAL",4)
+RealGlobalTimerExpired("AjantisAR0400TalkTimer","GLOBAL") 
+Global("7XKatrinaExists","AR0400",0)
+CombatCounter(0) 
+THEN
+  RESPONSE #100
+ClearAllActions()
+SetGlobal("7XKatrinaExists","AR0400",1)
+StartCutSceneMode()		
+FadeFromColor([70.0],0)
+CreateCreatureObject("7XKatr",Player1,0,0,0) 
+ActionOverride("7XKatr",FaceObject([PC])) 
+SmallWait(2)
+CreateCreatureObject("7XKatr1",Player1,0,0,0)
+CreateCreatureObject("7XKatr2",Player1,0,0,0)
+ActionOverride("7XKatr1",FaceObject([PC]))
+ActionOverride("7XKatr2",FaceObject([PC]))
+DisplayStringHead("7XKatr",@778)
+Wait(3)
+DisplayStringHead("7XKatr1",@779)
+Wait(3)
+Deactivate("7XKatr")
+EndCutSceneMode()
+END
+
+IF 
+InParty("7XAJAN") !StateCheck("7XAJAN",CD_STATE_NOTVALID)
+Global("AjantisQuest","GLOBAL",4)
+Global("7XKatrinaExists","AR0400",1)
+CombatCounter(0) 
+Dead("7XKatr1")
+Dead("7XKatr2")
+!Dead("7XKatr")
+THEN
+  RESPONSE #100
+Activate("7XKatr")
+SetGlobal("AjantisQuest","GLOBAL",5)
+ActionOverride("7XKatr",StartDialogNoSet(Player1))
+END
+
+IF 
+InParty("7XAJAN") !StateCheck("7XAJAN",CD_STATE_NOTVALID)
+Global("AjantisQuest","GLOBAL",6)
+THEN
+  RESPONSE #100
+ActionOverride("7XKatr",DestroySelf())  
+SetGlobal("AjantisQuest","GLOBAL",7)
+ActionOverride("7XAJAN",StartDialogNoSet(Player1))
+END

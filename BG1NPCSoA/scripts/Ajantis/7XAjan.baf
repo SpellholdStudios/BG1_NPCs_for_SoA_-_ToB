@@ -117,3 +117,78 @@ THEN
   SetGlobal("AjanAfterUnderdarkTalking","GLOBAL",2)
    StartDialogNoSet(Player1)
 END
+
+// Athkatla (quest)
+IF
+InParty("7XAJAN")!StateCheck("7XAJAN",CD_STATE_NOTVALID)
+See(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+CombatCounter(0) 
+Global("AjantisQuest","GLOBAL",0)
+OR(9)
+AreaCheck("AR0020")
+AreaCheck("AR0300")
+AreaCheck("AR0400")
+AreaCheck("AR0500")
+AreaCheck("AR0700")
+AreaCheck("AR0800")
+AreaCheck("AR0900")
+AreaCheck("AR1000")
+AreaCheck("ARBGX2")
+THEN
+  RESPONSE #100
+  SetGlobal("AjantisQuest","GLOBAL",1)
+  StartDialogNoSet(Player1)
+END
+
+IF
+InParty("7XAJAN")!StateCheck("7XAJAN",CD_STATE_NOTVALID)
+See(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+CombatCounter(0) 
+AreaCheck("AR0700")
+Range("DOOR0702",30)
+Global("AjantisQuest","GLOBAL",2)
+THEN
+  RESPONSE #100
+  SetGlobal("AjantisQuest","GLOBAL",3)
+    StartDialogNoSet(Player1)
+END
+
+IF
+Global("AjantisQuest","GLOBAL",8)
+GlobalTimerExpired("7xAjantisQuestTimer1","GLOBAL")
+InParty("7XAJAN")!StateCheck("7XAJAN",CD_STATE_NOTVALID)
+See(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+CombatCounter(0) 
+THEN
+  RESPONSE #100
+  SetGlobal("AjantisQuest","GLOBAL",9)
+  StartDialogNoSet(Player1)
+END
+
+IF
+Global("AjantisQuest","GLOBAL",10)
+GlobalTimerExpired("7xAjantisQuestTimer2","GLOBAL")
+InParty("7XAJAN")!StateCheck("7XAJAN",CD_STATE_NOTVALID)
+See(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+CombatCounter(0) 
+THEN
+  RESPONSE #100
+  SetGlobal("AjantisQuest","GLOBAL",11)
+  StartDialogNoSet(Player1)
+END
+
+IF
+Global("AjantisQuest","GLOBAL",12)
+AreaCheck("AR0300")
+InParty("7XAJAN")!StateCheck("7XAJAN",CD_STATE_NOTVALID)
+See("7xKatr")
+CombatCounter(0)
+THEN
+  RESPONSE #100
+  SetGlobal("AjantisQuest","GLOBAL",13)
+  ActionOverride("7xKatr",StartDialogNoSet(Player1))
+END
