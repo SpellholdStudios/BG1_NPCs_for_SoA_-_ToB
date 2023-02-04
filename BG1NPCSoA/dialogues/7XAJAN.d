@@ -934,3 +934,289 @@ THEN BAERIE 7XAJANAerieBanter
 == 7XAJANB @320
 == BAERIE @321
 EXIT
+
+// Ajantis quest
+APPEND 7XAJANJ
+IF WEIGHT #-90 ~Global("AjantisQuest","GLOBAL",1)~ THEN BEGIN 7xAjantisPCTalkAthkatla
+SAY @330
+=@331
+IF ~~ THEN DO ~SetGlobal("AjantisQuest","GLOBAL",2) AddJournalEntry(@1849,QUEST)~ EXIT
+END
+
+IF WEIGHT #-90 ~Global("AjantisQuest","GLOBAL",3)~ THEN BEGIN 7xAjantisPCTalkPromenade
+SAY @332
+IF ~~ THEN REPLY @333 GOTO 7xAjantisPCTalkPromenade-1
+IF ~~ THEN REPLY @335 GOTO 7xAjantisPCTalkPromenade-2
+IF ~~ THEN REPLY @337 GOTO 7xAjantisPCTalkPromenade-3
+IF ~~ THEN DO ~SetGlobal("AjantisQuest","GLOBAL",99)~ REPLY @339 GOTO 7xAjantisPCTalkPromenade-4
+END
+
+IF ~~ THEN BEGIN 7xAjantisPCTalkPromenade-1
+SAY @334
+IF ~~ THEN REPLY @341 GOTO 7xAjantisPCTalkPromenade-5-1
+IF ~~ THEN REPLY @343 GOTO 7xAjantisPCTalkPromenade-5-2
+IF ~~ THEN REPLY @345 GOTO 7xAjantisPCTalkPromenade-5-3
+IF ~~ THEN DO ~SetGlobal("AjantisQuest","GLOBAL",99)~ REPLY @347 GOTO 7xAjantisPCTalkPromenade-5-4
+END
+
+IF ~~ THEN BEGIN 7xAjantisPCTalkPromenade-2
+SAY @336
+IF ~~ THEN REPLY @341 GOTO 7xAjantisPCTalkPromenade-5-1
+IF ~~ THEN REPLY @343 GOTO 7xAjantisPCTalkPromenade-5-2
+IF ~~ THEN REPLY @345 GOTO 7xAjantisPCTalkPromenade-5-3
+IF ~~ THEN DO ~SetGlobal("AjantisQuest","GLOBAL",99)~ REPLY @347 GOTO 7xAjantisPCTalkPromenade-5-4
+END
+
+IF ~~ THEN BEGIN 7xAjantisPCTalkPromenade-3
+SAY @338
+IF ~~ THEN REPLY @341 GOTO 7xAjantisPCTalkPromenade-5-1
+IF ~~ THEN REPLY @343 GOTO 7xAjantisPCTalkPromenade-5-2
+IF ~~ THEN REPLY @345 GOTO 7xAjantisPCTalkPromenade-5-3
+IF ~~ THEN DO ~SetGlobal("AjantisQuest","GLOBAL",99)~ REPLY @347 GOTO 7xAjantisPCTalkPromenade-5-4
+END
+
+IF ~~ THEN BEGIN 7xAjantisPCTalkPromenade-4
+SAY @340
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN BEGIN 7xAjantisPCTalkPromenade-5-1
+SAY @342
+IF ~~ THEN REPLY @349 GOTO 7xAjantisPCTalkPromenade-6-1
+IF ~~ THEN REPLY @351 GOTO 7xAjantisPCTalkPromenade-6-2
+IF ~~ THEN REPLY @353 GOTO 7xAjantisPCTalkPromenade-6-3
+IF ~~ THEN DO ~SetGlobal("AjantisQuest","GLOBAL",99)~ REPLY @355 GOTO 7xAjantisPCTalkPromenade-6-4
+END
+
+IF ~~ THEN BEGIN 7xAjantisPCTalkPromenade-5-2
+SAY @344
+IF ~~ THEN REPLY @349 GOTO 7xAjantisPCTalkPromenade-6-1
+IF ~~ THEN REPLY @351 GOTO 7xAjantisPCTalkPromenade-6-2
+IF ~~ THEN REPLY @353 GOTO 7xAjantisPCTalkPromenade-6-3
+IF ~~ THEN DO ~SetGlobal("AjantisQuest","GLOBAL",99)~ REPLY @355 GOTO 7xAjantisPCTalkPromenade-6-4
+END
+
+IF ~~ THEN BEGIN 7xAjantisPCTalkPromenade-5-3
+SAY @346
+IF ~~ THEN REPLY @349 GOTO 7xAjantisPCTalkPromenade-6-1
+IF ~~ THEN REPLY @351 GOTO 7xAjantisPCTalkPromenade-6-2
+IF ~~ THEN REPLY @353 GOTO 7xAjantisPCTalkPromenade-6-3
+IF ~~ THEN DO ~SetGlobal("AjantisQuest","GLOBAL",99)~ REPLY @355 GOTO 7xAjantisPCTalkPromenade-6-4
+END
+
+IF ~~ THEN BEGIN 7xAjantisPCTalkPromenade-5-4
+SAY @348
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN BEGIN 7xAjantisPCTalkPromenade-6-1
+SAY @350
+IF ~~ THEN DO ~SetGlobal("AjantisQuest","GLOBAL",4) AddJournalEntry(@1850,QUEST)~ REPLY @357 GOTO 7xAjantisPCTalkPromenade-7-1
+IF ~~ THEN DO ~SetGlobal("AjantisQuest","GLOBAL",4) AddJournalEntry(@1850,QUEST)~ REPLY @359 GOTO 7xAjantisPCTalkPromenade-7-2
+IF ~~ THEN DO ~SetGlobal("AjantisQuest","GLOBAL",4) AddJournalEntry(@1850,QUEST)~ REPLY @361 GOTO 7xAjantisPCTalkPromenade-7-3
+IF ~~ THEN DO ~SetGlobal("AjantisQuest","GLOBAL",99)~ REPLY @363 GOTO 7xAjantisPCTalkPromenade-7-4
+END
+
+IF ~~ THEN BEGIN 7xAjantisPCTalkPromenade-6-2
+SAY @352
+IF ~~ THEN DO ~SetGlobal("AjantisQuest","GLOBAL",4) AddJournalEntry(@1850,QUEST)~ REPLY @357 GOTO 7xAjantisPCTalkPromenade-7-1
+IF ~~ THEN DO ~SetGlobal("AjantisQuest","GLOBAL",4) AddJournalEntry(@1850,QUEST)~ REPLY @359 GOTO 7xAjantisPCTalkPromenade-7-2
+IF ~~ THEN DO ~SetGlobal("AjantisQuest","GLOBAL",4) AddJournalEntry(@1850,QUEST)~ REPLY @361 GOTO 7xAjantisPCTalkPromenade-7-3
+IF ~~ THEN DO ~SetGlobal("AjantisQuest","GLOBAL",99)~ REPLY @363 GOTO 7xAjantisPCTalkPromenade-7-4
+END
+
+IF ~~ THEN BEGIN 7xAjantisPCTalkPromenade-6-3
+SAY @354
+IF ~~ THEN DO ~SetGlobal("AjantisQuest","GLOBAL",4) AddJournalEntry(@1850,QUEST)~ REPLY @357 GOTO 7xAjantisPCTalkPromenade-7-1
+IF ~~ THEN DO ~SetGlobal("AjantisQuest","GLOBAL",4) AddJournalEntry(@1850,QUEST)~ REPLY @359 GOTO 7xAjantisPCTalkPromenade-7-2
+IF ~~ THEN DO ~SetGlobal("AjantisQuest","GLOBAL",4) AddJournalEntry(@1850,QUEST)~ REPLY @361 GOTO 7xAjantisPCTalkPromenade-7-3
+IF ~~ THEN DO ~SetGlobal("AjantisQuest","GLOBAL",99)~ REPLY @363 GOTO 7xAjantisPCTalkPromenade-7-4
+END
+
+IF ~~ THEN BEGIN 7xAjantisPCTalkPromenade-6-4
+SAY @356
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN BEGIN 7xAjantisPCTalkPromenade-7-1
+SAY @358
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN BEGIN 7xAjantisPCTalkPromenade-7-2
+SAY @360
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN BEGIN 7xAjantisPCTalkPromenade-7-3
+SAY @362
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN BEGIN 7xAjantisPCTalkPromenade-7-4
+SAY @364
+IF ~~ THEN EXIT
+END
+
+END
+
+BEGIN 7xKatr
+
+CHAIN IF ~Global("AjantisQuest","GLOBAL",5)~ THEN 7xKatr 7xKatrinaAjantis
+@365 DO ~SetGlobal("AjantisQuest","GLOBAL",6)~
+== 7XAJANJ @366
+== 7xKatr @367
+=@368
+== 7XAJANJ @369
+== 7xKatr @370
+=@371
+== IF_FILE_EXISTS 7XSafaJ IF ~InParty("7XSAFA") InMyArea("7XSAFA") !StateCheck("7XSAFA",CD_STATE_NOTVALID)~ THEN @448
+== 7XAJANJ @372
+== 7xKatr @373
+== 7XAJANJ @374
+== 7xKatr @375
+== 7XAJANJ @376
+== 7xKatr @377
+=@378
+EXIT
+
+APPEND 7XAJANJ
+IF WEIGHT #-99 ~Global("AjantisQuest","GLOBAL",7)~ THEN BEGIN 7xAjantisQuestTalk
+SAY @379
+IF ~~ THEN DO ~SetGlobal("AjantisQuest","GLOBAL",8) SetGlobalTimer("7xAjantisQuestTimer1","GLOBAL",ONE_DAY)~ REPLY @380 GOTO 7xAjantisQuestTalk-1
+IF ~~ THEN DO ~SetGlobal("AjantisQuest","GLOBAL",8) SetGlobalTimer("7xAjantisQuestTimer1","GLOBAL",ONE_DAY)~ REPLY @389 GOTO 7xAjantisQuestTalk-2
+IF ~~ THEN DO ~SetGlobal("AjantisQuest","GLOBAL",8) SetGlobalTimer("7xAjantisQuestTimer1","GLOBAL",ONE_DAY)~ REPLY @391 GOTO 7xAjantisQuestTalk-3
+END
+
+IF ~~ THEN BEGIN 7xAjantisQuestTalk-1
+SAY @381
+IF ~~ THEN REPLY @382 GOTO 7xAjantisQuestTalk-1-1
+IF ~~ THEN REPLY @385 GOTO 7xAjantisQuestTalk-1-2
+IF ~~ THEN REPLY @387 GOTO 7xAjantisQuestTalk-1-3
+END
+
+IF ~~ THEN BEGIN 7xAjantisQuestTalk-1-1
+SAY @383
+=@384
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN BEGIN 7xAjantisQuestTalk-1-2
+SAY @386
+=@384
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN BEGIN 7xAjantisQuestTalk-1-3
+SAY @388
+=@384
+IF ~~ THEN EXIT
+END
+
+
+IF ~~ THEN BEGIN 7xAjantisQuestTalk-2
+SAY @390
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN BEGIN 7xAjantisQuestTalk-3
+SAY @392
+IF ~~ THEN EXIT
+END
+
+IF WEIGHT #-70 ~Global("AjantisQuest","GLOBAL",9)~ THEN BEGIN 7xAjantisQuestTalk-4
+SAY @393
+IF ~~ THEN DO ~SetGlobal("AjantisQuest","GLOBAL",10) SetGlobalTimer("7xAjantisQuestTimer2","GLOBAL",ONE_DAY)~ REPLY @394 GOTO 7xAjantisQuestTalk-5
+IF ~~ THEN DO ~SetGlobal("AjantisQuest","GLOBAL",99) EraseJournalEntry(@1850,QUEST) EraseJournalEntry(@1849,QUEST)~ REPLY @404 GOTO 7xAjantisQuestTalk-4-End
+END
+
+IF ~~ THEN BEGIN 7xAjantisQuestTalk-5
+SAY @395
+IF ~~ THEN REPLY @396 GOTO 7xAjantisQuestTalk-5-1
+IF ~~ THEN REPLY @398 GOTO 7xAjantisQuestTalk-5-2
+IF ~~ THEN REPLY @400 GOTO 7xAjantisQuestTalk-5-3
+IF ~~ THEN REPLY @402 GOTO 7xAjantisQuestTalk-5-4
+END
+
+IF ~~ THEN BEGIN 7xAjantisQuestTalk-5-1
+SAY @397
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN BEGIN 7xAjantisQuestTalk-5-2
+SAY @399
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN BEGIN 7xAjantisQuestTalk-5-3
+SAY @401
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN BEGIN 7xAjantisQuestTalk-5-4
+SAY @403
+IF ~~ THEN EXIT
+END
+
+
+IF ~~ THEN BEGIN 7xAjantisQuestTalk-4-End
+SAY @405
+IF ~~ THEN EXIT
+END
+
+IF WEIGHT #-99 ~Global("AjantisQuest","GLOBAL",11)~ THEN BEGIN 7xAjantisQuestTalk-6
+SAY @406
+IF ~~ THEN DO ~SetGlobal("AjantisQuest","GLOBAL",12) AddJournalEntry(@1851,QUEST)~ EXIT
+END
+
+END
+
+CHAIN IF ~Global("AjantisQuest","GLOBAL",13)~ THEN 7xKatr 7xKatrinaAjantisFinal
+@407 DO ~SetGlobal("AjantisQuest","GLOBAL",14)~
+== EDWINJ IF ~InParty("Edwin") InMyArea("Edwin") !StateCheck("Edwin",CD_STATE_NOTVALID)~ THEN @437
+== 7XAJANJ @408
+== 7xKatr @409
+== IF_FILE_EXISTS NEERAJ IF ~InParty("Neera") InMyArea("Neera") !StateCheck("Neera",CD_STATE_NOTVALID)~ THEN @429
+== IMOEN2J IF ~InParty("Imoen2") !StateCheck("Imoen2",CD_STATE_NOTVALID) OR(2) !InParty("Neera") StateCheck("Neera",CD_STATE_NOTVALID)~ THEN @429
+== IF_FILE_EXISTS 7XsharJ IF ~InParty("7XSHAR") !StateCheck("7XSHAR",CD_STATE_NOTVALID)~ THEN @430
+== IF_FILE_EXISTS 7XTIAXJ IF ~InParty("7XTIAX") !StateCheck("7XTIAX",CD_STATE_NOTVALID)~ THEN @431
+== 7XAJANJ @410
+== 7xKatr @411
+== IF_FILE_EXISTS WILSONJ IF ~InParty("Wilson") !StateCheck("Wilson",CD_STATE_NOTVALID)~ THEN @436
+== IF_FILE_EXISTS 7XXZARJ IF ~InParty("7XXZAR") !StateCheck("7XXZAR",CD_STATE_NOTVALID)~ THEN @432
+== JAHEIRAJ IF ~InParty("Jaheira") !StateCheck("Jaheira",CD_STATE_NOTVALID)~ THEN @433
+== MINSCJ IF ~InParty("Minsc") !StateCheck("Minsc",CD_STATE_NOTVALID)~ THEN @434
+== IF_FILE_EXISTS 7XkagaJ IF ~InParty("7Xkaga") !StateCheck("7Xkaga",CD_STATE_NOTVALID)~ THEN @438
+== 7XAJANJ @412
+== 7xKatr @413
+== 7XAJANJ @414
+== 7xKatr @415
+== 7XAJANJ @416
+== 7xKatr @417
+== IF_FILE_EXISTS DORNJ IF ~InParty("Dorn") !StateCheck("Dorn",CD_STATE_NOTVALID)~ THEN @439
+== 7XAJANJ IF ~InParty("Dorn") !StateCheck("Dorn",CD_STATE_NOTVALID)~ THEN @440
+== IF_FILE_EXISTS 7XMONTJ IF ~InParty("7XMONT") !StateCheck("7XMONT",CD_STATE_NOTVALID) OR(2) !InParty("Dorn") StateCheck("Dorn",CD_STATE_NOTVALID)~ THEN @439
+== 7XAJANJ IF ~InParty("7XMONT") !StateCheck("7XMONT",CD_STATE_NOTVALID) OR(2) !InParty("Dorn") StateCheck("Dorn",CD_STATE_NOTVALID)~ THEN @440
+== 7XAJANJ @418
+== 7xKatr @419
+=@420
+== 7XAJANJ @421
+== 7xKatr @422
+== 7XAJANJ @423
+== IF_FILE_EXISTS 7XMONTJ IF ~InParty("7XMONT") !StateCheck("7XMONT",CD_STATE_NOTVALID)~ THEN @435
+== VICONIJ IF ~InParty("Viconia") !StateCheck("Viconia",CD_STATE_NOTVALID) OR(2) !InParty("7XMONT") StateCheck("7XMONT",CD_STATE_NOTVALID)~ THEN @435
+== 7xKatr @424
+== IF_FILE_EXISTS 7XTIAXJ IF ~InParty("7XTIAX") !StateCheck("7XTIAX",CD_STATE_NOTVALID)~ THEN @443
+== 7xKatr IF ~InParty("7XTIAX") !StateCheck("7XTIAX",CD_STATE_NOTVALID)~ THEN @444
+== IF_FILE_EXISTS 7XXZARJ IF ~InParty("7XXZAR") !StateCheck("7XXZAR",CD_STATE_NOTVALID) InParty("7XTIAX") !StateCheck("7XTIAX",CD_STATE_NOTVALID)~ THEN @449
+== 7XAJANJ @425 DO ~AddJournalEntry(@1852,QUEST_DONE) AddexperienceParty(6000)~
+== 7xKatr @426
+=@427 DO ~GiveItem("RING07","7XAJAN") EscapeArea()~
+== KORGANJ IF ~InParty("Korgan") !StateCheck("Korgan",CD_STATE_NOTVALID)~ THEN @445
+== 7XkagaJ IF ~InParty("7Xkaga") !StateCheck("7Xkaga",CD_STATE_NOTVALID) OR(2) !InParty("Korgan") StateCheck("Korgan",CD_STATE_NOTVALID)~ THEN @445
+== KELDORJ IF ~InParty("Keldorn") !StateCheck("Keldorn",CD_STATE_NOTVALID)~ THEN @441
+== 7XAJANJ IF ~InParty("Keldorn") !StateCheck("Keldorn",CD_STATE_NOTVALID)~ THEN @442
+== IF_FILE_EXISTS 7XCoranJ IF ~InParty("7XCORAN")!StateCheck("7XCORAN",CD_STATE_NOTVALID)~ THEN @446
+== IF_FILE_EXISTS 7XGarJ IF ~InParty("7XGAR") !StateCheck("7XGAR",CD_STATE_NOTVALID)~ THEN @447
+== 7XAJANJ @428
+EXIT
