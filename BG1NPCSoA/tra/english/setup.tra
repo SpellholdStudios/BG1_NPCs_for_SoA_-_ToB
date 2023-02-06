@@ -1265,6 +1265,9 @@ This magical necklace is what allows the person wearing it to transform into a w
 @771  = ~Duty to one's cause outweighs all.~ [ajantis_]
 @774  = ~With Helm's blessing.~ [ajantisi]
 @776  = ~As you will.~ [ajantisi]
+@777  = ~Katrina~
+@778  = ~Wait, it's Sir Ajanthis! Don't touch him!~
+@779  = ~It doesn't matter who it is! They are going to die now!~
 @790  = ~It is unfortunate that our companion died before he could recant his ways.~
 @791  = ~Ajantis' Body~
 @792  = ~Medium Shield~
@@ -3690,6 +3693,22 @@ We found a parrot, we should take it to Borivyk, the animal dealer in the Water 
 @1848 = ~New Animal Trouble
 
 We have given the luxurious parrot to Borivyk. I don't know how much it's vocabulary will be to the liking of the new owner, but I hope everything will be fine.~
+
+@1849 = ~Childhood memories
+
+Ajantis seems to want to buy something at the Promenade. We should take a look at the malls with him before leaving.~
+
+@1850 = ~Childhood memories
+
+Ajantis searched in vain for childhood-flavoured mints from shopkeepers. He seemed to me upset and even somehow lost. I think the continuation of this story will follow.~
+
+@1851 = ~Childhood memories
+
+Ajantis asked me to go to the Docks area and look for Katrina there - he seems to be seriously worried about her.~
+
+@1852 = ~Childhood memories
+
+Ajantis, with our help, found Katrina at the Docks and saved her from attack, after which she set sail. It is unlikely that they will meet again, although... life is unpredictable.~
 
 
 @1876 = ~Elminster's Spare Hat~
