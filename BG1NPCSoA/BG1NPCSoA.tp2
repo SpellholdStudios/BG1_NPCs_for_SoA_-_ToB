@@ -1,6 +1,6 @@
 BACKUP ~BG1NPCSoA/backup~
 SUPPORT ~http://www.baldursgatemods.com/forums/index.php?board=133.0~
-VERSION ~14.2~
+VERSION ~14.3~
 
 AUTO_TRA ~BG1NPCSoA/tra/%s~
 
@@ -8066,7 +8066,7 @@ COPY ~BG1NPCSoA/cre/KAGAIN'S-KORNER/KGSTO4.CRE~ ~override/KGSTO4.cre~
 SAY NAME1 @1431
 SAY NAME2 @1431
 
-COPY ~BG1NPCSoA/store/BG1NPC.sto~ ~override~
+COPY ~BG1NPCSoA/store/Crazy-items/BG1NPC.sto~ ~override~
 SAY NAME2 @1432
 
 COPY ~BG1NPCSoA/store/BG1NPC8.sto~ ~override~
@@ -8357,6 +8357,9 @@ SAY NAME2 @1431
 
 COPY ~BG1NPCSoA/store/BG1NPC5.sto~ ~override/BG1NPC5.sto~
 SAY NAME2 @1426
+
+COPY ~BG1NPCSoA/store/BG1NPC.sto~ ~override~
+SAY NAME2 @1432
 
 COPY ~BG1NPCSoA/store/BG1NPC8.sto~ ~override/BG1NPC8.sto~
 SAY NAME2 @1433
