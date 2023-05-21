@@ -12,7 +12,7 @@
 @11   = ~Let me see what you have.~
 @12   = ~Perhaps some other time.~
 @13   = ~Kagain, is that you?~
-@14   = ~Okay, but let me warn you. I have over 400 items here from all across Faerûn and beyond and it takes time to catalog everything, so some descriptions on some items are vague. If you have a problem with any of the items you bought, there is nothing you can do about it.~
+@14   = ~Okay, but let me warn you. I have many items here from all across Faerûn and beyond and it takes time to catalog everything, so some descriptions on some items are vague. If you have a problem with any of the items you bought, there is nothing you can do about it.~
 @15   = ~Some of my items may also be cursed and others come with mysterious powers. None of that is grounds for a refund though!~
 @16   = ~Ahh.. <CHARNAME>. I did not recognize you. Suppose you are wondering what I am doing round these parts, aye?~
 @17   = ~After Baldur's Gate I decided ta head to the City of Gold for the love o' money, treasure and riches.~
@@ -36,7 +36,7 @@
 @35   = ~No thanks, you go ahead an keep yer glory and fame! All I want is ta have more jewels and pearls.~ [KAGAINF]
 @36   = ~No thank you.~
 @37   = ~I told you already, I won't be risking me neck for the likes of you!~
-@38   = ~I'd rather sit up at night, counting me gold coins than being lost in some forest, drenched in the rain, huddling next ta an elf ta keep warm. No thanks.~ [KAGAINF]
+@38   = ~I'd rather sit up at night, counting me gold coins than being lost in some forest, drenched in the rain, huddling next ta an elf ta keep warm. No thanks.~
 @39   = ~Now hurry up and buy something or move along, time is money.~
 @40   = ~Don't waste yer time shopping next door at the Adventurer's Mart. The shoddy stuff they sell falls apart in day or so.~
 @41   = ~Whadda say, try buying something from me instead? I have items magical items that I, myself has plundered from crumbling temples lost to infinity. I'm sure that I have somethin' ta tickle yer fancy.~
