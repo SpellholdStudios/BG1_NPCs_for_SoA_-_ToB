@@ -551,3 +551,14 @@ END
 INTERJECT_COPY_TRANS PALERN 0 Kagain_PALERN_0
   == 7XkagaJ IF ~InParty("7Xkaga") !StateCheck("7Xkaga",CD_STATE_NOTVALID)~ THEN @219
 END
+
+CHAIN IF ~InParty("Jaheira")
+See("Jaheira")!StateCheck("Jaheira",CD_STATE_NOTVALID)
+InParty("7Xkaga")!StateCheck("7Xkaga",CD_STATE_NOTVALID)CombatCounter(0)
+Global("KagainJaheira","GLOBAL",1)~ THEN 7XkagaB KagainJaheira_2
+@220 DO ~SetGlobal("KagainJaheira","GLOBAL",2)~
+== BJAHEIR @221
+== 7XkagaB @222
+== BJAHEIR @223
+== 7XkagaB @224
+EXIT

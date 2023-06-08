@@ -11,7 +11,7 @@ END
 
 IF ~~ THEN BEGIN NEWKAGAIN1
 SAY @3
-IF ~~ THEN REPLY @4 DO ~SetGlobal("7Xkaga","GLOBAL",99)~ GOTO StartStore
+IF ~~ THEN REPLY @4 DO ~SetGlobal("7Xkaga","GLOBAL",99)~ GOTO 7xStartStore
 IF ~~ THEN REPLY @5  DO ~SetGlobal("7Xkaga","GLOBAL",99)~ GOTO SHUTUP
 IF ~~ THEN REPLY @6 GOTO ID2
 END
@@ -30,7 +30,7 @@ IF ~~ THEN REPLY @12 GOTO SHUTUP
 IF ~~ THEN REPLY @13 GOTO ID2
 END
 
-IF ~~ THEN BEGIN StartStore
+IF ~~ THEN BEGIN 7xStartStore
 SAY @14
 =
 @15
@@ -64,7 +64,7 @@ SAY @27
 @28
 IF ~~ THEN REPLY @29 GOTO CRAZY1
 IF ~~ THEN REPLY @30 GOTO PAWNSHOP
-IF ~~ THEN REPLY @11 DO ~SetGlobal("7Xkaga","GLOBAL",1)~ GOTO StartStore
+IF ~~ THEN REPLY @11 DO ~SetGlobal("7Xkaga","GLOBAL",1)~ GOTO 7xStartStore
 IF ~~ THEN REPLY @31  DO ~SetGlobal("7Xkaga","GLOBAL",1)~ GOTO SHUTUP
 END
 
@@ -72,7 +72,7 @@ IF ~Global("7Xkaga","GLOBAL",1)~ kagain2
 SAY @10
 IF ~~ THEN REPLY @29 GOTO CRAZY2
 IF ~~ THEN REPLY @30 GOTO PAWNSHOP
-IF ~~ THEN REPLY @11 DO ~SetGlobal("7Xkaga","GLOBAL",2)~ GOTO StartStore
+IF ~~ THEN REPLY @11 DO ~SetGlobal("7Xkaga","GLOBAL",2)~ GOTO 7xStartStore
 IF ~~ THEN REPLY @32  DO ~SetGlobal("7Xkaga","GLOBAL",2)~ GOTO SHUTUP
 END
 
@@ -83,7 +83,7 @@ SAY @33
 =
 @35
 IF ~~ THEN REPLY @30 GOTO PAWNSHOP
-IF ~~ THEN REPLY @11 DO ~SetGlobal("7Xkaga","GLOBAL",1)~ GOTO StartStore
+IF ~~ THEN REPLY @11 DO ~SetGlobal("7Xkaga","GLOBAL",1)~ GOTO 7xStartStore
 IF ~~ THEN REPLY @36  DO ~SetGlobal("7Xkaga","GLOBAL",1)~ GOTO SHUTUP
 END
 
@@ -94,7 +94,7 @@ SAY @37
 =
 @39
 IF ~~ THEN REPLY @30 GOTO PAWNSHOP
-IF ~~ THEN REPLY @11 DO ~SetGlobal("7Xkaga","GLOBAL",2)~ GOTO StartStore
+IF ~~ THEN REPLY @11 DO ~SetGlobal("7Xkaga","GLOBAL",2)~ GOTO 7xStartStore
 IF ~~ THEN REPLY @36  DO ~SetGlobal("7Xkaga","GLOBAL",2)~ GOTO SHUTUP
 END
 
@@ -104,7 +104,7 @@ SAY @40
 @41
 IF ~~ THEN REPLY @29 GOTO CRAZY1
 IF ~~ THEN REPLY @30 GOTO PAWNSHOP
-IF ~~ THEN REPLY @11 DO ~SetGlobal("7Xkaga","GLOBAL",3)~ GOTO StartStore
+IF ~~ THEN REPLY @11 DO ~SetGlobal("7Xkaga","GLOBAL",3)~ GOTO 7xStartStore
 IF ~~ THEN REPLY @36  DO ~SetGlobal("7Xkaga","GLOBAL",3)~ GOTO SHUTUP
 END
 
@@ -113,7 +113,7 @@ IF ~Global("7Xkaga","GLOBAL",3)~ kagain4
 SAY @42
 IF ~~ THEN REPLY @29 GOTO OKAY1
 IF ~~ THEN REPLY @30 GOTO PAWNSHOP
-IF ~~ THEN REPLY @11 DO ~SetGlobal("7Xkaga","GLOBAL",1)~ GOTO StartStore
+IF ~~ THEN REPLY @11 DO ~SetGlobal("7Xkaga","GLOBAL",1)~ GOTO 7xStartStore
 IF ~~ THEN REPLY @36  DO ~SetGlobal("7Xkaga","GLOBAL",1)~ GOTO SHUTUP
 END
 
