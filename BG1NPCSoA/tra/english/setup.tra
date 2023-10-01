@@ -738,8 +738,7 @@ Although they refused her a place in the priesthood, the tribal leaders of Seawo
 @528  = ~Khal Abbil~
 @529  = ~Khal Abbil
 
-Khal Abbil was created in the drow city of Menzoberanzan deep in the Underdark by a mage of great power. Although powerful, the mage realized that he might need a bodyguard to protect him from the more straightforward attacks of for example a fighter. Since drow are a race that thrives on betrayal and hidden agendas the mage decided to create a magiacal bodyguard. Golems are powerful fighters, but the mage wanted a bodyguard that he could bring with him wherever he went and one that he could call forth to defend him in the blink of an eye. He created a sword that would float in the air and attack any enemies he commanded it to strike. 'Khal Abbil' means 
-'trusted Friend' in the drow tongue.
+Khal Abbil was created in the drow city of Menzoberanzan deep in the Underdark by a mage of great power. Although powerful, the mage realized that he might need a bodyguard to protect him from the more straightforward attacks of for example a fighter. Since drow are a race that thrives on betrayal and hidden agendas the mage decided to create a magiacal bodyguard. Golems are powerful fighters, but the mage wanted a bodyguard that he could bring with him wherever he went and one that he could call forth to defend him in the blink of an eye. He created a sword that would float in the air and attack any enemies he commanded it to strike. 'Khal Abbil' means 'trusted Friend' in the drow tongue.
 
 STATISTICS:
 
@@ -750,11 +749,7 @@ Weight: 3
 Speed Factor: 3
 Proficiency Type: Large Sword
 Type:  1-handed
-Special: The sword can be commanded to 
-              "dance". It will attack enemies 
-              indicated by its owner and it will
-              fight for 2 full rounds before it 
-              teleports back to its owner.
+Special: The sword can be commanded to "dance". It will attack enemies indicated by its owner and it will fight for 2 full rounds before it teleports back to its owner.
 Not Usable By:
  Druid
  Cleric
@@ -3546,14 +3541,6 @@ After talking to Talon Zargos, the acolyte that Calandra pointed you to, you lea
 @1794 = ~Calandra and Talon
 
 After some dealings with Lord Dermond Ophal and Talon Zogas, you ventured inside the forgotten temple in the Windspear Hills and defeated Dran Draggore and his undead horde.~
-
-@17931  = ~Calandra and Talon
-
-You learned that Dran Draggore has taken refuge inside of an ancient temple in the Windspear Hills~
-
-@17941 = ~Calandra and Talon
-
-You ventured inside the forgotten temple in the Windspear Hills and defeated Dran Draggore and his undead horde.~
 
 @1795  = ~Calandra and Talon
 
