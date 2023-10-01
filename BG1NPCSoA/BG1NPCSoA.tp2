@@ -1,6 +1,6 @@
 BACKUP ~BG1NPCSoA/backup~
 SUPPORT ~http://www.baldursgatemods.com/forums/index.php?board=133.0~
-VERSION ~14.2~
+VERSION ~14.3~
 
 AUTO_TRA ~BG1NPCSoA/tra/%s~
 
@@ -725,7 +725,7 @@ COPY ~BG1NPCSoA/cre/Coran-Safana-Chronicles/7XCRE44.cre~ ~override/7XCRE44.cre~
 SAY NAME1 @352
 SAY NAME2 @352
 
-COPY ~BG1NPCSoA/Items/bg1x23b.itm~ ~Override/bg1x23b.itm~ //**
+COPY ~BG1NPCSoA/Items/bg1x23b.itm~ ~Override/bg1x23b.itm~
 SAY NAME1 @353
 SAY NAME2 @353
 SAY UNIDENTIFIED_DESC @353
@@ -3115,6 +3115,7 @@ COMPILE EVALUATE_BUFFER ~BG1NPCSoA/dialogues/MISC/KGSTO2sharteel.d~ USING ~BG1NP
 END
 
 COMPILE ~BG1NPCSoA/scripts/7xshar.BAF~
+// FOR v14.4 COMPILE ~BG1NPCSoA/scripts/7xsharD.BAF~
 
 ACTION_IF FILE_EXISTS_IN_GAME ~7XCRE1.cre~ BEGIN
   COPY_EXISTING ~7XCRE1.cre~ ~override~
@@ -8070,7 +8071,7 @@ COPY ~BG1NPCSoA/cre/KAGAIN'S-KORNER/KGSTO4.CRE~ ~override/KGSTO4.cre~
 SAY NAME1 @1431
 SAY NAME2 @1431
 
-COPY ~BG1NPCSoA/store/BG1NPC.sto~ ~override~
+COPY ~BG1NPCSoA/store/Crazy-items/BG1NPC.sto~ ~override~
 SAY NAME2 @1432
 
 COPY ~BG1NPCSoA/store/BG1NPC8.sto~ ~override~
@@ -8361,6 +8362,9 @@ SAY NAME2 @1431
 
 COPY ~BG1NPCSoA/store/BG1NPC5.sto~ ~override/BG1NPC5.sto~
 SAY NAME2 @1426
+
+COPY ~BG1NPCSoA/store/BG1NPC.sto~ ~override~
+SAY NAME2 @1432
 
 COPY ~BG1NPCSoA/store/BG1NPC8.sto~ ~override/BG1NPC8.sto~
 SAY NAME2 @1433
@@ -10234,6 +10238,7 @@ EXTEND_TOP ~AR0400.bcs~ ~BG1NPCSoA/scripts/Ajantis/AR0400.baf~
 EXTEND_TOP ~AR1202.bcs~ ~BG1NPCSoA/scripts/Ajantis/AR1202.baf~
 EXTEND_TOP ~AR4000.bcs~ ~BG1NPCSoA/scripts/Ajantis/AR4000Ajan.baf~
 EXTEND_TOP ~AR4500.bcs~ ~BG1NPCSoA/scripts/Ajantis/AR4500Ajan.baf~
+EXTEND_TOP ~Imoen2.bcs~ ~BG1NPCSoA/scripts/Ajantis/Imoen2.baf~ 
 COMPILE ~BG1NPCSoA/scripts/Ajantis/7XAjan.baf~ EVALUATE_BUFFER
 COMPILE ~BG1NPCSoA/scripts/Ajantis/7XAjan25.baf~ EVALUATE_BUFFER
 
