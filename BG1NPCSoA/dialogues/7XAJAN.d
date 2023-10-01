@@ -119,15 +119,17 @@ END
 BEGIN ~7XAJANB~
 
 CHAIN
-IF ~CombatCounter(0) !See([ENEMY]) InParty("imoen2")
-See("imoen2")!StateCheck("imoen2",CD_STATE_NOTVALID)!StateCheck("7XAJAN",CD_STATE_NOTVALID)InParty("7XAJAN")
-!StateCheck("imoen2",CD_STATE_NOTVALID)!Dead("imoen2")Global("Ajantis_ImoenBanter1","GLOBAL",0)~ THEN BIMOEN2 ajantisimoen1
+IF ~CombatCounter(0) !See([ENEMY]) 
+InParty("Imoen2") !StateCheck("Imoen2",CD_STATE_NOTVALID)
+See("Imoen2")
+InParty("7XAJAN")!StateCheck("7XAJAN",CD_STATE_NOTVALID)
+Global("Ajantis_ImoenBanter","GLOBAL",0)~ THEN BIMOEN2 ajantisimoen1
 @34
 =
 @35
 == 7XAJANB @36
 =
-@37 DO ~SetGlobal("Ajantis_ImoenBanter1","GLOBAL",1)~
+@37 DO ~SetGlobal("Ajantis_ImoenBanter","GLOBAL",1)~
 == BIMOEN2 @38
 == 7XAJANB @39
 == BIMOEN2 @40
@@ -1219,4 +1221,42 @@ CHAIN IF ~Global("AjantisQuest","GLOBAL",13)~ THEN 7xKatr 7xKatrinaAjantisFinal
 == IF_FILE_EXISTS 7XCoranJ IF ~InParty("7XCORAN")!StateCheck("7XCORAN",CD_STATE_NOTVALID)~ THEN @446
 == IF_FILE_EXISTS 7XGarJ IF ~InParty("7XGAR") !StateCheck("7XGAR",CD_STATE_NOTVALID)~ THEN @447
 == 7XAJANJ @428
+EXIT
+
+
+CHAIN IF WEIGHT #7 ~Global("ImoenAjantisThievesGuildTalk","AR0305",1)~ THEN IMOEN2J 7xImoenAjantisThievesGuild
+@450 DO ~SetGlobal("ImoenAjantisThievesGuildTalk","AR0305",2)~
+== 7XAJANJ @451
+== IMOEN2J @452
+== 7XAJANJ @453
+== IMOEN2J @454
+== 7XAJANJ @455
+== IMOEN2J @456
+== 7XAJANJ @457
+EXIT
+
+CHAIN
+IF ~CombatCounter(0) !See([ENEMY]) 
+InParty("Imoen2")!StateCheck("Imoen2",CD_STATE_NOTVALID)
+See("Imoen2")
+InParty("7XAJAN")!StateCheck("7XAJAN",CD_STATE_NOTVALID)
+Global("Ajantis_ImoenBanter","GLOBAL",1)~ THEN 7XAJANB ajantisimoen2
+@458
+DO ~SetGlobal("Ajantis_ImoenBanter","GLOBAL",2)~
+== BIMOEN2 @459
+== 7XAJANB @460
+== BIMOEN2 @461
+== 7XAJANB @462
+== BIMOEN2 @463
+== 7XAJANB @464
+== BIMOEN2 @465
+=@466
+=@467
+== 7XAJANB @468
+== BIMOEN2 @469
+== 7XAJANB @470
+== BIMOEN2 @471
+== 7XAJANB @472
+== BIMOEN2 @473
+== 7XAJANB @474
 EXIT

@@ -1,0 +1,11 @@
+IF 
+InParty("7XAJAN") !StateCheck("7XAJAN",CD_STATE_NOTVALID)
+InParty("Imoen2") !StateCheck("Imoen2",CD_STATE_NOTVALID)
+AreaCheck("AR0305")
+Global("ImoenAjantisThievesGuildTalk","AR0305",0)
+CombatCounter(0) 
+THEN
+  RESPONSE #100
+SetGlobal("ImoenAjantisThievesGuildTalk","AR0305",1)
+StartDialogNoSet(Player1)
+END

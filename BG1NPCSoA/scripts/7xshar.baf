@@ -1,3 +1,92 @@
+IF
+Global("BD_JOINXP","LOCALS",0)
+InParty(Myself)
+XPGT(Player1,1249999)
+XPLT(Myself,1250000)
+THEN
+RESPONSE #100
+SetInterrupt(FALSE)
+SetGlobal("BD_JOINXP","LOCALS",1)
+ChangeStat(Myself,XP,1250000,SET)
+SetInterrupt(TRUE)
+END
+
+IF
+Global("BD_JOINXP","LOCALS",0)
+InParty(Myself)
+XPGT(Player1,999999)
+XPLT(Myself,1000000)
+THEN
+RESPONSE #100
+SetInterrupt(FALSE)
+SetGlobal("BD_JOINXP","LOCALS",1)
+ChangeStat(Myself,XP,1000000,SET)
+SetInterrupt(TRUE)
+END
+
+IF
+Global("BD_JOINXP","LOCALS",0)
+InParty(Myself)
+XPGT(Player1,749999)
+XPLT(Myself,750000)
+THEN
+RESPONSE #100
+SetInterrupt(FALSE)
+SetGlobal("BD_JOINXP","LOCALS",1)
+ChangeStat(Myself,XP,750000,SET)
+SetInterrupt(TRUE)
+END
+
+IF
+Global("BD_JOINXP","LOCALS",0)
+InParty(Myself)
+XPGT(Player1,499999)
+XPLT(Myself,500000)
+THEN
+RESPONSE #100
+SetInterrupt(FALSE)
+SetGlobal("BD_JOINXP","LOCALS",1)
+ChangeStat(Myself,XP,500000,SET)
+SetInterrupt(TRUE)
+END
+
+IF
+Global("BD_JOINXP","LOCALS",0)
+InParty(Myself)
+XPGT(Player1,249999)
+XPLT(Myself,250000)
+THEN
+RESPONSE #100
+SetInterrupt(FALSE)
+SetGlobal("BD_JOINXP","LOCALS",1)
+ChangeStat(Myself,XP,250000,SET)
+SetInterrupt(TRUE)
+END
+
+IF
+Global("BD_JOINXP","LOCALS",0)
+InParty(Myself)
+XPGT(Player1,124999)
+XPLT(Myself,125000)
+THEN
+RESPONSE #100
+SetInterrupt(FALSE)
+SetGlobal("BD_JOINXP","LOCALS",1)
+ChangeStat(Myself,XP,125000,SET)
+SetInterrupt(TRUE)
+END
+
+IF
+Global("BD_JOINXP","LOCALS",0)
+InParty(Myself)
+XPLT(Player1,89001)
+THEN
+RESPONSE #100
+SetInterrupt(FALSE)
+SetGlobal("BD_JOINXP","LOCALS",1)
+SetInterrupt(TRUE)
+END
+
 IF 
 
 ReputationLT(Player1,3)
@@ -263,12 +352,8 @@ THEN
 END
 
 IF
-
-InParty("7XSHAR")
-!StateCheck("7XSHAR",CD_STATE_NOTVALID)
-InParty("Korgan")
-!StateCheck("Korgan",CD_STATE_NOTVALID)InParty("7XSHAR")
-!StateCheck("7XSHAR",CD_STATE_NOTVALID)
+InParty("Korgan")!StateCheck("Korgan",CD_STATE_NOTVALID)
+InParty("7XSHAR")!StateCheck("7XSHAR",CD_STATE_NOTVALID)
 OR(6)
 AreaCheck("AR0406")
 AreaCheck("AR0509")
@@ -281,6 +366,18 @@ Global("KorganSharTavern","GLOBAL",0)
 THEN
   RESPONSE #100
 SetGlobal("KorganSharTavern","GLOBAL",1)
+RealSetGlobalTimer("KorganSharTavernTimer","GLOBAL",4)
+END
+
+IF
+InParty("Korgan")!StateCheck("Korgan",CD_STATE_NOTVALID)
+InParty("7XSHAR")!StateCheck("7XSHAR",CD_STATE_NOTVALID)
+Global("KorganSharTavern","GLOBAL",1)
+RealGlobalTimerExpired("KorganSharTavernTimer","GLOBAL") 
+
+THEN
+  RESPONSE #100
+SetGlobal("KorganSharTavern","GLOBAL",2)
     ActionOverride("7XSHAR",Interact("Korgan"))
 END
 
@@ -296,4 +393,35 @@ THEN
   RESPONSE #100
   SetGlobal("Sharar2100","GLOBAL",1)
    ActionOverride("7XSHAR",Interact("Viconia"))
+END
+
+IF
+Global("SharteelRomanceActive","GLOBAL",1)
+Global("SharSafanaWomanSecrets","GLOBAL",0) 
+See("7XSAFA")
+InParty("7XSAFA") !StateCheck("7XSAFA",CD_STATE_NOTVALID)
+InParty("7XSHAR")!StateCheck("7XSHAR",CD_STATE_NOTVALID)
+OR(6)
+AreaCheck("AR0406")
+AreaCheck("AR0509")
+AreaCheck("AR0313")
+AreaCheck("AR1105")
+AreaCheck("AR2010")
+AreaCheck("AR1602")
+
+THEN
+  RESPONSE #100
+SetGlobal("SharSafanaWomanSecrets","GLOBAL",1) 
+RealSetGlobalTimer("SharSafanaWomanTimer","GLOBAL",8)
+END
+
+IF
+Global("SharSafanaWomanSecrets","GLOBAL",1) 
+RealGlobalTimerExpired("SharSafanaWomanTimer","GLOBAL") 
+InParty("7XSAFA") !StateCheck("7XSAFA",CD_STATE_NOTVALID)
+InParty("7XSHAR")!StateCheck("7XSHAR",CD_STATE_NOTVALID)
+THEN
+  RESPONSE #100
+SetGlobal("SharSafanaWomanSecrets","GLOBAL",2) 
+ActionOverride("7XSHAR",Interact("7XSAFA"))
 END
