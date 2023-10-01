@@ -1902,9 +1902,9 @@ SAY DESC @527
 COPY ~BG1NPCSoA/Items/bgsx82.itm~ ~Override/bgsx82.itm~
 	 ~BG1NPCSoA/Items/bgsx82a.itm~ ~Override/bgsx82a.itm~
 	 ~BG1NPCSoA/Items/bgsx82c.itm~ ~Override/bgsx82c.itm~
-SAY NAME1 @528
+SAY NAME1 #2893
 SAY NAME2 @528
-SAY UNIDENTIFIED_DESC @528
+SAY UNIDENTIFIED_DESC #6742
 LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@529" END
 
 COPY ~BG1NPCSoA/cre/MISC/DANCER.cre~ ~override/DANCER.cre~
