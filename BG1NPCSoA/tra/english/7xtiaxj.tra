@@ -8,7 +8,7 @@
 @7    = ~Tiax thinks that instead of asking pointless riddles that you should do something useful, like scooping up some of those werewolf droppings!~ [TIAXD]
 @8    = ~For your insolence, gnome, I would turn you into an insect, but Kalah has greater plans in store for you.~
 @9    = ~Why must Tiax the Great be subjected to such insolence? When Tiax the Gnomequeror rules all, none shall dare manhandle him, unless they are pretty ladies with noses even more resplendent than Tiax's own!~
-@10   = ~Ya lil' monkey-spanker.~ [TIAXX23]
+@10   = ~Ya lil' monkey-spanker.~ [TIAX#]
 @11   = ~When Tiax the Gnomequeror rules, you shall be appointed to sewage detail.~
 @12   = ~You are but grease stains on the wheel of time compared to Tiax!~
 @13   = ~Tiax is as Tiax does... hmmm-humm.~ [TIAXX20]
@@ -38,7 +38,7 @@
 @37   = ~Tiax the Great is not leaving until we see the flying elephants!~ [TIAXX03]
 @38   = ~That's it? Grovel at the feet of Tiax the Great and show the proper gratitude! And watch what you say about gnomes!~ [TIAXX08]
 @39   = ~Silence peck! That will be enough out of you!~
-@40   = ~Ummm... Tiax will rule.. from a distance.~ [TIAXX02]
+@40   = ~Ummm... Tiax will rule.. from a distance.~ [TIAX1]
 @41   = ~Finally.. now maybe someone can tell me where to get a bratwurst and beer!~ [TIAXX20]
 @42   = ~Ahh, a genie! Tiax wishes for a bag of popcorn to munch while high wire trapeze clowns juggle gorillas for his amusement.~ [TIAXX23]
 @43   = ~I think you have me mistaken for the kind of genie that gives a damn what you are wishing for.~
@@ -95,8 +95,8 @@
 @94   = ~Tiax? How is this possible? I thought that you were rotting in Spellhold!~
 @95   = ~Foolish wizard! Cyric did not make it my destiny to rule so that I could spend it locked up in some cramped cell!~ [TIAXX31]
 @96   = ~Very well, then allow me to now teach you the true meaning of discipline, peck!~
-@97   = ~Tiax will rule!~ [PPTIAX01]
-@98   = ~..from a distance.~ [TIAXX02]
+@97   = ~Tiax will rule!~ [TIAX1]
+@98   = ~..from a distance.~
 @99   = ~Tremble in fear of Tiax the almighty, for one day..~ [TIAXX30]
 @100  = ~'BOOM'~ [TIAXX25]
 @101  = ~Tiax will rule!!!~ [TIAXX21]
@@ -104,7 +104,7 @@
 @103  = ~It's too bad we did not go to the market before we came..~
 @104  = ~Lil alurl! Please <CHARNAME>!~ [VICONI10]
 @105  = ~We could have roasted a couple of wieners on the bonfire!~ [TIAXm]
-@106  = ~Tiax the Wise thinks it's best for everyone if we stay out of it and concentrate on bringing all of Faerûn under his control.~ [TIAXX30]
+@106  = ~Tiax the Wise thinks it's best for everyone if we stay out of it and concentrate on bringing all of Faerun under his control.~ [TIAXX30]
 @107  = ~P-please, sir, we r-really need someone's help!~
 @108  = ~Tiax the Infinitely Intelligent thinks that it is a really bad idea for us to go to that place.~ [TIAXX35]
 @109  = ~Instead we should sit down, drink some wine, have a leg-of-mutton and talk about how you serve Tiax once he rules.~ [TIAXX26]
@@ -188,7 +188,7 @@
 @185 = ~So you're the boss in this district? Well, report back to me on the preparations for the reign of Tiax! Have you already purchased fireworks for his lordship?~ [PPTIAX12]
 @186 = ~What? You seem to be talking to the wrong person, citizen. Any other questions?~
 @187 = ~Under Tiax's rule, all druids will be forced to cut wood and take that wood to his castle so that he can light a fireplace and smoke a pipe in the evenings, from being tired of commanding the peasants all day!~ [TIAXX12]
-@188 = ~People like you will be stripped naked and flogged in the main square under the rule of Tiax the Almighty!~ [TIAXX31]
+@188 = ~People like you will be stripped naked and flogged in the main square under the rule of Tiax the Almighty!~
 @189 = ~Tiax orders you to please him, girl. In return, he will give you his grace when he becomes ruler.~ [PPTIAX26]
 @190 = ~I will not put your grace in my pocket nor will I smear it on bread. If you want to have fun, you need to pay gnome!~
 @191 = ~You were only born to serve Tiax at the table, you filthy slave!~ [TIAXX21]

@@ -7,9 +7,42 @@
 @6    = ~It seems this party isn't as pathetic as I first suspected.~
 @7    = ~The back of my hand or the tip of my boot! Take your pick!~
 @8    = ~I'll do a better job than any man would.~ [shartb]
+@9    = ~Liora~
 @11   = ~Eat steel, scum!~ [sharta]
 @17   = ~I don't have time to bleed.~ [sharte]
 @26   = ~Life is made fun by crushing your enemies.~ [shartx]
+@27   = ~Shar-Teel's Collar~
+@28   = ~This is Shar-Teel's "BAD GIRL" collar, a gift from <CHARNAME>. The collar is enchanted and increases the protection class. Can be used with any other magical items that improve defense class. And the Hellhound skin from which it is made additionally protects the owner from fire.
+
+STATISTICS
+Armor Class Bonus: 2
+Fire protection: +20%
+
+Weight: 1
+Face value: 3000~
+
+@29    = ~Shar-Teel Wedding Ring~
+@30    = ~Shar-Teel Wedding Ring
+
+This is a silver Shar-Teel wedding ring.
+
+STATISTICS:
+Protects against charm effects.
+
+Weight: 1
+Face value: 2000~
+
+@31    = ~<CHARNAME>'s Wedding Ring~
+@32    = ~<CHARNAME>'s Wedding Ring
+
+This is the silver wedding ring that <CHARNAME> received when he married Shar-Teel.
+
+STATISTICS:
+Protects against charm effects.
+
+Weight: 1
+Face value: 2000~
+
 @44   = ~Shar-Teel already found; skipping to next NPC...~
 @45   = ~Yeslick~
 @46   = ~Yeslick Orothiar~
@@ -738,7 +771,8 @@ Although they refused her a place in the priesthood, the tribal leaders of Seawo
 @528  = ~Khal Abbil~
 @529  = ~Khal Abbil
 
-Khal Abbil was created in the drow city of Menzoberanzan deep in the Underdark by a mage of great power. Although powerful, the mage realized that he might need a bodyguard to protect him from the more straightforward attacks of for example a fighter. Since drow are a race that thrives on betrayal and hidden agendas the mage decided to create a magiacal bodyguard. Golems are powerful fighters, but the mage wanted a bodyguard that he could bring with him wherever he went and one that he could call forth to defend him in the blink of an eye. He created a sword that would float in the air and attack any enemies he commanded it to strike. 'Khal Abbil' means 'trusted Friend' in the drow tongue.
+Khal Abbil was created in the drow city of Menzoberanzan deep in the Underdark by a mage of great power. Although powerful, the mage realized that he might need a bodyguard to protect him from the more straightforward attacks of for example a fighter. Since drow are a race that thrives on betrayal and hidden agendas the mage decided to create a magiacal bodyguard. Golems are powerful fighters, but the mage wanted a bodyguard that he could bring with him wherever he went and one that he could call forth to defend him in the blink of an eye. He created a sword that would float in the air and attack any enemies he commanded it to strike. 'Khal Abbil' means 
+'trusted Friend' in the drow tongue.
 
 STATISTICS:
 
@@ -749,7 +783,11 @@ Weight: 3
 Speed Factor: 3
 Proficiency Type: Large Sword
 Type:  1-handed
-Special: The sword can be commanded to "dance". It will attack enemies indicated by its owner and it will fight for 2 full rounds before it teleports back to its owner.
+Special: The sword can be commanded to 
+              "dance". It will attack enemies 
+              indicated by its owner and it will
+              fight for 2 full rounds before it 
+              teleports back to its owner.
 Not Usable By:
  Druid
  Cleric
@@ -3110,7 +3148,7 @@ This is Kagain's shiny gold helmet.~
 @1477 = ~This city is an example of man's excesses. I wish it would be gone from this miserable place.~ [KIVANO]
 @1482 = ~Justice may be blind, but I'm not!~
 @1484 = ~Kivan already found; skipping to next NPC...~
-@1485 = ~Xzar and Monty Murder Mysteries (SoA & ToB)~
+@1485 = ~Xzar and Monty Murder Mysteries (SoA & ToB) (R, 18+!)~
 @1486 = ~Montaron~
 @1487 = ~When asked about what he has been doing since you last traveled together during the Iron Crisis, Montaron openly threatens you with bodily harm. He seems quite dangerous, and more than willing to engage in gratuitous violence. It would appear that he cares little for life, including his own. He still works grudgingly with Xzar, even though he obviously despises the man more than ever. YOu would like to ask hi more but you get the feeling that you probably would not wake up the next morning if you did.~
 @1488 = ~Effective... I may not kill you after all...~
@@ -3580,7 +3618,7 @@ You have been sent on a scavenger hunt by a water fey that you met near the rive
 
 @1802   = ~Three demon hearts
 
-After defeating the Umar With, Largot the Troll, and Mulahey, and collecting all the items for the water fey, Nixie Brightstream, you bested the Undead Lich King, Gornash the Rotting. In doing so, it seems that you have set free all the souls the the Soul Harvester had been collecting for The Lady of Decay, Zuggtmoy, the queen of Shedaklah in the Abyss. Amongst the souls that were saved, their was there was that of a woman who was murdered by cult members in the Bridge District.~
+After defeating the Umar With, Largot the Troll, and Mulahey, and collecting all the items for the water fey, Nixie Brightstream, she asks you to defeat the Undead King - the lich Gornash the Rotting. You can find him somewhere in the dungeons under the cemetery area.~
 
 @1803 = ~Airship Difficulty
 
@@ -3645,6 +3683,10 @@ We found a ranger who agreed to look after the she-bear. Now I can return to Bor
 @1818 = ~Meeting Silke
 
 We met an old acquaintance of Silke Rosena at the "Five Flagons". By some miracle, she had survived that confrontation in Beregost, and she had arranged another surprise for Garrick - a very unpleasant one. Perhaps we will meet again.~
+
+@1819 = ~Three demon hearts
+
+You have defeated the Undead Lich King Gornash the Rotting. And it seems you have freed all the souls that the Soul Reaver was collecting for the Mold Queen Zuggtma, who rules in Shedaklah in the Abyss. Among the souls saved was a woman who was killed by cultists in the Bridge area. ~
 
 @1820 = ~Bidding Manager~
 @1821 = ~Madame Rosalind~
@@ -3713,6 +3755,25 @@ Ajantis asked me to go to the Docks area and look for Katrina there - he seems t
 
 Ajantis, with our help, found Katrina at the Docks and saved her from attack, after which she set sail. It is unlikely that they will meet again, although... life is unpredictable.~
 
+@1853 = ~Never say Never...
+
+It's hard to believe, but you managed to change Shar-Teel's mind and she agreed to become your wife... someday.~
+
+@1854 = ~Never say Never...
+
+It's hard to believe, but you managed to change Shar-Teel's mind and she agreed to share your fate - albeit without a wedding ceremony.~
+
+@1855 = ~Never say Never...
+
+After your wedding in besieged Saradush, your lives will never be the same. Now Shar-Teel Dosan is your legal wife. Yes, it's hard to believe, but it happened!~
+
+@1856 = ~Shar-Teel's Journey
+
+Shar-Teel set sail on a sea journey to Murann, to guard a cargo of Sharran. She promised to return in a fortnight.~
+
+@1857 = ~Shar-Teel's Journey
+
+Shar-Teel is finally back from her voyage. She seems to have missed you and is full of energy. Judging by her carnivorous gaze, you're in for a sleepless night ahead, and maybe more than one.~
 
 @1876 = ~Elminster's Spare Hat~
 @1877 = ~This well worn hat may once have been fashionable, but those days are long gone, and now it is notable mainly for the fact that it used to belong to Elminster himself. Although, if you still do not hesitate to wear it, it will definitely protect you from magic. Plus how often does one get to say that they get to wear something that once belonged to the great Elminster!
@@ -3851,6 +3912,9 @@ Equipment properties:
 @1904 = ~Brave Sir Garrick NPC in BG2 (SoA)~
 @1905 = ~Skie & Eldoth NPCs in BG2 (SoA)~
 @1906 = ~Branwen NPC in BG2 (SoA)~
+
+@1907 = ~New portrait of Shar-Teel (blonde, slightly older)~
+@1908 = ~This portrait requires the Shar-Teel component installed~
 
 @1910 = ~Oswald took you where you asked for. After that, his airship returned to Athkatla.~
 
@@ -4004,6 +4068,12 @@ Like many bards Deekin's works would far out live him and his works would be pre
 @8019 = ~Ajantis Ilvastar returned to Athkatla after leaving <CHARNAME>. Wanderings with the child of Bhaal tempered his character, but did not harden his heart. Kindness and sincere compassion attracted people to him more than his courage and military prowess. Over the years, Ajantis realized that the Most Noble Order of the Radiant Heart, which he so admired in his youth, was not as perfect as he thought. Being naturally soft-spoken, unable to fight corruption, Ajantis now tried to stay as far away from the order as possible, spending more and more time on campaigns and wanderings. Even through all his tribulations, Ajantis's devotion to Helm did not weaken at all. 
 
 Ajantis married late, to a simple kind woman, ready to wait as long as she wanted for her husband from the next campaign. Although in the eyes of his relatives this marriage was a misalliance, but the paladin found his happiness; he now had someone to return to.~
+
+@8020  = ~After her stormy breakup with the Bhaal Spawn, Shar-Teel had shed the last vestiges of her humanity and sanity. But she did not stay in Amn; there was a feeling within her that she could not understand, and she was drawn back to Baldur's Gate. Her own small band of Wildcats of the North had been ruthlessly terrorized the trade route between the Gates and Waterdeep for six months, preying on caravans and lonely travellers. But the worried authorities soon took action, offering a huge bounty on the bandits' heads. As expected, Shar-Teel's gang was ambushed and completely slaughtered; the amazon, fought bravely, but was roped in by an outnumbering number of adventurers. Half-blind and injured, she was dragged to the court, which did not last long. Eventually, the guards made the mistake of throwing Shar-Teel into a thick stone bag inaccessible to the sunlight. There, in the pitch-darkness, she begged for help from Shar, but the Goddess did not condescend to her Guardian - she was never interested in the prayers of the defeated. Soon after, Shar-Teel was hanged in Waterdeep main square. Her body was dumped in an unmarked grave outside the city walls.~
+
+@8021  = ~Shar-Teel helped you gain the power and richness you wanted in Athkatla. She has shared with you hundreds of battles, failures, worries, doubts and sleepless nights. But it seems Gods did not want Bhaal's seed to spread across the land and Shar-Teel was never able to conceive a child for you. The passion that had flared up between you began to fade with time; you grew cold to your wife. Then Shar-Teel abandoned you, disappearing one night into the darkness beyond your doorstep. No one ever saw her again, though you spent a lot of gold trying to find any trace of her. You have her old sword to remember her by - jagged and tarnished, but still as straight and formidable as Shar-Teel had always been.~
+
+@8022  = ~They say happy marriages are destined to happen. But it's unlikely that Shar-Teel, your fierce lady, ever tried that expression on herself before she met you. The amazon has shared hundreds of battles, joys, sorrows, doubts and nights of love with you. She gave you a healthy, red-cheeked firstborn, Bhalerik, the boy Shar-Teel loved more than anyone in her life. For her, a long and happy married life began, wanderings were forgotten and swords were permanently sheathed. It is only sometimes, when a fresh breeze blows through her favourite colorful curtains in the kitchen, that you are reminded of the old, formidable and belligerent Shar-Teel.~
 
 @9000  = ~Hey, what's the joke? Where did he go?~
 

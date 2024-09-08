@@ -65,9 +65,9 @@ SAY @17
 IF ~~ THEN DO ~SetGlobal("XZARQUESTSTART","GLOBAL",1)AddJournalEntry(@1801,QUEST)~ EXIT
 END
 
-IF ~Global("XZARQUESTSTART","GLOBAL",1) IsValidForPartyDialog("7XXZAR")!Dead("7XXZAR")InParty("7XXZAR")~ THEN BEGIN NEWGAMESTART
+IF ~Global("XZARQUESTSTART","GLOBAL",1) IsValidForPartyDialog("7XXZAR")InParty("7XXZAR")~ THEN BEGIN NEWGAMESTART
 SAY @18
-IF ~Dead("7XMULA")Dead("xqwitch")Dead("xqtroll")PartyHasItem("MISCA9")PartyHasItem("MISC9D") PartyHasItem("MISC6M")PartyHasItem("MISC6M")PartyHasItem("MISC6M")PartyHasItem("MISC85") ~ THEN REPLY @19 DO ~SetGlobal("XZARQUESTSTART","GLOBAL",1)~ GOTO QUESTFINISH
+IF ~Dead("7XMULA")Dead("xqwitch")Dead("xqtroll")PartyHasItem("MISCA9")PartyHasItem("MISC9D") PartyHasItem("MISC6M")PartyHasItem("MISC6M")PartyHasItem("MISC6M")PartyHasItem("MISC85") ~ THEN REPLY @19 GOTO QUESTFINISH
 IF ~~ THEN REPLY @20 EXIT
 END
 
@@ -75,13 +75,13 @@ IF ~~ THEN BEGIN QUESTFINISH
 SAY @21
 IF ~~ THEN DO ~TakePartyItem("MISCA9")TakePartyItem("MISC9D")TakePartyItem("MISC6M")TakePartyItem("MISC6M")
 TakePartyItem("MISC9D") 
-TakePartyItem("MISC6M")EraseJournalEntry(@1801)~ GOTO QUESTFINISH2
+TakePartyItem("MISC6M")EraseJournalEntry(@1801) AddJournalEntry(@1802,QUEST)~ GOTO QUESTFINISH2
 END 
 
 IF ~~ THEN BEGIN QUESTFINISH2
 SAY 
 @22
-IF ~~ THEN DO ~SetGlobal("XZARQUESTSTART","GLOBAL",2)SetGlobal("XQLICHCREATE","GLOBAL",0)AddexperienceParty(25000)~
+IF ~~ THEN DO ~SetGlobal("XZARQUESTSTART","GLOBAL",2)~
 EXIT
 END
 
@@ -91,7 +91,7 @@ SAY @23
 IF ~~ THEN EXIT
 END
 
-IF ~Dead("XQLICH")~ THEN BEGIN EPILOGUE
+IF WEIGHT #-10 ~Dead("XQLICH") Global("XZARQUESTSTART","GLOBAL",2)~ THEN BEGIN EPILOGUE
 SAY @24
 =
 @25
@@ -101,7 +101,7 @@ SAY @24
 @27
 =
 @28
-IF ~~ THEN DO ~SetGlobal("XZARQUESTSTART","GLOBAL",2)AddJournalEntry(@1802,QUEST_DONE)~ EXIT
+IF ~~ THEN DO ~SetGlobal("XZARQUESTSTART","GLOBAL",3)AddJournalEntry(@1819,QUEST_DONE) AddexperienceParty(25000)~ EXIT
 END
 
 APPEND 7XXZARJ

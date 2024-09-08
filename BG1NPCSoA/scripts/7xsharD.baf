@@ -1,0 +1,50 @@
+IF
+InParty(Myself) !StateCheck(Myself,CD_STATE_NOTVALID)
+Global("SharteelRomanceActive","GLOBAL",1) 
+Global("SharteelRomanceTalk","GLOBAL",3)
+Global("SharteelRomanceSleepTalk","GLOBAL",0) 
+AreaType(FOREST)
+CombatCounter(0)
+THEN
+  RESPONSE #100
+SetGlobal("SharteelRomanceSleepTalk","GLOBAL",1) 
+StartDialogueNoSet(Player1)
+END
+
+IF
+InParty(Myself) !StateCheck(Myself,CD_STATE_NOTVALID)
+Global("SharteelRomanceActive","GLOBAL",2) 
+Global("SharteelRomanceSleepTalk","GLOBAL",2)
+RealGlobalTimerExpired("SharteelNightTalk1Timer","GLOBAL")
+CheckStatGT(Player1,10,INT)
+CombatCounter(0)
+THEN
+  RESPONSE #100
+SetGlobal("SharteelRomanceSleepTalk","GLOBAL",3) 
+StartDialogueNoSet(Player1)
+END
+
+IF
+InParty(Myself) !StateCheck(Myself,CD_STATE_NOTVALID)
+Global("SharteelRomanceActive","GLOBAL",2) 
+Global("SharteelRomanceTalk","GLOBAL",5)
+CombatCounter(0)
+THEN
+  RESPONSE #100
+SetGlobal("SharteelRomanceTalk","GLOBAL",6)
+StartDialogueNoSet(Player1)
+END
+
+
+// Special Banter 7.1
+IF
+InParty(Myself) !StateCheck(Myself,CD_STATE_NOTVALID)
+AreaType(FOREST)
+Global("SharteelRomanceActive","GLOBAL",2) 
+Global("SharteelSadoMazo","GLOBAL",1)
+CombatCounter(0)
+THEN
+  RESPONSE #100
+SetGlobal("SharteelSadoMazo","GLOBAL",2)
+StartDialogueNoSet(Player1)
+END

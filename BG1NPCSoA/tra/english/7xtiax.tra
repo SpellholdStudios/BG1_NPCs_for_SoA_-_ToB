@@ -1,7 +1,7 @@
 @0    = ~You dare to walk in the line of sight of Tiax the Grand? Such insolence! Tiax will place a mark of shame upon your forehead! All will know your treachery!~ [PPTIAX11]
 @1    = ~Hmmm.. Wait..~
 @2    = ~Praise Cyric, you have arrived at last! Tiax should have you flogged for keeping him waiting!~
-@3    = ~Tiax shall remember that on an ordinary <DAYNIGHTALL> on <HOUR>:<MINUTE> of <DAYANDMONTH> in the year <YEAR>, <CHARNAME> arrived at the circus and was reunited with Tiax the Almighty, exactly <DURATION> since <PRO_HISHER> adventure in Amn began. It is good to see me, is it not?~ [PPTIAX08]
+@3    = ~Tiax shall remember that on an ordinary <DAYNIGHTALL> on <HOUR>:<MINUTE> of <DAYANDMONTH> in the year <YEAR>, <CHARNAME> arrived at the circus and was reunited with Tiax the Almighty, exactly <DURATION> since <PRO_HISHER> adventure in Amn began. It is good to see me, is it not?~
 @4    = ~Oh no, not you again! I thought I had seen the last of you back in Baldur's Gate!~
 @5    = ~Oh Joy! You still refer to yourself in the third person.~
 @6    = ~Tiax? You are the gnome whom I met near Baldur's Gate?~
@@ -18,7 +18,7 @@
 @17   = ~Death was but a minor inconvenience for my plans to rule all. The soul of Tiax endured and thanks to the ever present power of Cyric, I was able to return to the world of the living to complete my quest of world domination.~ [PPTIAX18]
 @18   = ~WHAT? Oh this can not be! Tiax will not be saddled with such a milk-sopped dullard! Fate decrees the world to thine hands and you flout her as a common wench?~ [TIAXX06]
 @19   = ~Are ye cup shot? Mutton-headed foole, you and your natty lads will be fallen away from a horse load to a cart load whilst Tiax puts the world to bed with a shovel! 'Twill be a squeak for your life then ye duke of limbs, stir yer stumps and begone! Begone, and beware my inevitable rule, ye bandie-legged clapdragons!~ [PPTIAX13]
-@20   = ~The master plan of Tiax is unfolding just like Tiax knew it would. Hahahaha!~ [PPTIAX12]
+@20   = ~The master plan of Tiax is unfolding just like Tiax knew it would. Hahahaha!~
 @21   = ~Even though Tiax the Grand is not known to use any arcane magic, the doppelganger Xzar sold him has gained access to Spellhold!!~
 @22   = ~Once Tiax has learned all he needs from there, he will use that knowledge to take his rightful place as ruler of all Toril! Things are falling into place!!~
 @23   = ~However, Tiax has encountered one minor snag in his great plan.~ [PPTIAX26]
@@ -35,7 +35,7 @@
 @34   = ~Get out of my face to idiotic gnome!~
 @35   = ~Have ye no ears to hear?! It is as Tiax said! DESTINY! Cyric himself will lift Tiax "on-high," hurtling me to my rightful place when the time comes! 'Twas fated by Cyric to be so.~
 @36   = ~Tiax is destined to lead, though he grows to enjoy your company.  Perhaps you shall be spared his wrath, and appointed to more than sewage detail. To this end I have decided to travel with you.~
-@37   = ~Later, your power shall added to mine, and Tiax the Great will ascend to his rightful place as ruler of all of Faerûn!~
+@37   = ~Later, your power shall added to mine, and Tiax the Great will ascend to his rightful place as ruler of all of Faerun!~
 @38   = ~Thou would presume to bother Tiax the Great once more? Thy bravery is oddly tempered with foolishness!~
 @39   = ~Still, Cyric has decreed that I seek out the services of one such as thyself. Tiax himself.. myself will aid in your quest.  In return, when the time is right, your might will forge the way for my ascension to power.~
 @40   = ~What?! You galley-whipped short-knickers! Tiax the grand will not stand to be cast aside! He shall ascend without your bumbling sneakery! The Great Tiax, betrayed on all sides by those seeking to undermine his coming rule, casts aside the refuse he once called his slaves!~
@@ -51,8 +51,8 @@
 @50   = ~You shall, of course, meet the Great Tiax again, at which point I will make my grand ascension and appoint you to your rightful place as whipper of the slaves and faithless. ~ [TIAXX06]
 @51   = ~What? Fate decrees the world to thine hands and you flout her as a common wench?~ [PPTIAX13]
 @52   = ~Are ye cup shot?  Mutton-headed foole, you and your natty lads will be fallen away from a horse load to a cart load whilst Tiax puts the world to bed with a shovel!  'Twill be a squeak for your life then ye duke of limbs, stir yer stumps and begone!!~
-@53   = ~BAH! Tiax the Grand has no time for your impudent prittle-prattle! I'm off to the circus to finish my master plan of world domination.. right after I see the flying elephants.~ [TIAXX06]
+@53   = ~BAH! Tiax the Grand has no time for your impudent prittle-prattle! I'm off to the circus to finish my master plan of world domination.. right after I see the flying elephants.~ [TIAXM]
 @54   = ~Bah! I'm down 75,000 gold pieces in Dragon Poker! I think I need a brake.~
 @55   = ~Sorry, I have no room for you at the moment.~
 @56   = ~Come along Tiax.~
-@57   = ~'Twas fated by Cyric to be so.  Let us go forth and make short work of your tasks, for greater things will need attendance.~ [PPTIAX02]
+@57   = ~'Twas fated by Cyric to be so.  Let us go forth and make short work of your tasks, for greater things will need attendance.~

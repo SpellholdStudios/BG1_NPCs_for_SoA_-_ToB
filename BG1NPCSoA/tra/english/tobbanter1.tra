@@ -92,7 +92,7 @@
 @91   = ~Are you still there, amazon? Boo thought that perhaps the evil spirits had you taken over completely.~
 @92   = ~The only way that I am leaving this world, you outland pig, is when a warrior of perfect skill defeats me. Until then, I shall be here, piling up the corpses like an avenging demon.~
 @93   = ~Your sickness grows worse by the day.~
-@94   = ~Be silent, you miserable jackal! I have not traveled the length of Faerûn, challenging the swordmasters, to be pestered by the likes of you!~
+@94   = ~Be silent, you miserable jackal! I have not traveled the length of Faerun, challenging the swordmasters, to be pestered by the likes of you!~
 @95   = ~Both Boo and I fear that the day when the evil Goddess, Shar, takes you over, we will have to inflict a righteous ass kicking upon you, amazon.~
 @96   = ~Then draw your blade, you skulking rat! I'd be a fool to let you live!~
 @97   = ~Now it not the time.~
@@ -302,10 +302,10 @@
 @301  = ~What will you do once we have fulfilled Alaundo’s prophecy about the Bhaalspawn, Shar-Teel?~
 @302  = ~Will you go back to Athkatla to fight in the battle pits again?~
 @303  = ~No, I have wasted enough time slaying mindless beasts and worthless gladiators.~
-@304  = ~After my time with <CHARNAME> is at an end, I will seek out all the remaining Nightbringers in Faerûn and defeat them one bye one, until I am the only one left.~
+@304  = ~After my time with <CHARNAME> is at an end, I will seek out all the remaining Nightbringers in Faerun and defeat them one bye one, until I am the only one left.~
 @305  = ~You wish to become the Avatar of Shar?~
 @306  = ~Together with the Avatar of Cyric, I will bring about the downfall of Mystra and the Weave.~
-@307  = ~You would destroy the very essence of all magic in Faerûn?~
+@307  = ~You would destroy the very essence of all magic in Faerun?~
 @308  = ~It will be great watching the powerless nations of the earth that were ruled by wizards, topple under the shields and pikes of my armies.~
 @309  = ~This is madness! The spirit that Shar has placed inside of you is taking over the very essence of your soul, amazon. I want no part of what you are speaking of..~
 @310  = ~Ha! I should have known that a weakling magic user would not have the spine to hear the truth. Nothing can stop the prophecy!~
@@ -488,7 +488,7 @@
 @487  = ~I'm not so sure that there is such a thing as a, 'normal' life, anymore.~
 @488  = ~Interesting.. I suppose `you are right though.. Now that father has passed, life will be anything but normal.~
 @489  = ~I have been wondering what life will be like once this is all over though. Will the routine of running a castle keep me as enthralled as traveling with <CHARNAME>?~
-@490  = ~Doubtful.. though I find it hard to think of anything that could match the level of excitement that I have felt traveling with Faerûn <CHARNAME>.~
+@490  = ~Doubtful.. though I find it hard to think of anything that could match the level of excitement that I have felt traveling with Faerun <CHARNAME>.~
 @491  = ~Have you given any thought as to what you are going to do? Still intent on traveling back to Athkatla?~
 @492  = ~To be honest, I'm not sure.. But I am confident that when Tempus is ready a path shall be layed out before me.~
 @493  = ~Well, if you wanted, I could always use a captain of the guard at my castle. I have seen what you can do and I would be honored if you accepted.~
@@ -704,7 +704,7 @@
 @703  = ~Hmmm.. Can I assume that you guys have not heard all the latest songs then?~
 @704  = ~Wouldn't you rather be more like Brave, brave Sir Garrick?~ [garrickp]
 @705  = ~Who is that?~
-@706  = ~Only the bravest warrior in all of Faerûn!~ [garrick5]
+@706  = ~Only the bravest warrior in all of Faerun!~ [garrick5]
 @707  = ~Sounds like a pig herder.~
 @708  = ~You need to learn some manners.~ [garrick8]
 @709  = ~I think you need to learn some manners!~ [garrick8]

@@ -1,6 +1,6 @@
 BACKUP ~BG1NPCSoA/backup~
-SUPPORT ~http://www.baldursgatemods.com/forums/index.php?board=133.0~
-VERSION ~14.3~
+SUPPORT ~http://www.shsforums.net/forum/686-bg1-npcs-for-soa-~
+VERSION ~15~
 
 AUTO_TRA ~BG1NPCSoA/tra/%s~
 
@@ -155,6 +155,7 @@ COPY ~BG1NPCSoA/portraits/MAIN/EE-portraits/DEEKINM.BMP~ ~override/DEEKINM.BMP~
 END ELSE BEGIN
 COPY ~BG1NPCSoA/portraits/MAIN/vanilla-portraits/DEEKINL.BMP~ ~override/DEEKINL.BMP~
 COPY ~BG1NPCSoA/portraits/MAIN/vanilla-portraits/DEEKINS.BMP~ ~override/DEEKINS.BMP~
+COPY ~BG1NPCSoA/portraits/MAIN/vanilla-portraits/DEEKINM.BMP~ ~override/DEEKINM.BMP~
 END
 
 COPY ~BG1NPCSoA/store/DEEKIN.sto~ ~override~
@@ -243,16 +244,16 @@ COPY ~BG1NPCSoA/BAM~ ~override~
 
 
 COPY ~BG1NPCSoA/Items/BG1IWD3.itm~ ~Override/BG1IWD3.itm~
-SAY NAME1 #6346
+SAY NAME1 @231
 SAY NAME2 @231
-SAY UNIDENTIFIED_DESC #6807
+SAY UNIDENTIFIED_DESC @231
 SAY DESC @232
 
 
 COPY ~BG1NPCSoA/Items/BG1IWD4.itm~ ~Override/BG1IWD4.itm~
-SAY NAME1 #6913
+SAY NAME1 @233
 SAY NAME2 @233
-SAY UNIDENTIFIED_DESC #6912
+SAY UNIDENTIFIED_DESC @234
 LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@235" END
 
 
@@ -263,60 +264,60 @@ SAY UNIDENTIFIED_DESC @236
 SAY DESC @237
 
 COPY ~BG1NPCSoA/Items/BG1IWD1.itm~ ~Override/BG1IWD1.itm~
-SAY NAME1 #6339
+SAY NAME1 @238
 SAY NAME2 @238
-SAY UNIDENTIFIED_DESC #6824
+SAY UNIDENTIFIED_DESC @238
 SAY DESC @239
 
 
 COPY ~BG1NPCSoA/Items/BG1IWD2.itm~ ~Override/BG1IWD2.itm~
-SAY NAME1 #6339
+SAY NAME1 @240
 SAY NAME2 @240
-SAY UNIDENTIFIED_DESC #6824
+SAY UNIDENTIFIED_DESC @240
 SAY DESC @241
 
 
 
 COPY ~BG1NPCSoA/Items/BG1IWD6.itm~ ~Override/BG1IWD6.itm~
-SAY NAME1 #6701
+SAY NAME1 @242
 SAY NAME2 @243
-SAY UNIDENTIFIED_DESC #6703
+SAY UNIDENTIFIED_DESC @243
 SAY DESC @244
 
 
 COPY ~BG1NPCSoA/Items/BG1IWD7.itm~ ~Override/BG1IWD7.itm~
-SAY NAME1 #11052
+SAY NAME1 @245
 SAY NAME2 @246
-SAY UNIDENTIFIED_DESC #22712
+SAY UNIDENTIFIED_DESC @245
 SAY DESC @247
 LPF SCIMITAR_AXE_USABILITY STR_VAR itype = "scimitar" END
 
 COPY ~BG1NPCSoA/Items/DEPO45.itm~ ~Override/DEPO45.itm~
-SAY NAME1 #22094
+SAY NAME1 @248
 SAY NAME2 @248
-SAY UNIDENTIFIED_DESC #22096
+SAY UNIDENTIFIED_DESC @248
 SAY DESC @249
 
 COPY ~BG1NPCSoA/Items/DEPO18.itm~ ~Override/DEPO18.itm~
-SAY NAME1 #6654
+SAY NAME1 @250
 SAY NAME2 @251
-SAY UNIDENTIFIED_DESC #6656
+SAY UNIDENTIFIED_DESC @250
 SAY DESC @252
 LPF SCIMITAR_AXE_USABILITY STR_VAR itype = "axe" END
 
 
 COPY ~BG1NPCSoA/Items/BG1IWD8.itm~ ~Override/BG1IWD8.itm~
-SAY NAME1 #11052
+SAY NAME1 @245
 SAY NAME2 @253
-SAY UNIDENTIFIED_DESC #22712
+SAY UNIDENTIFIED_DESC @245
 SAY DESC @254
 LPF SCIMITAR_AXE_USABILITY STR_VAR itype = "scimitar" END
 
 
 COPY ~BG1NPCSoA/Items/BG1IWD9.itm~ ~Override/BG1IWD9.itm~
-SAY NAME1 #6654
+SAY NAME1 @255
 SAY NAME2 @255
-SAY UNIDENTIFIED_DESC #6656
+SAY UNIDENTIFIED_DESC @255
 SAY DESC @256
 LPF SCIMITAR_AXE_USABILITY STR_VAR itype = "axe" END
 
@@ -398,52 +399,52 @@ COPY ~BG1NPCSoA/store/bg1npc7.sto~ ~override~
 SAY NAME2 @282
 
 COPY ~BG1NPCSoA/Items/ETBITM1.itm~ ~Override/ETBITM1.itm~
-SAY NAME1 #2893
+SAY NAME1 @283
 SAY NAME2 @284
-SAY UNIDENTIFIED_DESC #6742
+SAY UNIDENTIFIED_DESC @283
 SAY DESC @285
 
 
 COPY ~BG1NPCSoA/Items/ETBITM2.itm~ ~Override/ETBITM2.itm~
-SAY NAME1 #4385
+SAY NAME1 @286
 SAY NAME2 @287
-SAY UNIDENTIFIED_DESC #6889
+SAY UNIDENTIFIED_DESC @286
 SAY DESC @288
 
 
 COPY ~BG1NPCSoA/Items/ETBITM3.itm~ ~Override/ETBITM3.itm~
-SAY NAME1 #2893
+SAY NAME1 @283
 SAY NAME2 @289
-SAY UNIDENTIFIED_DESC #6742
+SAY UNIDENTIFIED_DESC @283
 SAY DESC @290
 
 
 
 COPY ~BG1NPCSoA/Items/ETBITM4.itm~ ~Override/ETBITM4.itm~
-SAY NAME1 #6654
+SAY NAME1 @250
 SAY NAME2 @291
-SAY UNIDENTIFIED_DESC #6656
+SAY UNIDENTIFIED_DESC @250
 SAY DESC @292
 LPF SCIMITAR_AXE_USABILITY STR_VAR itype = "axe" END
 
 
 COPY ~BG1NPCSoA/Items/ETBITM5.itm~ ~Override/ETBITM5.itm~
-SAY NAME1 #6328
+SAY NAME1 @293
 SAY NAME2 @294
-SAY UNIDENTIFIED_DESC #6760
+SAY UNIDENTIFIED_DESC @293
 SAY DESC @295
 
 
 COPY ~BG1NPCSoA/Items/ETBITM6.itm~ ~Override/ETBITM6.itm~
-SAY NAME1 #22714
+SAY NAME1 @296
 SAY NAME2 @297
-SAY UNIDENTIFIED_DESC #22716
+SAY UNIDENTIFIED_DESC @296
 SAY DESC @298
 
 COPY ~BG1NPCSoA/Items/ETBITM7.itm~ ~Override/ETBITM7.itm~
 SAY NAME1 @299
 SAY NAME2 @300
-SAY UNIDENTIFIED_DESC #39668
+SAY UNIDENTIFIED_DESC @299
 SAY DESC @300
 
 
@@ -796,46 +797,46 @@ SAY NAME2 @362
 
 
 COPY ~BG1NPCSoA/Items/BGSX01.itm~ ~Override/BGSX01.itm~
-SAY NAME1 #6345
+SAY NAME1 @363
 SAY NAME2 @364
-SAY UNIDENTIFIED_DESC #6716
+SAY UNIDENTIFIED_DESC @363
 SAY DESC @365
 
 
 COPY ~BG1NPCSoA/Items/BGSX02.itm~ ~Override/BGSX02.itm~
-SAY NAME1 #6745
+SAY NAME1 @366
 SAY NAME2 @367
-SAY UNIDENTIFIED_DESC #6747
+SAY UNIDENTIFIED_DESC @366
 SAY DESC @368
 
 
 COPY ~BG1NPCSoA/Items/BGSX03.itm~ ~Override/BGSX03.itm~
-SAY NAME1 #6339
+SAY NAME1 @369
 SAY NAME2 @370
-SAY UNIDENTIFIED_DESC #6824
+SAY UNIDENTIFIED_DESC @369
 SAY DESC @371
 
 
 COPY ~BG1NPCSoA/Items/BGSX04.itm~ ~Override/BGSX04.itm~
-SAY NAME1 #6852
+SAY NAME1 @372
 SAY NAME2 @372
-SAY UNIDENTIFIED_DESC #6900
+SAY UNIDENTIFIED_DESC @372
 SAY DESC @373
 
 
 
 COPY ~BG1NPCSoA/Items/BGSX05.itm~ ~Override/BGSX05.itm~
-SAY NAME1 #11052
+SAY NAME1 @245
 SAY NAME2 @374
-SAY UNIDENTIFIED_DESC #22712
+SAY UNIDENTIFIED_DESC @245
 SAY DESC @375
 LPF SCIMITAR_AXE_USABILITY STR_VAR itype = "scimitar" END
 
 
 COPY ~BG1NPCSoA/Items/BGSX06.itm~ ~Override/BGSX06.itm~
-SAY NAME1 #6345
+SAY NAME1 @376
 SAY NAME2 @376
-SAY UNIDENTIFIED_DESC #6716
+SAY UNIDENTIFIED_DESC @376
 SAY DESC @377
 
 
@@ -847,16 +848,16 @@ SAY DESC @379
 
 
 COPY ~BG1NPCSoA/Items/BGSX08.itm~ ~Override/BGSX08.itm~
-SAY NAME1 #6654
+SAY NAME1 @380
 SAY NAME2 @380
-SAY UNIDENTIFIED_DESC #6656
+SAY UNIDENTIFIED_DESC @380
 SAY DESC @381
 LPF SCIMITAR_AXE_USABILITY STR_VAR itype = "axe" END
 
 COPY ~BG1NPCSoA/Items/BGSX16.itm~ ~Override/BGSX16.itm~
-SAY NAME1 #2890
+SAY NAME1 @382
 SAY NAME2 @383
-SAY UNIDENTIFIED_DESC #6652
+SAY UNIDENTIFIED_DESC @382
 SAY DESC @384
 
 
@@ -869,9 +870,9 @@ SAY DESC @386
 
 
 COPY ~BG1NPCSoA/Items/BGSX18.itm~ ~Override/BGSX18.itm~
-SAY NAME1 #7106
+SAY NAME1 @387
 SAY NAME2 @387
-SAY UNIDENTIFIED_DESC #7106
+SAY UNIDENTIFIED_DESC @387
 SAY DESC @387
 
 
@@ -1347,29 +1348,29 @@ SAY NAME2 @406
 
 
 COPY ~BG1NPCSoA/Items/DEPO211.itm~ ~Override/DEPO211.itm~
-SAY NAME1 #6701
+SAY NAME1 @242
 SAY NAME2 @407
-SAY UNIDENTIFIED_DESC #6703
+SAY UNIDENTIFIED_DESC @242
 SAY DESC @408
 
 COPY ~BG1NPCSoA/Items/DEPO189.itm~ ~Override/DEPO189.itm~
-SAY NAME1 #6745
+SAY NAME1 @366
 SAY NAME2 @409
-SAY UNIDENTIFIED_DESC #6747
+SAY UNIDENTIFIED_DESC @366
 SAY DESC @410
 
 COPY ~BG1NPCSoA/Items/DEPO135.itm~ ~Override/DEPO135.itm~
-SAY NAME1 #215
+SAY NAME1 @411
 SAY NAME2 @412
-SAY UNIDENTIFIED_DESC #6819
+SAY UNIDENTIFIED_DESC @412
 SAY DESC @413
 
 
 
 COPY ~BG1NPCSoA/Items/DEPO212.itm~ ~Override/DEPO212.itm~
-SAY NAME1 #9642
+SAY NAME1 @414
 SAY NAME2 @415
-SAY UNIDENTIFIED_DESC #10046
+SAY UNIDENTIFIED_DESC @414
 SAY DESC @416
 
 
@@ -1427,16 +1428,16 @@ SAY NAME1  @431
 
 
 COPY ~BG1NPCSoA/Items/BGSX22.itm~ ~Override/BGSX22.itm~
-SAY NAME1 #9642
+SAY NAME1 @433
 SAY NAME2 @433
-SAY UNIDENTIFIED_DESC #10046
+SAY UNIDENTIFIED_DESC @433
 SAY DESC @434
 
 
 COPY ~BG1NPCSoA/Items/BGSX23.itm~ ~Override/BGSX23.itm~
-SAY NAME1 #6873
+SAY NAME1 @435
 SAY NAME2 @435
-SAY UNIDENTIFIED_DESC #18095
+SAY UNIDENTIFIED_DESC @435
 SAY DESC @435
 
 
@@ -1461,9 +1462,9 @@ SAY DESC @438
 
 
 COPY ~BG1NPCSoA/Items/BGSX27.itm~ ~Override/BGSX27.itm~
-SAY NAME1 #7106
+SAY NAME1 @439
 SAY NAME2 @439
-SAY UNIDENTIFIED_DESC #7106
+SAY UNIDENTIFIED_DESC @439
 SAY DESC @439
 
 
@@ -1489,9 +1490,9 @@ SAY DESC @442
 
 
 COPY ~BG1NPCSoA/Items/BGSX31.itm~ ~Override/BGSX31.itm~
-SAY NAME1 #7106
+SAY NAME1 @443
 SAY NAME2 @443
-SAY UNIDENTIFIED_DESC #7106
+SAY UNIDENTIFIED_DESC @443
 SAY DESC @444
 
 
@@ -1503,38 +1504,38 @@ SAY DESC @445
 
 
 ACTION_IF !FILE_EXISTS_IN_GAME ~MISC5K.itm~ BEGIN
-  COPY ~BG1NPCSoA/Items/MISC5K.itm~ ~Override/MISC5K.itm~
-	SAY NAME1 @446
-	SAY NAME2 @446
-	SAY UNIDENTIFIED_DESC @446
-	SAY DESC @447
+COPY ~BG1NPCSoA/Items/MISC5K.itm~ ~Override/MISC5K.itm~
+SAY NAME1 @446
+SAY NAME2 @446
+SAY UNIDENTIFIED_DESC @446
+SAY DESC @447
 END
 
 COPY ~BG1NPCSoA/Items/BGSX33.itm~ ~Override/BGSX33.itm~
-SAY NAME1 #7106
+SAY NAME1 @448
 SAY NAME2 @448
-SAY UNIDENTIFIED_DESC #7106
+SAY UNIDENTIFIED_DESC @448
 SAY DESC @448
 
 
 COPY ~BG1NPCSoA/Items/BGSX34.itm~ ~Override/BGSX34.itm~
-SAY NAME1 #6976
+SAY NAME1 @449
 SAY NAME2 @449
-SAY UNIDENTIFIED_DESC #16264
+SAY UNIDENTIFIED_DESC @449
 SAY DESC @450
 
 
 COPY ~BG1NPCSoA/Items/BGSX35.itm~ ~Override/BGSX35.itm~
-SAY NAME1 #6976
+SAY NAME1 @451
 SAY NAME2 @451
-SAY UNIDENTIFIED_DESC #16264
+SAY UNIDENTIFIED_DESC @451
 SAY DESC @452
 
 
 COPY ~BG1NPCSoA/Items/BGSX36.itm~ ~Override/BGSX36.itm~
-SAY NAME1 #6346
+SAY NAME1 @453
 SAY NAME2 @453
-SAY UNIDENTIFIED_DESC #6807
+SAY UNIDENTIFIED_DESC @453
 SAY DESC @453
 	
 
@@ -1900,11 +1901,11 @@ SAY UNIDENTIFIED_DESC @527
 SAY DESC @527
 
 COPY ~BG1NPCSoA/Items/bgsx82.itm~ ~Override/bgsx82.itm~
-	 ~BG1NPCSoA/Items/bgsx82a.itm~ ~Override/bgsx82a.itm~
-	 ~BG1NPCSoA/Items/bgsx82c.itm~ ~Override/bgsx82c.itm~
-SAY NAME1 #2893
+~BG1NPCSoA/Items/bgsx82a.itm~ ~Override/bgsx82a.itm~
+~BG1NPCSoA/Items/bgsx82c.itm~ ~Override/bgsx82c.itm~
+SAY NAME1 @528
 SAY NAME2 @528
-SAY UNIDENTIFIED_DESC #6742
+SAY UNIDENTIFIED_DESC @528
 LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@529" END
 
 COPY ~BG1NPCSoA/cre/MISC/DANCER.cre~ ~override/DANCER.cre~
@@ -2451,6 +2452,7 @@ COPY ~BG1NPCSoA/store/BG1NPCZ.sto~ ~override/BG1NPCZ.sto~
 SAY NAME2 @2004
 
 EXTEND_TOP ~Ar0406.bcs~ ~BG1NPCSoA/scripts/AR0406.baf~
+EXTEND_BOTTOM ~AR0602.bcs~ ~BG1NPCSoA/scripts/MISC/AR0602.baf~
 
 COMPILE ~BG1NPCSoA/scripts/MISC/CONDO.BAF~
 COMPILE ~BG1NPCSoA/dialogues/MISC/ETBNPC1.d~ 
@@ -3035,6 +3037,11 @@ COPY_EXISTING ~sw1h01.itm~ ~override/FirstComp.mrk~ // For enable the installati
 APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~
 UNLESS ~CD_STATE_NOTVALID~
 
+APPEND ~gtimes.ids~ ~7200 ONE_DAY~ UNLESS ~ONE_DAY~
+APPEND ~gtimes.ids~ ~14400 TWO_DAYS~ UNLESS ~TWO_DAYS~
+APPEND ~gtimes.ids~ ~21600 THREE_DAYS~ UNLESS ~THREE_DAYS~
+APPEND ~gtimes.ids~ ~100800 FOURTEEN_DAYS~ UNLESS ~FOURTEEN_DAYS~
+
 COPY ~BG1NPCSoA/Cre/7xcre1.cre~ ~override/7xcre1.cre~ 
 SAY NAME1 @2
 SAY NAME2 @3
@@ -3099,6 +3106,54 @@ END
 
 LAF HANDLE_AUDIO STR_VAR audio_path = "BG1NPCSoA/sounds/Sharteel" oggdec_path = "BG1NPCSoA/sounds" END
 
+APPEND ~pdialog.2da~
+~7Xshar	7XsharP		7XsharJ		7XsharD  7Xsha25P 7Xsha25J 7Xsha25D 7Xsha25~
+UNLESS ~7Xshar~
+
+
+APPEND ~interdia.2da~
+  ~7Xshar     B7Xshar     B7Xsh25~
+  UNLESS ~7Xshar~
+
+ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+   // If a EE-version is installed, change the journal entries to adapt it 
+  ADD_JOURNAL @1853 @1854 @1855 @1856 @1857 USING ~%MOD_FOLDER%/tra/%LANGUAGE%/setup.tra~ 
+END 
+
+ACTION_IF GAME_IS "tob bgt" BEGIN
+COPY ~%MOD_FOLDER%/sounds/blank.mus~ ~music~
+COPY_EXISTING ~songlist.2da~ ~override~
+	SET_2DA_ENTRY 0 2 3 ~BLANK.MUS~
+END
+
+
+
+///
+// We create dialogue files for those NPCs that will speak in Shar-Teel component
+//(so that there are no compilation errors if the components of these NPCs are not installed in the future)
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~7XSafaJ.dlg~ BEGIN
+COMPILE ~BG1NPCSoA/dialogues/7XSafaJ-Begin.d~
+END
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~7XAloraJ.dlg~ BEGIN
+COMPILE ~BG1NPCSoA/dialogues/7XAlora-Begin.d~
+END
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~7XFALDJ.dlg~ BEGIN
+COMPILE ~BG1NPCSoA/dialogues/Faldorn/7XFALD-begin.d~
+END
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~7XTIAXJ.dlg~ BEGIN
+COMPILE ~BG1NPCSoA/dialogues/7XTIAXJ-begin.d~
+END
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~7XMONTJ.dlg~ BEGIN
+COMPILE ~BG1NPCSoA/dialogues/7XMONTJ-begin.d~
+END
+
+COPY ~BG1NPCSoA/Spells/STCHR.SPL~ ~Override/STCHR.SPL~
+
 COMPILE ~BG1NPCSoA/dialogues/7Xshar.d~ 
 
 ACTION_IF FILE_EXISTS_IN_GAME ~7XsharJ.dlg~ BEGIN
@@ -3109,13 +3164,26 @@ COMPILE ~BG1NPCSoA/dialogues/7XsharJ.d~
 END
 
 COMPILE ~BG1NPCSoA/dialogues/B7Xshar.d~ 
+COMPILE ~BG1NPCSoA/dialogues/7xsharRomanceSoA.d~ EVALUATE_BUFFER USING ~BG1NPCSoA/tra/%LANGUAGE%/7xsharromance.tra~
+COMPILE ~BG1NPCSoA/dialogues/7xsharRomanceToB.d~ EVALUATE_BUFFER USING ~BG1NPCSoA/tra/%LANGUAGE%/7xsharromance.tra~ 
 
 ACTION_IF FILE_EXISTS_IN_GAME ~KGSTO2.dlg~ BEGIN
 COMPILE EVALUATE_BUFFER ~BG1NPCSoA/dialogues/MISC/KGSTO2sharteel.d~ USING ~BG1NPCSoA/tra/%LANGUAGE%/KGSTO2.tra~
 END
 
 COMPILE ~BG1NPCSoA/scripts/7xshar.BAF~
-// FOR v14.4 COMPILE ~BG1NPCSoA/scripts/7xsharD.BAF~
+
+ACTION_IF (GAME_IS ~eet~) BEGIN
+EXTEND_TOP ~7xshar.bcs~ ~BG1NPCSoA/scripts/SoDExp.baf~
+END
+
+COMPILE ~BG1NPCSoA/scripts/7xsharD.BAF~
+
+ACTION_FOR_EACH area IN AR0020 AR0300 AR0400 AR0500 AR0700 AR0800 AR0900 AR1000 L#ND01 L#NI01 BEGIN //сюда можно добавить локации из модов. Типа Южной окраины. Если они установлены, туда тоже добавит
+	ACTION_IF FILE_EXISTS_IN_GAME ~%area%.bcs~ BEGIN
+		EXTEND_TOP ~%area%.bcs~ ~%MOD_FOLDER%/scripts/7xSharReturn.baf~ EVALUATE_BUFFER
+	END
+END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~7XCRE1.cre~ BEGIN
   COPY_EXISTING ~7XCRE1.cre~ ~override~
@@ -3144,14 +3212,11 @@ END ELSE BEGIN
 END
 END
 
-APPEND ~pdialog.2da~
-~7Xshar	7XsharP		7XsharJ		7XsharD  7Xsha25P 7Xsha25J 7Xsha25D 7Xsha25~
-UNLESS ~7Xshar~
 
-
-APPEND ~interdia.2da~
-  ~7Xshar     B7Xshar     B7Xsh25~
-  UNLESS ~7Xshar~
+COPY ~BG1NPCSoA/cre/MISC/7xLiora.cre~ ~override/7xLiora.cre~
+SAY NAME1 @9
+SAY NAME2 @9  
+  
 
 COPY ~BG1NPCSoA/cre/ARENA/7Xcre10.cre~ ~override/7Xcre10.cre~
 SAY NAME1 @257
@@ -3590,9 +3655,53 @@ COMPILE ~BG1NPCSoA/scripts/ARENA/ARENA2.BAF~
 COMPILE ~BG1NPCSoA/scripts/ARENA/ARENA3.BAF~
 EXTEND_TOP ~Ar0406.bcs~ ~BG1NPCSoA/scripts/ARENA/AR0406.baf~
 
+EXTEND_TOP ~AR2204.bcs~ ~BG1NPCSoA/scripts/AR2204.baf~
+
 ACTION_IF FILE_EXISTS_IN_GAME ~ARBGX4.bcs~ BEGIN
 EXTEND_TOP ~ARBGX4.bcs~~BG1NPCSoA/scripts/ARENA/ARBGX4.baf~
 END
+
+COPY ~BG1NPCSoA/Bam/STBadG.bam~ ~Override/STBadG.bam~
+
+ACTION_IF NOT(FILE_EXISTS_IN_GAME ~CBELT02.bam~) BEGIN
+COPY ~BG1NPCSoA/Bam/CBELT02.bam~ ~Override/CBELT02.bam~
+END
+
+COPY ~BG1NPCSoA/Items/STBadG.itm~ ~Override/STBadG.itm~
+SAY NAME1 @27
+SAY NAME2 @27
+SAY UNIDENTIFIED_DESC @28
+SAY DESC @28
+
+COPY ~BG1NPCSoA/Items/STrng1.itm~ ~Override/STrng1.itm~
+SAY NAME1 @29
+SAY NAME2 @29
+SAY UNIDENTIFIED_DESC @30
+SAY DESC @30
+
+COPY ~BG1NPCSoA/Items/STrng2.itm~ ~Override/STrng2.itm~
+SAY NAME1 @31
+SAY NAME2 @31
+SAY UNIDENTIFIED_DESC @32
+SAY DESC @32
+
+// Optional Shar-Teel portrait
+BEGIN @1907 DESIGNATED 3
+GROUP ~Main Mod~
+REQUIRE_COMPONENT ~BG1NPCSoA.tp2~ ~2~ @1908
+
+ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+COPY ~BG1NPCSoA/portraits/Shar-Teel/EE-portraits/SHARTELL.BMP~ ~override/SHARTELL.BMP~
+COPY ~BG1NPCSoA/portraits/Shar-Teel/EE-portraits/SHARTELS.BMP~ ~override/SHARTELS.BMP~
+COPY ~BG1NPCSoA/portraits/Shar-Teel/EE-portraits/SHARTELM.BMP~ ~override/SHARTELM.BMP~
+END ELSE BEGIN
+COPY ~BG1NPCSoA/portraits/Shar-Teel/vanilla-portraits/SHARTELL.BMP~ ~override/SHARTELL.BMP~
+COPY ~BG1NPCSoA/portraits/Shar-Teel/vanilla-portraits/SHARTELS.BMP~ ~override/SHARTELS.BMP~
+COPY ~BG1NPCSoA/portraits/Shar-Teel/vanilla-portraits/SHARTELM.BMP~ ~override/SHARTELM.BMP~
+END
+
+
+////////////////////////
 
 
 BEGIN @1903 DESIGNATED 4
@@ -3764,7 +3873,12 @@ EXTEND_TOP ~Ar0400.bcs~ ~BG1NPCSoA/scripts/YESLICK-QUEST/AR0400.baf~
 EXTEND_TOP ~Ar0500.bcs~ ~BG1NPCSoA/scripts/YESLICK-QUEST/AR0500.baf~
 EXTEND_TOP ~Ar0800.bcs~ ~BG1NPCSoA/scripts/YESLICK-QUEST/AR0800.baf~
 EXTEND_TOP ~Ar0900.bcs~ ~BG1NPCSoA/scripts/YESLICK-QUEST/AR0900.baf~
+
 COMPILE ~BG1NPCSoA/scripts/7xYesl.BAF~
+
+ACTION_IF (GAME_IS ~eet~) BEGIN
+EXTEND_TOP ~7xYesl.bcs~ ~BG1NPCSoA/scripts/SoDExp.baf~
+END
 
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~override/bimoen2.dlg~ THEN BEGIN
   <<<<<<<< BG1NPCSoA/dialogues/MISC/BIMOEN2.d
@@ -4016,6 +4130,11 @@ END
   
 
 COMPILE ~BG1NPCSoA/scripts/7xGARR.BAF~
+
+ACTION_IF (GAME_IS ~eet~) BEGIN
+EXTEND_TOP ~7xGARR.bcs~ ~BG1NPCSoA/scripts/SoDExp.baf~
+END
+
 COMPILE ~BG1NPCSoA/scripts/7XGarD.BAF~
 COMPILE ~BG1NPCSoA/scripts/misc/7Xnekto.BAF~
 EXTEND_TOP ~Ar0511.bcs~ ~BG1NPCSoA/scripts/AR0511.baf~
@@ -4265,6 +4384,11 @@ COMPILE EVALUATE_BUFFER ~BG1NPCSoA/dialogues/MISC/ETBNPC2skie.d~ USING ~BG1NPCSo
 END
 
 COMPILE EVALUATE_BUFFER ~BG1NPCSoA/scripts/7xskie.BAF~
+
+ACTION_IF (GAME_IS ~eet~) BEGIN
+EXTEND_TOP ~7xskie.bcs~ ~BG1NPCSoA/scripts/SoDExp.baf~
+END
+
 EXTEND_TOP ~Ar0500.bcs~ ~BG1NPCSoA/scripts/AR0500_Skie.baf~
 
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~override/bimoen2.dlg~ THEN BEGIN
@@ -4395,6 +4519,11 @@ COMPILE EVALUATE_BUFFER ~BG1NPCSoA/crossbanter/Water Gardens comments/GARDENS-el
 END
 
 COMPILE ~BG1NPCSoA/scripts/7xELDO.BAF~
+
+ACTION_IF (GAME_IS ~eet~) BEGIN
+EXTEND_TOP ~7xELDO.bcs~ ~BG1NPCSoA/scripts/SoDExp.baf~
+END
+
 EXTEND_TOP ~Ar0800.bcs~ ~BG1NPCSoA/scripts/AR0800_Eldoth.baf~
 
 APPEND ~pdialog.2da~
@@ -4522,6 +4651,11 @@ COMPILE EVALUATE_BUFFER ~BG1NPCSoA/dialogues/MISC/ETBNPC2bran.d~ USING ~BG1NPCSo
 END
 
 COMPILE ~BG1NPCSoA/scripts/7xbran.BAF~
+
+ACTION_IF (GAME_IS ~eet~) BEGIN
+EXTEND_TOP ~7xbran.bcs~ ~BG1NPCSoA/scripts/SoDExp.baf~
+END
+
 EXTEND_TOP ~AR0701.bcs~ ~BG1NPCSoA/scripts/TRANZIG/AR0701.baf~
 EXTEND_TOP ~Ar0900.bcs~ ~BG1NPCSoA/scripts/AR0900_Branwen.baf~
 
@@ -4574,6 +4708,7 @@ END ELSE BEGIN
 COPY ~BG1NPCSoA/portraits/Branwen/vanilla-portraits~ ~override~
 END
 
+SILENT
 
 ////////////
 BEGIN @1703 /*DESIGNATED 15*/ INSTALL_BY_DEFAULT
@@ -4584,6 +4719,7 @@ REQUIRE_PREDICATE (FILE_EXISTS_IN_GAME ~FirstComp.mrk~) ~To install this compone
 
 APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~
 UNLESS ~CD_STATE_NOTVALID~
+
 COMPILE ~BG1NPCSoA/dialogues/TOBBanter1.d~ // This file creates the ToB dialog files for the first component (compiled separately and earlier, otherwise dialogs with IF_FILE_EXISTS checking for the presence of these files will not work when compiling the dialogs themselves)
 COMPILE ~BG1NPCSoA/dialogues/TOBBanter2.d~ USING ~BG1NPCSoA/tra/%LANGUAGE%/TOBBanter1.tra~ // The dialogs of the first component are created in this file.
 
@@ -4615,8 +4751,17 @@ END
 
 // Shar-Teel's Epilogue
 EXTEND_TOP ~AR6200.bcs~ ~BG1NPCSoA/epilogues/Shar-Teel/AR6200.baf~
-COPY ~BG1NPCSoA/epilogues/Shar-Teel/SharEp.2da~ ~override/SharEp.2da~
+COPY ~BG1NPCSoA/epilogues/Shar-Teel/SharEp1.2da~ ~override/SharEp1.2da~
 REPLACE ~99999~ @8009
+
+COPY ~BG1NPCSoA/epilogues/Shar-Teel/SharEp2.2da~ ~override/SharEp2.2da~
+REPLACE ~99999~ @8020
+
+COPY ~BG1NPCSoA/epilogues/Shar-Teel/SharEp3.2da~ ~override/SharEp3.2da~
+REPLACE ~99999~ @8021
+
+COPY ~BG1NPCSoA/epilogues/Shar-Teel/SharEp4.2da~ ~override/SharEp4.2da~
+REPLACE ~99999~ @8022
 
 // Garrick's Epilogue
 
@@ -4670,14 +4815,6 @@ END
 EXTEND_BOTTOM ~AR4000.bcs~ ~Shar_fix.baf~
 
 //// Create and install a missing ToB-script file to avoid installation errors and not to use a script from the BG1&SOA
-ACTION_IF FILE_EXISTS ~%MOD_FOLDER%/scripts/7Xshar.baf~ BEGIN
-	COMPILE ~%MOD_FOLDER%/scripts/7Xshar.baf~
-END ELSE BEGIN
-<<<<<<<<7Xshar.baf
->>>>>>>>
-	COMPILE ~7Xshar.baf~
-END
-
 ACTION_IF FILE_EXISTS ~%MOD_FOLDER%/scripts/7Xsha25.baf~ BEGIN
 	COMPILE ~%MOD_FOLDER%/scripts/7Xsha25.baf~ END
 ELSE BEGIN
@@ -4685,8 +4822,6 @@ ELSE BEGIN
 >>>>>>>>
 COMPILE ~7Xsha25.baf~
 END
-
-SILENT
 
 LAF ~EET_NPC_TRANSITION~
 INT_VAR
@@ -4725,14 +4860,6 @@ END
 EXTEND_BOTTOM ~AR4000.bcs~ ~Yeslick_fix.baf~
 
 //// Create and install a missing ToB-script file to avoid installation errors and not to use a script from the BG1&SOA
-ACTION_IF FILE_EXISTS ~%MOD_FOLDER%/scripts/7XYESL.baf~ BEGIN
-	COMPILE ~%MOD_FOLDER%/scripts/7XYESL.baf~
-END ELSE BEGIN
-<<<<<<<<7XYESL.baf
->>>>>>>>
-	COMPILE ~7XYESL.baf~
-END
-
 ACTION_IF FILE_EXISTS ~%MOD_FOLDER%/scripts/7XYES25.baf~ BEGIN
 	COMPILE ~%MOD_FOLDER%/scripts/7XYES25.baf~ END
 ELSE BEGIN
@@ -4878,14 +5005,6 @@ END
 EXTEND_BOTTOM ~AR4000.bcs~ ~Branwen_fix.baf~
 
 //// Create and install a missing ToB-script file to avoid installation errors and not to use a script from the BG1&SOA
-ACTION_IF FILE_EXISTS ~%MOD_FOLDER%/scripts/7xbran.baf~ BEGIN
-	COMPILE ~%MOD_FOLDER%/scripts/7xbran.baf~
-END ELSE BEGIN
-<<<<<<<<7xbran.baf
->>>>>>>>
-	COMPILE ~7xbran.baf~
-END
-
 ACTION_IF FILE_EXISTS ~%MOD_FOLDER%/scripts/7XBRA25.baf~ BEGIN
 	COMPILE ~%MOD_FOLDER%/scripts/7XBRA25.baf~ END
 ELSE BEGIN
@@ -4932,14 +5051,6 @@ END
 EXTEND_BOTTOM ~AR4000.bcs~ ~Skie_fix.baf~
 
 //// Create and install a missing ToB-script file to avoid installation errors and not to use a script from the BG1&SOA
-ACTION_IF FILE_EXISTS ~%MOD_FOLDER%/scripts/7xskie.baf~ BEGIN
-	COMPILE ~%MOD_FOLDER%/scripts/7xskie.baf~
-END ELSE BEGIN
-<<<<<<<<7xskie.baf
->>>>>>>>
-	COMPILE ~7xskie.baf~
-END
-
 ACTION_IF FILE_EXISTS ~%MOD_FOLDER%/scripts/7XSki25.baf~ BEGIN
 	COMPILE ~%MOD_FOLDER%/scripts/7XSki25.baf~ END
 ELSE BEGIN
@@ -4967,8 +5078,6 @@ OUTER_SPRINT ~tob_override~ ~7XSki25~
 OUTER_SPRINT ~tob_var~ ~SkieTOBSummon~
 EXTEND_TOP ~7xskie.bcs~ ~fix_tob_script.baf~ EVALUATE_BUFFER
 END
-
-VERBOSE
 
 COMPILE ~BG1NPCSoA/dialogues/MISC/BG1X38.d~
 EXTEND_TOP ~AR5200.bcs~ ~BG1NPCSoA/scripts/MISC/AR5200.baf~
@@ -5147,6 +5256,7 @@ SAY DESC @491
 EXTEND_TOP ~AR5500.bcs~ ~BG1NPCSoA/scripts/MISC/AR5500.baf~
 EXTEND_TOP ~AR4500.bcs~ ~BG1NPCSoA/scripts/MISC/AR4500.baf~ 
 
+VERBOSE
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -5494,7 +5604,17 @@ END
 
 
 COMPILE ~BG1NPCSoA/scripts/Coran-Safana-Chronicles/7xcoran.baf~
+
+ACTION_IF (GAME_IS ~eet~) BEGIN
+EXTEND_TOP ~7xcoran.bcs~ ~BG1NPCSoA/scripts/SoDExp.baf~
+END
+
 COMPILE ~BG1NPCSoA/scripts/Coran-Safana-Chronicles/7xsafa.baf~ EVALUATE_BUFFER
+
+ACTION_IF (GAME_IS ~eet~) BEGIN
+EXTEND_TOP ~7xsafa.bcs~ ~BG1NPCSoA/scripts/SoDExp.baf~
+END
+
 COMPILE ~BG1NPCSoA/scripts/Coran-Safana-Chronicles/7XSafaD.baf~
 COMPILE ~BG1NPCSoA/scripts/Coran-Safana-Chronicles/7Xlanf.baf~
 COMPILE ~BG1NPCSoA/scripts/Coran-Safana-Chronicles/7XCRE68.baf~
@@ -5759,11 +5879,20 @@ END
 LAF HANDLE_AUDIO STR_VAR audio_path = "BG1NPCSoA/sounds/Alora" oggdec_path = "BG1NPCSoA/sounds" END
 
 COMPILE ~BG1NPCSoA/scripts/7xAlor.baf~
+
+ACTION_IF (GAME_IS ~eet~) BEGIN
+EXTEND_TOP ~7xAlor.bcs~ ~BG1NPCSoA/scripts/SoDExp.baf~
+END
+
+
 COPY ~BG1NPCSoA/BAM~ ~override~
 
 
 EXTEND_TOP ~AR0706.bcs~ ~BG1NPCSoA/scripts/AR0706.baf~
 
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~7XAloraJ.dlg~ BEGIN
+COMPILE ~BG1NPCSoA/dialogues/7XAlora-Begin.d~
+END
 
 COMPILE ~BG1NPCSoA/dialogues/7XALORAB.d~
 COMPILE ~BG1NPCSoA/dialogues/7XALORA.d~ 
@@ -8087,6 +8216,11 @@ SAY NAME2 @1435
 
 COMPILE ~BG1NPCSoA/dialogues/MISC/BG1X42.d~
 COMPILE ~BG1NPCSoA/scripts/7XKAGA.BAF~
+
+ACTION_IF (GAME_IS ~eet~) BEGIN
+EXTEND_TOP ~7XKAGA.bcs~ ~BG1NPCSoA/scripts/SoDExp.baf~
+END
+
 COPY ~BG1NPCSoA/dialogues/KAGAIN'S-KORNER/AELOTUS.DLG~ ~override/AELOTUS.DLG~
 COMPILE ~BG1NPCSoA/dialogues/7Xkaga.d~ 
 
@@ -8137,14 +8271,6 @@ END
 
 
 //// Create and install a missing ToB-script file to avoid installation errors and not to use a script from the BG1&SOA
-ACTION_IF FILE_EXISTS ~%MOD_FOLDER%/scripts/7Xkaga.baf~ BEGIN
-	COMPILE ~%MOD_FOLDER%/scripts/7Xkaga.baf~
-END ELSE BEGIN
-<<<<<<<<7Xkaga.baf
->>>>>>>>
-	COMPILE ~7Xkaga.baf~
-END
-
 ACTION_IF FILE_EXISTS ~%MOD_FOLDER%/scripts/7Xkag25.baf~ BEGIN
 	COMPILE ~%MOD_FOLDER%/scripts/7Xkag25.baf~ END
 ELSE BEGIN
@@ -8379,6 +8505,12 @@ SAY NAME2 @1435
 
 COMPILE ~BG1NPCSoA/dialogues/MISC/BG1X42.d~
 COMPILE ~BG1NPCSoA/scripts/7XKAGA.BAF~
+
+ACTION_IF (GAME_IS ~eet~) BEGIN
+EXTEND_TOP ~7XKAGA.bcs~ ~BG1NPCSoA/scripts/SoDExp.baf~
+END
+
+
 COPY ~BG1NPCSoA/dialogues/KAGAIN'S-KORNER/AELOTUS.DLG~ ~override/AELOTUS.DLG~
 COMPILE ~BG1NPCSoA/dialogues/7Xkaga.d~ 
 
@@ -8453,14 +8585,6 @@ END
 EXTEND_BOTTOM ~AR4000.bcs~ ~Kagain_fix.baf~
 
 //// Create and install a missing ToB-script file to avoid installation errors and not to use a script from the BG1&SOA
-ACTION_IF FILE_EXISTS ~%MOD_FOLDER%/scripts/7Xkaga.baf~ BEGIN
-	COMPILE ~%MOD_FOLDER%/scripts/7Xkaga.baf~
-END ELSE BEGIN
-<<<<<<<<7Xkaga.baf
->>>>>>>>
-	COMPILE ~7Xkaga.baf~
-END
-
 ACTION_IF FILE_EXISTS ~%MOD_FOLDER%/scripts/7Xkag25.baf~ BEGIN
 	COMPILE ~%MOD_FOLDER%/scripts/7Xkag25.baf~ END
 ELSE BEGIN
@@ -8709,6 +8833,10 @@ END
 
 COMPILE ~BG1NPCSoA/scripts/Faldorn/7XFALD.baf~
 
+ACTION_IF (GAME_IS ~eet~) BEGIN
+EXTEND_TOP ~7XFALD.bcs~ ~BG1NPCSoA/scripts/SoDExp.baf~
+END
+
 COMPILE ~BG1NPCSoA/dialogues/FALDORN/7XFALD25.d~
 EXTEND_TOP ~AR4500.bcs~ ~BG1NPCSoA/scripts/MISC/AR4500Faldorn.baf~
 EXTEND_TOP ~AR5203.bcs~ ~BG1NPCSoA/scripts/MISC/AR5203Faldorn.baf~
@@ -8878,6 +9006,10 @@ END
 COMPILE ~BG1NPCSoA/dialogues/MONTARON-QUEST/MQFIRE1.d~
 EXTEND_TOP ~AR0701.bcs~ ~BG1NPCSoA/scripts/MONTARON-QUEST/AR0701.baf~
 COMPILE ~BG1NPCSoA/scripts/7XMONT.baf~
+
+ACTION_IF (GAME_IS ~eet~) BEGIN
+EXTEND_TOP ~7XMONT.bcs~ ~BG1NPCSoA/scripts/SoDExp.baf~
+END
 
 EXTEND_TOP ~AR0407.bcs~ ~BG1NPCSoA/scripts/AR0407.baf~
 
@@ -9107,7 +9239,7 @@ END
 
 ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
    // If a EE-version is installed, change the journal entries to adapt it 
-  ADD_JOURNAL @1801 @1802 USING ~%MOD_FOLDER%/tra/%LANGUAGE%/setup.tra~ 
+  ADD_JOURNAL @1801 @1802 @1819 USING ~%MOD_FOLDER%/tra/%LANGUAGE%/setup.tra~ 
 END 
 
 LAF HANDLE_AUDIO STR_VAR audio_path = "BG1NPCSoA/sounds/Xzar-Montaron" oggdec_path = "BG1NPCSoA/sounds" END
@@ -9210,6 +9342,10 @@ COMPILE ~BG1NPCSoA/dialogues/XZAR-QUEST/XQtroll.d~
 
 COMPILE ~BG1NPCSoA/scripts/7XXzar.baf~
 
+ACTION_IF (GAME_IS ~eet~) BEGIN
+EXTEND_TOP ~7XXzar.bcs~ ~BG1NPCSoA/scripts/SoDExp.baf~
+END
+
 APPEND ~pdialog.2da~
 ~7XXZAR	7XXZARP	7XXZARJ	7XXZARD 7XXZA25P 7XXZA25J 7XXZA25D 7XXZA25~
 UNLESS ~7XXZAR~
@@ -9300,14 +9436,6 @@ END
 EXTEND_BOTTOM ~AR4000.bcs~ ~XZAR_fix.baf~
 
 //// Create and install a missing ToB-script file to avoid installation errors and not to use a script from the BG1&SOA
-ACTION_IF FILE_EXISTS ~%MOD_FOLDER%/scripts/7XXZAR.baf~ BEGIN
-	COMPILE ~%MOD_FOLDER%/scripts/7XXZAR.baf~
-END ELSE BEGIN
-<<<<<<<<7XXZAR.baf
->>>>>>>>
-	COMPILE ~7XXZAR.baf~
-END
-
 ACTION_IF FILE_EXISTS ~%MOD_FOLDER%/scripts/7XXZA25.baf~ BEGIN
 	COMPILE ~%MOD_FOLDER%/scripts/7XXZA25.baf~ END
 ELSE BEGIN
@@ -9484,7 +9612,7 @@ COPY ~BG1NPCSoA/portraits/Tiax/EE-portraits/TIAXS.BMP~ ~override/TIAXS.BMP~
 COPY ~BG1NPCSoA/portraits/Tiax/EE-portraits/TIAXM.BMP~ ~override/TIAXM.BMP~
 END ELSE BEGIN
 COPY ~BG1NPCSoA/portraits/Tiax/Vanilla-portraits/TIAXL.BMP~ ~override/TIAXL.BMP~
-COPY ~BG1NPCSoA/portraits/Tiax/Vanilla-portraits/TIAXM.BMP~ ~override/TIAXS.BMP~
+COPY ~BG1NPCSoA/portraits/Tiax/Vanilla-portraits/TIAXM.BMP~ ~override/TIAXM.BMP~
 COPY ~BG1NPCSoA/portraits/Tiax/Vanilla-portraits/TIAXS.BMP~ ~override/TIAXS.BMP~
 END
 
@@ -9829,6 +9957,16 @@ END
 
 COMPILE ~BG1NPCSoA/scripts/7xquay.BAF~
 COMPILE ~BG1NPCSoA/scripts/7xtiax.BAF~
+
+ACTION_IF (GAME_IS ~eet~) BEGIN
+EXTEND_TOP ~7xquay.bcs~ ~BG1NPCSoA/scripts/SoDExp.baf~
+END
+
+ACTION_IF (GAME_IS ~eet~) BEGIN
+EXTEND_TOP ~7xtiax.bcs~ ~BG1NPCSoA/scripts/SoDExp.baf~
+END
+
+
 COMPILE ~BG1NPCSoA/scripts/TIAX-QUAYLE/AR01TZ.BAF~ 
 COMPILE ~BG1NPCSoA/scripts/TIAX-QUAYLE/AR01TQ.BAF~ 
 COMPILE ~BG1NPCSoA/scripts/TIAX-QUAYLE/7xtradmt.BAF~ 
@@ -10240,6 +10378,11 @@ EXTEND_TOP ~AR4000.bcs~ ~BG1NPCSoA/scripts/Ajantis/AR4000Ajan.baf~
 EXTEND_TOP ~AR4500.bcs~ ~BG1NPCSoA/scripts/Ajantis/AR4500Ajan.baf~
 EXTEND_TOP ~Imoen2.bcs~ ~BG1NPCSoA/scripts/Ajantis/Imoen2.baf~ 
 COMPILE ~BG1NPCSoA/scripts/Ajantis/7XAjan.baf~ EVALUATE_BUFFER
+
+ACTION_IF (GAME_IS ~eet~) BEGIN
+EXTEND_TOP ~7XAjan.bcs~ ~BG1NPCSoA/scripts/SoDExp.baf~
+END
+
 COMPILE ~BG1NPCSoA/scripts/Ajantis/7XAjan25.baf~ EVALUATE_BUFFER
 
 COPY ~BG1NPCSoA/BAM/BG1NPC1.bam~ ~override/BG1NPC1.bam~

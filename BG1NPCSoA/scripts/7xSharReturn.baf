@@ -1,0 +1,35 @@
+// Shar-Teel returned
+IF
+	RealGlobalTimerExpired("SharTeelReturns","GLOBAL")
+    Global("7xSharTeelLeave","GLOBAL",1)	
+	AreaType(OUTDOOR)
+	CombatCounter(0)
+THEN
+       RESPONSE #100
+	   ClearAllActions()
+	StartCutSceneMode()
+	CutSceneId(Player1) 	   
+	MoveGlobalObjectOffScreen("7XSHAR",Player1)
+	SetGlobal("7xSharTeelLeave","GLOBAL",2)
+	SmallWait(5)
+	EndCutSceneMode()
+	PlaySong(0)
+	ActionOverride("7XSHAR",StartDialogNoSet(Player1))
+END
+
+// Shar-Teel again returned
+IF
+	Global("SharteelRomanceTalk","GLOBAL",14)
+	GlobalTimerExpired("SharTeelReturnsSea","GLOBAL")
+    Global("7xSharTeelLeaveSea","GLOBAL",1)	
+	AreaType(OUTDOOR)
+	CombatCounter(0)
+	!Exists("7XSHAR")
+THEN
+       RESPONSE #100
+	MoveGlobalObjectOffScreen("7XSHAR",Player1)
+	SetGlobal("7xSharTeelLeaveSea","GLOBAL",2)
+	PlaySong(0)
+	ActionOverride("7XSHAR",StartDialogNoSet(Player1))
+END
+

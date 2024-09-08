@@ -1,92 +1,3 @@
-IF
-Global("BD_JOINXP","LOCALS",0)
-InParty(Myself)
-XPGT(Player1,1249999)
-XPLT(Myself,1250000)
-THEN
-RESPONSE #100
-SetInterrupt(FALSE)
-SetGlobal("BD_JOINXP","LOCALS",1)
-ChangeStat(Myself,XP,1250000,SET)
-SetInterrupt(TRUE)
-END
-
-IF
-Global("BD_JOINXP","LOCALS",0)
-InParty(Myself)
-XPGT(Player1,999999)
-XPLT(Myself,1000000)
-THEN
-RESPONSE #100
-SetInterrupt(FALSE)
-SetGlobal("BD_JOINXP","LOCALS",1)
-ChangeStat(Myself,XP,1000000,SET)
-SetInterrupt(TRUE)
-END
-
-IF
-Global("BD_JOINXP","LOCALS",0)
-InParty(Myself)
-XPGT(Player1,749999)
-XPLT(Myself,750000)
-THEN
-RESPONSE #100
-SetInterrupt(FALSE)
-SetGlobal("BD_JOINXP","LOCALS",1)
-ChangeStat(Myself,XP,750000,SET)
-SetInterrupt(TRUE)
-END
-
-IF
-Global("BD_JOINXP","LOCALS",0)
-InParty(Myself)
-XPGT(Player1,499999)
-XPLT(Myself,500000)
-THEN
-RESPONSE #100
-SetInterrupt(FALSE)
-SetGlobal("BD_JOINXP","LOCALS",1)
-ChangeStat(Myself,XP,500000,SET)
-SetInterrupt(TRUE)
-END
-
-IF
-Global("BD_JOINXP","LOCALS",0)
-InParty(Myself)
-XPGT(Player1,249999)
-XPLT(Myself,250000)
-THEN
-RESPONSE #100
-SetInterrupt(FALSE)
-SetGlobal("BD_JOINXP","LOCALS",1)
-ChangeStat(Myself,XP,250000,SET)
-SetInterrupt(TRUE)
-END
-
-IF
-Global("BD_JOINXP","LOCALS",0)
-InParty(Myself)
-XPGT(Player1,124999)
-XPLT(Myself,125000)
-THEN
-RESPONSE #100
-SetInterrupt(FALSE)
-SetGlobal("BD_JOINXP","LOCALS",1)
-ChangeStat(Myself,XP,125000,SET)
-SetInterrupt(TRUE)
-END
-
-IF
-Global("BD_JOINXP","LOCALS",0)
-InParty(Myself)
-XPLT(Player1,89001)
-THEN
-RESPONSE #100
-SetInterrupt(FALSE)
-SetGlobal("BD_JOINXP","LOCALS",1)
-SetInterrupt(TRUE)
-END
-
 IF 
 
 ReputationLT(Player1,3)
@@ -378,7 +289,7 @@ RealGlobalTimerExpired("KorganSharTavernTimer","GLOBAL")
 THEN
   RESPONSE #100
 SetGlobal("KorganSharTavern","GLOBAL",2)
-    ActionOverride("7XSHAR",Interact("Korgan"))
+Interact("Korgan")
 END
 
 IF
@@ -392,9 +303,11 @@ InParty("Viconia")!StateCheck("Viconia",CD_STATE_NOTVALID)
 THEN
   RESPONSE #100
   SetGlobal("Sharar2100","GLOBAL",1)
-   ActionOverride("7XSHAR",Interact("Viconia"))
+  Interact("Viconia")
 END
 
+
+// Shar-Teel - PC romance
 IF
 Global("SharteelRomanceActive","GLOBAL",1)
 Global("SharSafanaWomanSecrets","GLOBAL",0) 
@@ -416,12 +329,231 @@ RealSetGlobalTimer("SharSafanaWomanTimer","GLOBAL",8)
 END
 
 IF
+See("7XSAFA")
 Global("SharSafanaWomanSecrets","GLOBAL",1) 
 RealGlobalTimerExpired("SharSafanaWomanTimer","GLOBAL") 
 InParty("7XSAFA") !StateCheck("7XSAFA",CD_STATE_NOTVALID)
 InParty("7XSHAR")!StateCheck("7XSHAR",CD_STATE_NOTVALID)
+CombatCounter(0)
 THEN
   RESPONSE #100
 SetGlobal("SharSafanaWomanSecrets","GLOBAL",2) 
-ActionOverride("7XSHAR",Interact("7XSAFA"))
+ActionOverride("7XSAFA",Interact([PC]))
+END
+
+// Romance banter 7
+IF
+InParty("7XSHAR") !StateCheck("7XSHAR",CD_STATE_NOTVALID)
+Global("SharteelRomanceTalkNight","GLOBAL",1)
+CombatCounter(0)
+See([PC])
+THEN
+	RESPONSE #100
+StartMovie("niteday")	
+SetGlobal("SharteelRomanceTalkNight","GLOBAL",2)
+PlaySong(0)
+Interact([PC])
+END
+
+IF
+InParty("7XSHAR") !StateCheck("7XSHAR",CD_STATE_NOTVALID)
+Global("SharteelRomanceTalkNight","GLOBAL",4)
+CombatCounter(0)
+See([PC])
+THEN
+	RESPONSE #100
+StartMovie("niteday")	
+SetGlobal("SharteelRomanceTalkNight","GLOBAL",5)
+PlaySong(0)
+Interact([PC])
+END
+
+// If PC is injured
+IF
+Global("SharteelRomanceActive","GLOBAL",2)
+HPPercentLT(Player1,40)
+InParty("7XSHAR") !StateCheck("7XSHAR",CD_STATE_NOTVALID)
+Global("7XSHARHealPCtalk","GLOBAL",0)
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+SetGlobal("7XSHARHealPCtalk","GLOBAL",1)
+Interact([PC])
+END
+
+// Love Points <13
+IF
+Global("SharteelRomanceActive","GLOBAL",2)
+GlobalLT("SharteelRomRep","GLOBAL",13)
+InParty("7XSHAR") !StateCheck("7XSHAR",CD_STATE_NOTVALID)
+Global("7XSHARLovePointsTalk","GLOBAL",0)
+CombatCounter(0)
+THEN
+  RESPONSE #100
+SetGlobal("7XSHARLovePointsTalk","GLOBAL",1)
+Interact([PC])
+END
+
+
+
+// Liora encounter
+IF
+GlobalTimerExpired("LioraEncounter","GLOBAL")
+AreaType(OUTDOOR)
+InParty("7XSHAR")!StateCheck("7XSHAR",CD_STATE_NOTVALID)
+Global("SharteelRomanceActive","GLOBAL",2)
+Global("SharteelRomanceTalk","GLOBAL",12)
+Global("SharteelLioraEncounter","GLOBAL",0)
+Global("SharteelLioraExists","LOCALS",0)
+CombatCounter(0)	
+	
+THEN
+       RESPONSE #100
+	CreateCreatureObject("7xLiora","7XSHAR",0,0,0) 
+	SetGlobal("SharteelLioraExists","LOCALS",1)
+	ActionOverride("7xLiora",StartDialogNoSet([PC])
+END
+
+IF
+Global("SharteelLioraEncounter","GLOBAL",1)
+	
+THEN
+       RESPONSE #100
+	SetGlobal("SharteelLioraEncounter","GLOBAL",2)
+	StartDialogNoSet([PC])
+END
+
+// ToB - Saradush 1
+IF
+Global("SharSaradushTalk","GLOBAL",0)
+Global("MelissanJob","GLOBAL",1) 
+AreaCheck("AR5000") 
+InParty("7XSHAR") !StateCheck("7XSHAR",CD_STATE_NOTVALID)
+CombatCounter(0)
+THEN
+  RESPONSE #100
+SetGlobal("SharSaradushTalk","GLOBAL",1)
+ActionOverride("7XSHAR",StartDialogueNoSet([PC]))
+END
+
+
+// ToB - Saradush 2 (romance)
+IF
+Global("SharteelRomanceActive","GLOBAL",2) 
+Global("7xSharTeelChaoticNeutral","GLOBAL",2) 
+Global("MelissanJob","GLOBAL",1) 
+AreaCheck("AR5000") 
+Global("7xSharTeelMarried","GLOBAL",0)
+InParty("7XSHAR") !StateCheck("7XSHAR",CD_STATE_NOTVALID)
+CombatCounter(0)
+THEN
+  RESPONSE #100
+SetGlobal("7xSharTeelMarried","GLOBAL",1)
+RealSetGlobalTimer("7xSharTeelSaradushTimer","GLOBAL",15)
+END
+
+IF
+RealGlobalTimerExpired("7xSharTeelSaradushTimer","GLOBAL") 
+Global("SharteelRomanceActive","GLOBAL",2) 
+AreaCheck("AR5000") 
+Global("7xSharTeelMarried","GLOBAL",1)
+InParty("7XSHAR") !StateCheck("7XSHAR",CD_STATE_NOTVALID)
+CombatCounter(0)
+THEN
+  RESPONSE #100
+SetGlobal("7xSharTeelMarried","GLOBAL",2)
+PlaySong(0)
+ActionOverride("7XSHAR",StartDialogueNoSet([PC]))
+END
+
+
+
+// Phaere Talk (SoA)
+
+IF
+	InParty(Myself)
+	See(Player1)
+	Global("SharTeelCheckMad2","GLOBAL",1)
+	Global("PhaereInnuendo","GLOBAL",2)
+	!Range("Phaere",6)  // Ôýéð
+	Global("SharTeelMad2","LOCALS",0)
+	OR(2)
+		Global("SharTeelRomanceActive","GLOBAL",1)
+		Global("SharTeelRomanceActive","GLOBAL",2)
+	CombatCounter(0)
+THEN
+	RESPONSE #100
+		StartDialogueNoSet([PC])
+END
+
+IF
+	InParty(Myself)
+	See(Player1)
+	Global("SharTeelCheckMad2","GLOBAL",1)
+	Global("PhaereInnuendo","GLOBAL",3)
+	!Range("Phaere",6)  // Ôýéð
+	Global("SharTeelMad3","LOCALS",0)
+	OR(2)
+		Global("SharTeelRomanceActive","GLOBAL",1)
+		Global("SharTeelRomanceActive","GLOBAL",2)
+	CombatCounter(0)
+THEN
+	RESPONSE #100
+		StartDialogueNoSet([PC])
+END
+
+// If Shar-Teel is injured (before romance talk)
+IF
+Global("SharteelRomanceActive","GLOBAL",0)
+HPPercentLT(Myself,50)
+InParty("7XSHAR") !StateCheck("7XSHAR",CD_STATE_NOTVALID)
+Global("SharteelBeforeRomanceTalk","GLOBAL",0)
+Gender(Player1,MALE)
+CheckStatGT(Player1,10,CHR)
+CheckStatGT(Player1,10,STR)
+!Race(Player1,HALFLING)
+!Race(Player1,GNOME)
+CombatCounter(0)
+THEN
+  RESPONSE #100
+SetGlobal("SharteelBeforeRomanceTalk","GLOBAL",1)
+PlaySong(0)
+Interact([PC])
+END
+
+
+// Dialogue before the battle with Irenicus (SoA)
+IF
+AreaCheck("AR2806")
+Global("SharteelRomanceActive","GLOBAL",2)
+InParty("7XSHAR") !StateCheck("7XSHAR",CD_STATE_NOTVALID)
+Global("SharTeelAR2806Talk","AR2806",0)
+CombatCounter(0)
+THEN
+  RESPONSE #100
+  SetGlobal("SharTeelAR2806Talk","AR2806",1)
+  RealSetGlobalTimer("SharTeelAR2806TalkTimer","AR2806",5) 
+END
+
+IF
+AreaCheck("AR2806")
+RealGlobalTimerExpired("SharTeelAR2806TalkTimer","AR2806") 
+InParty("7XSHAR") !StateCheck("7XSHAR",CD_STATE_NOTVALID)
+Global("SharTeelAR2806Talk","AR2806",1)
+CombatCounter(0)
+THEN
+  RESPONSE #100
+  StartDialogNoSet(Player1)
+END
+
+// Warning from Shar-Teel
+IF
+Global("SharteelRomanceActive","GLOBAL",2)
+InParty("7XSHAR") !StateCheck("7XSHAR",CD_STATE_NOTVALID)
+Global("SharteelRomanceWarning","GLOBAL",0)
+CombatCounter(0)
+THEN
+  RESPONSE #100
+  SetGlobal("SharteelRomanceWarning","GLOBAL",1)
+  StartDialogNoSet(Player1)
 END

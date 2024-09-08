@@ -131,9 +131,6 @@ END
 
 
 
-BEGIN ~7XAloraJ~
-
-
 I_C_T RIBALD 0 Alora-RIBALD
 == 7XAloraJ IF ~!Dead("7XAlora") InParty("7XAlora")!StateCheck("7XAlora",CD_STATE_NOTVALID)~ THEN @45
 == RIBALD IF ~!Dead("7XAlora") InParty("7XAlora")!StateCheck("7XAlora",CD_STATE_NOTVALID)~ THEN @46
@@ -372,7 +369,6 @@ END
 ++ @107 EXTERN 7XAloraJ Alora_TreeOfLife2
 ++ @108 EXTERN 7XAloraJ Alora_TreeOfLife2
 ++ @109 EXTERN 7XAloraJ Alora_TreeOfLife2
-
 
 APPEND 7XAloraJ
 IF ~~ THEN BEGIN Alora_TreeOfLife2
