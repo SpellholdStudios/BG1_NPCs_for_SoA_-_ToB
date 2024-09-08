@@ -1,0 +1,12 @@
+IF
+Global("WaterGardensHideinMap","AR0602",0)
+
+THEN
+	RESPONSE #100
+		HideAreaOnMap("ARBGX2") 
+		SetGlobal("WaterGardensHideinMap","AR0602",1)
+END
+
+
+
+
