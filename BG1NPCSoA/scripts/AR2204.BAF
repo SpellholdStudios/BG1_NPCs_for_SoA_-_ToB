@@ -1,0 +1,15 @@
+IF
+	Global("CheckMad","AR2204",1)  // House in Ust Natha
+	OR(2)
+		InParty("7XSHAR")  
+		InMyArea(Player1)
+	!Dead("7XSHAR")  
+	OR(2)
+		Global("SharTeelRomanceActive","Global",1)
+		Global("SharTeelRomanceActive","Global",2)
+THEN
+	RESPONSE #100
+		SetGlobal("SharTeelCheckMad2","GLOBAL",1)
+		SetGlobal("CheckMad","AR2204",2)  // House in Ust Natha
+		Continue()
+END
