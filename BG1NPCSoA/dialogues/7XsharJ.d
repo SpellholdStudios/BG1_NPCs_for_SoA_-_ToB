@@ -1,6 +1,6 @@
 APPEND ~7XsharJ~
 
-IF ~IsGabber(Player1)Global("SHARPC","GLOBAL",0)RandomNum(1,5)
+IF ~Global("SHARPC","GLOBAL",0)RandomNum(1,5)
 CombatCounter(0)~ THEN BEGIN clicky-clicky1
 SAY @0
 =
@@ -8,27 +8,27 @@ SAY @0
  IF ~~ THEN EXIT
 END
 
-IF ~IsGabber(Player1)Global("SHARPC","GLOBAL",0)RandomNum(2,5)
+IF ~Global("SHARPC","GLOBAL",0)RandomNum(2,5)
 CombatCounter(0)~ THEN BEGIN clicky-clicky2
 SAY @2
  IF ~~ THEN EXIT
 END
 
-IF ~IsGabber(Player1)Global("SHARPC","GLOBAL",0)RandomNum(3,5)
+IF ~Global("SHARPC","GLOBAL",0)RandomNum(3,5)
 CombatCounter(0)~ THEN BEGIN clicky-clicky3
 SAY @3
  IF ~~ THEN EXIT
 END
 
 
-IF ~IsGabber(Player1)Global("SHARPC","GLOBAL",0)RandomNum(4,5)
+IF ~Global("SHARPC","GLOBAL",0)RandomNum(4,5)
 CombatCounter(0)~ THEN BEGIN clicky-clicky4
 SAY @4 
  IF ~~ THEN EXIT
 END
 
-IF ~IsGabber(Player1)Global("SHARPC","GLOBAL",0)RandomNum(5,5)
-CombatCounter(0)~ THEN BEGIN clicky-clicky5
+IF ~Global("SHARPC","GLOBAL",0)RandomNum(5,5)
+CombatCounter(0) !Global("SharteelRomanceActive","GLOBAL",2) !Global("SharteelRomanceActive","GLOBAL",1)~ THEN BEGIN clicky-clicky5
 SAY @5 
  IF ~~ THEN EXIT
 END
@@ -1238,4 +1238,28 @@ END
 INTERJECT_COPY_TRANS UDDROW08 12 7xSharTeelUDDROW08-12
   == 7XsharJ IF ~InParty("7XSHAR") !StateCheck("7XSHAR",CD_STATE_NOTVALID)~ THEN @260
   == UDDROW08 @261
+END
+
+INTERJECT_COPY_TRANS COHRVALE 2 7xSharTeelCOHRVALE2
+  == 7XsharJ IF ~InParty("7XSHAR") !StateCheck("7XSHAR",CD_STATE_NOTVALID)~ THEN @263 DO ~IncrementGlobal("SharteelRomRep","GLOBAL",1)~
+  == COHRVALE @205
+END
+
+INTERJECT_COPY_TRANS PPBODHI4 21 7xSharPPBODHI21
+== 7XsharJ IF ~InParty("7XSHAR")!StateCheck("7XSHAR",CD_STATE_NOTVALID)~ THEN @264
+END
+
+INTERJECT PLAYER1 5 PLAYER1-5-SharT
+== 7XsharJ IF ~InParty("7XSHAR")!StateCheck("7XSHAR",CD_STATE_NOTVALID)~ THEN @265
+END
+++ @266 EXTERN 7XsharJ PLAYER1-5-SharT1
+
+APPEND 7XsharJ
+IF ~~ THEN BEGIN PLAYER1-5-SharT1
+SAY @267
+=@268
+=@269
+COPY_TRANS PLAYER1 5
+END
+
 END

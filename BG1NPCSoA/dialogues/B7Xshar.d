@@ -249,7 +249,7 @@ IF ~~ EXIT
 END
 
 
-IF WEIGHT #-99~Global("SharAR0800","GLOBAL",1)
+IF WEIGHT #-9 ~Global("SharAR0800","GLOBAL",1)
 AreaCheck("ar0800")~ THEN BEGIN Shar-Grave
   SAY @80
 =
@@ -257,7 +257,7 @@ AreaCheck("ar0800")~ THEN BEGIN Shar-Grave
   IF ~~ THEN DO ~SetGlobal("SharAR0800","GLOBAL",2)~ EXIT
 END
 
-IF WEIGHT #-99 ~Global("PCRestingShar","GLOBAL",1)~ THEN BEGIN SharTeelWakeUp
+IF WEIGHT #-10 ~Global("PCRestingShar","GLOBAL",1)~ THEN BEGIN SharTeelWakeUp
 SAY @82 
 ++ @83 DO ~SetGlobal("PCRestingShar","GLOBAL",2)~ + SharTeelWakeUp2
 ++ @84 DO ~SetGlobal("PCRestingShar","GLOBAL",2)~ + SharTeelWakeUp2
@@ -282,7 +282,7 @@ SAY @93
 IF ~~ EXIT
 END
 
-IF  WEIGHT #-99~See(Player1)
+IF  WEIGHT #-9 ~See(Player1)
 Class(Player1,MAGE)
 !StateCheck(Player1,STATE_SLEEPING)
 Global("SharTeelPCMage","GLOBAL",0)~ THEN BEGIN PCMageBanter1
@@ -367,13 +367,13 @@ IF ~~ THEN EXIT
 END
 
 
-IF ~NumInPartyGT("3")Global("SharTeelPCBanter","GLOBAL",0)~ THEN BEGIN Shar-Teel-PC-Banter1
+IF ~NumInPartyGT("3") Global("SharTeelPCBanterGroup","GLOBAL",0)~ THEN BEGIN Shar-Teel-PC-Banter1
 SAY @127
 =
 @128 
-IF~~THEN REPLY @129 DO ~SetGlobal("SharTeelPCBanter","GLOBAL",1)~ GOTO Shar-Teel-PC-Banter2
-IF~~THEN REPLY @130 DO ~SetGlobal("SharTeelPCBanter","GLOBAL",1)~ GOTO Shar-Teel-PC-Banter3
-IF~~THEN REPLY @131 DO ~SetGlobal("SharTeelPCBanter","GLOBAL",1)~ GOTO Shar-Teel-PC-Banter3
+IF~~THEN REPLY @129 DO ~SetGlobal("SharTeelPCBanterGroup","GLOBAL",1)~ GOTO Shar-Teel-PC-Banter2
+IF~~THEN REPLY @130 DO ~SetGlobal("SharTeelPCBanterGroup","GLOBAL",1)~ GOTO Shar-Teel-PC-Banter3
+IF~~THEN REPLY @131 DO ~SetGlobal("SharTeelPCBanterGroup","GLOBAL",1)~ GOTO Shar-Teel-PC-Banter3
 END
 
 IF ~~ THEN BEGIN Shar-Teel-PC-Banter2
@@ -438,11 +438,11 @@ SAY @151
 IF ~~ THEN EXIT
 END
 
-IF ~Global("SharTeelPCBanter","GLOBAL",1)~ THEN BEGIN PC-Shar-Teel-Banter3
+IF ~Global("SharTeelPCBanter","GLOBAL",0)~ THEN BEGIN PC-Shar-Teel-Banter3
 SAY @156
-IF~~THEN REPLY @157 DO ~SetGlobal("SharTeelPCBanter","GLOBAL",2)~ GOTO PC-Shar-Teel-Banter3b
-IF~~THEN REPLY @158 DO ~SetGlobal("SharTeelPCBanter","GLOBAL",2)~ GOTO PC-Shar-Teel-Banter3b
-IF~~THEN REPLY @159 DO ~SetGlobal("SharTeelPCBanter","GLOBAL",2)~ GOTO PC-Shar-Teel-Banter3b
+IF~~THEN REPLY @157 DO ~SetGlobal("SharTeelPCBanter","GLOBAL",1)~ GOTO PC-Shar-Teel-Banter3b
+IF~~THEN REPLY @158 DO ~SetGlobal("SharTeelPCBanter","GLOBAL",1)~ GOTO PC-Shar-Teel-Banter3b
+IF~~THEN REPLY @159 DO ~SetGlobal("SharTeelPCBanter","GLOBAL",1)~ GOTO PC-Shar-Teel-Banter3b
 END
 
 IF ~~ THEN BEGIN PC-Shar-Teel-Banter3b
@@ -478,10 +478,10 @@ SAY @160
 IF ~~ THEN EXIT
 END
 
-IF ~Global("SharTeelPCBanter","GLOBAL",2)~ THEN BEGIN PCSharBanter4
+IF ~Global("SharTeelPCBanter","GLOBAL",1)~ THEN BEGIN PCSharBanter4
 SAY @175
-IF~~THEN REPLY @176 DO ~SetGlobal("SharTeelPCBanter","GLOBAL",3)~ GOTO PCSharBanter4b
-IF~~THEN REPLY @177 DO ~SetGlobal("SharTeelPCBanter","GLOBAL",3)~ GOTO PCSharBanter4c
+IF~~THEN REPLY @176 DO ~SetGlobal("SharTeelPCBanter","GLOBAL",2)~ GOTO PCSharBanter4b
+IF~~THEN REPLY @177 DO ~SetGlobal("SharTeelPCBanter","GLOBAL",2)~ GOTO PCSharBanter4c
 END
 
 IF ~~ THEN BEGIN PCSharBanter4c
@@ -529,7 +529,7 @@ IF ~~ THEN GOTO PC4d
 END
 
 
-IF ~Global("SharTeelPCBanter","GLOBAL",3)~ THEN BEGIN PCSharNEXTbanterX1
+IF ~Global("SharTeelPCBanter","GLOBAL",2)~ THEN BEGIN PCSharNEXTbanterX1
 SAY @195
 IF ~~ THEN REPLY @196 GOTO PCSharNEXTbanterX1_2
 IF ~~ THEN REPLY @197 GOTO PCSharNEXTbanterX1_3
@@ -539,41 +539,41 @@ IF ~~ THEN REPLY @200 GOTO PCSharNEXTbanterX1_6
 END
 
 
-IF ~Global("SharTeelPCBanter","GLOBAL",3)~ THEN BEGIN PCSharNEXTbanterX1_2
+IF ~~ THEN BEGIN PCSharNEXTbanterX1_2
 SAY @201
 =
 @202
-IF ~~ THEN DO~SetGlobal("SharTeelPCBanter","GLOBAL",4)~GOTO PCSharNEXTbanterX1_7
+IF ~~ THEN DO~SetGlobal("SharTeelPCBanter","GLOBAL",3)~GOTO PCSharNEXTbanterX1_7
 END
 
-IF ~Global("SharTeelPCBanter","GLOBAL",3)~ THEN BEGIN PCSharNEXTbanterX1_3
+IF ~~ THEN BEGIN PCSharNEXTbanterX1_3
 SAY @203
 =
 @204
-IF ~~ THEN DO~SetGlobal("SharTeelPCBanter","GLOBAL",4)~GOTO PCSharNEXTbanterX1_7
+IF ~~ THEN DO~SetGlobal("SharTeelPCBanter","GLOBAL",3)~GOTO PCSharNEXTbanterX1_7
 END
 
 
-IF ~Global("SharTeelPCBanter","GLOBAL",3)~ THEN BEGIN PCSharNEXTbanterX1_4
+IF ~~ THEN BEGIN PCSharNEXTbanterX1_4
 SAY @205
 =
 @206
-IF ~~ THEN DO~SetGlobal("SharTeelPCBanter","GLOBAL",4)~GOTO PCSharNEXTbanterX1_7
+IF ~~ THEN DO~SetGlobal("SharTeelPCBanter","GLOBAL",3)~GOTO PCSharNEXTbanterX1_7
 END
 
 
-IF ~Global("SharTeelPCBanter","GLOBAL",3)~ THEN BEGIN PCSharNEXTbanterX1_5
+IF ~~ THEN BEGIN PCSharNEXTbanterX1_5
 SAY @207
 =
 @208
-IF ~~ THEN DO~SetGlobal("SharTeelPCBanter","GLOBAL",4)~GOTO PCSharNEXTbanterX1_7
+IF ~~ THEN DO~SetGlobal("SharTeelPCBanter","GLOBAL",3)~GOTO PCSharNEXTbanterX1_7
 END
 
-IF ~Global("SharTeelPCBanter","GLOBAL",3)~ THEN BEGIN PCSharNEXTbanterX1_6
+IF ~~ THEN BEGIN PCSharNEXTbanterX1_6
 SAY @209
 =
 @210 
-IF ~~ THEN DO~SetGlobal("SharTeelPCBanter","GLOBAL",4)~GOTO PCSharNEXTbanterX1_7
+IF ~~ THEN DO~SetGlobal("SharTeelPCBanter","GLOBAL",3)~GOTO PCSharNEXTbanterX1_7
 END
 
 IF ~~ THEN BEGIN PCSharNEXTbanterX1_7
@@ -596,7 +596,7 @@ END
 
 //////////////////////////////////////////////////////////////////////////////////
 
-CHAIN IF WEIGHT #-99 ~Global("SharAR0903","GLOBAL",1)
+CHAIN IF WEIGHT #-5 ~Global("SharAR0903","GLOBAL",1)
 AreaCheck("AR0903")
 InParty("7XSHAR")!StateCheck("7XSHAR",CD_STATE_NOTVALID)~ THEN ~B7Xshar~ RadiantHeart1
 @220
@@ -608,7 +608,7 @@ DO ~SetGlobal("SharAR0903","GLOBAL",2)~
 EXIT
 
 CHAIN
-IF WEIGHT #-99 ~InParty("Korgan")
+IF WEIGHT #-20 ~InParty("Korgan")
 !StateCheck("Korgan",CD_STATE_NOTVALID)InParty("7XSHAR")
 !StateCheck("7XSHAR",CD_STATE_NOTVALID)
 OR(6)
@@ -618,9 +618,9 @@ AreaCheck("AR0313")
 AreaCheck("AR1105")
 AreaCheck("AR2010")
 AreaCheck("AR1602")
-Global("KorganSharTavern","GLOBAL",1)~ THEN ~BKORGAN~ SharKorganTavern1
+Global("KorganSharTavern","GLOBAL",2)~ THEN ~BKORGAN~ SharKorganTavern1
 @223
-DO ~SetGlobal("KorganSharTavern","GLOBAL",2)~
+DO ~SetGlobal("KorganSharTavern","GLOBAL",3)~
 == B7Xshar @224
 == BKORGAN @225
 =
@@ -632,7 +632,7 @@ DO ~SetGlobal("KorganSharTavern","GLOBAL",2)~
 EXIT
 
 CHAIN
-IF WEIGHT #-99~InParty("Edwin")
+IF ~InParty("Edwin")
 Gender("Edwin",FEMALE)
 InParty("7XSHAR")!StateCheck("7XSHAR",CD_STATE_NOTVALID)
 !StateCheck("Edwin",CD_STATE_NOTVALID)
@@ -657,7 +657,7 @@ EXIT
 
 
 CHAIN
-IF WEIGHT #-99 ~Global("PlayerLooksLikeDrow","GLOBAL",1)
+IF WEIGHT #-9 ~Global("PlayerLooksLikeDrow","GLOBAL",1)
 InParty("Valygar")InParty("7XSHAR")
 !StateCheck("7XSHAR",CD_STATE_NOTVALID)
 !StateCheck("Valygar",CD_STATE_NOTVALID)
@@ -753,7 +753,7 @@ EXIT
 
 
 CHAIN
-IF WEIGHT #-99~InParty("Viconia")InParty("7XSHAR")!StateCheck("Viconia",CD_STATE_NOTVALID)
+IF WEIGHT #-2 ~InParty("Viconia")InParty("7XSHAR")!StateCheck("Viconia",CD_STATE_NOTVALID)
 !StateCheck("7XSHAR",CD_STATE_NOTVALID)AreaCheck("ar2100")
 Global("Sharar2100","GLOBAL",1)~ THEN B7Xshar SHARVICunderdark
 @278
@@ -1893,3 +1893,23 @@ SAY @783
 IF ~~ THEN EXIT
 END
 END
+
+
+CHAIN IF ~Global("SharTeelJaheira","GLOBAL",3) See("7XSHAR")InParty("Jaheira")
+InParty("7XSHAR")!StateCheck("Jaheira",CD_STATE_NOTVALID)
+!StateCheck("7XSHAR",CD_STATE_NOTVALID)
+OR(8)
+Global("SharteelRomanceActive","GLOBAL",3) 
+!Gender(Player1,MALE)
+!CheckStatGT(Player1,10,CHR)
+!CheckStatGT(Player1,10,STR)
+Alignment(Player1,MASK_GOOD)
+Alignment(Player1,LAWFUL_NEUTRAL)
+Race(Player1,HALFLING)
+!ReputationLT(Player1,10)~ THEN ~BJAHEIR~ JaheiraSharTeel4
+@784 DO ~SetGlobal("SharTeelJaheira","GLOBAL",4)~ 
+== B7Xshar @785
+== BJAHEIR @786
+= @787
+== B7Xshar @788
+EXIT

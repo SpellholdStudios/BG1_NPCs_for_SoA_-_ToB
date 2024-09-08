@@ -13,8 +13,7 @@ END
 
 APPEND ~7Xsha25J~
 
-IF ~IsGabber(Player1)
-CombatCounter(0)~ THEN BEGIN PCSharChatsTOB
+IF ~!Global("SharteelRomanceActive","GLOBAL",2) CombatCounter(0)~ THEN BEGIN PCSharChatsTOB
 SAY @793
 ++ @794 + PCSharChatsTOB2
 ++ @795 + PCSharChatsTOB3
@@ -190,7 +189,7 @@ IF ~~ THEN BEGIN Sharkickout_6
 END
 
 
-BEGIN ~B7Xsh25~
+APPEND ~B7Xsh25~
 
 IF WEIGHT #-10 ~AreaCheck("AR5500")
 See(Player1)
@@ -219,17 +218,20 @@ SAY @46
 IF ~~ THEN EXIT
 END
 
+END
+
+APPEND ~7Xsha25J~
 
 IF WEIGHT #-20 ~AreaCheck("AR5000")
 See(Player1)
 !StateCheck(Player1,CD_STATE_NOTVALID)
-Global("SharSaradushTalk","GLOBAL",0)~ THEN BEGIN Sharpc1Saradush1
+Global("SharSaradushTalk","GLOBAL",1)~ THEN BEGIN Sharpc1Saradush1
 SAY @47
 =
 @48
-++ @49 DO ~SetGlobal("SharSaradushTalk","GLOBAL",1)~ + Saradush1
-++ @50 DO ~SetGlobal("SharSaradushTalk","GLOBAL",1)~ + Saradush2
-++ @51 DO ~SetGlobal("SharSaradushTalk","GLOBAL",1)~ + Saradush3
+++ @50 DO ~SetGlobal("SharSaradushTalk","GLOBAL",2)~ + Saradush2
+++ @49 DO ~SetGlobal("SharSaradushTalk","GLOBAL",2)~ + Saradush1
+++ @51 DO ~SetGlobal("SharSaradushTalk","GLOBAL",2)~ + Saradush3
 END
 
 IF ~~ Saradush1
@@ -265,6 +267,9 @@ SAY @61
 IF ~~ THEN EXIT
 END
 
+END
+
+APPEND ~B7Xsh25~
 
 IF ~See(Player1)
 !StateCheck(Player1,CD_STATE_NOTVALID)
@@ -296,6 +301,7 @@ IF ~~ THEN BEGIN SharPCToB3
  IF ~~ THEN EXIT
 END
 
+END
 
 CHAIN IF ~
 CombatCounter(0)
@@ -2736,7 +2742,7 @@ I_C_T IMOEN25J 13 SharIMOEN25J-13
 END
 
 I_C_T FINSOL01 32 SharFINSOL01-32
-== 7Xsha25J IF ~InParty("7Xshar")!StateCheck("7Xshar",CD_STATE_NOTVALID)~ THEN
+== 7Xsha25J IF ~InParty("7Xshar")!StateCheck("7Xshar",CD_STATE_NOTVALID) !Global("SharteelRomanceActive","GLOBAL",2)~ THEN
 @948
 END
 
@@ -3069,7 +3075,7 @@ CHAIN FINMEL01 7xEldothMelissan
 EXTERN FINMEL01 5
 
 INTERJECT_COPY_TRANS3 FINSOL01 27 7xChatFinSol
-== IF_FILE_EXISTS 7Xsha25J IF ~InParty("7Xshar") !StateCheck("7Xshar",CD_STATE_NOTVALID)~ THEN @986
+== IF_FILE_EXISTS 7Xsha25J IF ~InParty("7Xshar") !StateCheck("7Xshar",CD_STATE_NOTVALID) !Global("SharteelRomanceActive","GLOBAL",2)~ THEN @986
 == IF_FILE_EXISTS 7XYE25J IF ~InParty("7XYES") !StateCheck("7XYES",CD_STATE_NOTVALID)~ THEN @608 = @609
 == IF_FILE_EXISTS 7XSki25J IF ~InParty("7XSKI") !StateCheck("7XSKI",CD_STATE_NOTVALID)~ THEN @988
 == IF_FILE_EXISTS 7XBRA25J IF ~InParty("7XBRAN")!StateCheck("7XBRAN",CD_STATE_NOTVALID)~ THEN @989
