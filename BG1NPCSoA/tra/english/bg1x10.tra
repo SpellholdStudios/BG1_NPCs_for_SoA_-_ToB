@@ -101,7 +101,7 @@
 @100  = ~Oh dear!  A smelly dwarf!  I had no idea they were allowing their kind into the city!~
 @101  = ~Hmmm, are you going to be fighting, Rashemite? You certainly seem barbaric enough.~
 @102  = ~Everything that has gone wrong these days is because of those vile elves...they are the plague of the world, I tell you!~
-@103  = ~Did you know that they once ruled the entire length of Faerûn in one magnificent empire, but let it all crumble into ruins  thanks to their inherent laziness?~
+@103  = ~Did you know that they once ruled the entire length of Faerun in one magnificent empire, but let it all crumble into ruins  thanks to their inherent laziness?~
 @104  = ~You are wrong. Elves still excel in everything in which they partake.~
 @105  = ~You have no idea what you are talking about, woman!~
 @106  = ~Have you noticed that I am a half elf?~
@@ -152,7 +152,7 @@
 @151  = ~How do you know who I am?~
 @152  = ~Silly little thing, this pipe. Rather useless magical trinket isn't it? However, I knew that foolish wizard could not be at peace without it.~
 @153  = ~Knowing that Elminster would not want to trouble himself with such a minor nuisance, he sent you in his stead, just as I had planned.~
-@154  = ~Oh, but I did die. My body was consumed in the flames of a great ball of fire cast by the mighty Elminster himself. Yet I have returned to Faerûn to retake what is rightfully mine.~
+@154  = ~Oh, but I did die. My body was consumed in the flames of a great ball of fire cast by the mighty Elminster himself. Yet I have returned to Faerun to retake what is rightfully mine.~
 @155  = ~That is why I am glad you have arrived.~
 @156  = ~Consider yourself lucky that I spare the time to give you the satisfaction of knowing why you are about to killed, fool!~
 @157  = ~From what I had heard of you, I did not think you a coward. It seems that the storytellers have it all wrong though.~
@@ -161,7 +161,7 @@
 @160  = ~I know exactly who you are. That is why you are here.~
 @161  = ~The truth is, that I am not made of this crude flesh that you see before you. I am a Shadowmaster from a distant realm.~
 @162  = ~I need the soul of a powerful Bhaalspawn to resurrect the draco-lich, Rauglothgar. I was originally planned to use Sarevok, but after you defeated him in battle and became a hero, you wrote your own fate.~
-@163  = ~Once I have Rauglothgar under my control, all of Faerûn will burn and the might Elminster will finally meet his doom.For that to happen though, I must slay you.~
+@163  = ~Once I have Rauglothgar under my control, all of Faerun will burn and the might Elminster will finally meet his doom.For that to happen though, I must slay you.~
 @164  = ~Remember what I said about not being made of this crude flesh? Well.. I have one more secret for you.~
 @165  = ~By Mystra! If this teleportation spell doesn't work this time, I'm going to buy a horse and ride that to Athalantar!~
 @166  = ~Arrggh! That is going to be difficult though because as any wise man knows, Athalantar existed a thousand years in the past!~
@@ -231,7 +231,7 @@
 @230  = ~However, no sooner had I gained the kingship than I passed it to one of my friends, Helm Stoneblade, a knight of Athalantar. After all, I had wanted to avenge my family's death, not become a monarch.~
 @231  = ~As Myrjala and I left the kingdom, the so-called Mage Royal, Undarl, attacked us, and the sorceress revealed herself to be Mystra. She offered to make me her Chosen, and I readily accepted.~
 @232  = ~I later also freed High Dale and defeated Manshoon of the Zhentarim, but that is another story.~
-@233  = ~When the floating city of Thultanthar was returned to Faerûn after their exile in the Plane of Shadow, the Shadovar came to Shadowdale to ambush me. In the confrontation spells were thrown, and Storm blasted one of the shadow princes with a ball of silver fire.~ [ELMIN05]
+@233  = ~When the floating city of Thultanthar was returned to Faerun after their exile in the Plane of Shadow, the Shadovar came to Shadowdale to ambush me. In the confrontation spells were thrown, and Storm blasted one of the shadow princes with a ball of silver fire.~ [ELMIN05]
 @234  = ~Since Shadovar are living shadow magic, and silver fire is pure Weave magic, the collision between the two tore at the fabric of reality, creating a rift to the Nine Hells. I realized that the only way to close the portal before legions of devils spilled forth into Toril was to close it from the other side.~ [ELMIN01]
 @235  = ~I entered the portal and narrowly managed to do so, but at the expense of much of my magical powers. Once in Hell I was abducted and enslaved by an outcast arch-devil known as Nergal, who wished to discover the secret of Mystra's silver fire, and so subjected me to brutal tortures. I only survived only because of my exceptional endurance and ability to heal myself with silver fire.~
 @236  = ~While the arch-fiend plundered my thoughts and memories, Mystra became aware of her favorite servant's plight and entered Hell herself to find me.~
@@ -297,7 +297,7 @@
 @296  = ~The Golden Dragonne Theatre host many plays and concerts during the year. Only the most affluent and influential get invited to those exclusive performances.~
 @297  = ~However, my wife prefers the more rustic feeling of the Five Flagons.~
 @298  = ~Everyone knows about Waukeen's Promenade and the majestic buildings in the Government District and people come and go by the docks, but few venture into heart of the city.~
-@299  = ~The River District offer many fine restaurants and a classy casino where one can enjoy many table games from across Faerûn.~
+@299  = ~The River District offer many fine restaurants and a classy casino where one can enjoy many table games from across Faerun.~
 @300  = ~The Guards District is where all the city guards live. Understandably, it is one of the safest districts to live in.~
 @301  = ~The Scepter District, is currently the most popular place for nobles to buy their mansions because of the proximity to the Water Gardens. Several prominent Cowled Wizards also live there, including Lucious.~
 @302  = ~The Gem District is the wealthiest place in the city. The only downfall of living there is that you are across the river and therefore, far away from the Water Gardens, but the splendid fountains and marble statues more than make up for that.~
@@ -414,9 +414,9 @@
 @413  = ~That is not important at the moment.~
 @414  = ~Now is not the time for amusement.~
 @415  = ~Now is not the time for pleasantries.~
-@416  = ~Let me be brief.. This demon has been collecting books owned by mages, book with magical power in them. With enough of these books, this devil could open a portal that would allow hordes of demons to invade Faerûn!~
+@416  = ~Let me be brief.. This demon has been collecting books owned by mages, book with magical power in them. With enough of these books, this devil could open a portal that would allow hordes of demons to invade Faerun!~
 @417  = ~I will follow if you deem it necessary, but this devil must be stopped at all costs! Lead the way, Child of Bhaal. I will be your ally in this battle!~
-@418  = ~So it is done. The demon has been slain and Faerûn has been saved from a terrible fate. Thank you <CHARNAME>. Your heroic deed has saved the lives of thousands. ~
+@418  = ~So it is done. The demon has been slain and Faerun has been saved from a terrible fate. Thank you <CHARNAME>. Your heroic deed has saved the lives of thousands. ~
 @419  = ~Now, I am off.. I still have many books to find.. much knowledge to be learned.~
 @420  = ~Sorry, I don't do business with drow. You will have to move along.~
 @421  = ~As the premier moneylender in Athkatla, I can give you the best rates for exchanging your coins.~
@@ -605,7 +605,7 @@
 @604  = ~I also carry pure illithium ore, renowned for both its luster and its unique property of never becoming soiled. You will not find it at a lesser price.. only five thousand platinum coins.~
 @605  = ~Okay, I'll take a Gryphon Feather Quill.~
 @606  = ~Okay, I'll take some of that pure illithium ore.~
-@607  = ~My name is Chef Golin and I am the best chef in Faerûn!!~
+@607  = ~My name is Chef Golin and I am the best chef in Faerun!!~
 @608  = ~We have to keepit a scret though, because the boorish rich people here in the Water Gardens are afraid of trolls, yes.~
 @609  = ~The owner thinks the nobles won't spend their precious platinum in here if they find out their favorite food is made by the hands of a troll!~
 @610  = ~Which reminds me.. I need someone to do me a favor and you look like you are skilled at performing chores.~
@@ -639,7 +639,7 @@
 @638  = ~Hmmm... I wonder how they would taste in a stew?~
 @639  = ~Please don't attack me now! I am too busy with this huge dinner party to squash you now!~
 @640  = ~Lady Goldsword wants to meet the chef of the Blue Unicorn before he can cater her dinner party, but she does not know that Chef Golin is troll.~
-@641  = ~Should it really matter though? Afterall, I am the best chef in all of Faerûn! Yes I am!~
+@641  = ~Should it really matter though? Afterall, I am the best chef in all of Faerun! Yes I am!~
 @642  = ~I am not allowed outside here in the Water Gardens, not that I care.~
 @643  = ~I prefer the river in the Bridge District more than ugly flowers here anyhow!~
 @644  = ~When I get make enough money after opening my own restaurant in the Gem District, I will enroll in university.~
@@ -707,7 +707,7 @@
 @706  = ~The food and drink are not on par with what they offer at the Blue Unicorn, but the ladies upstairs have just brought over a whole shipment of rare spell scrolls from Waterdeep that might be interesting for an adventurer like yourself.~
 @707  = ~Take a look at the luxurious villas and apartments here in the Water Gardens and tell me that this place is not nicer by a tenfold.~
 @708  = ~The Government District is classic, but the Water Gardens has a modern feel to it. Plus the crowd here is much younger, mostly university students.~
-@709  = ~That is another interesting aspect of it, because you have so many different young nobles from all over Faerûn in one place. Makes for interesting conversation.~
+@709  = ~That is another interesting aspect of it, because you have so many different young nobles from all over Faerun in one place. Makes for interesting conversation.~
 @710  = ~Now, If you are talking about the Government District West Side, that is another matter altogether.~
 @711  = ~There you have the Dragon's End and the Silverale Hall Festhall, which are both my favorite places to have a drink when I am on that side of the Bridge.~
 @712  = ~Do I look like a servant to you? *sigh* One never asks a lady directions! I swear, you adventurers have such terrible manners! Try finding a servant somewhere and ask them.~
@@ -734,7 +734,7 @@
 @733  = ~I fear for Lord Abelard's safety should Fulbert find out. Fulbert has powerful friends amongst both the council and the Cowled Wizards.~
 @734  = ~It is also said that he secretly employs the government assassin know as the Harlequin, although that could just be a baseless rumor.~
 @735  = ~Yes, I have had the pleasure of meeting them both. Elminster was quite dashing, obviously born of royalty. Volo on the other hand, I fand rather odd.~
-@736  = ~He was always so busy with a quill and parchment, going on about a series of guide books that he was writing for people traveling throughout Faerûn. I must say, I found it all rather dull.~
+@736  = ~He was always so busy with a quill and parchment, going on about a series of guide books that he was writing for people traveling throughout Faerun. I must say, I found it all rather dull.~
 @737  = ~That is because you are a boorish adventurer and don't really understand the sophisticated things.~
 @738  = ~I been there where she filled her pool with liquor and of course there was the time she filled the room with haystacks with spellglow moonlight on them and let the nobles.~
 @739  = ~I missed the party she had where she bought a caged giant spider and had it spin a web throughout the entire villa so that they can could chase each other around on them!~
