@@ -858,7 +858,7 @@ END
 
 IF ~~ THEN BEGIN 7xSharRomanceBanterSado-2
 SAY @293
-@294
+=@294
 IF ~~ THEN GOTO 7xSharRomanceBanterSado-3
 END
 
