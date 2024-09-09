@@ -1245,7 +1245,8 @@ Global("SharteelRomanceTalk","GLOBAL",11)
 InParty("7XSHAR")!StateCheck("7XSHAR",CD_STATE_NOTVALID)
 CombatCounter(0)~ THEN BEGIN 7xSharRomanceBanter11
 SAY @423
-IF ~~ THEN REPLY @424 DO ~SetGlobal("SharteelRomanceTalk","GLOBAL",12) SetGlobalTimer("LioraEncounter","GLOBAL",THREE_DAYS)~ GOTO 7xSharRomanceBanter11-1
+IF ~~ THEN REPLY @424 DO ~SetGlobal("SharteelRomanceTalk","GLOBAL",12)~ GOTO 7xSharRomanceBanter11-1
+IF ~~ THEN REPLY @940 DO ~SetGlobal("SharteelRomanceTalk","GLOBAL",12) SetGlobalTimer("LioraEncounter","GLOBAL",THREE_DAYS)~ GOTO 7xSharRomanceBanter11-End1
 END
 
 IF ~~ THEN BEGIN 7xSharRomanceBanter11-1
@@ -1253,21 +1254,21 @@ SAY @425
 IF ~~ THEN REPLY @426 GOTO 7xSharRomanceBanter11-2
 IF ~~ THEN REPLY @427 GOTO 7xSharRomanceBanter11-3
 IF ~~ THEN REPLY @428 GOTO 7xSharRomanceBanter11-4
-IF ~~ THEN REPLY @940 GOTO 7xSharRomanceBanter11-End1
+IF ~~ THEN DO ~SetGlobalTimer("LioraEncounter","GLOBAL",THREE_DAYS)~ REPLY @940 GOTO 7xSharRomanceBanter11-End1
 END
 
 IF ~~ THEN BEGIN 7xSharRomanceBanter11-2
 SAY @429
 IF ~~ THEN REPLY @434 GOTO 7xSharRomanceBanter11-5
 IF ~~ THEN REPLY @435 GOTO 7xSharRomanceBanter11-5
-IF ~~ THEN REPLY @438 GOTO 7xSharRomanceBanter11-End
+IF ~~ THEN DO ~SetGlobalTimer("LioraEncounter","GLOBAL",THREE_DAYS)~ REPLY @438 GOTO 7xSharRomanceBanter11-End
 END
 
 IF ~~ THEN BEGIN 7xSharRomanceBanter11-3
 SAY @430
 IF ~~ THEN REPLY @938 GOTO 7xSharRomanceBanter11-5
 IF ~~ THEN REPLY @939 GOTO 7xSharRomanceBanter11-5
-IF ~~ THEN REPLY @940 GOTO 7xSharRomanceBanter11-End1
+IF ~~ THEN DO ~SetGlobalTimer("LioraEncounter","GLOBAL",THREE_DAYS)~ REPLY @940 GOTO 7xSharRomanceBanter11-End1
 END
 
 IF ~~ THEN BEGIN 7xSharRomanceBanter11-4
@@ -1276,14 +1277,14 @@ SAY @431
 =@433
 IF ~~ THEN REPLY @434 GOTO 7xSharRomanceBanter11-5
 IF ~~ THEN REPLY @435 GOTO 7xSharRomanceBanter11-5
-IF ~~ THEN REPLY @438 GOTO 7xSharRomanceBanter11-End
-IF ~~ THEN REPLY @940 GOTO 7xSharRomanceBanter11-End1
+IF ~~ THEN DO ~SetGlobalTimer("LioraEncounter","GLOBAL",THREE_DAYS)~ REPLY @438 GOTO 7xSharRomanceBanter11-End
+IF ~~ THEN DO ~SetGlobalTimer("LioraEncounter","GLOBAL",THREE_DAYS)~ REPLY @940 GOTO 7xSharRomanceBanter11-End1
 END
 
 IF ~~ THEN BEGIN 7xSharRomanceBanter11-5
 SAY @436
 IF ~~ THEN REPLY @437 GOTO 7xSharRomanceBanter11-6
-IF ~~ THEN REPLY @438 GOTO 7xSharRomanceBanter11-End
+IF ~~ THEN DO ~SetGlobalTimer("LioraEncounter","GLOBAL",THREE_DAYS)~ REPLY @438 GOTO 7xSharRomanceBanter11-End
 END
 
 IF ~~ THEN BEGIN 7xSharRomanceBanter11-End
@@ -1299,13 +1300,13 @@ END
 IF ~~ THEN BEGIN 7xSharRomanceBanter11-6
 SAY @440
 IF ~~ THEN REPLY @441 GOTO 7xSharRomanceBanter11-7
-IF ~~ THEN REPLY @438 GOTO 7xSharRomanceBanter11-End
+IF ~~ THEN DO ~SetGlobalTimer("LioraEncounter","GLOBAL",THREE_DAYS)~ REPLY @438 GOTO 7xSharRomanceBanter11-End
 END
 
 IF ~~ THEN BEGIN 7xSharRomanceBanter11-7
 SAY @442
 IF ~~ THEN REPLY @443 GOTO 7xSharRomanceBanter11-8
-IF ~~ THEN REPLY @438 GOTO 7xSharRomanceBanter11-End
+IF ~~ THEN DO ~SetGlobalTimer("LioraEncounter","GLOBAL",THREE_DAYS)~ REPLY @438 GOTO 7xSharRomanceBanter11-End
 END
 
 IF ~~ THEN BEGIN 7xSharRomanceBanter11-8
@@ -1313,31 +1314,31 @@ SAY @444
 IF ~~ THEN REPLY @445 GOTO 7xSharRomanceBanter11-9
 IF ~~ THEN REPLY @447 GOTO 7xSharRomanceBanter11-10
 IF ~~ THEN REPLY @449 GOTO 7xSharRomanceBanter11-11
-IF ~~ THEN REPLY @438 GOTO 7xSharRomanceBanter11-End
+IF ~~ THEN DO ~SetGlobalTimer("LioraEncounter","GLOBAL",THREE_DAYS)~ REPLY @438 GOTO 7xSharRomanceBanter11-End
 END
 
 IF ~~ THEN BEGIN 7xSharRomanceBanter11-9
 SAY @446
 IF ~~ THEN GOTO 7xSharRomanceBanter11-12
-IF ~~ THEN REPLY @438 GOTO 7xSharRomanceBanter11-End
+IF ~~ THEN DO ~SetGlobalTimer("LioraEncounter","GLOBAL",THREE_DAYS)~ REPLY @438 GOTO 7xSharRomanceBanter11-End
 END
 
 IF ~~ THEN BEGIN 7xSharRomanceBanter11-10
 SAY @448
 IF ~~ THEN GOTO 7xSharRomanceBanter11-12
-IF ~~ THEN REPLY @438 GOTO 7xSharRomanceBanter11-End
+IF ~~ THEN DO ~SetGlobalTimer("LioraEncounter","GLOBAL",THREE_DAYS)~ REPLY @438 GOTO 7xSharRomanceBanter11-End
 END
 
 IF ~~ THEN BEGIN 7xSharRomanceBanter11-11
 SAY @450
 IF ~~ THEN GOTO 7xSharRomanceBanter11-12
-IF ~~ THEN REPLY @438 GOTO 7xSharRomanceBanter11-End
+IF ~~ THEN DO ~SetGlobalTimer("LioraEncounter","GLOBAL",THREE_DAYS)~ REPLY @438 GOTO 7xSharRomanceBanter11-End
 END
 
 IF ~~ THEN BEGIN 7xSharRomanceBanter11-12
 SAY @451
 IF ~~ THEN REPLY @452 GOTO 7xSharRomanceBanter11-13
-IF ~~ THEN REPLY @438 GOTO 7xSharRomanceBanter11-End
+IF ~~ THEN DO ~SetGlobalTimer("LioraEncounter","GLOBAL",THREE_DAYS)~ REPLY @438 GOTO 7xSharRomanceBanter11-End
 END
 
 IF ~~ THEN BEGIN 7xSharRomanceBanter11-13
@@ -1363,7 +1364,7 @@ IF ~~ THEN BEGIN 7xSharRomanceBanter11-16-STAY
 SAY @463
 IF ~GlobalGT("SharteelRomRep","GLOBAL",19)~ THEN REPLY @464 GOTO 7xSharRomanceBanter17Good
 IF ~~ THEN REPLY @489 GOTO 7xSharRomanceBanter17Normal
-IF ~~ THEN DO ~IncrementGlobal("SharteelRomRep","GLOBAL",-5)~ REPLY @495 GOTO 7xSharRomanceBanter18End
+IF ~~ THEN DO ~IncrementGlobal("SharteelRomRep","GLOBAL",-5) SetGlobalTimer("LioraEncounter","GLOBAL",THREE_DAYS)~ REPLY @495 GOTO 7xSharRomanceBanter18End
 END
 
 IF ~~ THEN BEGIN 7xSharRomanceBanter11-16-LEAVE
@@ -1379,21 +1380,21 @@ END
 IF ~~ THEN BEGIN 7xSharRomanceBanter17Good
 SAY @465
 IF ~~ THEN REPLY @466 GOTO 7xSharRomanceBanter17Good-1
-IF ~~ THEN DO ~IncrementGlobal("SharteelRomRep","GLOBAL",-5)~ REPLY @495 GOTO 7xSharRomanceBanter18End
+IF ~~ THEN DO ~IncrementGlobal("SharteelRomRep","GLOBAL",-5) SetGlobalTimer("LioraEncounter","GLOBAL",THREE_DAYS)~ REPLY @495 GOTO 7xSharRomanceBanter18End
 END
 
 IF ~~ THEN BEGIN 7xSharRomanceBanter17Good-1
 SAY @467
 =@468
 IF ~~ THEN REPLY @469 GOTO 7xSharRomanceBanter17Good-2
-IF ~~ THEN DO ~IncrementGlobal("SharteelRomRep","GLOBAL",-5)~ REPLY @495 GOTO 7xSharRomanceBanter18End
+IF ~~ THEN DO ~IncrementGlobal("SharteelRomRep","GLOBAL",-5) SetGlobalTimer("LioraEncounter","GLOBAL",THREE_DAYS)~ REPLY @495 GOTO 7xSharRomanceBanter18End
 END
 
 IF ~~ THEN BEGIN 7xSharRomanceBanter17Good-2
 SAY @470
 IF ~~ THEN REPLY @471 GOTO 7xSharRomanceBanter17Good-3
 IF ~~ THEN REPLY @472 GOTO 7xSharRomanceBanter17Good-3
-IF ~~ THEN DO ~IncrementGlobal("SharteelRomRep","GLOBAL",-5)~ REPLY @495 GOTO 7xSharRomanceBanter18End
+IF ~~ THEN DO ~IncrementGlobal("SharteelRomRep","GLOBAL",-5) SetGlobalTimer("LioraEncounter","GLOBAL",THREE_DAYS)~ REPLY @495 GOTO 7xSharRomanceBanter18End
 END
 
 IF ~~ THEN BEGIN 7xSharRomanceBanter17Good-3
@@ -1406,33 +1407,33 @@ IF ~~ THEN BEGIN 7xSharRomanceBanter17Good-4
 SAY @507
 IF ~~ THEN REPLY @474 GOTO 7xSharRomanceBanter17Good-5
 IF ~~ THEN REPLY @475 GOTO 7xSharRomanceBanter17Good-6
-IF ~~ THEN DO ~IncrementGlobal("SharteelRomRep","GLOBAL",-5)~ REPLY @476 GOTO 7xSharRomanceBanter18End
+IF ~~ THEN DO ~IncrementGlobal("SharteelRomRep","GLOBAL",-5) SetGlobalTimer("LioraEncounter","GLOBAL",THREE_DAYS)~ REPLY @476 GOTO 7xSharRomanceBanter18End
 END
 
 IF ~~ THEN BEGIN 7xSharRomanceBanter17Good-5
 SAY @477
 IF ~~ THEN REPLY @480 GOTO 7xSharRomanceBanter17Good-7
-IF ~~ THEN DO ~IncrementGlobal("SharteelRomRep","GLOBAL",-5)~ REPLY @476 GOTO 7xSharRomanceBanter18End
+IF ~~ THEN DO ~IncrementGlobal("SharteelRomRep","GLOBAL",-5) SetGlobalTimer("LioraEncounter","GLOBAL",THREE_DAYS)~ REPLY @476 GOTO 7xSharRomanceBanter18End
 END
 
 IF ~~ THEN BEGIN 7xSharRomanceBanter17Good-6
 SAY @478
 IF ~~ THEN REPLY @481 GOTO 7xSharRomanceBanter17Good-7
-IF ~~ THEN DO ~IncrementGlobal("SharteelRomRep","GLOBAL",-5)~ REPLY @476 GOTO 7xSharRomanceBanter18End
+IF ~~ THEN DO ~IncrementGlobal("SharteelRomRep","GLOBAL",-5) SetGlobalTimer("LioraEncounter","GLOBAL",THREE_DAYS)~ REPLY @476 GOTO 7xSharRomanceBanter18End
 END
 
 IF ~~ THEN BEGIN 7xSharRomanceBanter17Good-7
 SAY @482
-IF ~~ THEN DO ~SetGlobal("7xSharTeelChaoticNeutral","GLOBAL",1)~ REPLY @483 GOTO 7xSharRomanceBanter17Good-8
+IF ~~ THEN DO ~SetGlobal("7xSharTeelChaoticNeutral","GLOBAL",2)~ REPLY @483 GOTO 7xSharRomanceBanter17Good-8
 IF ~~ THEN DO ~SetGlobal("7xSharTeelChaoticNeutral","GLOBAL",1)~ REPLY @484 GOTO 7xSharRomanceBanter17Good-9
-IF ~~ THEN DO ~IncrementGlobal("SharteelRomRep","GLOBAL",-5)~ REPLY @485 GOTO 7xSharRomanceBanter18End
+IF ~~ THEN DO ~IncrementGlobal("SharteelRomRep","GLOBAL",-5) SetGlobalTimer("LioraEncounter","GLOBAL",THREE_DAYS)~ REPLY @485 GOTO 7xSharRomanceBanter18End
 END
 
 IF ~~ THEN BEGIN 7xSharRomanceBanter17Good-8
 SAY @486
 =@487
 =@488
-IF ~OR(2) !InParty("Imoen2") StateCheck("Imoen2",CD_STATE_NOTVALID) OR(2) !InParty("7XSAFA") StateCheck("7XSAFA",CD_STATE_NOTVALID) OR(2) !InParty("7XAlora") StateCheck("7XAlora",CD_STATE_NOTVALID)~ THEN DO ~SetGlobal("7xSharTeelLeave","GLOBAL",1) SetGlobalTimer("SharTeelReturns","GLOBAL",TWO_DAYS) ChangeAIScript("",DEFAULT)~ REPLY @497 GOTO 7xSharRomanceBanter17Good-10_1
+IF ~OR(2) !InParty("Imoen2") StateCheck("Imoen2",CD_STATE_NOTVALID) OR(2) !InParty("7XSAFA") StateCheck("7XSAFA",CD_STATE_NOTVALID) OR(2) !InParty("7XAlora") StateCheck("7XAlora",CD_STATE_NOTVALID)~ THEN DO ~SetGlobal("7xSharTeelLeave","GLOBAL",1) RealSetGlobalTimer("SharTeelReturns","GLOBAL",200) ChangeAIScript("",DEFAULT)~ REPLY @497 GOTO 7xSharRomanceBanter17Good-10_1
 IF ~OR(2) !InParty("7XSAFA") StateCheck("7XSAFA",CD_STATE_NOTVALID) OR(2) !InParty("7XAlora") StateCheck("7XAlora",CD_STATE_NOTVALID) InParty("Imoen2") !StateCheck("Imoen2",CD_STATE_NOTVALID)~ THEN REPLY @497 EXTERN IMOEN2J 7xSharRomanceBanter17Imoen
 IF ~OR(2) !InParty("7XSAFA") StateCheck("7XSAFA",CD_STATE_NOTVALID) InParty("7XAlora") !StateCheck("7XAlora",CD_STATE_NOTVALID)~ THEN REPLY @497 EXTERN 7XAloraJ 7xSharRomanceBanter17Alora
 IF ~InParty("7XSAFA") !StateCheck("7XSAFA",CD_STATE_NOTVALID)~ THEN REPLY @497 EXTERN 7XSafaJ 7xSharRomanceBanter17Safana
@@ -1442,7 +1443,7 @@ IF ~~ THEN BEGIN 7xSharRomanceBanter17Good-9
 SAY @496
 =@487
 =@488
-IF ~OR(2) !InParty("Imoen2") StateCheck("Imoen2",CD_STATE_NOTVALID) OR(2) !InParty("7XSAFA") StateCheck("7XSAFA",CD_STATE_NOTVALID) OR(2) !InParty("7XAlora") StateCheck("7XAlora",CD_STATE_NOTVALID)~ THEN DO ~SetGlobal("7xSharTeelLeave","GLOBAL",1) SetGlobalTimer("SharTeelReturns","GLOBAL",TWO_DAYS) ChangeAIScript("",DEFAULT)~ REPLY @497 GOTO 7xSharRomanceBanter17Good-10_1
+IF ~OR(2) !InParty("Imoen2") StateCheck("Imoen2",CD_STATE_NOTVALID) OR(2) !InParty("7XSAFA") StateCheck("7XSAFA",CD_STATE_NOTVALID) OR(2) !InParty("7XAlora") StateCheck("7XAlora",CD_STATE_NOTVALID)~ THEN DO ~SetGlobal("7xSharTeelLeave","GLOBAL",1) RealSetGlobalTimer("SharTeelReturns","GLOBAL",200) ChangeAIScript("",DEFAULT)~ REPLY @497 GOTO 7xSharRomanceBanter17Good-10_1
 IF ~OR(2) !InParty("7XSAFA") StateCheck("7XSAFA",CD_STATE_NOTVALID) OR(2) !InParty("7XAlora") StateCheck("7XAlora",CD_STATE_NOTVALID) InParty("Imoen2") !StateCheck("Imoen2",CD_STATE_NOTVALID)~ THEN REPLY @497 EXTERN IMOEN2J 7xSharRomanceBanter17Imoen
 IF ~OR(2) !InParty("7XSAFA") StateCheck("7XSAFA",CD_STATE_NOTVALID) InParty("7XAlora") !StateCheck("7XAlora",CD_STATE_NOTVALID)~ THEN REPLY @497 EXTERN 7XAloraJ 7xSharRomanceBanter17Alora
 IF ~InParty("7XSAFA") !StateCheck("7XSAFA",CD_STATE_NOTVALID)~ THEN REPLY @497 EXTERN 7XSafaJ 7xSharRomanceBanter17Safana
@@ -1461,14 +1462,14 @@ END
 IF ~~ THEN BEGIN 7xSharRomanceBanter17Normal
 SAY @490
 IF ~~ THEN REPLY @491 GOTO 7xSharRomanceBanter17Normal-1
-IF ~~ THEN DO ~IncrementGlobal("SharteelRomRep","GLOBAL",-5)~ REPLY @495 GOTO 7xSharRomanceBanter18End
+IF ~~ THEN DO ~IncrementGlobal("SharteelRomRep","GLOBAL",-5) SetGlobalTimer("LioraEncounter","GLOBAL",THREE_DAYS)~ REPLY @495 GOTO 7xSharRomanceBanter18End
 END
 
 IF ~~ THEN BEGIN 7xSharRomanceBanter17Normal-1
 SAY @492
 IF ~~ THEN REPLY @493 GOTO 7xSharRomanceBanter17Normal-2
 IF ~~ THEN REPLY @494 GOTO 7xSharRomanceBanter17Normal-3
-IF ~~ THEN DO ~IncrementGlobal("SharteelRomRep","GLOBAL",-5)~ REPLY @495 GOTO 7xSharRomanceBanter18End
+IF ~~ THEN DO ~IncrementGlobal("SharteelRomRep","GLOBAL",-5) SetGlobalTimer("LioraEncounter","GLOBAL",THREE_DAYS)~ REPLY @495 GOTO 7xSharRomanceBanter18End
 END
 
 IF ~~ THEN BEGIN 7xSharRomanceBanter17Normal-2
@@ -1502,7 +1503,7 @@ CHAIN 7XSafaJ 7xSharRomanceBanter17Safana
 == 7XAloraJ IF ~InParty("7XAlora") !StateCheck("7XAlora",CD_STATE_NOTVALID)~ THEN @502
 == IMOEN2J IF ~OR(2) !InParty("7XAlora") StateCheck("7XAlora",CD_STATE_NOTVALID) InParty("Imoen2") !StateCheck("Imoen2",CD_STATE_NOTVALID)~ THEN @502
 END
-IF ~OR(2) !InParty("Imoen2") StateCheck("Imoen2",CD_STATE_NOTVALID) OR(2) !InParty("7XSAFA") StateCheck("7XSAFA",CD_STATE_NOTVALID) OR(2) !InParty("7XAlora") StateCheck("7XAlora",CD_STATE_NOTVALID)~ THEN DO ~SetGlobal("7xSharTeelLeave","GLOBAL",1) SetGlobalTimer("SharTeelReturns","GLOBAL",TWO_DAYS) ChangeAIScript("",DEFAULT)~ REPLY @497 EXTERN B7Xshar 7xSharRomanceBanter17Good-10_1
+IF ~OR(2) !InParty("Imoen2") StateCheck("Imoen2",CD_STATE_NOTVALID) OR(2) !InParty("7XSAFA") StateCheck("7XSAFA",CD_STATE_NOTVALID) OR(2) !InParty("7XAlora") StateCheck("7XAlora",CD_STATE_NOTVALID)~ THEN DO ~SetGlobal("7xSharTeelLeave","GLOBAL",1) RealSetGlobalTimer("SharTeelReturns","GLOBAL",200) ChangeAIScript("",DEFAULT)~ REPLY @497 EXTERN B7Xshar 7xSharRomanceBanter17Good-10_1
 IF ~OR(2) !InParty("7XAlora") StateCheck("7XAlora",CD_STATE_NOTVALID) InParty("Imoen2") !StateCheck("Imoen2",CD_STATE_NOTVALID)~ THEN REPLY @503 EXTERN IMOEN2J 7xSharRomanceBanter17Imoen1
 IF ~InParty("7XAlora") !StateCheck("7XAlora",CD_STATE_NOTVALID)~ THEN REPLY @503 EXTERN 7XAloraJ 7xSharRomanceBanter17Alora1
 
@@ -1547,8 +1548,8 @@ END
 IF ~~ THEN BEGIN 7xSharRomanceBanter12-1
 SAY @511
 =@512
-IF ~Global("7xSharTeelChaoticNeutral","GLOBAL",1)~ THEN REPLY @513 GOTO 7xSharRomanceBanter12-2
-IF ~Global("7xSharTeelChaoticNeutral","GLOBAL",0)~ THEN REPLY @523 GOTO 7xSharRomanceBanter12-2
+IF ~~ THEN REPLY @513 GOTO 7xSharRomanceBanter12-2
+IF ~~ THEN REPLY @523 GOTO 7xSharRomanceBanter12-2
 END
 
 IF ~~ THEN BEGIN 7xSharRomanceBanter12-2
@@ -1559,12 +1560,13 @@ END
 IF ~~ THEN BEGIN 7xSharRomanceBanter12-3
 SAY @516
 IF ~Global("7xSharTeelChaoticNeutral","GLOBAL",0)~ THEN GOTO 7xSharRomanceBanter12-4Orig
-IF ~Global("7xSharTeelChaoticNeutral","GLOBAL",1)~ THEN GOTO 7xSharRomanceBanter12-4CN
+IF ~OR(2) Global("7xSharTeelChaoticNeutral","GLOBAL",1) Global("7xSharTeelChaoticNeutral","GLOBAL",2)~ THEN GOTO 7xSharRomanceBanter12-4CN
 END
 
 IF ~~ THEN BEGIN 7xSharRomanceBanter12-4Orig
 SAY @524
 IF ~~ THEN DO ~AddJournalEntry(@1854,USER)~ REPLY @525 GOTO 7xSharRomanceBanter12-4Orig1
+IF ~~ THEN DO ~AddJournalEntry(@1854,USER)~ REPLY @519 GOTO 7xSharRomanceBanter12-4Orig1
 END
 
 IF ~~ THEN BEGIN 7xSharRomanceBanter12-4Orig1
@@ -1582,9 +1584,9 @@ END
 IF ~~ THEN BEGIN 7xSharRomanceBanter12-4CN1
 SAY @520
 =@527
-IF ~~ THEN DO ~SetGlobal("7xSharTeelChaoticNeutral","GLOBAL",2) AddJournalEntry(@1853,USER)~ REPLY @529 GOTO 7xSharRomanceBanter12-4CN2
-IF ~~ THEN DO ~SetGlobal("7xSharTeelChaoticNeutral","GLOBAL",2) AddJournalEntry(@1853,USER)~ REPLY @530 GOTO 7xSharRomanceBanter12-4CN2
-IF ~~ THEN DO ~SetGlobal("7xSharTeelChaoticNeutral","GLOBAL",2) AddJournalEntry(@1853,USER)~ REPLY @531 GOTO 7xSharRomanceBanter12-4CN2
+IF ~~ THEN DO ~AddJournalEntry(@1853,USER)~ REPLY @529 GOTO 7xSharRomanceBanter12-4CN2
+IF ~~ THEN DO ~AddJournalEntry(@1853,USER)~ REPLY @530 GOTO 7xSharRomanceBanter12-4CN2
+IF ~~ THEN DO ~AddJournalEntry(@1853,USER)~ REPLY @531 GOTO 7xSharRomanceBanter12-4CN2
 END
 
 IF ~~ THEN BEGIN 7xSharRomanceBanter12-4CN2
@@ -1600,16 +1602,11 @@ END
 
 BEGIN 7xLiora
 
-CHAIN IF WEIGHT #-99 ~InParty("7XSHAR")!StateCheck("7XSHAR",CD_STATE_NOTVALID)
-Global("SharteelRomanceActive","GLOBAL",2)
-Global("SharteelRomanceTalk","GLOBAL",12)
-Global("SharteelLioraEncounter","GLOBAL",0)
-GlobalTimerExpired("LioraEncounter","GLOBAL")
-CombatCounter(0)~ THEN ~7XsharJ~ 7xSharLioraTalk
+CHAIN IF WEIGHT #-99 ~InParty("7XSHAR")!StateCheck("7XSHAR",CD_STATE_NOTVALID) Global("SharteelLioraEncounter","GLOBAL",1)~ THEN ~7XsharJ~ 7xSharLioraTalk
 @535
 == 7xLiora @536
 == 7XsharJ @537
-== 7xLiora @538 DO ~SetGlobal("SharteelLioraEncounter","GLOBAL",1)~
+== 7xLiora @538 DO ~SetGlobal("SharteelLioraEncounter","GLOBAL",2)~
 == 7XsharJ @539
 =@540
 == 7xLiora @541
@@ -1618,9 +1615,9 @@ EXIT
 
 APPEND ~7XsharJ~
 
-IF WEIGHT #-1 ~Global("SharteelLioraEncounter","GLOBAL",2)~ THEN BEGIN 7xSharLioraTalk1
+IF WEIGHT #-1 ~Global("SharteelLioraEncounter","GLOBAL",3)~ THEN BEGIN 7xSharLioraTalk1
 SAY @574
-IF ~~ THEN DO ~SetGlobal("SharteelLioraEncounter","GLOBAL",3)~ REPLY @543 GOTO 7xSharLioraTalk2
+IF ~~ THEN DO ~SetGlobal("SharteelLioraEncounter","GLOBAL",4)~ REPLY @543 GOTO 7xSharLioraTalk2
 END
 
 IF ~~ THEN BEGIN 7xSharLioraTalk2
@@ -1701,10 +1698,10 @@ APPEND ~B7Xshar~
 IF ~InParty("7XSHAR")!StateCheck("7XSHAR",CD_STATE_NOTVALID)
 Global("SharteelRomanceActive","GLOBAL",2)
 Global("SharteelRomanceTalk","GLOBAL",12)
-Global("SharteelLioraEncounter","GLOBAL",3)
+Global("SharteelLioraEncounter","GLOBAL",4)
 CombatCounter(0)~ THEN BEGIN 7xSharRomanceBanter13
 SAY @575
-IF ~~ THEN DO ~SetGlobal("SharteelRomanceTalk","GLOBAL",14) RealSetGlobalTimer("SharTeelReturnsSea","GLOBAL",200)~ REPLY @576 GOTO 7xSharRomanceBanter13-1
+IF ~~ THEN DO ~SetGlobal("SharteelRomanceTalk","GLOBAL",14) RealSetGlobalTimer("SharTeelReturnsSea","GLOBAL",1200)~ REPLY @576 GOTO 7xSharRomanceBanter13-1
 END
 
 IF ~~ THEN BEGIN 7xSharRomanceBanter13-1
@@ -1729,7 +1726,7 @@ END
 
 IF ~~ THEN BEGIN 7xSharRomanceBanter13-3
 SAY @587
-IF ~Global("7xSharTeelChaoticNeutral","GLOBAL",1)~ THEN GOTO 7xSharRomanceBanter13-4Razreshenie
+IF ~OR(2) Global("7xSharTeelChaoticNeutral","GLOBAL",1) Global("7xSharTeelChaoticNeutral","GLOBAL",2)~ THEN GOTO 7xSharRomanceBanter13-4Razreshenie
 IF ~Global("7xSharTeelChaoticNeutral","GLOBAL",0)~ THEN GOTO 7xSharRomanceBanter13-4NoRazreshenie
 END
 
