@@ -404,22 +404,21 @@ InParty("7XSHAR")!StateCheck("7XSHAR",CD_STATE_NOTVALID)
 Global("SharteelRomanceActive","GLOBAL",2)
 Global("SharteelRomanceTalk","GLOBAL",12)
 Global("SharteelLioraEncounter","GLOBAL",0)
-Global("SharteelLioraExists","LOCALS",0)
 CombatCounter(0)	
-	
+!Global("Chapter","GLOBAL",%bg2_chapter_5%)
 THEN
        RESPONSE #100
 	CreateCreatureObject("7xLiora","7XSHAR",0,0,0) 
-	SetGlobal("SharteelLioraExists","LOCALS",1)
-	ActionOverride("7xLiora",StartDialogNoSet([PC])
+	SetGlobal("SharteelLioraEncounter","GLOBAL",1)
+	ActionOverride("7XSHAR",StartDialogNoSet([PC])
 END
 
 IF
-Global("SharteelLioraEncounter","GLOBAL",1)
+Global("SharteelLioraEncounter","GLOBAL",2)
 	
 THEN
        RESPONSE #100
-	SetGlobal("SharteelLioraEncounter","GLOBAL",2)
+	SetGlobal("SharteelLioraEncounter","GLOBAL",3)
 	StartDialogNoSet([PC])
 END
 
@@ -440,6 +439,8 @@ END
 // ToB - Saradush 2 (romance)
 IF
 Global("SharteelRomanceActive","GLOBAL",2) 
+OR(2)
+Global("7xSharTeelChaoticNeutral","GLOBAL",1) 
 Global("7xSharTeelChaoticNeutral","GLOBAL",2) 
 Global("MelissanJob","GLOBAL",1) 
 AreaCheck("AR5000") 
