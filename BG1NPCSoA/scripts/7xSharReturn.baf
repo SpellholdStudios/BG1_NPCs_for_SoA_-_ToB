@@ -2,6 +2,7 @@
 IF
 	RealGlobalTimerExpired("SharTeelReturns","GLOBAL")
     Global("7xSharTeelLeave","GLOBAL",1)	
+	!Global("Chapter","GLOBAL",%bg2_chapter_5%)
 	AreaType(OUTDOOR)
 	CombatCounter(0)
 THEN
@@ -20,8 +21,9 @@ END
 // Shar-Teel again returned
 IF
 	Global("SharteelRomanceTalk","GLOBAL",14)
-	GlobalTimerExpired("SharTeelReturnsSea","GLOBAL")
+	RealGlobalTimerExpired("SharTeelReturnsSea","GLOBAL")
     Global("7xSharTeelLeaveSea","GLOBAL",1)	
+	!Global("Chapter","GLOBAL",%bg2_chapter_5%)
 	AreaType(OUTDOOR)
 	CombatCounter(0)
 	!Exists("7XSHAR")

@@ -8,10 +8,8 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("DruzersSpawn","GLOBAL",1)
-		CreateCreatureObject("bdoffscr",Player1,0,0,0)  
-		ApplySpellRES("bdoffscr","bdoffscr") 
+		CreateCreatureObject("7xDruzer","Player1",0,0,0)  
 		SmallWait(1)
-		CreateCreatureObject("7xDruzer","bdoffscr",0,0,0)  
 		ActionOverride("7xDruzer",Dialog(Player1))
 END
 
