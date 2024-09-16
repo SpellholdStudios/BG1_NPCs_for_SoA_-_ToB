@@ -2090,7 +2090,7 @@ I_C_T AMBOY01 0 GarickAMBOY01-0
 == 7XGar25J IF ~InParty("7XGAR")!StateCheck("7XGAR",CD_STATE_NOTVALID)~ THEN
  @704
 == AMBOY01 @705
-== 7XGar25J ~Only the bravest warrior in all of Faerûn!~[garrick5]
+== 7XGar25J @706
 == AMBOY01 @707
 == 7XGar25J @708
 END
