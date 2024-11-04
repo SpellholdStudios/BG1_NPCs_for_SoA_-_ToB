@@ -1129,7 +1129,7 @@ END
 IF WEIGHT #-70 ~Global("AjantisQuest","GLOBAL",9)~ THEN BEGIN 7xAjantisQuestTalk-4
 SAY @393
 IF ~~ THEN DO ~SetGlobal("AjantisQuest","GLOBAL",10) SetGlobalTimer("7xAjantisQuestTimer2","GLOBAL",ONE_DAY)~ REPLY @394 GOTO 7xAjantisQuestTalk-5
-IF ~~ THEN DO ~SetGlobal("AjantisQuest","GLOBAL",99) EraseJournalEntry(@1850,QUEST) EraseJournalEntry(@1849,QUEST)~ REPLY @404 GOTO 7xAjantisQuestTalk-4-End
+IF ~~ THEN DO ~SetGlobal("AjantisQuest","GLOBAL",99) EraseJournalEntry(@1850) EraseJournalEntry(@1849)~ REPLY @404 GOTO 7xAjantisQuestTalk-4-End
 END
 
 IF ~~ THEN BEGIN 7xAjantisQuestTalk-5
