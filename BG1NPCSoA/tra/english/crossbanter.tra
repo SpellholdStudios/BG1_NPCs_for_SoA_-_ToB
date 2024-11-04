@@ -765,7 +765,7 @@ With King Cole and his fiddlers three!~
 @705 = ~Have you had any experience of love in your life?~
 @706 = ~I had a minstrel following me around with romantic sobs about this and that: nightingales, forget-me-nots. I told him if he didn't leave me alone, I'd burn all his stupid poems. But he didn't back off.~
 @707 = ~*Sighs* I see. That's pretty much how I imagined it. ~
-@708 = ~Okay, let's get down to business. First of all, remember, you can't command if you don't know anything. So, before he opens his mouth, you need to know what he's going to talk about, before he pulls out his wallet, you need to know how many coins are in it. And so on.~
+@708 = ~Okay, let's get down to business. First of all, remember, you can't command if you don't know anything. So, before he opens his mouth, you need to know what he's going to talk about, before he opens out his wallet, you need to know how many coins are in it. And so on.~
 @709 = ~Oh!? In the name of all the gods, how am I supposed to know that? ~
 @710 = ~Observe closely. You're not blind. Forget the words: "I don't know". You know everything. You control everything.~
 @711 = ~Got it! I must watch that useless male.~
@@ -820,3 +820,13 @@ With King Cole and his fiddlers three!~
 @756 = ~I heard you, Safana.~
 @757 = ~I'll decide for myself what I value and what I don't.~
 @758 = ~Good. Now I'd better get back in line, I doubt our the Furious Bearess will appreciate how hard I'm working for her here.~
+
+// NEW (v.15.1)
+// Ajantis - Skie 2
+@759 = ~A little bird that fluttered out of a golden cage... Even though the wind stubbornly tries to pin you to the ground, you still spread your wings.~
+@760 = ~Hm? That's too poetic. Sir Knight, if you want to compliment me, you'd better compliment my hair. Or my manicure... You have no idea how hard it is to take care of your nails in field conditions.~
+@761 = ~You've been through so much already... Skie, you're much more mature than you pretend to be. I think I see more behind that sweet girl facade.~
+@762 = ~We've all had it tough, Ajantis. Why try to get into my soul? Yeah, you're a paladin and all, but... don't bother. I'll figure it out myself. There's nothing to figure out.~
+@763 = ~Sorry, I didn't mean to be pushy. I just like the way you carry yourself. Maybe I really do want to see more than you have. But I still see that even though you get involved in bad things, you manage to keep your soul pure.~
+@764 = ~Stop looking at me like that, I got something in my eye. Now my eyes will be red, and that's not nice. And don't even think about handing me a clean handkerchief! I'm not crying.~
+@765 = ~A stubborn little bird that, if it wants, will fly high into the sky...~

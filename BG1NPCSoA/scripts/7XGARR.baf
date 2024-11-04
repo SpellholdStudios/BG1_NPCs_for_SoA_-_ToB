@@ -281,7 +281,7 @@ THEN
 	RESPONSE #100
 GivePartyAllEquipment()
 LeaveParty()
-EscapeAreaMove("AR0602",-1,-1,N)  // Irenicus's Dungeon 1st Floor
+EscapeAreaMove("AR0602",-1,-1,8)  // Irenicus's Dungeon 1st Floor
 SetGlobal("GarrickBardQuest","GLOBAL",4)
 END
 
