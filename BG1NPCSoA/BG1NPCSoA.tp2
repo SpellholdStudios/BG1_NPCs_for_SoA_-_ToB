@@ -1,5 +1,6 @@
 BACKUP ~BG1NPCSoA/backup~
 SUPPORT ~http://www.shsforums.net/forum/686-bg1-npcs-for-soa-~
+
 VERSION ~15.2~
 
 AUTO_TRA ~BG1NPCSoA/tra/%s~
