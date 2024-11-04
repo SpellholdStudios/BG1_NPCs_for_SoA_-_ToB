@@ -1,6 +1,6 @@
 BACKUP ~BG1NPCSoA/backup~
 SUPPORT ~http://www.shsforums.net/forum/686-bg1-npcs-for-soa-~
-VERSION ~15~
+VERSION ~15.2~
 
 AUTO_TRA ~BG1NPCSoA/tra/%s~
 
@@ -3173,7 +3173,7 @@ END
 
 COMPILE ~BG1NPCSoA/scripts/7xshar.BAF~ EVALUATE_BUFFER
 
-ACTION_IF (GAME_IS ~eet~) BEGIN
+ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
 EXTEND_TOP ~7xshar.bcs~ ~BG1NPCSoA/scripts/SoDExp.baf~
 END
 
@@ -3876,7 +3876,7 @@ EXTEND_TOP ~Ar0900.bcs~ ~BG1NPCSoA/scripts/YESLICK-QUEST/AR0900.baf~
 
 COMPILE ~BG1NPCSoA/scripts/7xYesl.BAF~
 
-ACTION_IF (GAME_IS ~eet~) BEGIN
+ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
 EXTEND_TOP ~7xYesl.bcs~ ~BG1NPCSoA/scripts/SoDExp.baf~
 END
 
@@ -4131,7 +4131,7 @@ END
 
 COMPILE ~BG1NPCSoA/scripts/7xGARR.BAF~
 
-ACTION_IF (GAME_IS ~eet~) BEGIN
+ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
 EXTEND_TOP ~7xGARR.bcs~ ~BG1NPCSoA/scripts/SoDExp.baf~
 END
 
@@ -4385,7 +4385,7 @@ END
 
 COMPILE EVALUATE_BUFFER ~BG1NPCSoA/scripts/7xskie.BAF~
 
-ACTION_IF (GAME_IS ~eet~) BEGIN
+ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
 EXTEND_TOP ~7xskie.bcs~ ~BG1NPCSoA/scripts/SoDExp.baf~
 END
 
@@ -4520,7 +4520,7 @@ END
 
 COMPILE ~BG1NPCSoA/scripts/7xELDO.BAF~
 
-ACTION_IF (GAME_IS ~eet~) BEGIN
+ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
 EXTEND_TOP ~7xELDO.bcs~ ~BG1NPCSoA/scripts/SoDExp.baf~
 END
 
@@ -4652,7 +4652,7 @@ END
 
 COMPILE ~BG1NPCSoA/scripts/7xbran.BAF~
 
-ACTION_IF (GAME_IS ~eet~) BEGIN
+ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
 EXTEND_TOP ~7xbran.bcs~ ~BG1NPCSoA/scripts/SoDExp.baf~
 END
 
@@ -5605,13 +5605,13 @@ END
 
 COMPILE ~BG1NPCSoA/scripts/Coran-Safana-Chronicles/7xcoran.baf~
 
-ACTION_IF (GAME_IS ~eet~) BEGIN
+ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
 EXTEND_TOP ~7xcoran.bcs~ ~BG1NPCSoA/scripts/SoDExp.baf~
 END
 
 COMPILE ~BG1NPCSoA/scripts/Coran-Safana-Chronicles/7xsafa.baf~ EVALUATE_BUFFER
 
-ACTION_IF (GAME_IS ~eet~) BEGIN
+ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
 EXTEND_TOP ~7xsafa.bcs~ ~BG1NPCSoA/scripts/SoDExp.baf~
 END
 
@@ -5880,7 +5880,7 @@ LAF HANDLE_AUDIO STR_VAR audio_path = "BG1NPCSoA/sounds/Alora" oggdec_path = "BG
 
 COMPILE ~BG1NPCSoA/scripts/7xAlor.baf~
 
-ACTION_IF (GAME_IS ~eet~) BEGIN
+ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
 EXTEND_TOP ~7xAlor.bcs~ ~BG1NPCSoA/scripts/SoDExp.baf~
 END
 
@@ -8217,7 +8217,7 @@ SAY NAME2 @1435
 COMPILE ~BG1NPCSoA/dialogues/MISC/BG1X42.d~
 COMPILE ~BG1NPCSoA/scripts/7XKAGA.BAF~
 
-ACTION_IF (GAME_IS ~eet~) BEGIN
+ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
 EXTEND_TOP ~7XKAGA.bcs~ ~BG1NPCSoA/scripts/SoDExp.baf~
 END
 
@@ -8506,7 +8506,7 @@ SAY NAME2 @1435
 COMPILE ~BG1NPCSoA/dialogues/MISC/BG1X42.d~
 COMPILE ~BG1NPCSoA/scripts/7XKAGA.BAF~
 
-ACTION_IF (GAME_IS ~eet~) BEGIN
+ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
 EXTEND_TOP ~7XKAGA.bcs~ ~BG1NPCSoA/scripts/SoDExp.baf~
 END
 
@@ -8833,7 +8833,7 @@ END
 
 COMPILE ~BG1NPCSoA/scripts/Faldorn/7XFALD.baf~
 
-ACTION_IF (GAME_IS ~eet~) BEGIN
+ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
 EXTEND_TOP ~7XFALD.bcs~ ~BG1NPCSoA/scripts/SoDExp.baf~
 END
 
@@ -9007,7 +9007,7 @@ COMPILE ~BG1NPCSoA/dialogues/MONTARON-QUEST/MQFIRE1.d~
 EXTEND_TOP ~AR0701.bcs~ ~BG1NPCSoA/scripts/MONTARON-QUEST/AR0701.baf~
 COMPILE ~BG1NPCSoA/scripts/7XMONT.baf~
 
-ACTION_IF (GAME_IS ~eet~) BEGIN
+ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
 EXTEND_TOP ~7XMONT.bcs~ ~BG1NPCSoA/scripts/SoDExp.baf~
 END
 
@@ -9342,7 +9342,7 @@ COMPILE ~BG1NPCSoA/dialogues/XZAR-QUEST/XQtroll.d~
 
 COMPILE ~BG1NPCSoA/scripts/7XXzar.baf~
 
-ACTION_IF (GAME_IS ~eet~) BEGIN
+ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
 EXTEND_TOP ~7XXzar.bcs~ ~BG1NPCSoA/scripts/SoDExp.baf~
 END
 
@@ -9958,11 +9958,11 @@ END
 COMPILE ~BG1NPCSoA/scripts/7xquay.BAF~
 COMPILE ~BG1NPCSoA/scripts/7xtiax.BAF~
 
-ACTION_IF (GAME_IS ~eet~) BEGIN
+ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
 EXTEND_TOP ~7xquay.bcs~ ~BG1NPCSoA/scripts/SoDExp.baf~
 END
 
-ACTION_IF (GAME_IS ~eet~) BEGIN
+ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
 EXTEND_TOP ~7xtiax.bcs~ ~BG1NPCSoA/scripts/SoDExp.baf~
 END
 
@@ -10379,7 +10379,7 @@ EXTEND_TOP ~AR4500.bcs~ ~BG1NPCSoA/scripts/Ajantis/AR4500Ajan.baf~
 EXTEND_TOP ~Imoen2.bcs~ ~BG1NPCSoA/scripts/Ajantis/Imoen2.baf~ 
 COMPILE ~BG1NPCSoA/scripts/Ajantis/7XAjan.baf~ EVALUATE_BUFFER
 
-ACTION_IF (GAME_IS ~eet~) BEGIN
+ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
 EXTEND_TOP ~7XAjan.bcs~ ~BG1NPCSoA/scripts/SoDExp.baf~
 END
 
