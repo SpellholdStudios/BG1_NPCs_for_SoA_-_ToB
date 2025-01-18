@@ -1,3 +1,9 @@
+<hr>
+
+:warning: **The maintenance and support of this project has been moved to a [new repository](https://github.com/Spellhold-Studios/BG1-NPCs-for-SoA-ToB).**
+
+<hr><br>
+
 # BG1 NPCs for SoA&ToB
 
 ## The new district of Athkatla (Water Gardens), as well as the old companions from BG1, who are back with you!
